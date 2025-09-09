@@ -1,0 +1,65 @@
+[
+  {
+    "id": "thu-gui-hoc-sinh-1945",
+    "year": 1945,
+    "date": "1945-09-05",
+    "title": "Thư gửi các em học sinh nhân ngày khai trường đầu tiên",
+    "summary": "Non sông Việt Nam có trở nên tươi đẹp hay không, dân tộc Việt Nam có bước tới đài vinh quang để sánh vai với các cường quốc năm châu được hay không, chính là nhờ một phần lớn ở công học tập của các em.",
+    "location": "Hà Nội",
+    "type": "letter",
+    "media": [{ "url": "https://picsum.photos/600/800?random=21", "kind": "document", "caption": "Bản bút tích thư gửi học sinh." }],
+    "sources": [{ "label": "Báo Cứu Quốc", "url": "https://www.qdnd.vn/ho-so-su-kien/van-kien-tu-lieu/thu-bac-ho-gui-hoc-sinh-nhan-ngay-khai-truong-dau-tien-cua-nuoc-viet-nam-dan-chu-cong-hoa-550215" }],
+    "tags": ["giáo dục", "thế hệ trẻ"]
+  },
+  {
+    "id": "loi-keu-goi-toan-quoc-khang-chien",
+    "year": 1946,
+    "date": "1946-12-19",
+    "title": "Lời kêu gọi Toàn quốc kháng chiến",
+    "summary": "Hỡi đồng bào toàn quốc! Chúng ta muốn hoà bình, chúng ta phải nhân nhượng. Nhưng chúng ta càng nhân nhượng, thực dân Pháp càng lấn tới, vì chúng quyết tâm cướp nước ta lần nữa! Không! Chúng ta thà hy sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ.",
+    "location": "Hà Nội",
+    "type": "speech",
+    "tags": ["kháng chiến", "thực dân Pháp"]
+  },
+  {
+    "id": "khong-co-gi-quy-hon-doc-lap-tu-do",
+    "year": 1966,
+    "date": "1966-07-17",
+    "title": "Lời kêu gọi 'Không có gì quý hơn độc lập, tự do'",
+    "summary": "Chiến tranh có thể kéo dài 5 năm, 10 năm, 20 năm hoặc lâu hơn nữa. Hà Nội, Hải Phòng và một số thành phố, xí nghiệp có thể bị tàn phá, song nhân dân Việt Nam quyết không sợ! Không có gì quý hơn độc lập, tự do!",
+    "location": "Hà Nội",
+    "type": "speech",
+    "media": [{ "url": "https://picsum.photos/600/800?random=22", "kind": "document", "caption": "Bản thảo Lời kêu gọi." }],
+    "tags": ["độc lập", "tự do", "kháng chiến chống Mỹ"]
+  },
+  {
+    "id": "di-chuc-1969",
+    "year": 1969,
+    "date": "1969-05-10",
+    "title": "Di chúc của Chủ tịch Hồ Chí Minh",
+    "summary": "Toàn Đảng, toàn dân ta đoàn kết phấn đấu, xây dựng một nước Việt Nam hoà bình, thống nhất, độc lập, dân chủ và giàu mạnh, và góp phần xứng đáng vào sự nghiệp cách mạng thế giới.",
+    "location": "Hà Nội",
+    "type": "document",
+    "media": [{ "url": "https://picsum.photos/600/800?random=23", "kind": "document", "caption": "Bản Di chúc lịch sử của Người." }],
+    "tags": ["di chúc", "di sản", "thống nhất"]
+  },
+  {
+    "id": "nguc-trung-nhat-ky",
+    "year": 1942,
+    "title": "Nhật ký trong tù (trích đoạn)",
+    "summary": "Thân thể ở trong lao, Tinh thần ở ngoài lao; Muốn nên sự nghiệp lớn, Tinh thần càng phải cao.",
+    "location": "Quảng Tây, Trung Quốc",
+    "type": "poem",
+    "tags": ["thơ", "ý chí", "cách mạng"]
+  },
+  {
+    "id": "thu-trung-thu-1951",
+    "year": 1951,
+    "date": "1951-09-14",
+    "title": "Thư Trung thu gửi các cháu thiếu nhi",
+    "summary": "Trung thu này, Bác không có quà gì tặng các cháu. Bác chỉ gửi các cháu nhiều cái hôn thân ái. Bác hứa với các cháu: đến ngày kháng chiến thắng lợi, độc lập thành công, Bác cháu ta sẽ cùng nhau ăn một Tết Trung thu thật vui vẻ.",
+    "location": "Chiến khu Việt Bắc",
+    "type": "letter",
+    "tags": ["thiếu nhi", "Trung thu", "kháng chiến"]
+  }
+]

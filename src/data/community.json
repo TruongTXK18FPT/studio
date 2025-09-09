@@ -1,0 +1,57 @@
+[
+  {
+    "id": "post-1",
+    "title": "Câu chuyện về đôi dép cao su của Bác",
+    "content": "Đôi dép cao su của Bác không chỉ là một vật dụng cá nhân, mà còn là biểu tượng cho sự giản dị, tiết kiệm và gần gũi với nhân dân. Câu chuyện về đôi dép đã đi cùng Bác qua bao chặng đường kháng chiến là một bài học sâu sắc cho thế hệ chúng ta.",
+    "tags": ["giản dị", "kỷ vật"],
+    "status": "approved",
+    "createdAt": "2024-05-18T10:00:00Z",
+    "author": "Nguyễn Văn An"
+  },
+  {
+    "id": "post-2",
+    "title": "Phân tích tư tưởng 'lấy dân làm gốc' trong di chúc",
+    "content": "Trong Di chúc, tư tưởng 'lấy dân làm gốc' được thể hiện một cách xuyên suốt. Bác dặn dò Đảng phải chăm lo đời sống của nhân dân, từ những điều nhỏ nhất. Đây là kim chỉ nam cho mọi hành động của chúng ta.",
+    "tags": ["tư tưởng", "di chúc", "nhân dân"],
+    "status": "approved",
+    "createdAt": "2024-05-19T14:30:00Z",
+    "author": "Trần Thị Bình"
+  },
+  {
+    "id": "post-3",
+    "title": "Hình ảnh Bác Hồ trong thơ Tố Hữu",
+    "content": "Nhà thơ Tố Hữu đã dành những vần thơ hay nhất, trang trọng nhất để viết về Bác. Hình tượng Bác hiện lên vừa vĩ đại, vừa gần gũi, là 'cha, là bác, là anh'. Thơ Tố Hữu giúp chúng ta cảm nhận sâu sắc hơn về tình cảm của nhân dân đối với Bác.",
+    "tags": ["văn học", "thơ", "Tố Hữu"],
+    "status": "approved",
+    "createdAt": "2024-05-20T09:00:00Z",
+    "author": "Lê Văn Cường"
+  },
+  {
+    "id": "post-4",
+    "title": "Chuyến thăm của Bác đến làng cá Cát Bà năm 1959",
+    "content": "Ít ai biết về chuyến thăm bất ngờ của Bác đến làng chài Cát Bà. Người đã ân cần hỏi thăm đời sống bà con ngư dân, động viên mọi người hăng hái thi đua sản xuất. Kỷ niệm đó vẫn còn được người dân nơi đây kể lại.",
+    "tags": ["kỷ niệm", "thăm dân"],
+    "status": "approved",
+    "createdAt": "2024-05-21T11:20:00Z",
+    "author": "Phạm Thị Dung",
+    "cover": "https://picsum.photos/1200/800?random=30"
+  },
+  {
+    "id": "post-5",
+    "title": "Đề xuất số hóa các tài liệu về Bác",
+    "content": "Tôi nghĩ rằng chúng ta nên có một dự án cộng đồng để số hóa tất cả các tài liệu, hình ảnh về Bác đang được lưu trữ ở các địa phương. Điều này sẽ giúp bảo quản và lan tỏa di sản của Người tốt hơn.",
+    "tags": ["ý tưởng", "số hóa"],
+    "status": "pending",
+    "createdAt": "2024-05-22T08:00:00Z",
+    "author": "Vũ Minh Hải"
+  },
+  {
+    "id": "post-6",
+    "title": "Tìm kiếm thông tin về bài báo Bác viết trên tờ 'Người Cùng Khổ'",
+    "content": "Tôi đang tìm kiếm các bài báo cụ thể mà Nguyễn Ái Quốc đã viết trên tờ Le Paria (Người Cùng Khổ). Ai có thông tin hoặc tài liệu xin chia sẻ. Cảm ơn nhiều!",
+    "tags": ["tư liệu", "báo chí", "Le Paria"],
+    "status": "pending",
+    "createdAt": "2024-05-22T15:45:00Z",
+    "author": "Hoàng Thị Lan"
+  }
+]
