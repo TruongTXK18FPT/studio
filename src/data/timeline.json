@@ -1,5 +1,48 @@
 [
   {
+    "id": "1890-05-19",
+    "year": 1890,
+    "date": "1890-05-19",
+    "title": "Sinh ra tại làng Kim Liên",
+    "summary": "Nguyễn Sinh Cung (sau đổi tên là Nguyễn Tất Thành, Nguyễn Ái Quốc, Hồ Chí Minh) sinh ngày 19 tháng 5 năm 1890 tại làng Hoàng Trù, xã Kim Liên, Nam Đàn, Nghệ An trong một gia đình nhà nho yêu nước.",
+    "location": "Nam Đàn, Nghệ An, Việt Nam",
+    "type": "event",
+    "media": [{
+      "url": "https://picsum.photos/800/500",
+      "kind": "photo",
+      "caption": "Ngôi nhà tranh đơn sơ ở làng Hoàng Trù, nơi Bác ra đời."
+    }],
+    "tags": ["sinh ra", "quê hương"]
+  },
+  {
+    "id": "1901-01-01",
+    "year": 1901,
+    "title": "Cha đỗ Phó bảng",
+    "summary": "Ông Nguyễn Sinh Sắc, thân phụ của Bác, thi đỗ Phó bảng trong khoa thi Hội. Đây là niềm tự hào lớn của gia đình và quê hương.",
+    "location": "Kinh thành Huế, Việt Nam",
+    "type": "event",
+    "tags": ["gia đình", "phó bảng"]
+  },
+  {
+    "id": "1905-01-01",
+    "year": 1905,
+    "title": "Theo cha vào Huế",
+    "summary": "Nguyễn Sinh Cung theo cha vào Huế, học tại Trường Tiểu học Pháp - Việt Đông Ba, rồi sau đó là Trường Quốc Học Huế. Tại đây, Người được tiếp xúc với nhiều tư tưởng tiến bộ.",
+    "location": "Huế, Việt Nam",
+    "type": "event",
+    "tags": ["học tập", "Huế"]
+  },
+  {
+    "id": "1908-04-09",
+    "year": 1908,
+    "date": "1908-04-09",
+    "title": "Tham gia biểu tình chống sưu thuế",
+    "summary": "Nguyễn Tất Thành tham gia cuộc biểu tình chống sưu thuế của nhân dân Thừa Thiên - Huế. Đây là lần đầu tiên Người trực tiếp tham gia một phong trào yêu nước của quần chúng.",
+    "location": "Huế, Việt Nam",
+    "type": "event",
+    "tags": ["yêu nước", "phong trào"]
+  },
+  {
     "id": "1911-06-05",
     "year": 1911,
     "date": "1911-06-05",
@@ -14,30 +57,124 @@
     }],
     "tags": ["hành trình", "cứu nước"]
   },
+{
+    "id": "1912-09-15",
+    "year": 1912,
+    "title": "Đến Hoa Kỳ",
+    "summary": "Nguyễn Tất Thành đến thành phố Boston (Mỹ), làm nhiều nghề lao động phổ thông như phụ bếp, cào tuyết, chụp ảnh… để kiếm sống và tìm hiểu đời sống công nhân, phong trào dân chủ ở Mỹ.",
+    "location": "Boston, Hoa Kỳ",
+    "type": "event",
+    "tags": ["Mỹ", "lao động", "tìm hiểu xã hội"]
+  },
+  {
+    "id": "1913-01-01",
+    "year": 1913,
+    "title": "Sang Anh quốc",
+    "summary": "Người chuyển đến Anh, làm phụ bếp tại khách sạn Carlton ở London. Đây là thời gian Người tiếp cận nền văn hóa và phong trào công nhân Anh.",
+    "location": "London, Vương quốc Anh",
+    "type": "event",
+    "tags": ["Anh", "lao động", "cách mạng"]
+  },
+  {
+    "id": "1917-06-01",
+    "year": 1917,
+    "title": "Trở lại Pháp",
+    "summary": "Sau Cách mạng Tháng Mười Nga 1917, Nguyễn Tất Thành trở lại Pháp, tham gia phong trào công nhân, hoạt động trong Hội những người Việt Nam yêu nước.",
+    "location": "Paris, Pháp",
+    "type": "event",
+    "tags": ["Pháp", "cách mạng", "phong trào công nhân"]
+  },
+  {
+    "id": "1923-06-30",
+    "year": 1923,
+    "title": "Đến Liên Xô",
+    "summary": "Nguyễn Ái Quốc sang Liên Xô theo lời mời của Quốc tế Cộng sản. Người học tập tại Trường Đại học Phương Đông, làm việc tại Quốc tế Nông dân và tham dự nhiều hội nghị quốc tế.",
+    "location": "Mátxcơva, Liên Xô",
+    "type": "event",
+    "tags": ["Liên Xô", "Quốc tế Cộng sản", "học tập"]
+  },
+  {
+    "id": "1924-10-17",
+    "year": 1924,
+    "title": "Dự Đại hội V Quốc tế Cộng sản",
+    "summary": "Nguyễn Ái Quốc tham dự Đại hội V Quốc tế Cộng sản, đọc tham luận quan trọng về vấn đề dân tộc và thuộc địa, nêu cao tiếng nói của nhân dân thuộc địa.",
+    "location": "Mátxcơva, Liên Xô",
+    "type": "speech",
+    "tags": ["Quốc tế Cộng sản", "tham luận", "thuộc địa"]
+  },
+  {
+    "id": "1925-06-21",
+    "year": 1925,
+    "title": "Thành lập Hội Việt Nam Cách mạng Thanh niên",
+    "summary": "Nguyễn Ái Quốc thành lập Hội Việt Nam Cách mạng Thanh niên tại Quảng Châu, Trung Quốc. Người trực tiếp mở lớp huấn luyện chính trị, đào tạo cán bộ cách mạng cho Việt Nam.",
+    "location": "Quảng Châu, Trung Quốc",
+    "type": "event",
+    "tags": ["Hội Thanh niên", "đào tạo cán bộ"]
+  },
+  {
+    "id": "1928-07-01",
+    "year": 1928,
+    "title": "Hoạt động ở Xiêm (Thái Lan)",
+    "summary": "Nguyễn Ái Quốc sang Xiêm (nay là Thái Lan), sống cùng Việt kiều, tổ chức hoạt động tuyên truyền, gây dựng cơ sở cách mạng trong cộng đồng người Việt.",
+    "location": "Nakhon Phanom, Xiêm",
+    "type": "event",
+    "tags": ["Xiêm", "Việt kiều", "tuyên truyền"]
+  },
+  {
+    "id": "1929-06-01",
+    "year": 1929,
+    "title": "Đi nhiều nước châu Á",
+    "summary": "Người tiếp tục hoạt động tại Ấn Độ, Miến Điện, Xiêm, Singapore…, gây dựng cơ sở liên lạc, truyền bá chủ nghĩa Mác – Lênin vào phong trào giải phóng dân tộc Đông Nam Á.",
+    "location": "Châu Á",
+    "type": "event",
+    "tags": ["Đông Nam Á", "cách mạng", "Mác-Lênin"]
+  },
   {
     "id": "1930-02-03",
     "year": 1930,
     "date": "1930-02-03",
-    "title": "Thành lập Đảng Cộng sản Việt Nam",
-    "summary": "Tại Cửu Long (Hồng Kông), Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản, thành lập Đảng Cộng sản Việt Nam, một bước ngoặt vĩ đại của cách mạng Việt Nam.",
+    "title": "Chủ trì thành lập Đảng Cộng sản Việt Nam",
+    "summary": "Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Hồng Kông, thành lập Đảng Cộng sản Việt Nam.",
     "location": "Hồng Kông, Trung Quốc",
     "type": "event",
-    "tags": ["Đảng Cộng sản", "cách mạng"]
+    "tags": ["Đảng Cộng sản Việt Nam", "Hồng Kông"]
+  },
+  {
+    "id": "1931-06-06",
+    "year": 1931,
+    "title": "Bị bắt ở Hồng Kông",
+    "summary": "Nguyễn Ái Quốc bị chính quyền Anh bắt giam tại Hồng Kông. Nhờ sự giúp đỡ của luật sư Loseby và phong trào cách mạng quốc tế, Người được trả tự do năm 1933.",
+    "location": "Hồng Kông, Trung Quốc",
+    "type": "event",
+    "tags": ["bị bắt", "Hồng Kông"]
+  },
+  {
+    "id": "1933-01-01",
+    "year": 1933,
+    "title": "Sang Liên Xô lần thứ hai",
+    "summary": "Sau khi được trả tự do, Nguyễn Ái Quốc sang Liên Xô lần thứ hai, tiếp tục học tập, nghiên cứu và tham gia công tác Quốc tế Cộng sản.",
+    "location": "Mátxcơva, Liên Xô",
+    "type": "event",
+    "tags": ["Liên Xô", "nghiên cứu", "Quốc tế Cộng sản"]
+  },
+  {
+    "id": "1938-10-01",
+    "year": 1938,
+    "title": "Trở lại Trung Quốc",
+    "summary": "Nguyễn Ái Quốc trở lại Trung Quốc, tham gia tổ chức huấn luyện quân sự và chính trị cho cán bộ Việt Nam tại Côn Minh, Quảng Tây.",
+    "location": "Côn Minh, Trung Quốc",
+    "type": "event",
+    "tags": ["huấn luyện", "Trung Quốc", "cách mạng"]
   },
   {
     "id": "1941-01-28",
     "year": 1941,
     "date": "1941-01-28",
-    "title": "Về nước sau 30 năm",
-    "summary": "Nguyễn Ái Quốc trở về Tổ quốc qua cột mốc 108 tại Pác Bó, Cao Bằng, trực tiếp lãnh đạo phong trào cách mạng trong nước.",
+    "title": "Về nước sau 30 năm bôn ba",
+    "summary": "Nguyễn Ái Quốc vượt mốc 108 ở Pác Bó (Cao Bằng), chính thức trở về lãnh đạo phong trào cách mạng trong nước.",
     "location": "Pác Bó, Cao Bằng, Việt Nam",
     "type": "event",
-    "media": [{
-      "url": "https://picsum.photos/800/500",
-      "kind": "photo",
-      "caption": "Hang Pác Bó, nơi Người sống và làm việc những ngày đầu về nước."
-    }],
-    "tags": ["về nước", "Pác Bó", "lãnh đạo"]
+    "tags": ["trở về", "Pác Bó", "lãnh đạo"]
   },
   {
     "id": "1942-08-13",
@@ -56,15 +193,6 @@
     "summary": "Tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập, khai sinh ra nước Việt Nam Dân chủ Cộng hòa.",
     "location": "Hà Nội, Việt Nam",
     "type": "speech",
-    "media": [{
-      "url": "https://picsum.photos/900/600",
-      "kind": "photo",
-      "caption": "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình."
-    }],
-    "sources": [{
-      "label": "Toàn văn Tuyên ngôn Độc lập",
-      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Tuyen-ngon-doc-lap-1945-4222.aspx"
-    }],
     "tags": ["độc lập", "Tuyên ngôn", "khai sinh"]
   },
   {
@@ -78,19 +206,14 @@
     "tags": ["kháng chiến", "thực dân Pháp"]
   },
   {
-    "id": "1954-05-07",
+    "id": "1954-07-21",
     "year": 1954,
-    "date": "1954-05-07",
-    "title": "Chiến thắng Điện Biên Phủ",
-    "summary": "Quân và dân Việt Nam giành thắng lợi vĩ đại trong chiến dịch Điện Biên Phủ, kết thúc 9 năm kháng chiến chống Pháp.",
-    "location": "Điện Biên, Việt Nam",
+    "date": "1954-07-21",
+    "title": "Hiệp định Genève",
+    "summary": "Hiệp định Genève được ký kết, chấm dứt chiến tranh ở Đông Dương. Chủ tịch Hồ Chí Minh cùng Trung ương Đảng lãnh đạo đất nước đi vào giai đoạn mới.",
+    "location": "Genève, Thụy Sĩ",
     "type": "event",
-    "media": [{
-      "url": "https://picsum.photos/800/550",
-      "kind": "photo",
-      "caption": "Lá cờ 'Quyết chiến Quyết thắng' tung bay trên nóc hầm De Castries."
-    }],
-    "tags": ["Điện Biên Phủ", "chiến thắng"]
+    "tags": ["Hiệp định Genève", "hòa bình"]
   },
   {
     "id": "1960-09-05",
@@ -112,3 +235,4 @@
     "tags": ["từ trần", "di sản"]
   }
 ]
+

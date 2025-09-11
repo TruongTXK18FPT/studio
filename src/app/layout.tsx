@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SiteFooter } from '@/components/layout/SiteFooter';
+import { ChatBox } from '@/components/chat/ChatBox';
 import './globals.css';
 
 const VERCEL_URL = process.env.VERCEL_URL ? `https://{VERCEL_URL}` : 'http://localhost:3000';
@@ -51,14 +52,15 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased min-h-screen bg-background text-foreground">
+      <body className="font-body antialiased min-h-screen bg-background text-foreground" suppressHydrationWarning>
         <div className="relative flex min-h-screen flex-col">
-          <div className="fixed top-0 left-0 w-full h-full bg-trongdong-pattern opacity-[0.06] pointer-events-none"></div>
+          <div className="fixed top-0 left-0 w-full h-full bg-trongdong-pattern opacity-[0.2] pointer-events-none"></div>
           <SiteHeader />
           <main className="flex-1 container mx-auto px-4 py-8">
             {children}
           </main>
           <SiteFooter />
+          <ChatBox />
         </div>
         <Toaster />
       </body>

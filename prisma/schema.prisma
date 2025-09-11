@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String?
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Mối quan hệ với Post
+  posts Post[]
+
+  @@map("users")
+}
+
+// Model Post cho community
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  content   String?
+  status    String   @default("pending") // pending, approved, rejected
+  tags      Json?
+  imageUrl  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Quan hệ với User
+  authorId String
+  author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade)
+
+  @@map("posts")
+}
+
+// Model Timeline cho dữ liệu lịch sử
+model Timeline {
+  id       String   @id @default(cuid())
+  year     Int
+  date     String?
+  title    String
+  summary  String?
+  location String?
+  type     String   // event, document, speech, etc.
+  media    Json?    // array of images/documents
+  tags     Json?    // array of tags
+  content  String?  // full content
+  sources  Json?    // array of source links
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("timelines")
+}

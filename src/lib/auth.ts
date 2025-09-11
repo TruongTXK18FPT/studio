@@ -1,0 +1,59 @@
+import { SignJWT, jwtVerify } from 'jose'
+import { cookies } from 'next/headers'
+
+const secret = new TextEncoder().encode(process.env.JWT_SECRET || 'fallback-secret-key')
+
+export interface JWTPayload {
+  sub: string
+  email: string
+  name?: string
+  role?: string
+  iat?: number
+  exp?: number
+}
+
+// Ký JWT token
+export async function signToken(payload: Omit<JWTPayload, 'iat' | 'exp'>): Promise<string> {
+  return await new SignJWT(payload)
+    .setProtectedHeader({ alg: 'HS256' })
+    .setIssuedAt()
+    .setExpirationTime('7d')
+    .sign(secret)
+}
+
+// Verify JWT token
+export async function verifyToken(token: string): Promise<JWTPayload | null> {
+  try {
+    const { payload } = await jwtVerify(token, secret)
+    return payload as unknown as JWTPayload
+  } catch (error) {
+    console.error('JWT verification failed:', error)
+    return null
+  }
+}
+
+// Lấy session từ cookie (server-side)
+export async function getSession(): Promise<JWTPayload | null> {
+  try {
+    const cookieStore = await cookies()
+    const token = cookieStore.get('session')?.value
+    
+    if (!token) return null
+    
+    return await verifyToken(token)
+  } catch (error) {
+    console.error('Get session failed:', error)
+    return null
+  }
+}
+
+// Tạo session cookie options
+export function getSessionCookieOptions() {
+  return {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax' as const,
+    path: '/',
+    maxAge: 7 * 24 * 60 * 60 // 7 days
+  }
+}

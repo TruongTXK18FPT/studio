@@ -18,6 +18,7 @@ export interface TimelineItem {
   date?: string; // YYYY-MM-DD
   title: string;
   summary: string;
+  content?: string; // Full content for letters/documents
   location?: string;
   type: DocType;
   media?: MediaItem[];
