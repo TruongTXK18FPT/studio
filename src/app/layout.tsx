@@ -5,20 +5,20 @@ import { SiteFooter } from '@/components/layout/SiteFooter';
 import { ChatBox } from '@/components/chat/ChatBox';
 import './globals.css';
 
-const VERCEL_URL = process.env.VERCEL_URL ? `https://{VERCEL_URL}` : 'http://localhost:3000';
+const VERCEL_URL = process.env.VERCEL_URL ? `https://anh-sang-lich-su.vercel.app` : 'http://localhost:3000';
 
 export const metadata: Metadata = {
   metadataBase: new URL(VERCEL_URL),
   title: {
-    default: 'Hành Trình Bác Hồ',
-    template: `%s | Hành Trình Bác Hồ`,
+    default: 'Ánh sáng lịch sử',
+    template: `%s | Ánh sáng lịch sử`,
   },
   description: 'Kho tư liệu toàn diện về cuộc đời, sự nghiệp và di sản của Chủ tịch Hồ Chí Minh. Khám phá dòng thời gian, thư viện ảnh, thư và các văn bản gốc.',
   openGraph: {
-    title: 'Hành Trình Bác Hồ',
+    title: 'Ánh sáng lịch sử',
     description: 'Kho tư liệu toàn diện về cuộc đời và sự nghiệp của Chủ tịch Hồ Chí Minh.',
     url: VERCEL_URL,
-    siteName: 'Hành Trình Bác Hồ',
+    siteName: 'Ánh sáng lịch sử',
     images: [
       {
         url: '/og-base.png',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hành Trình Bác Hồ',
+    title: 'Ánh sáng lịch sử',
     description: 'Kho tư liệu toàn diện về cuộc đời và sự nghiệp của Chủ tịch Hồ Chí Minh.',
     images: ['/og-base.png'],
   },

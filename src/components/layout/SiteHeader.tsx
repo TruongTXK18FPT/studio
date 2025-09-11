@@ -62,7 +62,7 @@ export function SiteHeader() {
             </div>
             <div className="flex flex-col">
               <span className="font-bold font-semibold text-lg text-primary">
-                Hành Trình Bác Hồ
+                Ánh sáng lịch sử
               </span>
               <span className="text-xs text-muted-foreground hidden sm:block">
                 Kho tư liệu – Dòng thời gian – Thư & Văn bản gốc
