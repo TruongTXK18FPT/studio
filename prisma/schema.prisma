@@ -16,6 +16,7 @@ model User {
   email        String   @unique
   name         String?
   passwordHash String
+  role         String   @default("USER") // USER, ADMIN
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
@@ -33,6 +34,7 @@ model Post {
   status    String   @default("pending") // pending, approved, rejected
   tags      Json?
   imageUrl  String?
+  metadata  Json?    // Additional data like author name, source link, etc.
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 

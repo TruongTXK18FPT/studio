@@ -41,7 +41,8 @@ export async function POST(request: NextRequest) {
     const token = await signToken({
       sub: user.id,
       email: user.email,
-      name: user.name || undefined
+      name: user.name || undefined,
+      role: user.role || 'USER'
     })
 
     // Set cookie

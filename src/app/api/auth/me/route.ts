@@ -13,8 +13,10 @@ export async function GET() {
     }
 
     return NextResponse.json({
+      id: session.sub,
       email: session.email,
-      name: session.name
+      name: session.name,
+      role: session.role || 'USER',
     })
   } catch (error) {
     console.error('Get user error:', error)

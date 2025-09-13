@@ -34,7 +34,8 @@ export async function POST(request: NextRequest) {
       data: {
         email,
         passwordHash,
-        name
+        name,
+        role: 'USER'
       }
     })
 

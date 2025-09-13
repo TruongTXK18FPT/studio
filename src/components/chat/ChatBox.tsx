@@ -5,23 +5,52 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { X, Send, Bot } from 'lucide-react'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Badge } from '@/components/ui/badge'
+import { X, Send, Bot, Cpu, Sparkles, Zap } from 'lucide-react'
 
 interface Message {
   id: string
   text: string
   isUser: boolean
   timestamp: Date
+  model?: string
+  source?: string
+}
+
+type AIModel = 'gemini-2.5-flash' | 'gemini-1.5-flash' | 'gemma-3-27b-it'
+
+const AI_MODEL_INFO = {
+  'gemini-2.5-flash': {
+    name: 'Gemini 2.5 Flash',
+    description: 'Nhanh nhất, phù hợp cho chat',
+    icon: Zap,
+    color: 'bg-blue-500'
+  },
+  'gemini-1.5-flash': {
+    name: 'Gemini 1.5 Flash',
+    description: 'Cân bằng tốc độ và chất lượng',
+    icon: Sparkles,
+    color: 'bg-green-500'
+  },
+  'gemma-3-27b-it': {
+    name: 'Gemma 3 27B',
+    description: 'Chuyên sâu, phân tích chi tiết',
+    icon: Cpu,
+    color: 'bg-purple-500'
+  }
 }
 
 export function ChatBox() {
   const [isOpen, setIsOpen] = useState(false)
+  const [selectedModel, setSelectedModel] = useState<AIModel>('gemini-2.5-flash')
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Xin chào! Tôi là AI trợ lý về Chủ tịch Hồ Chí Minh. Tôi có thể giúp bạn tìm hiểu về cuộc đời, sự nghiệp và tư tưởng của Người. Bạn muốn hỏi gì?',
+      text: 'Xin chào! 🇻🇳 Tôi là chuyên gia AI về lịch sử Việt Nam, đặc biệt chuyên sâu về Chủ tịch Hồ Chí Minh.\n\n📚 Tôi có thể giúp bạn tìm hiểu về:\n• Cuộc đời và sự nghiệp của Bác Hồ\n• Lịch sử cách mạng Việt Nam\n• Tư tưởng và di sản của Người\n• Các sự kiện lịch sử quan trọng\n\n💡 Hãy chọn model AI phù hợp và đặt câu hỏi!',
       isUser: false,
-      timestamp: new Date()
+      timestamp: new Date(),
+      model: 'system'
     }
   ])
   const [inputMessage, setInputMessage] = useState('')
@@ -47,7 +76,10 @@ export function ChatBox() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ message: inputMessage })
+        body: JSON.stringify({ 
+          message: inputMessage,
+          model: selectedModel 
+        })
       })
 
       const data = await response.json()
@@ -56,7 +88,9 @@ export function ChatBox() {
         id: (Date.now() + 1).toString(),
         text: data.response || 'Xin lỗi, tôi không thể trả lời câu hỏi này lúc này.',
         isUser: false,
-        timestamp: new Date()
+        timestamp: new Date(),
+        model: data.model || selectedModel,
+        source: data.source || 'unknown'
       }
 
       setMessages(prev => [...prev, botMessage])
@@ -64,7 +98,7 @@ export function ChatBox() {
       console.error('Chat error:', error)
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: 'Xin lỗi, có lỗi xảy ra. Vui lòng thử lại sau.',
+        text: '❌ Xin lỗi, có lỗi xảy ra. Vui lòng thử lại sau.',
         isUser: false,
         timestamp: new Date()
       }
@@ -81,10 +115,12 @@ export function ChatBox() {
     }
   }
 
+  const ModelIcon = AI_MODEL_INFO[selectedModel].icon
+
   return (
     <div className="fixed bottom-6 right-6 z-50">
       {isOpen && (
-        <Card className="w-96 h-[550px] mb-4 shadow-2xl border-0 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+        <Card className="w-96 h-[600px] mb-4 shadow-2xl border-0 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
           <CardHeader className="pb-4 bg-gradient-to-r from-red-800 to-red-900 text-white relative">
             <div className="absolute inset-0 bg-[url('/patterns/lotus.svg')] opacity-10 bg-repeat bg-center"></div>
             <div className="relative flex items-center justify-between">
@@ -93,8 +129,8 @@ export function ChatBox() {
                   <Bot className="h-6 w-6 text-white drop-shadow-sm" strokeWidth={2} />
                 </div>
                 <div>
-                  <CardTitle className="text-lg font-bold tracking-wide">AI Trợ lý Bác Hồ</CardTitle>
-                  <p className="text-white/90 text-xs">Hỗ trợ tìm hiểu về Người</p>
+                  <CardTitle className="text-lg font-bold tracking-wide">Chuyên gia AI Lịch sử</CardTitle>
+                  <p className="text-white/90 text-xs">Hồ Chí Minh & Việt Nam</p>
                 </div>
               </div>
               <Button
@@ -106,9 +142,38 @@ export function ChatBox() {
                 <X className="h-4 w-4" />
               </Button>
             </div>
+
+            {/* Model Selection */}
+            <div className="relative mt-3">
+              <Select value={selectedModel} onValueChange={(value: AIModel) => setSelectedModel(value)}>
+                <SelectTrigger className="w-full bg-white/20 border-white/30 text-white backdrop-blur-sm">
+                  <div className="flex items-center space-x-2">
+                    <ModelIcon className="h-4 w-4" />
+                    <SelectValue />
+                  </div>
+                </SelectTrigger>
+                <SelectContent>
+                  {Object.entries(AI_MODEL_INFO).map(([key, info]) => {
+                    const Icon = info.icon
+                    return (
+                      <SelectItem key={key} value={key}>
+                        <div className="flex items-center space-x-2">
+                          <div className={`w-3 h-3 rounded-full ${info.color}`}></div>
+                          <Icon className="h-4 w-4" />
+                          <div>
+                            <div className="font-medium">{info.name}</div>
+                            <div className="text-xs text-gray-500">{info.description}</div>
+                          </div>
+                        </div>
+                      </SelectItem>
+                    )
+                  })}
+                </SelectContent>
+              </Select>
+            </div>
           </CardHeader>
           
-          <CardContent className="p-0 flex flex-col h-[calc(100%-100px)] bg-gradient-to-b from-gray-50 to-white">
+          <CardContent className="p-0 flex flex-col h-[calc(100%-140px)] bg-gradient-to-b from-gray-50 to-white">
             <ScrollArea className="flex-1 p-5">
               <div className="space-y-4">
                 {messages.map((message) => (
@@ -122,18 +187,40 @@ export function ChatBox() {
                       </div>
                     )}
                     <div
-                      className={`max-w-[75%] p-4 text-sm leading-relaxed transition-all duration-200 ${
+                      className={`max-w-[75%] transition-all duration-200 ${
                         message.isUser
                           ? 'bg-gradient-to-r from-red-800 to-red-900 text-white rounded-2xl rounded-br-lg shadow-lg'
                           : 'bg-white border border-gray-200 text-gray-800 rounded-2xl rounded-bl-lg shadow-md hover:shadow-lg'
                       }`}
                     >
-                      <div className="whitespace-pre-wrap">{message.text}</div>
-                      <div className={`text-xs mt-2 ${message.isUser ? 'text-white/80' : 'text-gray-500'}`}>
-                        {message.timestamp.toLocaleTimeString('vi-VN', { 
-                          hour: '2-digit', 
-                          minute: '2-digit' 
-                        })}
+                      <div className="p-4 text-sm leading-relaxed">
+                        <div className="whitespace-pre-wrap">{message.text}</div>
+                      </div>
+                      
+                      {/* Message footer with metadata */}
+                      <div className={`px-4 pb-3 flex items-center justify-between text-xs ${
+                        message.isUser ? 'text-white/80' : 'text-gray-500'
+                      }`}>
+                        <div className="flex items-center space-x-2">
+                          <span>{message.timestamp.toLocaleTimeString('vi-VN', { 
+                            hour: '2-digit', 
+                            minute: '2-digit' 
+                          })}</span>
+                          {message.model && message.model !== 'system' && (
+                            <Badge variant="outline" className={`text-xs border-0 ${
+                              message.isUser 
+                                ? 'bg-white/20 text-white/90' 
+                                : 'bg-gray-100 text-gray-600'
+                            }`}>
+                              {AI_MODEL_INFO[message.model as AIModel]?.name || message.model}
+                            </Badge>
+                          )}
+                        </div>
+                        {message.source === 'fallback' && (
+                          <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">
+                            Dự phòng
+                          </Badge>
+                        )}
                       </div>
                     </div>
                     {message.isUser && (
@@ -150,12 +237,13 @@ export function ChatBox() {
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded-2xl rounded-bl-lg text-sm shadow-md">
                       <div className="flex items-center space-x-2">
+                        <ModelIcon className="h-4 w-4 text-red-800 animate-spin" />
                         <div className="flex space-x-1">
                           <div className="w-2 h-2 bg-red-800 rounded-full animate-bounce"></div>
                           <div className="w-2 h-2 bg-red-800 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
                           <div className="w-2 h-2 bg-red-800 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                         </div>
-                        <span className="text-gray-600 text-xs">Đang suy nghĩ...</span>
+                        <span className="text-gray-600 text-xs">Đang phân tích...</span>
                       </div>
                     </div>
                   </div>
@@ -169,7 +257,7 @@ export function ChatBox() {
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
                   onKeyDown={handleKeyPress}
-                  placeholder="Hỏi về cuộc đời, tư tưởng của Bác Hồ..."
+                  placeholder="Hỏi về lịch sử Việt Nam, cuộc đời Bác Hồ..."
                   className="flex-1 text-sm border-2 border-gray-200 focus:border-red-800 focus:ring-2 focus:ring-red-800/20 rounded-xl px-4 py-3 transition-all duration-200"
                   disabled={isLoading}
                 />
@@ -189,9 +277,12 @@ export function ChatBox() {
       
       <Button
         onClick={() => setIsOpen(!isOpen)}
-        className="h-16 w-16 rounded-full bg-gradient-to-r from-red-800 to-red-900 hover:from-red-900 hover:to-red-950 shadow-2xl text-white border-4 border-white/30 transition-all duration-300 hover:scale-110 group"
+        className="h-16 w-16 rounded-full bg-gradient-to-r from-red-800 to-red-900 hover:from-red-900 hover:to-red-950 shadow-2xl text-white border-4 border-white/30 transition-all duration-300 hover:scale-110 group relative"
       >
         <Bot className="h-7 w-7 text-white drop-shadow-lg group-hover:scale-110 transition-transform duration-200" strokeWidth={2} />
+        <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg">
+          <ModelIcon className="h-3 w-3 text-white" />
+        </div>
       </Button>
     </div>
   )

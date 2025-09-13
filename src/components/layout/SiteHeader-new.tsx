@@ -5,7 +5,7 @@ import { NavLink } from './NavLink';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useEffect, useState } from 'react';
-import { Search, Menu, X, Heart, User, Settings, LogOut, Shield, BookOpen, MessageSquare, Clock, Globe } from 'lucide-react';
+import { Search, Menu, X, Heart, Star, User, Settings, LogOut, Shield, BookOpen, MessageSquare, Clock, Globe } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
@@ -74,10 +74,8 @@ export function SiteHeader() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-4 hover:opacity-80 transition-opacity">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 flex items-center justify-center">
-              <svg viewBox="0 0 100 100" className="w-full h-full">
-                <image href="/patterns/logo-hcm202.svg" width="100" height="100" />
-              </svg>
+            <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-2">
+              <Star className="w-6 h-6 text-white" />
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg text-primary bg-gradient-to-r from-red-800 to-red-900 bg-clip-text text-transparent">
@@ -230,10 +228,8 @@ export function SiteHeader() {
               <div className="flex flex-col h-full">
                 {/* Mobile Header */}
                 <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 flex items-center justify-center">
-                    <svg viewBox="0 0 100 100" className="w-full h-full">
-                      <image href="/patterns/logo-hcm202.svg" width="100" height="100" />
-                    </svg>
+                  <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-2">
+                    <Star className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h2 className="font-bold text-lg">HCM202</h2>

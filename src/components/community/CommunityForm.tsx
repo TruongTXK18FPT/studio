@@ -70,7 +70,9 @@ export function CommunityForm() {
         body: JSON.stringify({
           title: values.title,
           content: values.content,
-          tags: values.tags?.split(',').map(tag => tag.trim()).filter(Boolean),
+          tags: values.tags?.split(',').map(tag => tag.trim()).filter(Boolean) || [],
+          author: values.author,
+          sourceLink: values.sourceLink,
         }),
       });
 
@@ -80,7 +82,7 @@ export function CommunityForm() {
         setSubmitSuccess(true);
         toast({
           title: 'Gửi bài viết thành công!',
-          description: 'Bài viết của bạn đã được gửi và đang chờ kiểm duyệt. Cảm ơn bạn đã đóng góp!',
+          description: 'Bài viết của bạn đã được lưu vào hệ thống và đang chờ kiểm duyệt. Cảm ơn bạn đã đóng góp!',
         });
         form.reset();
         

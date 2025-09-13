@@ -8,9 +8,10 @@ import type { ReactNode } from 'react';
 type NavLinkProps = {
   href: string;
   children: ReactNode;
+  className?: string;
 };
 
-export function NavLink({ href, children }: NavLinkProps) {
+export function NavLink({ href, children, className }: NavLinkProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
 
@@ -19,7 +20,8 @@ export function NavLink({ href, children }: NavLinkProps) {
       href={href}
       className={cn(
         'transition-colors hover:text-primary',
-        isActive ? 'text-primary font-semibold' : 'text-foreground/60'
+        isActive ? 'text-primary font-semibold' : 'text-foreground/60',
+        className
       )}
     >
       {children}
