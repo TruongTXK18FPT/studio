@@ -217,7 +217,7 @@ export function SiteFooter() {
           <blockquote className="text-lg md:text-xl font-light italic text-white/90 mb-4 max-w-2xl mx-auto">
             "Không có gì quý hơn độc lập, tự do!"
           </blockquote>
-          <cite className="text-red-100 text-sm">— Chủ tịch Hồ Chí Minh</cite>
+          <cite className="text-red-100 text-sm">— Chủ tịch Hồ Chí Minh —</cite>
         </div>
       </div>
     </footer>

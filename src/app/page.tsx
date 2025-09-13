@@ -201,7 +201,7 @@ export default function TimelinePage() {
             <blockquote className="text-2xl md:text-3xl font-light italic leading-relaxed mb-4">
               "Không có gì quý hơn độc lập, tự do!"
             </blockquote>
-            <cite className="text-white/80 text-lg">— Chủ tịch Hồ Chí Minh</cite>
+            <cite className="text-white/80 text-lg">— Chủ tịch Hồ Chí Minh —</cite>
           </div>
         </div>
       </div>

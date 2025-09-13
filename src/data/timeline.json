@@ -8,7 +8,7 @@
     "location": "Nam Đàn, Nghệ An, Việt Nam",
     "type": "event",
     "media": [{
-      "url": "https://nld.mediacdn.vn/291774122806476800/2021/5/19/nha-san-kim-lien-162137437051649976134.jpg",
+      "url": "http://phunuvietnam.mediacdn.vn/media/news/be1b4073ff13b72ffc35bb9a2b71bd7d/3a.jpg",
       "kind": "photo",
       "caption": "Ngôi nhà tranh đơn sơ ở làng Hoàng Trù, nơi Bác ra đời."
     }],
@@ -21,6 +21,11 @@
     "summary": "Ông Nguyễn Sinh Sắc, thân phụ của Bác, thi đỗ Phó bảng trong khoa thi Hội. Đây là niềm tự hào lớn của gia đình và quê hương.",
     "location": "Kinh thành Huế, Việt Nam",
     "type": "event",
+    "media": [{
+      "url": "https://bna.1cdn.vn/2024/06/05/tranh-ve-cu-nguyen-sinh-sac-ke-toa-boc-thuoc-tri-benh-cho-ba-con.jpg",
+      "kind": "photo",
+      "caption": "Ông Nguyễn Sinh Sắc, thân phụ của Bác, thi đỗ Phó bảng trong khoa thi Hội. Đây là niềm tự hào lớn của gia đình và quê hương."
+    }],
     "tags": ["gia đình", "phó bảng"]
   },
   {
@@ -51,7 +56,7 @@
     "location": "Sài Gòn, Việt Nam",
     "type": "event",
     "media": [{
-      "url": "https://cdnimg.vietnamplus.vn/uploaded/xjtktqj/2020_09_02/0_bac_ho_doc_tuyen_ngon_doc_lap.jpg",
+      "url": "https://storage.baoquangngai.vn/data/dataimages/202206/original/images2457860_NR.jpg",
       "kind": "photo",
       "caption": "Bến Nhà Rồng, nơi Người bắt đầu cuộc hành trình vĩ đại."
     }],
@@ -64,6 +69,11 @@
     "summary": "Nguyễn Tất Thành đến thành phố Boston (Mỹ), làm nhiều nghề lao động phổ thông như phụ bếp, cào tuyết, chụp ảnh… để kiếm sống và tìm hiểu đời sống công nhân, phong trào dân chủ ở Mỹ.",
     "location": "Boston, Hoa Kỳ",
     "type": "event",
+    "media": [{
+      "url": "https://img.cand.com.vn/NewFiles/Images/2023/05/20/omni_02-1684570171216.jpg",
+      "kind": "photo",
+      "caption": "Nguyễn Tất Thành tại Hoa Kỳ."
+    }],
     "tags": ["Mỹ", "lao động", "tìm hiểu xã hội"]
   },
   {
@@ -73,6 +83,11 @@
     "summary": "Người chuyển đến Anh, làm phụ bếp tại khách sạn Carlton ở London. Đây là thời gian Người tiếp cận nền văn hóa và phong trào công nhân Anh.",
     "location": "London, Vương quốc Anh",
     "type": "event",
+    "media": [{
+      "url": "https://bcp.cdnchinhphu.vn/Uploaded/tranthitiep/2021_06_01/tau2.jpg",
+      "kind": "photo",
+      "caption": "Nguyễn Tất Thành tại Anh."
+    }],
     "tags": ["Anh", "lao động", "cách mạng"]
   },
   {
@@ -82,6 +97,11 @@
     "summary": "Sau Cách mạng Tháng Mười Nga 1917, Nguyễn Tất Thành trở lại Pháp, tham gia phong trào công nhân, hoạt động trong Hội những người Việt Nam yêu nước.",
     "location": "Paris, Pháp",
     "type": "event",
+    "media": [{
+      "url": "  https://file3.qdnd.vn/data/images/0/2022/07/08/tranhuyen/01nguyenaiquoc.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Nguyễn Tất Thành trở lại Pháp"
+    }],
     "tags": ["Pháp", "cách mạng", "phong trào công nhân"]
   },
   {
@@ -91,6 +111,11 @@
     "summary": "Nguyễn Ái Quốc sang Liên Xô theo lời mời của Quốc tế Cộng sản. Người học tập tại Trường Đại học Phương Đông, làm việc tại Quốc tế Nông dân và tham dự nhiều hội nghị quốc tế.",
     "location": "Mátxcơva, Liên Xô",
     "type": "event",
+    "media": [{
+      "url": "https://file.qdnd.vn/data/images/0/2021/05/29/phucthang/bh15.jpg?dpi=150&quality=100&w=575",
+      "kind": "photo",
+      "caption": "Đồng chí Nguyễn Ái Quốc (người đầu tiên bên trái hàng ngồi) chụp ảnh với một số đại biểu tham dự Đại hội lần thứ V Quốc tế cộng sản của tại Moskva, Nga từ ngày 17-6 đến 8-7-1924."
+    }],
     "tags": ["Liên Xô", "Quốc tế Cộng sản", "học tập"]
   },
   {
@@ -109,6 +134,11 @@
     "summary": "Nguyễn Ái Quốc thành lập Hội Việt Nam Cách mạng Thanh niên tại Quảng Châu, Trung Quốc. Người trực tiếp mở lớp huấn luyện chính trị, đào tạo cán bộ cách mạng cho Việt Nam.",
     "location": "Quảng Châu, Trung Quốc",
     "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2025/01/06/upload_2058/33.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Tranh vẽ “ Nguyễn Ái Quốc giảng bài tại lớp huấn luyện cán bộ cách mạng Việt Nam tại Quảng Châu, Trung Quốc”."
+    }],
     "tags": ["Hội Thanh niên", "đào tạo cán bộ"]
   },
   {
@@ -137,6 +167,11 @@
     "summary": "Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Hồng Kông, thành lập Đảng Cộng sản Việt Nam.",
     "location": "Hồng Kông, Trung Quốc",
     "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2025/01/10/upload_2058/3.jpg?dpi=150&mode=crop&anchor=topcenter&quality=100&w=500",
+      "kind": "photo",
+      "caption": "Hội nghị thành lập Đảng Cộng sản Việt Nam ngày 3-2-1930."
+    }],
     "tags": ["Đảng Cộng sản Việt Nam", "Hồng Kông"]
   },
   {
@@ -174,6 +209,11 @@
     "summary": "Nguyễn Ái Quốc vượt mốc 108 ở Pác Bó (Cao Bằng), chính thức trở về lãnh đạo phong trào cách mạng trong nước.",
     "location": "Pác Bó, Cao Bằng, Việt Nam",
     "type": "event",
+    "media": [{
+      "url": "https://special.nhandan.vn/ve-Pac-Bo-nho-Bac-Ho/assets/EoBeQGHSiR/ba-c-h-th-m-pa-c-bo-2-1961-1-2048x1360.jpg",
+      "kind": "photo",
+      "caption": "Bác Hồ thăm Pác Bó."
+    }],
     "tags": ["trở về", "Pác Bó", "lãnh đạo"]
   },
   {
@@ -183,6 +223,11 @@
     "summary": "Trong thời gian bị chính quyền Tưởng Giới Thạch bắt giam, Chủ tịch Hồ Chí Minh đã sáng tác tập thơ 'Ngục trung nhật ký' (Nhật ký trong tù) bất hủ.",
     "location": "Quảng Tây, Trung Quốc",
     "type": "poem",
+    "media": [{
+      "url": "https://cdnmedia.baotintuc.vn/Upload/Td3qmSNSjM5mhekL9vM2Q/files/2020/05/Nhatkytrongtu/nhatkytrongtu-anh2.gif",
+      "kind": "photo",
+      "caption": "Bản nhật ký trong tù của Bác Hồ."
+    }],
     "tags": ["thơ", "Nhật ký trong tù"]
   },
   {
@@ -193,6 +238,11 @@
     "summary": "Tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập, khai sinh ra nước Việt Nam Dân chủ Cộng hòa.",
     "location": "Hà Nội, Việt Nam",
     "type": "speech",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2022/09/01/tvkimgiang/bac%20ho%20doc%20tuyen%20ngon.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Bác Hồ đọc Tuyên ngôn Độc lập."
+    }],
     "tags": ["độc lập", "Tuyên ngôn", "khai sinh"]
   },
   {
@@ -203,6 +253,11 @@
     "summary": "Hồ Chủ tịch ra 'Lời kêu gọi Toàn quốc kháng chiến', hiệu triệu toàn dân đứng lên chống thực dân Pháp xâm lược.",
     "location": "Vạn Phúc, Hà Đông",
     "type": "speech",
+    "media": [{
+      "url": "https://hvlq.vn/upload/61311/20211210/images1774382_bac_ho_1__b5a1e.jpg",
+      "kind": "photo",
+      "caption": "Bác Hồ ra lời kêu gọi Toàn quốc kháng chiến."
+    }],
     "tags": ["kháng chiến", "thực dân Pháp"]
   },
   {
@@ -213,6 +268,11 @@
     "summary": "Hiệp định Genève được ký kết, chấm dứt chiến tranh ở Đông Dương. Chủ tịch Hồ Chí Minh cùng Trung ương Đảng lãnh đạo đất nước đi vào giai đoạn mới.",
     "location": "Genève, Thụy Sĩ",
     "type": "event",
+    "media": [{
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Gen-commons.jpg",
+      "kind": "photo",
+      "caption": "Hiệp định Genève."
+    }],
     "tags": ["Hiệp định Genève", "hòa bình"]
   },
   {
@@ -222,6 +282,11 @@
     "summary": "Chủ tịch Hồ Chí Minh bắt đầu viết bản Di chúc lịch sử, đúc kết những tư tưởng, tình cảm và dặn dò tâm huyết cho toàn Đảng, toàn dân.",
     "location": "Hà Nội, Việt Nam",
     "type": "document",
+    "media": [{
+      "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2019_08_22/2019-08-20-bao-chi-05.jpg",
+      "kind": "photo",
+      "caption": "Di chúc của Bác Hồ."
+    }],
     "tags": ["Di chúc", "di sản"]
   },
   {
@@ -232,6 +297,11 @@
     "summary": "Chủ tịch Hồ Chí Minh từ trần, để lại niềm tiếc thương vô hạn cho dân tộc Việt Nam và bạn bè quốc tế.",
     "location": "Hà Nội, Việt Nam",
     "type": "event",
+    "media": [{
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhN4073UTCaOpPpL9hqBXrxmqu1hCgVjZF0Q&s",
+      "kind": "photo",
+      "caption": "Chủ tịch Hồ Chí Minh qua đời."
+    }],
     "tags": ["từ trần", "di sản"]
   }
 ]
