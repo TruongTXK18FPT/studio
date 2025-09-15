@@ -35,10 +35,12 @@ export function SiteHeader() {
     // Check if user is logged in
     const checkAuth = async () => {
       try {
-        const response = await fetch('/api/auth/me');
+        const response = await fetch('/api/auth/me', {
+          credentials: 'include'
+        });
         if (response.ok) {
           const userData = await response.json();
-          setUser(userData);
+          setUser(userData.user); // Updated to match the new API response format
         }
       } catch (error) {
         console.error('Auth check failed:', error);
@@ -154,7 +156,7 @@ export function SiteHeader() {
                       <div className="hidden sm:flex flex-col items-start">
                         <span className="text-sm font-medium">{user.name || 'Người dùng'}</span>
                         <span className="text-xs text-gray-500">
-                          {user.role === 'ADMIN' && (
+                          {user.role === 'admin' && (
                             <Badge variant="secondary" className="text-xs bg-red-100 text-red-800">
                               <Shield className="w-3 h-3 mr-1" />
                               Admin
@@ -182,7 +184,7 @@ export function SiteHeader() {
                         Cài đặt
                       </Link>
                     </DropdownMenuItem>
-                    {user.role === 'ADMIN' && (
+                    {user.role === 'admin' && (
                       <>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem asChild>

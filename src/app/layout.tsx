@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SiteFooter } from '@/components/layout/SiteFooter';
+import { AdminRedirect } from '@/components/layout/AdminRedirect';
 import { ChatBox } from '@/components/chat/ChatBox';
 import './globals.css';
 
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body className="font-body antialiased min-h-screen bg-background text-foreground" suppressHydrationWarning>
         <div className="relative flex min-h-screen flex-col">
           <div className="fixed top-0 left-0 w-full h-full bg-trongdong-pattern opacity-[0.2] pointer-events-none"></div>
+          <AdminRedirect />
           <SiteHeader />
           <main className="flex-1 container mx-auto px-4 py-8">
             {children}

@@ -223,21 +223,21 @@ export default function TimelinePage() {
                           
                           <CardDescription className="flex flex-wrap items-center gap-4 text-gray-600">
                             {item.date && (
-                              <div className="flex items-center space-x-1">
+                              <span className="flex items-center space-x-1">
                                 <Calendar className="h-4 w-4" />
                                 <span>{formatDate(item.date)}</span>
-                              </div>
+                              </span>
                             )}
                             {item.location && (
-                              <div className="flex items-center space-x-1">
+                              <span className="flex items-center space-x-1">
                                 <MapPin className="h-4 w-4" />
                                 <span className="line-clamp-1">{item.location}</span>
-                              </div>
+                              </span>
                             )}
-                            <div className="flex items-center space-x-1 text-red-600">
+                            <span className="flex items-center space-x-1 text-red-600">
                               <Clock className="h-4 w-4" />
                               <span>{item.year}</span>
-                            </div>
+                            </span>
                           </CardDescription>
                         </CardHeader>
                         

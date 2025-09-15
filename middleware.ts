@@ -19,7 +19,7 @@ export async function middleware(request: NextRequest) {
   // Áp dụng cho /admin routes
   if (request.nextUrl.pathname.startsWith('/admin') && 
       !request.nextUrl.pathname.startsWith('/admin/login')) {
-    const token = request.cookies.get('auth-token')?.value
+    const token = request.cookies.get('session')?.value
 
     if (!token) {
       return NextResponse.redirect(new URL('/admin/login', request.url))

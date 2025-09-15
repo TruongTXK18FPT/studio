@@ -147,7 +147,7 @@ export function SiteFooter() {
               <div className="flex items-start text-red-100">
                 <MapPin className="w-4 h-4 mr-3 flex-shrink-0 mt-1" />
                 <span className="text-sm leading-relaxed">
-                  Hà Nội, Việt Nam
+                  FPT University, Việt Nam
                 </span>
               </div>
             </div>

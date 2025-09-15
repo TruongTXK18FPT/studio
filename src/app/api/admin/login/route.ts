@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
-import { SignJWT } from 'jose'
+import { signToken, getSessionCookieOptions } from '@/lib/auth'
 
 const adminSchema = z.object({
   email: z.string().email('Email không hợp lệ'),
@@ -25,30 +25,20 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create JWT token
-    const secret = new TextEncoder().encode(process.env.JWT_SECRET || 'fallback-secret')
-    const token = await new SignJWT({ 
+    // Create JWT token using the auth lib
+    const token = await signToken({ 
       sub: 'admin',
       email,
       role: 'admin'
     })
-      .setProtectedHeader({ alg: 'HS256' })
-      .setIssuedAt()
-      .setExpirationTime('7d')
-      .sign(secret)
 
     const response = NextResponse.json({
       message: 'Đăng nhập admin thành công',
       user: { email, role: 'admin' }
     })
 
-    // Set HTTP-only cookie
-    response.cookies.set('auth-token', token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax',
-      maxAge: 60 * 60 * 24 * 7 // 7 days
-    })
+    // Set session cookie consistently
+    response.cookies.set('session', token, getSessionCookieOptions())
 
     return response
   } catch (error) {

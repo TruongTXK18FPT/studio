@@ -45,7 +45,15 @@ export default function AdminDashboard() {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch('/api/admin/posts')
+      const response = await fetch('/api/admin/posts', {
+        credentials: 'include', // Đảm bảo cookies được gửi
+      })
+      
+      if (response.status === 401) {
+        router.push('/admin/login')
+        return
+      }
+      
       const data = await response.json()
       
       if (response.ok) {
@@ -69,8 +77,14 @@ export default function AdminDashboard() {
         headers: {
           'Content-Type': 'application/json',
         },
+        credentials: 'include',
         body: JSON.stringify({ postId, status }),
       })
+
+      if (response.status === 401) {
+        router.push('/admin/login')
+        return
+      }
 
       const data = await response.json()
       
@@ -99,8 +113,14 @@ export default function AdminDashboard() {
         headers: {
           'Content-Type': 'application/json',
         },
+        credentials: 'include',
         body: JSON.stringify({ postId }),
       })
+
+      if (response.status === 401) {
+        router.push('/admin/login')
+        return
+      }
 
       const data = await response.json()
       
@@ -119,7 +139,10 @@ export default function AdminDashboard() {
 
   const logout = async () => {
     try {
-      await fetch('/api/auth/logout', { method: 'POST' })
+      await fetch('/api/auth/logout', { 
+        method: 'POST',
+        credentials: 'include'
+      })
       router.push('/admin/login')
     } catch (error) {
       console.error('Logout error:', error)

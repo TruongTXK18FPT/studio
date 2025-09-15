@@ -6,23 +6,19 @@ export async function GET() {
     const session = await getSession()
     
     if (!session) {
-      return NextResponse.json(
-        { error: 'Chưa đăng nhập' },
-        { status: 401 }
-      )
+      return NextResponse.json({ user: null }, { status: 401 })
     }
 
     return NextResponse.json({
-      id: session.sub,
-      email: session.email,
-      name: session.name,
-      role: session.role || 'USER',
+      user: {
+        id: session.sub,
+        email: session.email,
+        name: session.name,
+        role: session.role || 'USER'
+      }
     })
   } catch (error) {
-    console.error('Get user error:', error)
-    return NextResponse.json(
-      { error: 'Có lỗi xảy ra' },
-      { status: 500 }
-    )
+    console.error('Get user session error:', error)
+    return NextResponse.json({ user: null }, { status: 401 })
   }
 }

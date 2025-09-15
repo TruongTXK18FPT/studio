@@ -11,19 +11,36 @@ export const metadata: Metadata = {
 
 async function getPosts() {
   try {
-    const response = await fetch(`${process.env.VERCEL_URL || 'http://localhost:9002'}/api/community/posts`, {
-      cache: 'no-store'
-    });
+    // Import prisma directly for server-side fetching
+    const { prisma } = await import('@/lib/prisma');
     
-    if (response.ok) {
-      const data = await response.json();
-      return data.posts || [];
-    }
+    const posts = await prisma.post.findMany({
+      where: { status: 'approved' },
+      orderBy: { createdAt: 'desc' },
+      select: {
+        id: true,
+        title: true,
+        content: true,
+        tags: true,
+        status: true,
+        createdAt: true,
+        metadata: true
+      }
+    });
+
+    return posts.map(post => ({
+      id: post.id,
+      title: post.title,
+      content: post.content || '',
+      tags: Array.isArray(post.tags) ? post.tags as string[] : [],
+      status: post.status as 'approved' | 'pending' | 'rejected',
+      createdAt: post.createdAt.toISOString(),
+      metadata: post.metadata as any
+    }));
   } catch (error) {
     console.error('Error fetching posts:', error);
+    return [];
   }
-  
-  return [];
 }
 
 export default async function CommunityPage() {
@@ -55,6 +72,20 @@ export default async function CommunityPage() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
         <CommunityClient initialPosts={posts} />
+        {posts.length === 0 && (
+          <div className="text-center py-16">
+            <h3 className="text-xl font-medium mb-4">Chưa có bài viết nào được duyệt</h3>
+            <p className="text-muted-foreground mb-6">
+              Hãy trở thành người đầu tiên đóng góp bài viết cho cộng đồng!
+            </p>
+            <Button asChild>
+              <Link href="/community/submit">
+                <PlusCircle className="mr-2 h-4 w-4" />
+                Viết bài đầu tiên
+              </Link>
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );

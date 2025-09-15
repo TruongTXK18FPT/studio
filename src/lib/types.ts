@@ -31,8 +31,13 @@ export interface Post {
   title: string;
   content: string;
   tags?: string[];
-  status: "pending" | "approved";
+  status: "pending" | "approved" | "rejected";
   createdAt: string; // ISO Date
   author?: string;
   cover?: string;
+  metadata?: {
+    authorName?: string;
+    sourceLink?: string;
+    submittedAt?: string;
+  };
 }

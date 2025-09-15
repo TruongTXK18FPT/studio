@@ -2,7 +2,6 @@ import type { Post } from '@/lib/types';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
-import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
 type PostCardProps = {
@@ -10,7 +9,9 @@ type PostCardProps = {
 };
 
 export function PostCard({ post }: PostCardProps) {
-  const authorInitial = post.author ? post.author.charAt(0).toUpperCase() : 'V';
+  // Handle metadata field for author name
+  const authorName = post.metadata?.authorName || post.author || 'Ẩn danh';
+  const authorInitial = authorName.charAt(0).toUpperCase();
 
   return (
     <Card className="flex flex-col h-full">
@@ -25,7 +26,7 @@ export function PostCard({ post }: PostCardProps) {
             <AvatarFallback>{authorInitial}</AvatarFallback>
           </Avatar>
           <div>
-            <p className="font-semibold">{post.author || 'Vô danh'}</p>
+            <p className="font-semibold">{authorName}</p>
             <p className="text-xs text-muted-foreground">{new Date(post.createdAt).toLocaleDateString('vi-VN')}</p>
           </div>
         </div>
@@ -36,18 +37,16 @@ export function PostCard({ post }: PostCardProps) {
       </CardContent>
       <CardFooter className="flex-col items-start gap-4">
         <div className="flex flex-wrap gap-2">
-            {post.tags?.map((tag) => (
-                <Badge key={tag} variant="secondary">{tag}</Badge>
+            {post.tags?.map((tag, index) => (
+                <Badge key={`${tag}-${index}`} variant="secondary">{tag}</Badge>
             ))}
         </div>
-        <Badge
-          className={cn(
-            post.status === 'approved' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
-          )}
-          variant="outline"
-        >
-          {post.status === 'approved' ? 'Đã kiểm duyệt' : 'Đang chờ duyệt'}
-        </Badge>
+        {/* Only show status badge for approved posts on community page */}
+        {post.status === 'approved' && (
+          <Badge className="bg-green-100 text-green-800" variant="outline">
+            Đã kiểm duyệt
+          </Badge>
+        )}
       </CardFooter>
     </Card>
   );
