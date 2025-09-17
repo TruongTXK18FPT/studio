@@ -1,7 +1,17 @@
 import { SignJWT, jwtVerify } from 'jose'
 import { cookies } from 'next/headers'
 
-const secret = new TextEncoder().encode(process.env.JWT_SECRET || 'fallback-secret-key')
+// Ensure JWT_SECRET exists and is strong enough
+const JWT_SECRET = process.env.JWT_SECRET
+if (!JWT_SECRET) {
+  throw new Error('JWT_SECRET environment variable is required')
+}
+
+if (JWT_SECRET.length < 32) {
+  console.warn('JWT_SECRET should be at least 32 characters long for security')
+}
+
+const secret = new TextEncoder().encode(JWT_SECRET)
 
 export interface JWTPayload {
   sub: string
@@ -27,7 +37,12 @@ export async function verifyToken(token: string): Promise<JWTPayload | null> {
     const { payload } = await jwtVerify(token, secret)
     return payload as unknown as JWTPayload
   } catch (error) {
-    console.error('JWT verification failed:', error)
+    // Log the specific error type for debugging
+    if (error instanceof Error) {
+      console.warn(`JWT verification failed: ${error.name} - ${error.message}`)
+    } else {
+      console.warn('JWT verification failed with unknown error:', error)
+    }
     return null
   }
 }
@@ -40,7 +55,17 @@ export async function getSession(): Promise<JWTPayload | null> {
     
     if (!token) return null
     
-    return await verifyToken(token)
+    const session = await verifyToken(token)
+    
+    // If token verification fails, clear the invalid cookie
+    if (!session) {
+      cookieStore.set('session', '', {
+        ...getSessionCookieOptions(),
+        maxAge: 0
+      })
+    }
+    
+    return session
   } catch (error) {
     console.error('Get session failed:', error)
     return null
