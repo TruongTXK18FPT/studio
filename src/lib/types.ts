@@ -41,3 +41,49 @@ export interface Post {
     submittedAt?: string;
   };
 }
+
+// Quiz Types
+export interface QuizChoice {
+  id: string;
+  text: string;
+  isCorrect?: boolean;
+}
+
+export interface QuizQuestion {
+  id: string;
+  question: string;
+  choices: QuizChoice[];
+  explanation?: string;
+  difficulty?: 'easy' | 'medium' | 'hard' | 'expert';
+  type?: "single" | "multiple" | "true_false";
+  grade_hint?: "THCS" | "THPT" | "nang_cao";
+  topic?: "tieu_su" | "su_kien" | "van_ban" | "tu_tuong" | "dia_danh" | "to_chuc" | "van_hoa";
+  correct_answers?: string[];
+  sources?: string[];
+}
+
+export interface QuizMetadata {
+  title: string;
+  language: string;
+  version: string;
+  created_at: string;
+  description: string;
+  copyright: string;
+  tags: string[];
+}
+
+export interface QuizData {
+  metadata: QuizMetadata;
+  items: QuizQuestion[];
+}
+
+export interface QuizResult {
+  quizId: string;
+  score: number;
+  totalQuestions: number;
+  correctAnswers: number;
+  timeSpent: number;
+  completedAt: Date;
+  grade: 'excellent' | 'good' | 'average' | 'poor';
+  incorrectAnswers?: QuizQuestion[];
+}

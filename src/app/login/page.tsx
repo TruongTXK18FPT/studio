@@ -24,9 +24,9 @@ export default function LoginPage() {
       const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ email, password }),
       })
 
       const data = await response.json()
@@ -35,9 +35,10 @@ export default function LoginPage() {
         router.push('/dashboard')
         router.refresh()
       } else {
-        setError(data.error || 'Có lỗi xảy ra')
+        setError(data.error || 'Email hoặc mật khẩu không đúng')
       }
     } catch (error) {
+      console.error('Login error:', error)
       setError('Có lỗi kết nối, vui lòng thử lại')
     } finally {
       setLoading(false)

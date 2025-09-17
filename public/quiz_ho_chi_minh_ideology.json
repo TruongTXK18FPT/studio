@@ -1,0 +1,358 @@
+{
+  "id": "ho_chi_minh_ideology",
+  "title": "Tư tưởng Hồ Chí Minh",
+  "description": "Kiểm tra kiến thức về Tư tưởng Hồ Chí Minh - Hệ thống tư tưởng toàn diện và sâu sắc của lãnh tụ dân tộc",
+  "difficulty": "advanced",
+  "estimatedTime": "45 phút",
+  "totalQuestions": 29,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Thuật ngữ \"Tư tưởng Hồ Chí Minh\" dùng để chỉ:",
+      "choices": [
+        { "text": "Tư tưởng một cá nhân", "isCorrect": false },
+        { "text": "Tư tưởng của lãnh tụ", "isCorrect": false },
+        { "text": "Tư tưởng của một dân tộc", "isCorrect": false },
+        { "text": "Tất cả đều đúng", "isCorrect": true }
+      ],
+      "explanation": "Tư tưởng Hồ Chí Minh vừa là tư tưởng của một cá nhân vĩ đại, vừa là tư tưởng của lãnh tụ, đồng thời cũng thể hiện tư tưởng của cả dân tộc Việt Nam.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 2,
+      "question": "Nội dung cốt lõi xuyên suốt Tư tưởng Hồ Chí Minh:",
+      "choices": [
+        { "text": "Chủ nghĩa yêu nước", "isCorrect": false },
+        { "text": "Độc lập dân tộc và CNXH", "isCorrect": true },
+        { "text": "Chủ nghĩa xã hội", "isCorrect": false },
+        { "text": "Chủ nghĩa nhân đạo", "isCorrect": false }
+      ],
+      "explanation": "Độc lập dân tộc và chủ nghĩa xã hội là hai nội dung cốt lõi, xuyên suốt trong Tư tưởng Hồ Chí Minh, thể hiện mục tiêu giải phóng dân tộc và xây dựng xã hội mới.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 3,
+      "question": "\"Không có gì quý hơn độc lập, tự do\" Bác Hồ khẳng định vào năm nào?",
+      "choices": [
+        { "text": "1945", "isCorrect": false },
+        { "text": "1954", "isCorrect": false },
+        { "text": "1966", "isCorrect": true },
+        { "text": "1968", "isCorrect": false }
+      ],
+      "explanation": "Câu nói nổi tiếng này được Bác Hồ khẳng định trong Di chúc năm 1966, thể hiện tinh thần bất khuất của dân tộc Việt Nam.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "question": "Theo Hồ Chí Minh, động lực quyết định nhất của chủ nghĩa xã hội là gì?",
+      "choices": [
+        { "text": "Khoa học kỹ thuật", "isCorrect": false },
+        { "text": "Kinh tế phát triển", "isCorrect": false },
+        { "text": "Con người", "isCorrect": true },
+        { "text": "Truyền thống dân tộc", "isCorrect": false }
+      ],
+      "explanation": "Theo Hồ Chí Minh, con người là động lực quyết định nhất, là mục tiêu và là phương tiện của chủ nghĩa xã hội.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 5,
+      "question": "Tư tưởng dân chủ Hồ Chí Minh chịu ảnh hưởng từ đâu?",
+      "choices": [
+        { "text": "Phương Đông", "isCorrect": false },
+        { "text": "Nho giáo", "isCorrect": false },
+        { "text": "Phương Tây", "isCorrect": true },
+        { "text": "Thiên chúa giáo", "isCorrect": false }
+      ],
+      "explanation": "Tư tưởng dân chủ của Hồ Chí Minh chịu ảnh hưởng từ những tư tưởng dân chủ phương Tây, đặc biệt là từ Cách mạng Pháp và tư tưởng Rousseau.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 6,
+      "question": "Mục tiêu cao nhất của chủ nghĩa xã hội theo Hồ Chí Minh?",
+      "choices": [
+        { "text": "Khoa học kỹ thuật tiên tiến", "isCorrect": false },
+        { "text": "Kinh tế phát triển", "isCorrect": false },
+        { "text": "Giải phóng con người", "isCorrect": false },
+        { "text": "Đời sống vật chất và tinh thần cho nhân dân", "isCorrect": true }
+      ],
+      "explanation": "Mục tiêu cao nhất là đảm bảo đời sống vật chất và tinh thần ngày càng tốt đẹp cho nhân dân, thể hiện bản chất nhân văn của chủ nghĩa xã hội.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 7,
+      "question": "Vận dụng sáng tạo lý luận Mác-Lênin về đoàn kết quốc tế, Hồ Chí Minh đã nêu khẩu hiệu:",
+      "choices": [
+        { "text": "Lao động tất cả nước đoàn kết lại", "isCorrect": false },
+        { "text": "Vô sản toàn thế giới và các dân tộc bị áp bức đoàn kết lại", "isCorrect": true },
+        { "text": "Tất cả các đảng và dân tộc trên thế giới đoàn kết lại", "isCorrect": false },
+        { "text": "Vô sản toàn thế giới, đoàn kết lại", "isCorrect": false }
+      ],
+      "explanation": "Đây là sự vận dụng sáng tạo của Hồ Chí Minh, mở rộng khẩu hiệu đoàn kết quốc tế để bao gồm cả các dân tộc bị áp bức.",
+      "difficulty": "hard"
+    },
+    {
+      "id": 8,
+      "question": "Giai đoạn phát triển và hoàn thiện Tư tưởng Hồ Chí Minh là:",
+      "choices": [
+        { "text": "1911 – 1920", "isCorrect": false },
+        { "text": "1921 – 1930", "isCorrect": false },
+        { "text": "1930 – 1945", "isCorrect": false },
+        { "text": "1945 – 1969", "isCorrect": true }
+      ],
+      "explanation": "Giai đoạn 1945-1969 là thời kỳ Tư tưởng Hồ Chí Minh được phát triển và hoàn thiện nhất, khi Người đảm nhận vai trò lãnh đạo Nhà nước.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 9,
+      "question": "Theo Hồ Chí Minh, chủ nghĩa xã hội có mục tiêu cao nhất là gì?",
+      "choices": [
+        { "text": "Quyền tự quyết dân tộc", "isCorrect": false },
+        { "text": "Xóa đói giảm nghèo", "isCorrect": false },
+        { "text": "Đảm bảo quyền làm chủ của nhân dân", "isCorrect": false },
+        { "text": "Độc lập cho dân tộc; tự do, hạnh phúc cho nhân dân", "isCorrect": true }
+      ],
+      "explanation": "Mục tiêu cao nhất là độc lập cho dân tộc, tự do và hạnh phúc cho nhân dân, thể hiện sự kết hợp giữa giải phóng dân tộc và giải phóng xã hội.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 10,
+      "question": "Hồ Chí Minh đã dùng hình ảnh nào chỉ chủ nghĩa tư bản?",
+      "choices": [
+        { "text": "Con bạch tuộc", "isCorrect": false },
+        { "text": "Con rồng tre", "isCorrect": false },
+        { "text": "Con đỉa hai vòi", "isCorrect": true },
+        { "text": "Con voi", "isCorrect": false }
+      ],
+      "explanation": "Hồ Chí Minh ví chủ nghĩa tư bản như 'con đỉa hai vòi' để chỉ bản chất bóc lột kép của chế độ này.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 11,
+      "question": "Theo Hồ Chí Minh, công tác gốc của Đảng là gì?",
+      "choices": [
+        { "text": "Công tác cán bộ", "isCorrect": true },
+        { "text": "Công tác dân vận", "isCorrect": false },
+        { "text": "Công tác lý luận", "isCorrect": false },
+        { "text": "Công tác tư tưởng chính trị", "isCorrect": false }
+      ],
+      "explanation": "Công tác cán bộ là công tác gốc của Đảng vì cán bộ là người thực hiện đường lối, chính sách của Đảng.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 12,
+      "question": "Khái niệm Tư tưởng Hồ Chí Minh được chính thức nêu ra trong Đại hội nào của Đảng?",
+      "choices": [
+        { "text": "VII", "isCorrect": false },
+        { "text": "VIII", "isCorrect": false },
+        { "text": "IX", "isCorrect": true },
+        { "text": "X", "isCorrect": false }
+      ],
+      "explanation": "Đại hội IX của Đảng (2001) đã chính thức nêu ra khái niệm 'Tư tưởng Hồ Chí Minh' và khẳng định giá trị của nó.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 13,
+      "question": "Nhiệm vụ nghiên cứu Tư tưởng Hồ Chí Minh có mấy nhiệm vụ?",
+      "choices": [
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": true }
+      ],
+      "explanation": "Có 5 nhiệm vụ nghiên cứu Tư tưởng Hồ Chí Minh: tuyên truyền, giáo dục, nghiên cứu, vận dụng và phát triển.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 14,
+      "question": "Ai là người thầy đầu tiên của Nguyễn Tất Thành?",
+      "choices": [
+        { "text": "Nguyễn Sinh Sắc", "isCorrect": true },
+        { "text": "Phan Bội Châu", "isCorrect": false },
+        { "text": "Nguyễn Ái Quốc", "isCorrect": false },
+        { "text": "Nguyễn Lương Bằng", "isCorrect": false }
+      ],
+      "explanation": "Nguyễn Sinh Sắc, cha của Bác Hồ, chính là người thầy đầu tiên dạy cho Người những bài học đầu đời.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 15,
+      "question": "Theo Hồ Chí Minh, chủ nghĩa Tam dân của Tôn Trung Sơn có ưu điểm lớn nhất là:",
+      "choices": [
+        { "text": "Phù hợp thực tế Việt Nam", "isCorrect": false },
+        { "text": "Đấu tranh vì tự do, dân chủ", "isCorrect": true },
+        { "text": "Chống phong kiến", "isCorrect": false },
+        { "text": "Tư tưởng hòa bình", "isCorrect": false }
+      ],
+      "explanation": "Hồ Chí Minh đánh giá cao tinh thần đấu tranh vì tự do, dân chủ trong chủ nghĩa Tam dân của Tôn Trung Sơn.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 16,
+      "question": "Hồ Chí Minh khảo nghiệm và tìm thấy con đường cứu nước vào thời kỳ nào?",
+      "choices": [
+        { "text": "1911–1920", "isCorrect": true },
+        { "text": "1890–1911", "isCorrect": false },
+        { "text": "1920–1930", "isCorrect": false },
+        { "text": "1930–1945", "isCorrect": false }
+      ],
+      "explanation": "Giai đoạn 1911-1920 là thời kỳ Hồ Chí Minh đi tìm đường cứu nước và khảo nghiệm các con đường khác nhau.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 17,
+      "question": "\"Làm theo năng lực, hưởng theo nhu cầu\" là nguyên tắc phân phối chủ yếu của:",
+      "choices": [
+        { "text": "Chủ nghĩa xã hội", "isCorrect": true },
+        { "text": "Chủ nghĩa tư bản", "isCorrect": false },
+        { "text": "Chủ nghĩa dân chủ", "isCorrect": false },
+        { "text": "Chủ nghĩa cộng sản", "isCorrect": false }
+      ],
+      "explanation": "Đây là nguyên tắc phân phối theo lao động trong giai đoạn chủ nghĩa xã hội, trước khi chuyển sang chủ nghĩa cộng sản.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 18,
+      "question": "Theo Hồ Chí Minh, yếu tố quyết định thắng lợi của cách mạng giải phóng dân tộc là:",
+      "choices": [
+        { "text": "Sự liên minh công nhân – nông dân", "isCorrect": false },
+        { "text": "Đoàn kết quốc tế", "isCorrect": false },
+        { "text": "Sự lãnh đạo của Đảng", "isCorrect": false },
+        { "text": "Sức mạnh toàn dân tộc", "isCorrect": true }
+      ],
+      "explanation": "Sức mạnh toàn dân tộc đoàn kết trong khối đại đoàn kết dân tộc là yếu tố quyết định thắng lợi của cách mạng.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 19,
+      "question": "Nội dung tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam nhấn mạnh vai trò:",
+      "choices": [
+        { "text": "Tập thể lãnh đạo, cá nhân phụ trách", "isCorrect": false },
+        { "text": "Đoàn kết quốc tế", "isCorrect": false },
+        { "text": "Kim chỉ nam hành động của Đảng", "isCorrect": true },
+        { "text": "Nền tảng tinh thần của xã hội", "isCorrect": false }
+      ],
+      "explanation": "Tư tưởng Hồ Chí Minh là kim chỉ nam hành động của Đảng Cộng sản Việt Nam trong mọi hoạt động.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 20,
+      "question": "Theo Tư tưởng Hồ Chí Minh, trong xã hội ta lực lượng nào có quyền lực cao nhất?",
+      "choices": [
+        { "text": "ĐCSVN", "isCorrect": false },
+        { "text": "Chính phủ", "isCorrect": false },
+        { "text": "Quốc hội", "isCorrect": false },
+        { "text": "Nhân dân", "isCorrect": true }
+      ],
+      "explanation": "Theo Hồ Chí Minh, nhân dân là chủ nhân của đất nước, có quyền lực cao nhất trong xã hội xã hội chủ nghĩa.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 21,
+      "question": "Giá trị lớn nhất của Tư tưởng Hồ Chí Minh đối với cách mạng Việt Nam là:",
+      "choices": [
+        { "text": "Cổ vũ các dân tộc", "isCorrect": false },
+        { "text": "Nền tảng tư tưởng và kim chỉ nam cho hành động", "isCorrect": true },
+        { "text": "Phản ánh khát vọng thời đại", "isCorrect": false },
+        { "text": "Giải pháp giải phóng loài người", "isCorrect": false }
+      ],
+      "explanation": "Tư tưởng Hồ Chí Minh là nền tảng tư tưởng và kim chỉ nam hành động cho cách mạng Việt Nam.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 22,
+      "question": "Theo Hồ Chí Minh, ưu điểm lớn nhất của chủ nghĩa Mác là gì?",
+      "choices": [
+        { "text": "Chủ nghĩa nhân đạo triệt để", "isCorrect": true },
+        { "text": "Phương pháp làm việc biện chứng", "isCorrect": false },
+        { "text": "Bản chất khoa học", "isCorrect": false },
+        { "text": "Bản chất cách mạng", "isCorrect": false }
+      ],
+      "explanation": "Hồ Chí Minh đánh giá cao chủ nghĩa nhân đạo triệt để là ưu điểm lớn nhất của chủ nghĩa Mác.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 23,
+      "question": "Nguyên tắc hoạt động của Đảng theo Hồ Chí Minh là:",
+      "choices": [
+        { "text": "Tập trung dân chủ", "isCorrect": false },
+        { "text": "Tập thể lãnh đạo, cá nhân phụ trách", "isCorrect": false },
+        { "text": "Đoàn kết quốc tế", "isCorrect": false },
+        { "text": "Tất cả đều đúng", "isCorrect": true }
+      ],
+      "explanation": "Tất cả các nguyên tắc này đều là những nguyên tắc hoạt động cơ bản của Đảng theo Tư tưởng Hồ Chí Minh.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 24,
+      "question": "Lực lượng chủ yếu trong khối đại đoàn kết dân tộc theo Hồ Chí Minh là:",
+      "choices": [
+        { "text": "Công nông", "isCorrect": true },
+        { "text": "Tầng lớp trí thức", "isCorrect": false },
+        { "text": "Người giàu", "isCorrect": false },
+        { "text": "Thanh niên", "isCorrect": false }
+      ],
+      "explanation": "Liên minh công nhân - nông dân là lực lượng chủ yếu trong khối đại đoàn kết dân tộc.",
+      "difficulty": "easy"
+    },
+    {
+      "id": 25,
+      "question": "Theo tư tưởng Hồ Chí Minh, động lực quan trọng và quyết định của CNXH ở Việt Nam là gì?",
+      "choices": [
+        { "text": "Đấu tranh giai cấp", "isCorrect": false },
+        { "text": "Là con người, là nhân dân lao động mà nòng cốt là công – nông – trí thức", "isCorrect": true },
+        { "text": "Công nghiệp hóa, hiện đại hóa", "isCorrect": false },
+        { "text": "Sở hữu tập thể", "isCorrect": false }
+      ],
+      "explanation": "Con người, nhân dân lao động với nòng cốt là liên minh công - nông - trí thức là động lực quyết định của CNXH.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 26,
+      "question": "Hồ Chí Minh từng khẳng định: \"Việc cách mạng trước hết phải...\"?",
+      "choices": [
+        { "text": "Giành độc lập", "isCorrect": true },
+        { "text": "Có chính sách đúng đắn", "isCorrect": false },
+        { "text": "Có năng lực lãnh đạo", "isCorrect": false },
+        { "text": "Cả hai đáp án trên", "isCorrect": false }
+      ],
+      "explanation": "Theo Hồ Chí Minh, việc cách mạng trước hết phải giành được độc lập dân tộc, đây là nhiệm vụ cấp bách nhất.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 27,
+      "question": "Theo Hồ Chí Minh, Đảng muốn lãnh đạo mặt trận dân tộc thống nhất phải:",
+      "choices": [
+        { "text": "Có chính sách đúng đắn", "isCorrect": false },
+        { "text": "Có năng lực lãnh đạo", "isCorrect": false },
+        { "text": "Cả hai đáp án trên", "isCorrect": true },
+        { "text": "Giữ vững cương lĩnh", "isCorrect": false }
+      ],
+      "explanation": "Đảng phải vừa có chính sách đúng đắn vừa có năng lực lãnh đạo để có thể lãnh đạo mặt trận dân tộc thống nhất.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 28,
+      "question": "Theo Hồ Chí Minh, người học chủ nghĩa Mác phải nắm vững:",
+      "choices": [
+        { "text": "Tinh thần biện chứng, xử trí mọi việc", "isCorrect": true },
+        { "text": "Học thuộc lý thuyết", "isCorrect": false },
+        { "text": "Nắm lý luận đấu tranh giai cấp", "isCorrect": false },
+        { "text": "Lý luận phát triển kinh tế", "isCorrect": false }
+      ],
+      "explanation": "Người học chủ nghĩa Mác phải nắm vững tinh thần biện chứng để có thể xử trí mọi việc một cách linh hoạt và sáng tạo.",
+      "difficulty": "medium"
+    },
+    {
+      "id": 29,
+      "question": "Mục tiêu giải phóng dân tộc trong tư tưởng Hồ Chí Minh nhấn mạnh:",
+      "choices": [
+        { "text": "Giải phóng giai cấp trước", "isCorrect": false },
+        { "text": "Giải phóng con người khỏi mọi ách nô lệ", "isCorrect": false },
+        { "text": "Độc lập dân tộc mới có thể xây dựng CNXH", "isCorrect": true },
+        { "text": "Xây dựng kinh tế phát triển trước", "isCorrect": false }
+      ],
+      "explanation": "Theo Hồ Chí Minh, phải giành được độc lập dân tộc trước, sau đó mới có thể xây dựng chủ nghĩa xã hội thành công.",
+      "difficulty": "medium"
+    }
+  ]
+}

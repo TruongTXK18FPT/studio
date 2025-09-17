@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   description: 'Nơi cộng đồng cùng nhau chia sẻ, đóng góp những bài viết, tư liệu và câu chuyện về Bác Hồ.',
 };
 
+// Add revalidate to force fresh data
+export const revalidate = 0;
+
 async function getPosts() {
   try {
     // Import prisma directly for server-side fetching

@@ -1,0 +1,964 @@
+{
+  "metadata": {
+    "title": "Quiz Lịch sử: Chủ tịch Hồ Chí Minh",
+    "language": "vi",
+    "version": "1.0.0",
+    "created_at": "2025-09-16T08:22:07.679100Z",
+    "description": "Bộ câu hỏi trắc nghiệm giúp học sinh ghi nhớ kiến thức cơ bản và nâng cao về cuộc đời, sự nghiệp và tư tưởng Hồ Chí Minh.",
+    "copyright": "CC BY 4.0 • soạn bởi Xuan Truong",
+    "tags": [
+      "lich_su_viet_nam",
+      "ho_chi_minh",
+      "cach_mang_viet_nam",
+      "tu_tuong"
+    ]
+  },
+  "schema": {
+    "id": "string/uuid",
+    "type": "single|multiple|true_false",
+    "grade_hint": "THCS|THPT|nang_cao",
+    "topic": "tieu_su|su_kien|van_ban|tu_tuong|dia_danh|to_chuc|van_hoa",
+    "question": "string",
+    "choices": [
+      {
+        "id": "A|B|C|D|...",
+        "text": "string"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "string",
+    "sources": [
+      "string"
+    ]
+  },
+  "items": [
+    {
+      "id": "Q001",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "tieu_su",
+      "question": "Chủ tịch Hồ Chí Minh sinh ngày, tháng, năm nào?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "19/5/1890"
+        },
+        {
+          "id": "B",
+          "text": "02/9/1890"
+        },
+        {
+          "id": "C",
+          "text": "03/2/1890"
+        },
+        {
+          "id": "D",
+          "text": "05/6/1890"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Bác Hồ sinh ngày 19/5/1890 tại làng Kim Liên (Nam Đàn, Nghệ An).",
+      "sources": [
+        "SGK Lịch sử Việt Nam",
+        "Tư liệu Bảo tàng HCM"
+      ]
+    },
+    {
+      "id": "Q002",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "tieu_su",
+      "question": "Tên khai sinh của Chủ tịch Hồ Chí Minh là gì?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Nguyễn Tất Thành"
+        },
+        {
+          "id": "B",
+          "text": "Nguyễn Sinh Cung"
+        },
+        {
+          "id": "C",
+          "text": "Nguyễn Ái Quốc"
+        },
+        {
+          "id": "D",
+          "text": "Văn Ba"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Tên khai sinh là Nguyễn Sinh Cung; sau đổi tên là Nguyễn Tất Thành, hoạt động với bút danh Nguyễn Ái Quốc, bí danh Văn Ba…",
+      "sources": [
+        "SGK Lịch sử 9",
+        "Tư liệu Bảo tàng HCM"
+      ]
+    },
+    {
+      "id": "Q003",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Ngày 05/6/1911, Người rời Bến Nhà Rồng để làm gì?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Du học Pháp"
+        },
+        {
+          "id": "B",
+          "text": "Tham gia hội nghị quốc tế"
+        },
+        {
+          "id": "C",
+          "text": "Ra đi tìm đường cứu nước"
+        },
+        {
+          "id": "D",
+          "text": "Làm phóng viên tại Paris"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "Ngày 05/6/1911, với tên Văn Ba, Người lên tàu Amiral Latouche-Tréville ra đi tìm đường cứu nước.",
+      "sources": [
+        "SGK Lịch sử 9"
+      ]
+    },
+    {
+      "id": "Q004",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "to_chuc",
+      "question": "Đảng Cộng sản Việt Nam được thành lập vào ngày nào?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "03/02/1930"
+        },
+        {
+          "id": "B",
+          "text": "02/09/1945"
+        },
+        {
+          "id": "C",
+          "text": "11/11/1931"
+        },
+        {
+          "id": "D",
+          "text": "19/08/1945"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Ngày 03/02/1930 tại Hương Cảng (Hồng Kông), dưới sự chủ trì của Nguyễn Ái Quốc, các tổ chức cộng sản hợp nhất thành Đảng Cộng sản Việt Nam.",
+      "sources": [
+        "Văn kiện Đảng"
+      ]
+    },
+    {
+      "id": "Q005",
+      "type": "true_false",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Ngày 02/9/1945, Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "Đúng"
+        },
+        {
+          "id": "F",
+          "text": "Sai"
+        }
+      ],
+      "correct_answers": [
+        "T"
+      ],
+      "explanation": "Đúng. Đây là thời khắc khai sinh nước Việt Nam Dân chủ Cộng hòa.",
+      "sources": [
+        "Tuyên ngôn Độc lập 1945"
+      ]
+    },
+    {
+      "id": "Q006",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "dia_danh",
+      "question": "Khu di tích gắn với thời kỳ 1941–1945 khi Nguyễn Ái Quốc về nước lãnh đạo cách mạng là:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Kim Liên (Nghệ An)"
+        },
+        {
+          "id": "B",
+          "text": "Pác Bó (Cao Bằng)"
+        },
+        {
+          "id": "C",
+          "text": "Tân Trào (Tuyên Quang)"
+        },
+        {
+          "id": "D",
+          "text": "ATK Định Hóa (Thái Nguyên)"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Đầu 1941, Nguyễn Ái Quốc về Pác Bó, Cao Bằng, trực tiếp chỉ đạo phong trào cách mạng.",
+      "sources": [
+        "Tư liệu lịch sử cách mạng"
+      ]
+    },
+    {
+      "id": "Q007",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Sự kiện Cách mạng Tháng Tám thành công diễn ra chủ yếu vào tháng/năm nào?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Tháng 5/1945"
+        },
+        {
+          "id": "B",
+          "text": "Tháng 8/1945"
+        },
+        {
+          "id": "C",
+          "text": "Tháng 12/1946"
+        },
+        {
+          "id": "D",
+          "text": "Tháng 9/1954"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Tổng khởi nghĩa Tháng Tám năm 1945 giành chính quyền trong cả nước.",
+      "sources": [
+        "SGK Lịch sử 9"
+      ]
+    },
+    {
+      "id": "Q008",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "van_ban",
+      "question": "Trong Tuyên ngôn Độc lập, Hồ Chí Minh trích dẫn tư tưởng từ những bản tuyên ngôn nào?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Tuyên ngôn Nhân quyền và Dân quyền (Pháp, 1789) và Tuyên ngôn Độc lập (Mỹ, 1776)"
+        },
+        {
+          "id": "B",
+          "text": "Hiến pháp Mỹ 1787 và Hiến pháp Pháp 1791"
+        },
+        {
+          "id": "C",
+          "text": "Tuyên ngôn Cộng sản và Tuyên ngôn Nhân quyền LHQ"
+        },
+        {
+          "id": "D",
+          "text": "Hiệp ước Versailles và Hiến chương Đại Tây Dương"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Người dẫn ra hai bản tuyên ngôn kinh điển của Mỹ (1776) và Pháp (1789) để khẳng định quyền độc lập, tự do của dân tộc Việt Nam.",
+      "sources": [
+        "Tuyên ngôn Độc lập 1945"
+      ]
+    },
+    {
+      "id": "Q009",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Cuộc Tổng tuyển cử đầu tiên bầu Quốc hội khóa I của nước Việt Nam Dân chủ Cộng hòa diễn ra ngày:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "02/9/1945"
+        },
+        {
+          "id": "B",
+          "text": "06/01/1946"
+        },
+        {
+          "id": "C",
+          "text": "11/11/1946"
+        },
+        {
+          "id": "D",
+          "text": "19/12/1946"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Ngày 06/01/1946 diễn ra Tổng tuyển cử đầu tiên bầu Quốc hội khóa I.",
+      "sources": [
+        "SGK Lịch sử 12"
+      ]
+    },
+    {
+      "id": "Q010",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "van_ban",
+      "question": "Bản Hiến pháp đầu tiên của nước Việt Nam Dân chủ Cộng hòa được thông qua năm:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1945"
+        },
+        {
+          "id": "B",
+          "text": "1946"
+        },
+        {
+          "id": "C",
+          "text": "1959"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Hiến pháp 1946 được Quốc hội thông qua ngày 09/11/1946.",
+      "sources": [
+        "Văn bản Hiến pháp 1946"
+      ]
+    },
+    {
+      "id": "Q011",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Sự kiện 19/12/1946 gắn với lời kêu gọi nào của Chủ tịch Hồ Chí Minh?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Lời kêu gọi toàn quốc kháng chiến"
+        },
+        {
+          "id": "B",
+          "text": "Lời kêu gọi thi đua ái quốc"
+        },
+        {
+          "id": "C",
+          "text": "Lời kêu gọi chống nạn đói"
+        },
+        {
+          "id": "D",
+          "text": "Lời kêu gọi cứu đói, diệt giặc dốt"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Ngày 19/12/1946, Bác ra Lời kêu gọi Toàn quốc kháng chiến chống thực dân Pháp.",
+      "sources": [
+        "SGK Lịch sử 12"
+      ]
+    },
+    {
+      "id": "Q012",
+      "type": "true_false",
+      "grade_hint": "THCS",
+      "topic": "tieu_su",
+      "question": "Hồ Chí Minh qua đời ngày 02/9/1969 tại Hà Nội.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "Đúng"
+        },
+        {
+          "id": "F",
+          "text": "Sai"
+        }
+      ],
+      "correct_answers": [
+        "T"
+      ],
+      "explanation": "Đúng. Người từ trần ngày 02/9/1969 tại Hà Nội.",
+      "sources": [
+        "Tư liệu chính thống"
+      ]
+    },
+    {
+      "id": "Q013",
+      "type": "multiple",
+      "grade_hint": "THPT",
+      "topic": "tu_tuong",
+      "question": "Những nội dung cốt lõi của tư tưởng Hồ Chí Minh gồm: (chọn 2)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Độc lập dân tộc gắn liền với chủ nghĩa xã hội"
+        },
+        {
+          "id": "B",
+          "text": "Bạo lực cách mạng là mục tiêu cuối cùng"
+        },
+        {
+          "id": "C",
+          "text": "Đại đoàn kết dân tộc"
+        },
+        {
+          "id": "D",
+          "text": "Cô lập quốc tế để tự lực tự cường"
+        }
+      ],
+      "correct_answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "Tư tưởng Hồ Chí Minh nhấn mạnh độc lập dân tộc gắn liền với CNXH, sức mạnh đại đoàn kết, kết hợp sức mạnh dân tộc và thời đại.",
+      "sources": [
+        "Giáo trình Tư tưởng HCM"
+      ]
+    },
+    {
+      "id": "Q014",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "van_hoa",
+      "question": "Tác phẩm nào sau đây KHÔNG phải của Hồ Chí Minh?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Đường Kách mệnh"
+        },
+        {
+          "id": "B",
+          "text": "Nhật ký trong tù"
+        },
+        {
+          "id": "C",
+          "text": "Bình Ngô đại cáo"
+        },
+        {
+          "id": "D",
+          "text": "Bản án chế độ thực dân Pháp"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "“Bình Ngô đại cáo” là của Nguyễn Trãi (thế kỷ XV). Ba tác phẩm còn lại là của Hồ Chí Minh.",
+      "sources": [
+        "SGK Ngữ văn, Lịch sử"
+      ]
+    },
+    {
+      "id": "Q015",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "to_chuc",
+      "question": "Mặt trận Việt Minh được thành lập vào thời điểm nào?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1930"
+        },
+        {
+          "id": "B",
+          "text": "1941"
+        },
+        {
+          "id": "C",
+          "text": "1945"
+        },
+        {
+          "id": "D",
+          "text": "1954"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Mặt trận Việt Minh thành lập tháng 5/1941, nhằm đoàn kết lực lượng làm cách mạng giải phóng dân tộc.",
+      "sources": [
+        "SGK Lịch sử 9"
+      ]
+    },
+    {
+      "id": "Q016",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "tieu_su",
+      "question": "Quê hương của Chủ tịch Hồ Chí Minh thuộc tỉnh nào?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Nghệ An"
+        },
+        {
+          "id": "B",
+          "text": "Hà Tĩnh"
+        },
+        {
+          "id": "C",
+          "text": "Thanh Hóa"
+        },
+        {
+          "id": "D",
+          "text": "Quảng Bình"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Quê ở làng Kim Liên (Nam Đàn, Nghệ An).",
+      "sources": [
+        "Tư liệu Bảo tàng HCM"
+      ]
+    },
+    {
+      "id": "Q017",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Chiến thắng Điện Biên Phủ (07/5/1954) có ý nghĩa gì?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Chấm dứt hoàn toàn sự can thiệp của Pháp ở Đông Dương ngay lập tức"
+        },
+        {
+          "id": "B",
+          "text": "Tạo cơ sở để ký Hiệp định Giơ-ne-vơ về chấm dứt chiến tranh, lập lại hòa bình ở Đông Dương"
+        },
+        {
+          "id": "C",
+          "text": "Thành lập nước Việt Nam Dân chủ Cộng hòa"
+        },
+        {
+          "id": "D",
+          "text": "Khai mạc Hội nghị Thành Đô"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Thắng lợi này buộc Pháp ngồi vào bàn đàm phán, ký Hiệp định Giơ-ne-vơ (7/1954).",
+      "sources": [
+        "SGK Lịch sử 12"
+      ]
+    },
+    {
+      "id": "Q018",
+      "type": "true_false",
+      "grade_hint": "THCS",
+      "topic": "van_hoa",
+      "question": "“Nhật ký trong tù” được Hồ Chí Minh viết chủ yếu bằng chữ Hán.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "Đúng"
+        },
+        {
+          "id": "F",
+          "text": "Sai"
+        }
+      ],
+      "correct_answers": [
+        "T"
+      ],
+      "explanation": "Đúng. Tác phẩm gồm các bài thơ chữ Hán sáng tác trong thời gian bị giam 1942–1943 ở Quảng Tây.",
+      "sources": [
+        "Ngữ văn 8,9"
+      ]
+    },
+    {
+      "id": "Q019",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Hội nghị nào quyết định phát động Tổng khởi nghĩa trong Cách mạng Tháng Tám 1945?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Hội nghị Trung ương 6 (11/1939)"
+        },
+        {
+          "id": "B",
+          "text": "Hội nghị Trung ương 8 (5/1941)"
+        },
+        {
+          "id": "C",
+          "text": "Hội nghị toàn quốc của Đảng (8/1945)"
+        },
+        {
+          "id": "D",
+          "text": "Hội nghị Hiệp thương 1946"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "Hội nghị toàn quốc của Đảng (13–15/8/1945) ở Tân Trào quyết định Tổng khởi nghĩa.",
+      "sources": [
+        "SGK Lịch sử 12"
+      ]
+    },
+    {
+      "id": "Q020",
+      "type": "multiple",
+      "grade_hint": "THPT",
+      "topic": "tu_tuong",
+      "question": "Theo tư tưởng Hồ Chí Minh, những nguyên tắc xây dựng Đảng quan trọng gồm: (chọn 2)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Tập trung dân chủ"
+        },
+        {
+          "id": "B",
+          "text": "Tuyển chọn đảng viên theo dòng họ"
+        },
+        {
+          "id": "C",
+          "text": "Tự phê bình và phê bình"
+        },
+        {
+          "id": "D",
+          "text": "Đóng kín, không tiếp thu cái mới"
+        }
+      ],
+      "correct_answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "Hồ Chí Minh nhấn mạnh tập trung dân chủ; tự phê bình và phê bình; đoàn kết, kỷ luật.",
+      "sources": [
+        "Giáo trình Tư tưởng HCM"
+      ]
+    },
+    {
+      "id": "Q021",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Bản “Yêu sách của nhân dân An Nam” được Nguyễn Ái Quốc gửi tới Hội nghị Versailles vào năm:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1911"
+        },
+        {
+          "id": "B",
+          "text": "1919"
+        },
+        {
+          "id": "C",
+          "text": "1925"
+        },
+        {
+          "id": "D",
+          "text": "1930"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Năm 1919, tại Paris, Nguyễn Ái Quốc gửi bản Yêu sách gồm 8 điểm tới Hội nghị Hòa bình Versailles.",
+      "sources": [
+        "SGK Lịch sử 11"
+      ]
+    },
+    {
+      "id": "Q022",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "van_ban",
+      "question": "Tác phẩm “Đường Kách mệnh” xuất bản lần đầu khoảng năm nào?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "1925–1927"
+        },
+        {
+          "id": "B",
+          "text": "1930–1931"
+        },
+        {
+          "id": "C",
+          "text": "1941–1942"
+        },
+        {
+          "id": "D",
+          "text": "1951"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "“Đường Kách mệnh” tập hợp các bài giảng của Nguyễn Ái Quốc tại Quảng Châu giai đoạn 1925–1927.",
+      "sources": [
+        "Tư liệu văn kiện"
+      ]
+    },
+    {
+      "id": "Q023",
+      "type": "true_false",
+      "grade_hint": "THCS",
+      "topic": "dia_danh",
+      "question": "Nhà sàn Bác Hồ ở Phủ Chủ tịch (Hà Nội) là nơi Người sống và làm việc trong nhiều năm sau 1954.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "Đúng"
+        },
+        {
+          "id": "F",
+          "text": "Sai"
+        }
+      ],
+      "correct_answers": [
+        "T"
+      ],
+      "explanation": "Đúng. Nhà sàn giản dị bên ao cá là biểu tượng về lối sống thanh bạch của Người.",
+      "sources": [
+        "Khu di tích Chủ tịch HCM"
+      ]
+    },
+    {
+      "id": "Q024",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "van_hoa",
+      "question": "Bút danh “Nguyễn Ái Quốc” được Hồ Chí Minh sử dụng nổi bật trong giai đoạn hoạt động tại:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Pháp và châu Âu những năm 1919–1923"
+        },
+        {
+          "id": "B",
+          "text": "Liên Xô những năm 1934–1938"
+        },
+        {
+          "id": "C",
+          "text": "Việt Bắc 1947–1954"
+        },
+        {
+          "id": "D",
+          "text": "Miền Nam 1961–1965"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Tên gọi Nguyễn Ái Quốc xuất hiện nổi bật ở Pháp và châu Âu sau 1919.",
+      "sources": [
+        "Tư liệu báo Le Paria, L'Humanité"
+      ]
+    },
+    {
+      "id": "Q025",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "van_hoa",
+      "question": "Câu nói nào sau đây gần với phong cách đạo đức Hồ Chí Minh?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cần, kiệm, liêm, chính, chí công vô tư"
+        },
+        {
+          "id": "B",
+          "text": "Phú quý sinh lễ nghĩa"
+        },
+        {
+          "id": "C",
+          "text": "Sống gấp, hưởng thụ tối đa"
+        },
+        {
+          "id": "D",
+          "text": "Lấy của công làm của riêng"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Đạo đức cách mạng Hồ Chí Minh đề cao cần, kiệm, liêm, chính; chí công vô tư.",
+      "sources": [
+        "Giáo trình Tư tưởng HCM"
+      ]
+    },
+    {
+      "id": "Q026",
+      "type": "multiple",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Những địa danh gắn với chuẩn bị Tổng khởi nghĩa 1945 là: (chọn 2)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Tân Trào (Tuyên Quang)"
+        },
+        {
+          "id": "B",
+          "text": "Huế"
+        },
+        {
+          "id": "C",
+          "text": "Sài Gòn"
+        },
+        {
+          "id": "D",
+          "text": "Pác Bó (Cao Bằng)"
+        }
+      ],
+      "correct_answers": [
+        "A",
+        "D"
+      ],
+      "explanation": "Tân Trào là nơi họp Quốc dân Đại hội (8/1945); Pác Bó là căn cứ đầu nguồn cách mạng (1941–1945).",
+      "sources": [
+        "SGK Lịch sử 12"
+      ]
+    },
+    {
+      "id": "Q027",
+      "type": "true_false",
+      "grade_hint": "THCS",
+      "topic": "tieu_su",
+      "question": "Trong thời gian hoạt động ở Pháp, Nguyễn Ái Quốc từng tham gia Đảng Xã hội Pháp.",
+      "choices": [
+        {
+          "id": "T",
+          "text": "Đúng"
+        },
+        {
+          "id": "F",
+          "text": "Sai"
+        }
+      ],
+      "correct_answers": [
+        "T"
+      ],
+      "explanation": "Đúng. Người tham gia Đảng Xã hội Pháp, sau đó bỏ phiếu tán thành Quốc tế Cộng sản (1920).",
+      "sources": [
+        "Lịch sử phong trào cộng sản"
+      ]
+    },
+    {
+      "id": "Q028",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Hội nghị nào do Nguyễn Ái Quốc chủ trì đã hợp nhất các tổ chức cộng sản ở Việt Nam?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Hội nghị Hương Cảng (đầu 1930)"
+        },
+        {
+          "id": "B",
+          "text": "Hội nghị Quốc dân (8/1945)"
+        },
+        {
+          "id": "C",
+          "text": "Hội nghị Fontainebleau (1946)"
+        },
+        {
+          "id": "D",
+          "text": "Hội nghị Genève (1954)"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Hội nghị Hương Cảng (1–2/1930) hợp nhất các tổ chức cộng sản thành ĐCSVN.",
+      "sources": [
+        "Văn kiện Đảng"
+      ]
+    },
+    {
+      "id": "Q029",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "van_hoa",
+      "question": "Tác phẩm “Bản án chế độ thực dân Pháp” được xuất bản bằng ngôn ngữ nào?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Tiếng Việt"
+        },
+        {
+          "id": "B",
+          "text": "Tiếng Pháp"
+        },
+        {
+          "id": "C",
+          "text": "Tiếng Anh"
+        },
+        {
+          "id": "D",
+          "text": "Tiếng Nga"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "Tác phẩm viết bằng tiếng Pháp, xuất bản tại Paris năm 1925.",
+      "sources": [
+        "Tư liệu xuất bản"
+      ]
+    },
+    {
+      "id": "Q030",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "tu_tuong",
+      "question": "Theo Hồ Chí Minh, lực lượng nào là gốc của cách mạng?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Công – nông và các tầng lớp lao động rộng rãi"
+        },
+        {
+          "id": "B",
+          "text": "Trí thức và tư sản dân tộc"
+        },
+        {
+          "id": "C",
+          "text": "Địa chủ phong kiến"
+        },
+        {
+          "id": "D",
+          "text": "Quý tộc tư sản"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "Người khẳng định tinh thần cách mạng triệt để của công – nông; đồng thời đoàn kết mọi lực lượng yêu nước.",
+      "sources": [
+        "Giáo trình Tư tưởng HCM"
+      ]
+    }
+  ]
+}

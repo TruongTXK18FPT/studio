@@ -1,0 +1,618 @@
+{
+  "metadata": {
+    "title": "Quiz Lịch sử Việt Nam tổng hợp",
+    "language": "vi",
+    "version": "1.0.0",
+    "created_at": "2025-09-17T00:00:00.000Z",
+    "description": "Bộ câu hỏi trắc nghiệm toàn diện về lịch sử Việt Nam từ thời cổ đại đến hiện đại",
+    "copyright": "CC BY 4.0 • HCM202 Studio",
+    "tags": [
+      "lich_su_viet_nam",
+      "tong_hop",
+      "thpt",
+      "dai_hoc"
+    ]
+  },
+  "items": [
+    {
+      "id": "VH001",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Nhà nước đầu tiên của người Việt cổ là gì?",
+      "choices": [
+        {"id": "A", "text": "Văn Lang"},
+        {"id": "B", "text": "Âu Lạc"},
+        {"id": "C", "text": "Nam Việt"},
+        {"id": "D", "text": "Đại Việt"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Văn Lang được coi là nhà nước đầu tiên của người Việt cổ, được thành lập bởi vua Hùng Vương đầu tiên."
+    },
+    {
+      "id": "VH002",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Cuộc khởi nghĩa Hai Bà Trưng diễn ra vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "40 TCN"},
+        {"id": "B", "text": "40 SCN"},
+        {"id": "C", "text": "43 SCN"},
+        {"id": "D", "text": "39 SCN"}
+      ],
+      "correct_answers": ["B"],
+      "explanation": "Cuộc khởi nghĩa Hai Bà Trưng nổ ra năm 40 sau Công nguyên, chống lại ách thống trị của nhà Hán."
+    },
+    {
+      "id": "VH003",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "nhan_vat",
+      "question": "Ai là người thành lập nhà nước Âu Lạc?",
+      "choices": [
+        {"id": "A", "text": "An Dương Vương"},
+        {"id": "B", "text": "Hùng Vương"},
+        {"id": "C", "text": "Triệu Đà"},
+        {"id": "D", "text": "Ngô Quyền"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "An Dương Vương (Thục Phán) đã đánh bại Hùng Vương cuối cùng và thành lập nhà nước Âu Lạc."
+    },
+    {
+      "id": "VH004",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Trận Bạch Đằng năm 938 có ý nghĩa gì?",
+      "choices": [
+        {"id": "A", "text": "Kết thúc 1000 năm Bắc thuộc"},
+        {"id": "B", "text": "Thành lập nhà Đinh"},
+        {"id": "C", "text": "Đánh bại quân Mông Cổ"},
+        {"id": "D", "text": "Thống nhất đất nước"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Chiến thắng Bạch Đằng năm 938 của Ngô Quyền đã chấm dứt 1000 năm Bắc thuộc, mở ra thời kỳ độc lập của dân tộc."
+    },
+    {
+      "id": "VH005",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "nhan_vat",
+      "question": "Ai là hoàng đế đầu tiên của Việt Nam?",
+      "choices": [
+        {"id": "A", "text": "Đinh Bộ Lĩnh"},
+        {"id": "B", "text": "Lê Đại Hành"},
+        {"id": "C", "text": "Lý Thái Tổ"},
+        {"id": "D", "text": "Ngô Quyền"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Đinh Bộ Lĩnh (Đinh Tiên Hoàng) là hoàng đế đầu tiên của Việt Nam, lên ngôi năm 968."
+    },
+    {
+      "id": "VH006",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Nhà Lý được thành lập vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1009"},
+        {"id": "B", "text": "1010"},
+        {"id": "C", "text": "1011"},
+        {"id": "D", "text": "1008"}
+      ],
+      "correct_answers": ["B"],
+      "explanation": "Nhà Lý được thành lập năm 1010 khi Lý Công Uẩn lên ngôi, lấy niên hiệu Thuận Thiên."
+    },
+    {
+      "id": "VH007",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "dia_danh",
+      "question": "Thủ đô Thăng Long được xây dựng dưới thời nào?",
+      "choices": [
+        {"id": "A", "text": "Nhà Đinh"},
+        {"id": "B", "text": "Nhà Lê sơ"},
+        {"id": "C", "text": "Nhà Lý"},
+        {"id": "D", "text": "Nhà Trần"}
+      ],
+      "correct_answers": ["C"],
+      "explanation": "Thăng Long được xây dựng năm 1010 dưới thời Lý Thái Tổ, trở thành thủ đô của nhà Lý."
+    },
+    {
+      "id": "VH008",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Cuộc kháng chiến chống quân Mông - Nguyên lần thứ nhất diễn ra khi nào?",
+      "choices": [
+        {"id": "A", "text": "1257-1258"},
+        {"id": "B", "text": "1284-1285"},
+        {"id": "C", "text": "1287-1288"},
+        {"id": "D", "text": "1225-1226"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Cuộc kháng chiến chống quân Mông - Nguyên lần thứ nhất diễn ra từ 1257-1258 dưới thời Trần Thái Tông."
+    },
+    {
+      "id": "VH009",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "nhan_vat",
+      "question": "Ai là danh tướng nổi tiếng trong các cuộc kháng chiến chống Mông - Nguyên?",
+      "choices": [
+        {"id": "A", "text": "Trần Hưng Đạo"},
+        {"id": "B", "text": "Lý Thường Kiệt"},
+        {"id": "C", "text": "Nguyễn Trãi"},
+        {"id": "D", "text": "Lê Lợi"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Trần Hưng Đạo là danh tướng xuất sắc, chỉ huy các cuộc kháng chiến chống quân Mông - Nguyên."
+    },
+    {
+      "id": "VH010",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Trận Đống Đa diễn ra vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1788"},
+        {"id": "B", "text": "1789"},
+        {"id": "C", "text": "1790"},
+        {"id": "D", "text": "1787"}
+      ],
+      "correct_answers": ["B"],
+      "explanation": "Trận Đống Đa diễn ra vào mùng 5 Tết Kỷ Dậu (1789), Quang Trung đại thắng quân Thanh."
+    },
+    {
+      "id": "VH011",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "nhan_vat",
+      "question": "Ai là người sáng lập ra nhà Hậu Lê?",
+      "choices": [
+        {"id": "A", "text": "Lê Lợi"},
+        {"id": "B", "text": "Lê Thái Tổ"},
+        {"id": "C", "text": "Lê Thánh Tông"},
+        {"id": "D", "text": "Lê Đại Hành"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Lê Lợi (sau này là Lê Thái Tổ) là người sáng lập nhà Hậu Lê sau khi đánh bại quân Minh."
+    },
+    {
+      "id": "VH012",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "van_ban",
+      "question": "Bình Ngô đại cáo được viết bởi ai?",
+      "choices": [
+        {"id": "A", "text": "Nguyễn Trãi"},
+        {"id": "B", "text": "Lê Lợi"},
+        {"id": "C", "text": "Trần Hưng Đạo"},
+        {"id": "D", "text": "Lý Thường Kiệt"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Bình Ngô đại cáo được Nguyễn Trãi viết sau chiến thắng Lam Sơn, tuyên bố độc lập của Đại Việt."
+    },
+    {
+      "id": "VH013",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Cuộc khởi nghĩa Lam Sơn bắt đầu vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1418"},
+        {"id": "B", "text": "1428"},
+        {"id": "C", "text": "1408"},
+        {"id": "D", "text": "1438"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Cuộc khởi nghĩa Lam Sơn bắt đầu năm 1418 do Lê Lợi lãnh đạo chống quân Minh xâm lược."
+    },
+    {
+      "id": "VH014",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "nhan_vat",
+      "question": "Ai được gọi là 'Thánh Tông'?",
+      "choices": [
+        {"id": "A", "text": "Lê Thánh Tông"},
+        {"id": "B", "text": "Lý Thánh Tông"},
+        {"id": "C", "text": "Trần Thánh Tông"},
+        {"id": "D", "text": "Nguyễn Thánh Tông"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Lê Thánh Tông (1442-1497) được coi là một trong những vua tài giỏi nhất trong lịch sử Việt Nam."
+    },
+    {
+      "id": "VH015",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Thời kỳ chia cắt Nam - Bắc diễn ra từ năm nào đến năm nào?",
+      "choices": [
+        {"id": "A", "text": "1533-1592"},
+        {"id": "B", "text": "1545-1592"},
+        {"id": "C", "text": "1533-1600"},
+        {"id": "D", "text": "1527-1592"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Thời kỳ chia cắt Nam - Bắc kéo dài từ 1533 đến 1592, với chúa Trịnh ở Bắc và chúa Nguyễn ở Nam."
+    },
+    {
+      "id": "VH016",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "nhan_vat",
+      "question": "Ai là người thống nhất đất nước sau thời kỳ chia cắt?",
+      "choices": [
+        {"id": "A", "text": "Nguyễn Ánh"},
+        {"id": "B", "text": "Quang Trung"},
+        {"id": "C", "text": "Nguyễn Huệ"},
+        {"id": "D", "text": "Tây Sơn"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Nguyễn Ánh (sau này là Gia Long) đã thống nhất đất nước năm 1802, lập ra nhà Nguyễn."
+    },
+    {
+      "id": "VH017",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Nhà Nguyễn được thành lập vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1802"},
+        {"id": "B", "text": "1801"},
+        {"id": "C", "text": "1803"},
+        {"id": "D", "text": "1800"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Nhà Nguyễn được thành lập năm 1802 khi Nguyễn Ánh lên ngôi hoàng đế, lấy niên hiệu Gia Long."
+    },
+    {
+      "id": "VH018",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Pháp bắt đầu xâm lược Việt Nam từ năm nào?",
+      "choices": [
+        {"id": "A", "text": "1858"},
+        {"id": "B", "text": "1859"},
+        {"id": "C", "text": "1857"},
+        {"id": "D", "text": "1860"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Pháp bắt đầu xâm lược Việt Nam từ năm 1858 với cuộc tấn công vào Đà Nẵng."
+    },
+    {
+      "id": "VH019",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Hiệp ước Sài Gòn được ký năm nào?",
+      "choices": [
+        {"id": "A", "text": "1862"},
+        {"id": "B", "text": "1863"},
+        {"id": "C", "text": "1861"},
+        {"id": "D", "text": "1864"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Hiệp ước Sài Gòn được ký năm 1862, Việt Nam phải nhượng 3 tỉnh Đông Nam Bộ cho Pháp."
+    },
+    {
+      "id": "VH020",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "nhan_vat",
+      "question": "Ai là người lãnh đạo cuộc khởi nghĩa Cần Vương?",
+      "choices": [
+        {"id": "A", "text": "Hàm Nghi"},
+        {"id": "B", "text": "Tôn Thất Thuyết"},
+        {"id": "C", "text": "Phan Đình Phùng"},
+        {"id": "D", "text": "Hoàng Hoa Thám"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Vua Hàm Nghi cùng với Tôn Thất Thuyết đã phát động cuộc khởi nghĩa Cần Vương năm 1885."
+    },
+    {
+      "id": "VH021",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "van_ban",
+      "question": "Chiếu Cần Vương được ban hành năm nao?",
+      "choices": [
+        {"id": "A", "text": "1885"},
+        {"id": "B", "text": "1884"},
+        {"id": "C", "text": "1886"},
+        {"id": "D", "text": "1887"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Chiếu Cần Vương được vua Hàm Nghi ban hành năm 1885, kêu gọi toàn dân chống Pháp."
+    },
+    {
+      "id": "VH022",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "nhan_vat",
+      "question": "Ai là người thành lập Đông Kinh Nghĩa Thục?",
+      "choices": [
+        {"id": "A", "text": "Luong Văn Can"},
+        {"id": "B", "text": "Phan Bội Châu"},
+        {"id": "C", "text": "Phan Chu Trinh"},
+        {"id": "D", "text": "Nguyễn Quyền"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Luong Văn Can cùng với các đồng chí thành lập Đông Kinh Nghĩa Thục năm 1907."
+    },
+    {
+      "id": "VH023",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "to_chuc",
+      "question": "Việt Nam Quốc Dân Đảng được thành lập năm nào?",
+      "choices": [
+        {"id": "A", "text": "1927"},
+        {"id": "B", "text": "1925"},
+        {"id": "C", "text": "1929"},
+        {"id": "D", "text": "1930"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Việt Nam Quốc Dân Đảng được Nguyễn Thái Học thành lập năm 1927."
+    },
+    {
+      "id": "VH024",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Xô viết Nghệ Tĩnh nổ ra vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1930"},
+        {"id": "B", "text": "1931"},
+        {"id": "C", "text": "1929"},
+        {"id": "D", "text": "1932"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Phong trào Xô viết Nghệ Tĩnh nổ ra năm 1930, do Đảng Cộng sản Việt Nam lãnh đạo."
+    },
+    {
+      "id": "VH025",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "to_chuc",
+      "question": "Đảng Cộng sản Việt Nam được thành lập vào ngày nào?",
+      "choices": [
+        {"id": "A", "text": "3/2/1930"},
+        {"id": "B", "text": "6/1/1930"},
+        {"id": "C", "text": "3/3/1930"},
+        {"id": "D", "text": "2/2/1930"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Đảng Cộng sản Việt Nam được thành lập ngày 3/2/1930 tại Hồng Kông do Nguyễn Ái Quốc sáng lập."
+    },
+    {
+      "id": "VH026",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Cách mạng tháng Tám thành công vào năm nao?",
+      "choices": [
+        {"id": "A", "text": "1945"},
+        {"id": "B", "text": "1944"},
+        {"id": "C", "text": "1946"},
+        {"id": "D", "text": "1943"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Cách mạng tháng Tám thành công tháng 8/1945, giành độc lập cho Việt Nam."
+    },
+    {
+      "id": "VH027",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Ngày tuyên bố Độc lập của Việt Nam là ngày nào?",
+      "choices": [
+        {"id": "A", "text": "2/9/1945"},
+        {"id": "B", "text": "19/8/1945"},
+        {"id": "C", "text": "30/4/1975"},
+        {"id": "D", "text": "1/5/1975"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Ngày 2/9/1945, Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa."
+    },
+    {
+      "id": "VH028",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Hiệp định Geneva về Đông Dương được ký năm nào?",
+      "choices": [
+        {"id": "A", "text": "1954"},
+        {"id": "B", "text": "1953"},
+        {"id": "C", "text": "1955"},
+        {"id": "D", "text": "1952"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Hiệp định Geneva về Đông Dương được ký ngày 21/7/1954, chấm dứt chiến tranh Đông Dương lần thứ nhất."
+    },
+    {
+      "id": "VH029",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Chiến thắng Điện Biên Phủ diễn ra vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1954"},
+        {"id": "B", "text": "1953"},
+        {"id": "C", "text": "1955"},
+        {"id": "D", "text": "1952"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Chiến thắng Điện Biên Phủ diễn ra từ 13/3 đến 7/5/1954, kết thúc ách thống trị thực dân Pháp."
+    },
+    {
+      "id": "VH030",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "nhan_vat",
+      "question": "Ai là tổng tư lệnh trong chiến dịch Điện Biên Phủ?",
+      "choices": [
+        {"id": "A", "text": "Võ Nguyên Giáp"},
+        {"id": "B", "text": "Nguyễn Chí Thanh"},
+        {"id": "C", "text": "Văn Tiến Dũng"},
+        {"id": "D", "text": "Hoàng Văn Thái"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Đại tướng Võ Nguyên Giáp là tổng tư lệnh chỉ huy chiến dịch Điện Biên Phủ."
+    },
+    {
+      "id": "VH031",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Cuộc kháng chiến chống Mỹ bắt đầu từ năm nào?",
+      "choices": [
+        {"id": "A", "text": "1964"},
+        {"id": "B", "text": "1965"},
+        {"id": "C", "text": "1963"},
+        {"id": "D", "text": "1966"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Cuộc kháng chiến chống Mỹ cứu nước bắt đầu từ năm 1964 khi Mỹ mở rộng chiến tranh ra miền Bắc."
+    },
+    {
+      "id": "VH032",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Tổng tiến công và nổi dậy Tết Mậu Thân diễn ra năm nào?",
+      "choices": [
+        {"id": "A", "text": "1968"},
+        {"id": "B", "text": "1967"},
+        {"id": "C", "text": "1969"},
+        {"id": "D", "text": "1970"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Tổng tiến công và nổi dậy Tết Mậu Thân diễn ra năm 1968, tạo bước ngoặt trong cuộc kháng chiến."
+    },
+    {
+      "id": "VH033",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Hiệp định Paris về Việt Nam được ký năm nào?",
+      "choices": [
+        {"id": "A", "text": "1973"},
+        {"id": "B", "text": "1972"},
+        {"id": "C", "text": "1974"},
+        {"id": "D", "text": "1971"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký ngày 27/1/1973."
+    },
+    {
+      "id": "VH034",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Ngày thống nhất đất nước là ngày nào?",
+      "choices": [
+        {"id": "A", "text": "30/4/1975"},
+        {"id": "B", "text": "2/7/1976"},
+        {"id": "C", "text": "1/5/1975"},
+        {"id": "D", "text": "2/9/1975"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Ngày 30/4/1975, Sài Gòn được giải phóng hoàn toàn, đất nước thống nhất."
+    },
+    {
+      "id": "VH035",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Đại hội thống nhất đất nước họp vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1976"},
+        {"id": "B", "text": "1975"},
+        {"id": "C", "text": "1977"},
+        {"id": "D", "text": "1974"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Đại hội thống nhất đất nước họp năm 1976, quyết định thành lập nước Cộng hòa xã hội chủ nghĩa Việt Nam."
+    },
+    {
+      "id": "VH036",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Đổi mới kinh tế bắt đầu từ năm nào?",
+      "choices": [
+        {"id": "A", "text": "1986"},
+        {"id": "B", "text": "1985"},
+        {"id": "C", "text": "1987"},
+        {"id": "D", "text": "1984"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Chính sách đổi mới được thông qua tại Đại hội VI của Đảng năm 1986."
+    },
+    {
+      "id": "VH037",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "su_kien",
+      "question": "Việt Nam gia nhập ASEAN vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1995"},
+        {"id": "B", "text": "1994"},
+        {"id": "C", "text": "1996"},
+        {"id": "D", "text": "1997"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Việt Nam chính thức gia nhập ASEAN ngày 28/7/1995."
+    },
+    {
+      "id": "VH038",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "su_kien",
+      "question": "Việt Nam gia nhập WTO vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "2007"},
+        {"id": "B", "text": "2006"},
+        {"id": "C", "text": "2008"},
+        {"id": "D", "text": "2005"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Việt Nam chính thức trở thành thành viên thứ 150 của WTO ngày 11/1/2007."
+    },
+    {
+      "id": "VH039",
+      "type": "single",
+      "grade_hint": "THCS",
+      "topic": "van_hoa",
+      "question": "Văn Miếu - Quốc Tử Giám được xây dựng vào năm nào?",
+      "choices": [
+        {"id": "A", "text": "1070"},
+        {"id": "B", "text": "1076"},
+        {"id": "C", "text": "1080"},
+        {"id": "D", "text": "1065"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Văn Miếu được xây dựng năm 1070, Quốc Tử Giám được thành lập năm 1076 dưới triều Lý Nhân Tông."
+    },
+    {
+      "id": "VH040",
+      "type": "single",
+      "grade_hint": "THPT",
+      "topic": "van_hoa",
+      "question": "Ai được coi là cha đẻ của chữ Quốc ngữ?",
+      "choices": [
+        {"id": "A", "text": "Alexandre de Rhodes"},
+        {"id": "B", "text": "Phan Chu Trinh"},
+        {"id": "C", "text": "Nguyễn Trường Tộ"},
+        {"id": "D", "text": "Lương Văn Can"}
+      ],
+      "correct_answers": ["A"],
+      "explanation": "Linh mục Alexandre de Rhodes được coi là cha đẻ của chữ Quốc ngữ với cuốn từ điển Việt-La-Bồ năm 1651."
+    }
+  ]
+}

@@ -1,210 +1,255 @@
-'use client';
+﻿'use client'
 
-import { useState } from 'react';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
-import { Calendar, MapPin, FileText, Quote } from 'lucide-react';
-import { TimelineFilters } from '@/components/timeline/TimelineFilters';
-import timelineData from '@/data/timeline.json';
-import type { TimelineItem } from '@/lib/types';
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { 
+  BookOpen, 
+  Trophy, 
+  Calendar,
+  Brain,
+  Globe,
+  Users,
+  ArrowRight,
+  FileText,
+  Target,
+  Heart
+} from 'lucide-react'
 
-export default function TimelinePage() {
-  const allTimelineItems = timelineData as TimelineItem[];
-  const [filteredItems, setFilteredItems] = useState<TimelineItem[]>(allTimelineItems);
+export default function HomePage() {
+  const [isVisible, setIsVisible] = useState(false)
+  const [currentQuote, setCurrentQuote] = useState(0)
+  const [activeFeature, setActiveFeature] = useState(0)
 
-  const getTypeIcon = (type: string) => {
-    switch (type) {
-      case 'speech':
-        return <Quote className="h-4 w-4" />;
-      case 'poem':
-        return <FileText className="h-4 w-4" />;
-      case 'document':
-        return <FileText className="h-4 w-4" />;
-      default:
-        return <Calendar className="h-4 w-4" />;
+  // Quotes rotation effect
+  useEffect(() => {
+    setIsVisible(true)
+    const interval = setInterval(() => {
+      setCurrentQuote((prev) => (prev + 1) % quotes.length)
+    }, 6000)
+    return () => clearInterval(interval)
+  }, [])
+
+  // Auto-rotate features every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveFeature((prev) => (prev + 1) % 4)
+    }, 5000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const quotes = [
+    {
+      text: "Không có gì quý hơn độc lập tự do",
+      author: "Chủ tịch Hồ Chí Minh"
+    },
+    {
+      text: "Học, học nữa, học mãi",
+      author: "Chủ tịch Hồ Chí Minh"
     }
-  };
+  ]
 
-  const getTypeLabel = (type: string) => {
-    const typeMap: Record<string, string> = {
-      'event': 'Sự kiện',
-      'speech': 'Bài phát biểu',
-      'poem': 'Thơ',
-      'document': 'Văn kiện'
-    };
-    return typeMap[type] || type;
-  };
-
-  const formatDate = (dateString?: string) => {
-    if (!dateString) return null;
-    const date = new Date(dateString);
-    return date.toLocaleDateString('vi-VN', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    });
-  };
+  const features = [
+    {
+      title: "Dòng Thời Gian Lịch Sử",
+      description: "Khám phá hành trình cuộc đời và sự nghiệp của Chủ tịch Hồ Chí Minh qua timeline tương tác",
+      icon: Calendar,
+      href: "/timeline",
+      color: "bg-blue-100 text-blue-600"
+    },
+    {
+      title: "Bài Quiz Tương Tác", 
+      description: "Kiểm tra kiến thức về tư tưởng Hồ Chí Minh qua các câu hỏi được thiết kế khoa học",
+      icon: Brain,
+      href: "/quiz",
+      color: "bg-green-100 text-green-600"
+    },
+    {
+      title: "Thư Viện Thư Tín",
+      description: "Đọc những bức thư quý giá của Bác Hồ gửi đến nhân dân và đồng chí",
+      icon: FileText,
+      href: "/letters", 
+      color: "bg-purple-100 text-purple-600"
+    },
+    {
+      title: "Cộng Đồng Học Tập",
+      description: "Chia sẻ và thảo luận với cộng đồng về tư tưởng và đạo đức Hồ Chí Minh",
+      icon: Users,
+      href: "/community",
+      color: "bg-orange-100 text-orange-600"
+    }
+  ]
 
   return (
-    <section className="w-full min-h-screen bg-gradient-to-br from-red-50/30 via-amber-50/30 to-yellow-50/30">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-red-800 to-red-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/patterns/lotus.svg')] opacity-10 bg-repeat bg-center"></div>
-        <div className="relative container mx-auto px-4 py-16">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Dòng Thời Gian Lịch Sử
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-              Hành trình vĩ đại của một con người phi thường - từ Nguyễn Sinh Cung đến Chủ tịch Hồ Chí Minh, 
-              vị lãnh tụ kính yêu của dân tộc Việt Nam
+    <div className="min-h-screen bg-gradient-to-br from-red-50 to-yellow-50">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden py-16 px-4">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/patterns/unnamed.svg"
+            alt="Pattern"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container mx-auto text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold text-red-800 mb-6">
+            Học Tập Tư Tưởng
+            <br />
+            <span className="text-yellow-600">Hồ Chí Minh</span>
+          </h1>
+          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            Khám phá và học hỏi những giá trị vĩnh cửu từ tư tưởng của Chủ tịch Hồ Chí Minh. 
+            Nền tảng học tập toàn diện với timeline lịch sử, bài quiz tương tác và cộng đồng học tập.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-red-600 hover:bg-red-700">
+              <Link href="/timeline">
+                <Calendar className="mr-2 h-5 w-5" />
+                Khám Phá Timeline
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="border-red-600 text-red-600 hover:bg-red-50">
+              <Link href="/quiz">
+                <Brain className="mr-2 h-5 w-5" />
+                Bắt Đầu Quiz
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote Section */}
+      <section className="py-12 px-4 bg-red-800 text-white">
+        <div className="container mx-auto text-center">
+          <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <blockquote className="text-2xl md:text-3xl font-light italic mb-4">
+              "{quotes[currentQuote].text}"
+            </blockquote>
+            <cite className="text-yellow-300 font-medium">
+              - {quotes[currentQuote].author}
+            </cite>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-4">
+              Tính Năng Nổi Bật
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Khám phá tư tưởng Hồ Chí Minh qua nhiều hình thức học tập đa dạng và sinh động
             </p>
           </div>
-        </div>
-      </div>
 
-      {/* Filters */}
-      <div className="container mx-auto px-4 py-8">
-        <TimelineFilters 
-          items={allTimelineItems} 
-          onFilteredItemsChange={setFilteredItems}
-        />
-      </div>
-
-      {/* Timeline Content */}
-      <div className="container mx-auto px-4 pb-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-red-800 via-red-700 to-red-900 transform md:-translate-x-px"></div>
-            
-            {/* Timeline items */}
-            <div className="space-y-12">
-              {filteredItems.map((item, index) => (
-                <div key={item.id} className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                  {/* Timeline dot */}
-                  <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-red-800 rounded-full transform -translate-x-2 md:-translate-x-2 z-10 border-4 border-white shadow-lg"></div>
-                  
-                  {/* Content card */}
-                  <div className={`w-full md:w-1/2 ml-16 md:ml-0 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-                    <Card className="shadow-xl border-0 bg-white/95 backdrop-blur-sm hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
-                      <CardHeader className="pb-4">
-                        <div className="flex items-center justify-between mb-2">
-                          <Badge variant="outline" className="bg-red-50 border-red-200 text-red-800 flex items-center space-x-1">
-                            {getTypeIcon(item.type)}
-                            <span>{getTypeLabel(item.type)}</span>
-                          </Badge>
-                          <Badge variant="secondary" className="bg-amber-100 text-amber-800 font-semibold">
-                            {item.year}
-                          </Badge>
-                        </div>
-                        
-                        <CardTitle className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
-                          {item.title}
-                        </CardTitle>
-                        
-                        <CardDescription className="flex flex-wrap items-center gap-4 text-gray-600">
-                          {item.date && (
-                            <div className="flex items-center space-x-1">
-                              <Calendar className="h-4 w-4" />
-                              <span>{formatDate(item.date)}</span>
-                            </div>
-                          )}
-                          {item.location && (
-                            <div className="flex items-center space-x-1">
-                              <MapPin className="h-4 w-4" />
-                              <span>{item.location}</span>
-                            </div>
-                          )}
-                        </CardDescription>
-                      </CardHeader>
-                      
-                      <CardContent className="pt-0">
-                        <p className="text-gray-700 leading-relaxed mb-4">
-                          {item.summary}
-                        </p>
-                        
-                        {(item as any).content && (
-                          <div className="bg-gradient-to-r from-red-50 to-amber-50 p-4 rounded-lg border-l-4 border-red-800 mb-4">
-                            <p className="text-sm text-gray-800 leading-relaxed line-clamp-4">
-                              {(item as any).content}
-                            </p>
-                          </div>
-                        )}
-                        
-                        {/* Media */}
-                        {item.media && item.media.length > 0 && (
-                          <div className="mb-4">
-                            <div className="grid grid-cols-1 gap-4">
-                              {item.media.map((media, mediaIndex) => (
-                                <div key={`${item.id}-media-${mediaIndex}`} className="group">
-                                  <div className="aspect-[16/10] rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
-                                    <img
-                                      src={media.url}
-                                      alt={media.caption || item.title}
-                                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                    />
-                                  </div>
-                                  {media.caption && (
-                                    <p className="text-xs text-gray-600 mt-2 italic">
-                                      {media.caption}
-                                    </p>
-                                  )}
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-                        
-                        {/* Tags */}
-                        {item.tags && item.tags.length > 0 && (
-                          <>
-                            <Separator className="mb-3" />
-                            <div className="flex flex-wrap gap-2">
-                              {item.tags.map((tag, tagIndex) => (
-                                <Badge key={`${item.id}-tag-${tagIndex}`} variant="outline" className="text-xs bg-gray-50 border-gray-200 text-gray-700">
-                                  {tag}
-                                </Badge>
-                              ))}
-                            </div>
-                          </>
-                        )}
-                      </CardContent>
-                    </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {features.map((feature) => (
+              <Card 
+                key={feature.title} 
+                className={`transition-all duration-300 hover:shadow-lg cursor-pointer ${
+                  activeFeature === features.indexOf(feature) ? 'ring-2 ring-red-500 scale-105' : ''
+                }`}
+              >
+                <CardHeader>
+                  <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4`}>
+                    <feature.icon className="h-6 w-6" />
                   </div>
-                </div>
-              ))}
+                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="mb-4">
+                    {feature.description}
+                  </CardDescription>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href={feature.href}>
+                      Khám Phá <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Learning Journey Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-yellow-100 to-red-100">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-4">
+              Hành Trình Học Tập
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Theo dõi tiến trình học tập của bạn và đạt được những thành tựu đáng tự hào
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <BookOpen className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Học Tập</h3>
+              <p className="text-gray-600">
+                Khám phá tư tưởng qua timeline, thư tín và tài liệu quý giá
+              </p>
             </div>
 
-            {/* No results message */}
-            {filteredItems.length === 0 && (
-              <div className="text-center py-16">
-                <div className="max-w-md mx-auto">
-                  <Quote className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Không tìm thấy kết quả</h3>
-                  <p className="text-gray-600">
-                    Hãy thử điều chỉnh bộ lọc hoặc từ khóa tìm kiếm của bạn.
-                  </p>
-                </div>
+            <div className="text-center">
+              <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Target className="h-8 w-8 text-green-600" />
               </div>
-            )}
+              <h3 className="text-xl font-semibold mb-2">Thực Hành</h3>
+              <p className="text-gray-600">
+                Kiểm tra kiến thức qua các bài quiz và hoạt động tương tác
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <Trophy className="h-8 w-8 text-yellow-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Thành Tựu</h3>
+              <p className="text-gray-600">
+                Đạt được những mốc quan trọng trong hành trình học tập
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      
-      {/* Footer quote */}
-      <div className="bg-gradient-to-r from-red-800 to-red-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Quote className="h-12 w-12 text-white/50 mx-auto mb-6" />
-            <blockquote className="text-2xl md:text-3xl font-light italic leading-relaxed mb-4">
-              "Không có gì quý hơn độc lập, tự do!"
-            </blockquote>
-            <cite className="text-white/80 text-lg">— Chủ tịch Hồ Chí Minh —</cite>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-16 px-4 bg-red-800 text-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Bắt Đầu Hành Trình Học Tập Ngay Hôm Nay
+          </h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+            Cùng nhau khám phá và ứng dụng những giá trị vĩnh cửu của tư tưởng Hồ Chí Minh vào cuộc sống
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" variant="secondary" className="bg-yellow-500 hover:bg-yellow-600 text-red-800">
+              <Link href="/register">
+                <Heart className="mr-2 h-5 w-5" />
+                Đăng Ký Ngay
+              </Link>
+            </Button>
+            <Button asChild size="lg" className="bg-white text-red-800 hover:bg-yellow-100 hover:text-red-900 border-2 border-white">
+              <Link href="/gallery">
+                <Globe className="mr-2 h-5 w-5" />
+                Khám Phá Thêm
+              </Link>
+            </Button>
           </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    </div>
+  )
 }

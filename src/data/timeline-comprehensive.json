@@ -1,0 +1,381 @@
+[
+  {
+    "id": "2879-bc",
+    "year": 2879,
+    "title": "Thành lập nhà nước Văn Lang",
+    "summary": "Vua Hùng Vương đầu tiên thành lập nhà nước Văn Lang, đánh dấu sự khởi đầu của lịch sử dân tộc Việt Nam. Đây được coi là nhà nước đầu tiên của người Việt cổ.",
+    "location": "Văn Lang (nay là Bắc Bộ, Việt Nam)",
+    "type": "event",
+    "tags": ["Văn Lang", "Hùng Vương", "nhà nước đầu tiên"],
+    "category": "ancient"
+  },
+  {
+    "id": "257-bc",
+    "year": 257,
+    "title": "Thành lập nhà nước Âu Lạc",
+    "summary": "An Dương Vương (Thục Phán) lật đổ Hùng Vương thứ 18, thành lập nhà nước Âu Lạc với thủ đô Cổ Loa, xây dựng thành Cổ Loa vững chắc.",
+    "location": "Cổ Loa (nay là Đông Anh, Hà Nội)",
+    "type": "event",
+    "media": [{
+      "url": "https://dulich.laocai.gov.vn/sites/dulichtinhlaocai/files/upload_images/tin-tuc-su-kien/2022/thang-3/thanh-co-loa-dong-anh-ha-noi-viettravelmn-7.jpg",
+      "kind": "photo",
+      "caption": "Thành Cổ Loa, thủ đô của nhà nước Âu Lạc"
+    }],
+    "tags": ["Âu Lạc", "An Dương Vương", "Cổ Loa"],
+    "category": "ancient"
+  },
+  {
+    "id": "40-ad",
+    "year": 40,
+    "date": "40-02-01",
+    "title": "Khởi nghĩa Hai Bà Trưng",
+    "summary": "Trưng Trắc và Trưng Nhị lãnh đạo cuộc khởi nghĩa chống ách thống trị của nhà Hán, lập ra nhà nước độc lập đầu tiên sau thời kỳ Bắc thuộc.",
+    "location": "Mê Linh (nay là Hà Nội)",
+    "type": "event",
+    "media": [{
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmrBzLYLqPOA4FZXR1nGKaXNw4v3SFmQJrw&s",
+      "kind": "photo",
+      "caption": "Tượng đài Hai Bà Trưng"
+    }],
+    "tags": ["Hai Bà Trưng", "khởi nghĩa", "chống Hán"],
+    "category": "resistance"
+  },
+  {
+    "id": "248-ad",
+    "year": 248,
+    "title": "Khởi nghĩa Bà Triệu",
+    "summary": "Triệu Thị Trinh (Bà Triệu) lãnh đạo cuộc khởi nghĩa chống quân Ngô (Trung Quốc), với khí phách \"muốn cưỡi gió cả, đạp sóng dài, chém cá kình ở biển Đông\".",
+    "location": "Cửu Chân (nay là Thanh Hóa)",
+    "type": "event",
+    "media": [{
+      "url": "https://danviet.mediacdn.vn/296231569849192448/2021/7/23/photo-1-16270251826321406094748.jpg",
+      "kind": "photo",
+      "caption": "Tượng Bà Triệu tại Thanh Hóa"
+    }],
+    "tags": ["Bà Triệu", "khởi nghĩa", "phụ nữ anh hùng"],
+    "category": "resistance"
+  },
+  {
+    "id": "938-ad",
+    "year": 938,
+    "title": "Chiến thắng Bạch Đằng lần thứ nhất",
+    "summary": "Ngô Quyền đánh bại quân Nam Hán tại sông Bạch Đằng, chấm dứt thời kỳ Bắc thuộc lần thứ nhất, mở ra thời kỳ độc lập tự chủ của dân tộc Việt Nam.",
+    "location": "Sông Bạch Đằng (nay là Quảng Ninh)",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/04/08/upload_2058/bach%20dang%20giang%201.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Tranh vẽ chiến thắng Bạch Đằng"
+    }],
+    "tags": ["Ngô Quyền", "Bạch Đằng", "độc lập"],
+    "category": "victory"
+  },
+  {
+    "id": "968-ad",
+    "year": 968,
+    "title": "Đinh Bộ Lĩnh lên ngôi hoàng đế",
+    "summary": "Đinh Bộ Lĩnh thống nhất đất nước, lên ngôi hoàng đế, lập ra nhà Đinh, đặt quốc hiệu là Đại Cồ Việt, thiết lập chế độ quân chủ tập quyền.",
+    "location": "Hoa Lư (nay là Ninh Bình)",
+    "type": "event",
+    "media": [{
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyK9o7dGr_xV1NcNGUaP4U9mNmIZlGIoMmOA&s",
+      "kind": "photo",
+      "caption": "Đinh Bộ Lĩnh tại Hoa Lư"
+    }],
+    "tags": ["Đinh Bộ Lĩnh", "Đại Cồ Việt", "thống nhất"],
+    "category": "dynasty"
+  },
+  {
+    "id": "1010-ad",
+    "year": 1010,
+    "title": "Lý Thái Tổ dời đô về Thăng Long",
+    "summary": "Vua Lý Thái Tổ dời đô từ Hoa Lư về Đại La, đổi tên thành Thăng Long, ban hành Chiếu dời đô nổi tiếng. Đây là nền tảng cho sự phát triển của Hà Nội ngày nay.",
+    "location": "Thăng Long (nay là Hà Nội)",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/10/01/upload_2058/thang%20long1.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Tranh vẽ Lý Thái Tổ dời đô"
+    }],
+    "tags": ["Lý Thái Tổ", "Thăng Long", "dời đô"],
+    "category": "dynasty"
+  },
+  {
+    "id": "1075-ad",
+    "year": 1075,
+    "title": "Thành lập Văn Miếu - Quốc Tử Giám",
+    "summary": "Vua Lý Nhân Tông cho xây dựng Văn Miếu, sau đó thành lập Quốc Tử Giám (1076) - trường đại học đầu tiên của Việt Nam, thúc đẩy sự phát triển của giáo dục.",
+    "location": "Thăng Long (nay là Hà Nội)",
+    "type": "event",
+    "media": [{
+      "url": "https://statics.vneconomy.vn/Images/Upload/2022/04/04/van-mieu-quoc-tu-giam-4.jpg",
+      "kind": "photo",
+      "caption": "Văn Miếu - Quốc Tử Giám"
+    }],
+    "tags": ["Văn Miếu", "Quốc Tử Giám", "giáo dục"],
+    "category": "culture"
+  },
+  {
+    "id": "1225-ad",
+    "year": 1225,
+    "title": "Trần Thủ Độ lên nắm quyền",
+    "summary": "Trần Thủ Độ lên nắm quyền, thành lập nhà Trần, mở ra một thời kỳ huy hoàng trong lịch sử Việt Nam với những chiến thắng vĩ đại chống quân Mông - Nguyên.",
+    "location": "Thăng Long",
+    "type": "event",
+    "tags": ["Trần Thủ Độ", "nhà Trần", "thành lập"],
+    "category": "dynasty"
+  },
+  {
+    "id": "1288-ad",
+    "year": 1288,
+    "title": "Chiến thắng Bạch Đằng lần thứ ba",
+    "summary": "Trần Hưng Đạo chỉ huy quân dân ta đánh bại hoàn toàn quân Mông - Nguyên tại Bạch Đằng lần thứ ba, bảo vệ vững chắc độc lập dân tộc.",
+    "location": "Sông Bạch Đằng",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/04/08/upload_2058/tran%20hung%20dao.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Trần Hưng Đạo tại Bạch Đằng"
+    }],
+    "tags": ["Trần Hưng Đạo", "Bạch Đằng", "Mông Nguyên"],
+    "category": "victory"
+  },
+  {
+    "id": "1400-ad",
+    "year": 1400,
+    "title": "Hồ Quý Ly cải cách",
+    "summary": "Hồ Quý Ly thực hiện nhiều cải cách tiến bộ: cải cách ruộng đất, sử dụng tiền giấy, phát triển khoa học kỹ thuật, đặt ra nhiều chính sách xã hội tiến bộ.",
+    "location": "Đại Ngu (Việt Nam)",
+    "type": "event",
+    "tags": ["Hồ Quý Ly", "cải cách", "tiến bộ"],
+    "category": "reform"
+  },
+  {
+    "id": "1428-ad",
+    "year": 1428,
+    "title": "Lê Lợi lên ngôi hoàng đế",
+    "summary": "Sau cuộc Lam Sơn khởi nghĩa thắng lợi, Lê Lợi lên ngôi hoàng đế, lập ra nhà Hậu Lê, chấm dứt 20 năm đô hộ của quân Minh.",
+    "location": "Đông Quan (nay là Hà Nội)",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/02/25/upload_2058/le%20loi.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Lê Lợi - Lê Thái Tổ"
+    }],
+    "tags": ["Lê Lợi", "Lam Sơn", "Hậu Lê"],
+    "category": "dynasty"
+  },
+  {
+    "id": "1471-ad",
+    "year": 1471,
+    "title": "Chinh phạt Champa",
+    "summary": "Lê Thánh Tông cho quân đánh Champa, chiếm được Vijaya (Quy Nhon), mở rộng lãnh thổ về phía nam, đánh dấu sự mở rộng lớn của đất nước.",
+    "location": "Champa (nay là miền Trung Việt Nam)",
+    "type": "event",
+    "tags": ["Lê Thánh Tông", "Champa", "mở rộng lãnh thổ"],
+    "category": "expansion"
+  },
+  {
+    "id": "1527-ad",
+    "year": 1527,
+    "title": "Mạc Đăng Dung lên ngôi",
+    "summary": "Mạc Đăng Dung lên ngôi hoàng đế, lập ra nhà Mạc, đất nước chia làm hai: nhà Mạc ở phía Bắc, nhà Lê (Lê Trung Hưng) ở phía Nam.",
+    "location": "Thăng Long",
+    "type": "event",
+    "tags": ["Mạc Đăng Dung", "nhà Mạc", "chia đôi"],
+    "category": "dynasty"
+  },
+  {
+    "id": "1592-ad",
+    "year": 1592,
+    "title": "Nguyễn Hoàng vào trấn Thuận Hóa",
+    "summary": "Nguyễn Hoàng được phong làm Thuận Hóa Công, vào trấn thủ đất Thuận Hóa, đặt nền móng cho sự hình thành chính quyền họ Nguyễn ở miền Nam.",
+    "location": "Thuận Hóa (nay là Huế)",
+    "type": "event",
+    "tags": ["Nguyễn Hoàng", "Thuận Hóa", "chúa Nguyễn"],
+    "category": "dynasty"
+  },
+  {
+    "id": "1627-ad",
+    "year": 1627,
+    "title": "Bắt đầu thời kỳ phân tranh Trịnh - Nguyễn",
+    "summary": "Chúa Trịnh và chúa Nguyễn chính thức chia đôi đất nước tại sông Gianh, bắt đầu thời kỳ phân tranh kéo dài hơn 150 năm.",
+    "location": "Sông Gianh",
+    "type": "event",
+    "tags": ["Trịnh Nguyễn", "phân tranh", "chia đôi"],
+    "category": "conflict"
+  },
+  {
+    "id": "1771-ad",
+    "year": 1771,
+    "title": "Khởi nghĩa Tây Sơn",
+    "summary": "Ba anh em họ Nguyễn ở Tây Sơn (Bình Định) khởi nghĩa, lật đổ chúa Nguyễn, sau đó đánh bại chúa Trịnh, thống nhất đất nước.",
+    "location": "Tây Sơn, Bình Định",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/09/15/upload_2058/tay%20son.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Khởi nghĩa Tây Sơn"
+    }],
+    "tags": ["Tây Sơn", "khởi nghĩa", "thống nhất"],
+    "category": "revolution"
+  },
+  {
+    "id": "1789-ad",
+    "year": 1789,
+    "title": "Chiến thắng Ngọc Hồi - Đống Đa",
+    "summary": "Quang Trung (Nguyễn Huệ) đánh bại hoàn toàn 29 vạn quân Thanh xâm lược tại Ngọc Hồi - Đống Đa, bảo vệ độc lập dân tộc.",
+    "location": "Ngọc Hồi - Đống Đa, Hà Nội",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/01/14/upload_2058/dong%20da.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Chiến thắng Đống Đa"
+    }],
+    "tags": ["Quang Trung", "Đống Đa", "đánh Thanh"],
+    "category": "victory"
+  },
+  {
+    "id": "1802-ad",
+    "year": 1802,
+    "title": "Nguyễn Ánh thống nhất đất nước",
+    "summary": "Nguyễn Ánh đánh bại Tây Sơn, thống nhất đất nước, lên ngôi hoàng đế lấy hiệu Gia Long, lập ra triều đại Nguyễn - triều đại phong kiến cuối cùng của Việt Nam.",
+    "location": "Phú Xuân (Huế)",
+    "type": "event",
+    "tags": ["Gia Long", "thống nhất", "triều Nguyễn"],
+    "category": "dynasty"
+  },
+  {
+    "id": "1858-ad",
+    "year": 1858,
+    "title": "Pháp tấn công Đà Nẵng",
+    "summary": "Hạm đội Pháp - Tây Ban Nha tấn công Đà Nẵng, mở đầu cho cuộc xâm lược thực dân Pháp vào Việt Nam.",
+    "location": "Đà Nẵng",
+    "type": "event",
+    "tags": ["Pháp", "xâm lược", "Đà Nẵng"],
+    "category": "colonialism"
+  },
+  {
+    "id": "1862-ad",
+    "year": 1862,
+    "title": "Ký hiệp ước Nhâm Tuất",
+    "summary": "Triều đình Huế buộc phải ký hiệp ước Nhâm Tuất (Saigon), nhượng 3 tỉnh Đông Nam Kỳ cho Pháp, mở đầu thời kỳ thực dân.",
+    "location": "Sài Gòn",
+    "type": "event",
+    "tags": ["Nhâm Tuất", "hiệp ước", "nhượng địa"],
+    "category": "colonialism"
+  },
+  {
+    "id": "1930-02-03",
+    "year": 1930,
+    "date": "1930-02-03",
+    "title": "Thành lập Đảng Cộng sản Việt Nam",
+    "summary": "Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Hồng Kông, thành lập Đảng Cộng sản Việt Nam.",
+    "location": "Hồng Kông",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2025/01/10/upload_2058/3.jpg?dpi=150&mode=crop&anchor=topcenter&quality=100&w=500",
+      "kind": "photo",
+      "caption": "Hội nghị thành lập Đảng Cộng sản Việt Nam"
+    }],
+    "tags": ["Đảng Cộng sản", "thành lập", "Nguyễn Ái Quốc"],
+    "category": "modern"
+  },
+  {
+    "id": "1945-08-19",
+    "year": 1945,
+    "date": "1945-08-19",
+    "title": "Cách mạng Tháng Tám thành công",
+    "summary": "Cách mạng Tháng Tám thành công, lật đổ chính quyền thực dân - phong kiến, giành chính quyền về tay nhân dân.",
+    "location": "Hà Nội",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/08/14/upload_2058/cach%20mang%20thang%20tam.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Cách mạng Tháng Tám"
+    }],
+    "tags": ["Cách mạng Tháng Tám", "giành chính quyền"],
+    "category": "modern"
+  },
+  {
+    "id": "1945-09-02",
+    "year": 1945,
+    "date": "1945-09-02",
+    "title": "Tuyên ngôn Độc lập",
+    "summary": "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, khai sinh nước Việt Nam Dân chủ Cộng hòa.",
+    "location": "Quảng trường Ba Đình, Hà Nội",
+    "type": "speech",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2022/09/01/tvkimgiang/bac%20ho%20doc%20tuyen%20ngon.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Bác Hồ đọc Tuyên ngôn Độc lập"
+    }],
+    "tags": ["Tuyên ngôn Độc lập", "khai sinh", "Ba Đình"],
+    "category": "modern"
+  },
+  {
+    "id": "1954-05-07",
+    "year": 1954,
+    "date": "1954-05-07",
+    "title": "Chiến thắng Điện Biên Phủ",
+    "summary": "Quân và dân ta giành chiến thắng hoàn toàn tại Điện Biên Phủ, 'lừng lẫy năm châu, chấn động địa cầu', buộc Pháp phải ký hiệp định Genève.",
+    "location": "Điện Biên Phủ",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/05/05/upload_2058/dien%20bien%20phu.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "Chiến thắng Điện Biên Phủ"
+    }],
+    "tags": ["Điện Biên Phủ", "chiến thắng", "chấn động địa cầu"],
+    "category": "modern"
+  },
+  {
+    "id": "1975-04-30",
+    "year": 1975,
+    "date": "1975-04-30",
+    "title": "Giải phóng hoàn toàn miền Nam",
+    "summary": "Quân giải phóng tiến vào Sài Gòn, chế độ Sài Gòn đầu hàng vô điều kiện, đất nước hoàn toàn thống nhất.",
+    "location": "Sài Gòn (nay là TP. Hồ Chí Minh)",
+    "type": "event",
+    "media": [{
+      "url": "https://file3.qdnd.vn/data/images/0/2020/04/28/upload_2058/30-4-1975.jpg?dpi=150&quality=100&w=870",
+      "kind": "photo",
+      "caption": "30/4/1975 - Giải phóng hoàn toàn miền Nam"
+    }],
+    "tags": ["30/4", "giải phóng", "thống nhất"],
+    "category": "modern"
+  },
+  {
+    "id": "1986-12-15",
+    "year": 1986,
+    "date": "1986-12-15",
+    "title": "Khởi đầu công cuộc Đổi mới",
+    "summary": "Đại hội VI của Đảng thông qua đường lối Đổi mới, mở ra một thời kỳ phát triển mới cho đất nước.",
+    "location": "Hà Nội",
+    "type": "event",
+    "tags": ["Đổi mới", "Đại hội VI", "phát triển"],
+    "category": "modern"
+  },
+  {
+    "id": "1995-07-28",
+    "year": 1995,
+    "date": "1995-07-28",
+    "title": "Gia nhập ASEAN",
+    "summary": "Việt Nam chính thức trở thành thành viên thứ 7 của ASEAN, đánh dấu bước tiến quan trọng trong hội nhập quốc tế.",
+    "location": "Brunei",
+    "type": "event",
+    "tags": ["ASEAN", "hội nhập", "quốc tế"],
+    "category": "modern"
+  },
+  {
+    "id": "2007-01-11",
+    "year": 2007,
+    "date": "2007-01-11",
+    "title": "Gia nhập WTO",
+    "summary": "Việt Nam chính thức trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới (WTO), hội nhập sâu rộng vào nền kinh tế thế giới.",
+    "location": "Geneva, Thụy Sĩ",
+    "type": "event",
+    "tags": ["WTO", "thương mại", "hội nhập"],
+    "category": "modern"
+  }
+]

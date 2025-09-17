@@ -58,6 +58,7 @@ export function SiteFooter() {
                 { href: '/gallery', label: 'Thư viện ảnh', icon: BookOpen },
                 { href: '/letters', label: 'Thư & Văn bản', icon: MessageSquare },
                 { href: '/community', label: 'Cộng đồng', icon: Globe },
+                { href: '/quiz', label: 'Quiz lịch sử', icon: Star },
               ].map((link) => {
                 const Icon = link.icon;
                 return (

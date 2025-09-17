@@ -16,6 +16,7 @@ const navLinks = [
   { href: '/gallery', label: 'Thư viện', icon: BookOpen, description: 'Hình ảnh & tư liệu quý' },
   { href: '/letters', label: 'Thư & Văn bản', icon: MessageSquare, description: 'Di sản văn học' },
   { href: '/community', label: 'Cộng đồng', icon: Globe, description: 'Chia sẻ & thảo luận' },
+  { href: '/quiz', label: 'Quiz lịch sử', icon: Shield, description: 'Kiểm tra kiến thức' },
 ];
 
 interface User {
