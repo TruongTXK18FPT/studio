@@ -96,7 +96,7 @@ export default function HomePage() {
         </div>
         <div className="container mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-red-800 mb-6">
-            Học Tập Tư Tưởng
+            Ánh Sáng Lịch Sử
             <br />
             <span className="text-yellow-600">Hồ Chí Minh</span>
           </h1>
