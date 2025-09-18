@@ -5,16 +5,18 @@ import { NavLink } from './NavLink';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useEffect, useState } from 'react';
-import { Search, Menu, X, Heart, User, Settings, LogOut, Shield, BookOpen, MessageSquare, Clock, Globe } from 'lucide-react';
+import { Search, Menu, X, Heart, User, Settings, LogOut, Shield, BookOpen, MessageSquare, Clock, Globe, Building } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { triggerHeaderLogoutRefresh } from '@/lib/auth-utils';
 
 const navLinks = [
   { href: '/timeline', label: 'Dòng thời gian', icon: Clock, description: 'Hành trình cuộc đời Bác' },
   { href: '/gallery', label: 'Thư viện', icon: BookOpen, description: 'Hình ảnh & tư liệu quý' },
   { href: '/letters', label: 'Thư & Văn bản', icon: MessageSquare, description: 'Di sản văn học' },
+  { href: '/virtual_museum', label: 'Bảo tàng ảo', icon: Building, description: 'Trải nghiệm bảo tàng 3D' },
   { href: '/community', label: 'Cộng đồng', icon: Globe, description: 'Chia sẻ & thảo luận' },
   { href: '/quiz', label: 'Quiz lịch sử', icon: Shield, description: 'Kiểm tra kiến thức' },
 ];
@@ -32,31 +34,77 @@ export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
-  useEffect(() => {
-    // Check if user is logged in
-    const checkAuth = async () => {
-      try {
-        const response = await fetch('/api/auth/me', {
-          credentials: 'include'
-        });
-        if (response.ok) {
-          const userData = await response.json();
-          setUser(userData.user); // Updated to match the new API response format
-        }
-      } catch (error) {
-        console.error('Auth check failed:', error);
-      } finally {
-        setLoading(false);
+  // Function to check authentication status
+  const checkAuth = async () => {
+    try {
+      const response = await fetch('/api/auth/me', {
+        credentials: 'include'
+      });
+      if (response.ok) {
+        const userData = await response.json();
+        setUser(userData.user);
+        return userData.user;
+      } else {
+        setUser(null);
+        return null;
       }
+    } catch (error) {
+      console.error('Auth check failed:', error);
+      setUser(null);
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Function to refresh user data (exposed globally)
+  const refreshUser = async () => {
+    setLoading(true);
+    return await checkAuth();
+  };
+
+  useEffect(() => {
+    // Initial auth check
+    checkAuth();
+
+    // Listen for custom login events
+    const handleLoginSuccess = () => {
+      refreshUser();
     };
 
-    checkAuth();
+    // Listen for custom logout events
+    const handleLogoutSuccess = () => {
+      setUser(null);
+      setLoading(false);
+    };
+
+    // Listen for window focus to check auth when user returns to tab
+    const handleWindowFocus = () => {
+      checkAuth();
+    };
+
+    // Add event listeners
+    window.addEventListener('login-success', handleLoginSuccess);
+    window.addEventListener('logout-success', handleLogoutSuccess);
+    window.addEventListener('focus', handleWindowFocus);
+
+    // Expose refreshUser function globally for use in login components
+    (window as any).refreshHeaderAuth = refreshUser;
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('login-success', handleLoginSuccess);
+      window.removeEventListener('logout-success', handleLogoutSuccess);
+      window.removeEventListener('focus', handleWindowFocus);
+      delete (window as any).refreshHeaderAuth;
+    };
   }, []);
 
   const handleLogout = async () => {
     try {
       await fetch('/api/auth/logout', { method: 'POST' });
       setUser(null);
+      triggerHeaderLogoutRefresh();
       window.location.href = '/';
     } catch (error) {
       console.error('Logout failed:', error);
@@ -75,18 +123,18 @@ export function SiteHeader() {
       {/* Main Header */}
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-4 hover:opacity-80 transition-opacity">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 flex items-center justify-center">
+        <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity flex-shrink-0">
+          <div className="flex items-center space-x-2.5">
+            <div className="w-9 h-9 flex items-center justify-center">
               <svg viewBox="0 0 100 100" className="w-full h-full">
                 <image href="/patterns/logo-hcm202.svg" width="100" height="100" />
               </svg>
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg text-primary bg-gradient-to-r from-red-800 to-red-900 bg-clip-text text-transparent">
+              <span className="font-bold text-base text-primary bg-gradient-to-r from-red-800 to-red-900 bg-clip-text text-transparent">
                 HCM202
               </span>
-              <span className="text-xs text-muted-foreground hidden sm:block">
+              <span className="text-xs text-muted-foreground hidden xl:block">
                 Ánh sáng lịch sử Việt Nam
               </span>
             </div>
@@ -94,17 +142,17 @@ export function SiteHeader() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-1">
+        <nav className="hidden xl:flex items-center space-x-1">
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
               <div key={link.href} className="group relative">
                 <NavLink 
                   href={link.href}
-                  className="flex items-center space-x-2 px-4 py-2 rounded-lg hover:bg-red-50 hover:text-red-800 transition-all duration-200"
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-lg hover:bg-red-50 hover:text-red-800 transition-all duration-200 text-sm"
                 >
                   <Icon className="w-4 h-4" />
-                  <span>{link.label}</span>
+                  <span className="whitespace-nowrap">{link.label}</span>
                 </NavLink>
                 
                 {/* Tooltip */}
@@ -118,13 +166,13 @@ export function SiteHeader() {
         </nav>
 
         {/* Search Bar */}
-        <div className="hidden md:flex items-center space-x-4 flex-1 max-w-md mx-6">
+        <div className="hidden lg:flex items-center space-x-4 flex-1 max-w-xs mx-4">
           <form onSubmit={handleSearch} className="relative w-full">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
             <Input
               type="search"
-              placeholder="Tìm kiếm sự kiện, văn bản..."
-              className="pl-10 pr-4 py-2 border-gray-300 focus:border-red-500 focus:ring-red-500"
+              placeholder="Tìm kiếm..."
+              className="pl-10 pr-4 py-2 border-gray-300 focus:border-red-500 focus:ring-red-500 text-sm"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -132,15 +180,15 @@ export function SiteHeader() {
         </div>
         
         {/* User Menu & Actions */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 flex-shrink-0">
           {/* Contribute Button */}
           <Button 
             asChild 
-            className="hidden sm:flex bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white shadow-lg"
+            className="hidden md:flex bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white shadow-lg text-sm px-3"
           >
-            <Link href="/community/submit" className="flex items-center space-x-2">
+            <Link href="/community/submit" className="flex items-center space-x-1.5">
               <Heart className="w-4 h-4" />
-              <span>Đóng góp</span>
+              <span className="whitespace-nowrap">Đóng góp</span>
             </Link>
           </Button>
 
@@ -150,11 +198,11 @@ export function SiteHeader() {
               {user ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="flex items-center space-x-2 hover:bg-red-50">
-                      <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center">
-                        <User className="w-4 h-4 text-white" />
+                    <Button variant="ghost" className="flex items-center space-x-1.5 hover:bg-red-50">
+                      <div className="w-7 h-7 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center">
+                        <User className="w-3.5 h-3.5 text-white" />
                       </div>
-                      <div className="hidden sm:flex flex-col items-start">
+                      <div className="hidden lg:flex flex-col items-start">
                         <span className="text-sm font-medium">{user.name || 'Người dùng'}</span>
                         <span className="text-xs text-gray-500">
                           {user.role === 'admin' && (
@@ -204,17 +252,17 @@ export function SiteHeader() {
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
-                <div className="flex items-center gap-2">
-                  <Button variant="outline" size="sm" asChild className="hidden sm:flex">
+                <div className="flex items-center gap-1.5">
+                  <Button variant="outline" size="sm" asChild className="hidden md:flex text-sm px-3">
                     <Link href="/login">Đăng nhập</Link>
                   </Button>
-                  <Button size="sm" asChild className="hidden sm:flex">
+                  <Button size="sm" asChild className="hidden md:flex text-sm px-3">
                     <Link href="/register">Đăng ký</Link>
                   </Button>
-                  <Button variant="outline" size="sm" asChild className="border-red-200 text-red-700 hover:bg-red-50">
+                  <Button variant="outline" size="sm" asChild className="border-red-200 text-red-700 hover:bg-red-50 text-sm px-3">
                     <Link href="/admin/login" className="flex items-center space-x-1">
                       <Shield className="w-4 h-4" />
-                      <span className="hidden sm:inline">Admin</span>
+                      <span className="hidden lg:inline">Admin</span>
                     </Link>
                   </Button>
                 </div>
@@ -225,7 +273,7 @@ export function SiteHeader() {
           {/* Mobile Menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="sm" className="lg:hidden">
+              <Button variant="ghost" size="sm" className="xl:hidden">
                 {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               </Button>
             </SheetTrigger>

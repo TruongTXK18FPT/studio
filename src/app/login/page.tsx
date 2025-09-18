@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { triggerHeaderAuthRefresh } from '@/lib/auth-utils'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -32,6 +33,9 @@ export default function LoginPage() {
       const data = await response.json()
 
       if (response.ok) {
+        // Trigger header refresh for user info update
+        triggerHeaderAuthRefresh();
+        
         router.push('/dashboard')
         router.refresh()
       } else {

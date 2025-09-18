@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Label } from "@/components/ui/label"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { AlertCircle, Shield, User, Lock } from "lucide-react"
+import { triggerHeaderAuthRefresh } from '@/lib/auth-utils'
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState('')
@@ -33,6 +34,9 @@ export default function AdminLoginPage() {
       const data = await response.json()
 
       if (response.ok) {
+        // Trigger header refresh for user info update
+        triggerHeaderAuthRefresh();
+        
         router.push('/admin/dashboard')
       } else {
         setError(data.error || 'Có lỗi xảy ra')
