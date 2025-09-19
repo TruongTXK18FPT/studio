@@ -87,59 +87,79 @@ export async function OPTIONS() {
   });
 }
 
-// Function to rewrite URLs in HTML content
+// Sửa function rewriteUrls
 function rewriteUrls(html: string, baseUrl: string): string {
   const proxyBaseUrl = new URL('/api/proxy/museum', baseUrl).toString();
   
-  // Rewrite relative URLs to use our proxy
   return html
-    // Rewrite src attributes
-    .replace(/src=["']\/([^"']*)["']/g, `src="${proxyBaseUrl}?path=/$1"`)
-    .replace(/src=["']([^"'http][^"']*)["']/g, `src="${proxyBaseUrl}?path=/$1"`)
+    // Fix absolute URLs to museum domain
+    .replace(new RegExp(`${MUSEUM_BASE_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'g'), proxyBaseUrl + '?path=')
     
-    // Rewrite href attributes  
-    .replace(/href=["']\/([^"']*)["']/g, `href="${proxyBaseUrl}?path=/$1"`)
-    .replace(/href=["']([^"'http][^"']*)["']/g, `href="${proxyBaseUrl}?path=/$1"`)
+    // Fix relative URLs starting with /
+    .replace(/(src|href|action)=["']\/([^"']*)["']/g, `$1="${proxyBaseUrl}?path=/$2"`)
     
-    // Rewrite action attributes
-    .replace(/action=["']\/([^"']*)["']/g, `action="${proxyBaseUrl}?path=/$1"`)
+    // Fix relative URLs without leading /
+    .replace(/(src|href|action)=["'](?!https?:\/\/|data:|#|\/\/)([^"']*)["']/g, `$1="${proxyBaseUrl}?path=/$2"`)
     
-    // Rewrite CSS url() functions
+    // Fix CSS url() functions
     .replace(/url\(["']?\/([^"')]*)["']?\)/g, `url("${proxyBaseUrl}?path=/$1")`)
+    .replace(/url\(["']?(?!https?:\/\/|data:)([^"')]*)["']?\)/g, `url("${proxyBaseUrl}?path=/$1")`)
     
-    // Add base tag to handle relative URLs
-    .replace(/<head[^>]*>/i, `$&\n<base href="${proxyBaseUrl}?path=/" target="_parent">`)
+    // Remove existing base tag and add new one
+    .replace(/<base[^>]*>/gi, '')
+    .replace(/<head[^>]*>/i, `$&\n<base href="${proxyBaseUrl}?path=/">`)
     
-    // Inject script to fix any remaining issues
+    // Enhanced dynamic fixing script
     .replace(/<\/body>/i, `
       <script>
-        // Fix any remaining relative URLs dynamically
-        document.addEventListener('DOMContentLoaded', function() {
+        (function() {
           const proxyBase = '${proxyBaseUrl}?path=';
+          const museumBase = '${MUSEUM_BASE_URL}';
           
-          // Fix images
-          document.querySelectorAll('img').forEach(img => {
-            if (img.src && img.src.startsWith('${MUSEUM_BASE_URL}')) {
-              img.src = img.src.replace('${MUSEUM_BASE_URL}', proxyBase);
+          // Override fetch to use proxy
+          const originalFetch = window.fetch;
+          window.fetch = function(url, options) {
+            if (typeof url === 'string' && url.startsWith(museumBase)) {
+              url = url.replace(museumBase, proxyBase);
             }
-          });
-          
-          // Fix links
-          document.querySelectorAll('a').forEach(link => {
-            if (link.href && link.href.startsWith('${MUSEUM_BASE_URL}')) {
-              link.href = link.href.replace('${MUSEUM_BASE_URL}', proxyBase);
-            }
-          });
-          
-          // Override window.open to use proxy
-          const originalOpen = window.open;
-          window.open = function(url, target, features) {
-            if (url && url.startsWith('${MUSEUM_BASE_URL}')) {
-              url = url.replace('${MUSEUM_BASE_URL}', proxyBase);
-            }
-            return originalOpen.call(this, url, target, features);
+            return originalFetch.call(this, url, options);
           };
-        });
+          
+          // Override XMLHttpRequest
+          const originalXHROpen = XMLHttpRequest.prototype.open;
+          XMLHttpRequest.prototype.open = function(method, url, ...args) {
+            if (typeof url === 'string' && url.startsWith(museumBase)) {
+              url = url.replace(museumBase, proxyBase);
+            }
+            return originalXHROpen.call(this, method, url, ...args);
+          };
+          
+          // Fix dynamic content
+          const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+              mutation.addedNodes.forEach(function(node) {
+                if (node.nodeType === 1) {
+                  fixElement(node);
+                  node.querySelectorAll && node.querySelectorAll('[src], [href]').forEach(fixElement);
+                }
+              });
+            });
+          });
+          
+          function fixElement(el) {
+            ['src', 'href'].forEach(attr => {
+              const val = el.getAttribute && el.getAttribute(attr);
+              if (val && !val.startsWith('http') && !val.startsWith('data:') && !val.startsWith('#')) {
+                el.setAttribute(attr, proxyBase + (val.startsWith('/') ? val.slice(1) : val));
+              }
+            });
+          }
+          
+          observer.observe(document.body, { childList: true, subtree: true });
+          
+          // Fix existing elements
+          document.querySelectorAll('[src], [href]').forEach(fixElement);
+        })();
       </script>
       $&
     `);
