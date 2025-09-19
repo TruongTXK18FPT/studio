@@ -407,7 +407,7 @@ export default function VirtualMuseumPage() {
               title="Bảo tàng Hồ Chí Minh Ảo - Proxy HTTPS"
               onLoad={handleIframeLoad}
               onError={handleIframeError}
-              sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation"
+              sandbox="allow-scripts allow-forms allow-popups"
               referrerPolicy="no-referrer-when-downgrade"
               allow="camera; microphone; fullscreen; display-capture"
             />
