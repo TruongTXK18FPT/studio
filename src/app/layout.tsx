@@ -4,6 +4,7 @@ import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SiteFooter } from '@/components/layout/SiteFooter';
 import { AdminRedirect } from '@/components/layout/AdminRedirect';
 import { ChatBox } from '@/components/chat/ChatBox';
+import { Analytics } from "@vercel/analytics/next"
 import './globals.css';
 
 const VERCEL_URL = process.env.VERCEL_URL ? `https://anh-sang-lich-su.vercel.app` : 'http://localhost:3000';
@@ -65,6 +66,7 @@ export default function RootLayout({
           <ChatBox />
         </div>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
