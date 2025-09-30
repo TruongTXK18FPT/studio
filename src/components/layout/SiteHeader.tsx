@@ -5,7 +5,7 @@ import { NavLink } from './NavLink';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useEffect, useState } from 'react';
-import { Search, Menu, X, Heart, User, Settings, LogOut, Shield, BookOpen, MessageSquare, Clock, Globe, Building } from 'lucide-react';
+import { Search, Menu, X, Heart, User, Settings, LogOut, Shield, BookOpen, MessageSquare, Clock, Globe, Building, Crown, GamepadIcon } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
@@ -19,6 +19,7 @@ const navLinks = [
   { href: '/virtual_museum', label: 'Bảo tàng ảo', icon: Building, description: 'Trải nghiệm bảo tàng 3D' },
   { href: '/community', label: 'Cộng đồng', icon: Globe, description: 'Chia sẻ & thảo luận' },
   { href: '/quiz', label: 'Quiz lịch sử', icon: Shield, description: 'Kiểm tra kiến thức' },
+  { href: '/play', label: 'Battle Royale', icon: GamepadIcon, description: 'Tham gia game đối kháng', special: true },
 ];
 
 interface User {
@@ -144,15 +145,32 @@ export function SiteHeader() {
         {/* Desktop Navigation */}
         <nav className="hidden xl:flex items-center space-x-1">
           {navLinks.map((link) => {
+            // Show admin-only links only to admin users
+            if (link.admin && (!user || user.role !== 'admin')) {
+              return null;
+            }
+            
             const Icon = link.icon;
             return (
               <div key={link.href} className="group relative">
                 <NavLink 
                   href={link.href}
-                  className="flex items-center space-x-1.5 px-3 py-2 rounded-lg hover:bg-red-50 hover:text-red-800 transition-all duration-200 text-sm"
+                  className={`flex items-center space-x-1.5 px-3 py-2 rounded-lg transition-all duration-200 text-sm ${
+                    link.admin 
+                      ? 'hover:bg-purple-50 hover:text-purple-800 text-purple-700'
+                      : link.special
+                      ? 'hover:bg-emerald-50 hover:text-emerald-800 text-emerald-700 font-medium'
+                      : 'hover:bg-red-50 hover:text-red-800'
+                  }`}
                 >
                   <Icon className="w-4 h-4" />
                   <span className="whitespace-nowrap">{link.label}</span>
+                  {link.admin && (
+                    <Crown className="w-3 h-3 text-purple-600" />
+                  )}
+                  {link.special && (
+                    <span className="text-xs bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full font-bold">NEW</span>
+                  )}
                 </NavLink>
                 
                 {/* Tooltip */}
@@ -309,17 +327,39 @@ export function SiteHeader() {
                 {/* Mobile Navigation */}
                 <nav className="space-y-2 flex-1">
                   {navLinks.map((link) => {
+                    // Show admin-only links only to admin users
+                    if (link.admin && (!user || user.role !== 'admin')) {
+                      return null;
+                    }
+                    
                     const Icon = link.icon;
                     return (
                       <Link
                         key={link.href}
                         href={link.href}
-                        className="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-red-50 transition-colors"
+                        className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
+                          link.admin 
+                            ? 'hover:bg-purple-50 border border-purple-200'
+                            : link.special
+                            ? 'hover:bg-emerald-50 border border-emerald-200 bg-gradient-to-r from-emerald-50 to-teal-50'
+                            : 'hover:bg-red-50'
+                        }`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        <Icon className="w-5 h-5 text-red-600" />
-                        <div>
-                          <span className="font-medium">{link.label}</span>
+                        <Icon className={`w-5 h-5 ${
+                          link.admin ? 'text-purple-600' : 
+                          link.special ? 'text-emerald-600' : 'text-red-600'
+                        }`} />
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2">
+                            <span className="font-medium">{link.label}</span>
+                            {link.admin && (
+                              <Crown className="w-4 h-4 text-purple-600" />
+                            )}
+                            {link.special && (
+                              <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-bold">NEW</span>
+                            )}
+                          </div>
                           <p className="text-sm text-gray-600">{link.description}</p>
                         </div>
                       </Link>

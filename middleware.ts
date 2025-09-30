@@ -16,6 +16,22 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  // Chỉ admin được truy cập trang Host
+  if (request.nextUrl.pathname === '/host') {
+    const token = request.cookies.get('session')?.value
+    if (!token) {
+      return NextResponse.redirect(new URL('/admin/login', request.url))
+    }
+    try {
+      const payload = await verifyToken(token)
+      if (!payload || payload.role !== 'admin') {
+        return NextResponse.redirect(new URL('/admin/login', request.url))
+      }
+    } catch (error) {
+      return NextResponse.redirect(new URL('/admin/login', request.url))
+    }
+  }
+
   // Áp dụng cho /admin routes
   if (request.nextUrl.pathname.startsWith('/admin') && 
       !request.nextUrl.pathname.startsWith('/admin/login')) {
@@ -40,5 +56,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/admin/:path*']
+  matcher: ['/dashboard/:path*', '/admin/:path*', '/host']
 }
