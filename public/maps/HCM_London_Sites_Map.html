@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4a8444df153aea58df9fd3d363326004 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4a8444df153aea58df9fd3d363326004" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4a8444df153aea58df9fd3d363326004 = L.map(
+                "map_4a8444df153aea58df9fd3d363326004",
+                {
+                    center: [51.507, -0.13],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_10b1e6402d2b38d30c8870a6dfb6c137 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4a8444df153aea58df9fd3d363326004);
+        
+    
+            var feature_group_f66012d92e116cfb3ec8fa146b100fce = L.featureGroup(
+                {}
+            ).addTo(map_4a8444df153aea58df9fd3d363326004);
+        
+    
+            var marker_877269929bbecee0832b5ced751c5a40 = L.marker(
+                [51.5129, -0.3173],
+                {}
+            ).addTo(feature_group_f66012d92e116cfb3ec8fa146b100fce);
+        
+    
+            var icon_0e70f71fa33e70d273b5d2c146af81bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_877269929bbecee0832b5ced751c5a40.setIcon(icon_0e70f71fa33e70d273b5d2c146af81bb);
+        
+    
+        var popup_17ede0e252fc8d477f1df8562377c9e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ec1721be4904f0b96dd53cbc45fe282 = $(`<div id="html_4ec1721be4904f0b96dd53cbc45fe282" style="width: 100.0%; height: 100.0%;"><b>Khách sạn Đraytơn Cơớc (The Drayton Court, Ealing)</b><br>Nơi làm bếp/phụ bếp (khoảng 1913–1914). Địa chỉ hiện nay: 2 The Avenue, West Ealing W13 8PH.</div>`)[0];
+            popup_17ede0e252fc8d477f1df8562377c9e0.setContent(html_4ec1721be4904f0b96dd53cbc45fe282);
+        
+
+        marker_877269929bbecee0832b5ced751c5a40.bindPopup(popup_17ede0e252fc8d477f1df8562377c9e0)
+        ;
+
+        
+    
+    
+            marker_877269929bbecee0832b5ced751c5a40.bindTooltip(
+                `<div>
+                     Khách sạn Đraytơn Cơớc (The Drayton Court, Ealing)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5a2e1eb64a3ebd3267f7283f55c1011 = L.marker(
+                [51.5077, -0.1318],
+                {}
+            ).addTo(feature_group_f66012d92e116cfb3ec8fa146b100fce);
+        
+    
+            var icon_c66aef6cf5ab362d4ee26ccc85ca1fe5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5a2e1eb64a3ebd3267f7283f55c1011.setIcon(icon_c66aef6cf5ab362d4ee26ccc85ca1fe5);
+        
+    
+        var popup_04405adcc1f431dc7628886e70fc4976 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4191c48258196ace27a80e92ac722fed = $(`<div id="html_4191c48258196ace27a80e92ac722fed" style="width: 100.0%; height: 100.0%;"><b>Khách sạn Cáclơtơn (Carlton) – nay là New Zealand House</b><br>Vị trí khách sạn Carlton cũ (Haymarket/Pall Mall). Hiện là 80 Haymarket, SW1Y 4TQ (có plaque).</div>`)[0];
+            popup_04405adcc1f431dc7628886e70fc4976.setContent(html_4191c48258196ace27a80e92ac722fed);
+        
+
+        marker_b5a2e1eb64a3ebd3267f7283f55c1011.bindPopup(popup_04405adcc1f431dc7628886e70fc4976)
+        ;
+
+        
+    
+    
+            marker_b5a2e1eb64a3ebd3267f7283f55c1011.bindTooltip(
+                `<div>
+                     Khách sạn Cáclơtơn (Carlton) – nay là New Zealand House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b96616fc959bc2a6cb5bb3e8588fea7 = L.marker(
+                [51.515, -0.131],
+                {}
+            ).addTo(feature_group_f66012d92e116cfb3ec8fa146b100fce);
+        
+    
+            var icon_7ae7231e506064e2cf43992b92355f17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "briefcase", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8b96616fc959bc2a6cb5bb3e8588fea7.setIcon(icon_7ae7231e506064e2cf43992b92355f17);
+        
+    
+        var popup_78c9b48daaabaf7067317e87f78371ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da2ac62e52c71ce0b554e9c36f342c5e = $(`<div id="html_da2ac62e52c71ce0b554e9c36f342c5e" style="width: 100.0%; height: 100.0%;"><b>Sở tìm việc ở Soho (ước tính: Soho Square)</b><br>Khu Soho – trung tâm tìm việc/lao động đầu thế kỷ 20 (đặt điểm tại Soho Square, minh hoạ).</div>`)[0];
+            popup_78c9b48daaabaf7067317e87f78371ad.setContent(html_da2ac62e52c71ce0b554e9c36f342c5e);
+        
+
+        marker_8b96616fc959bc2a6cb5bb3e8588fea7.bindPopup(popup_78c9b48daaabaf7067317e87f78371ad)
+        ;
+
+        
+    
+    
+            marker_8b96616fc959bc2a6cb5bb3e8588fea7.bindTooltip(
+                `<div>
+                     Sở tìm việc ở Soho (ước tính: Soho Square)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_93fd1a23d1aac72a66e907cdef64fa99 = L.featureGroup(
+                {}
+            ).addTo(map_4a8444df153aea58df9fd3d363326004);
+        
+    
+            var marker_a0d2f344d45637e1646ff6bea3a6f40a = L.marker(
+                [51.50861, -0.163611],
+                {}
+            ).addTo(feature_group_93fd1a23d1aac72a66e907cdef64fa99);
+        
+    
+            var icon_4518596e55d8926bf65cd274cac2840a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree-conifer", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a0d2f344d45637e1646ff6bea3a6f40a.setIcon(icon_4518596e55d8926bf65cd274cac2840a);
+        
+    
+        var popup_222802e3504677d4bc49108a929112b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7469bed80696d207fb505c2fc0e52d6 = $(`<div id="html_f7469bed80696d207fb505c2fc0e52d6" style="width: 100.0%; height: 100.0%;"><b>Công viên Hyde Park</b><br>Không gian công cộng; truyền thống diễn thuyết ở Speakers’ Corner.</div>`)[0];
+            popup_222802e3504677d4bc49108a929112b6.setContent(html_f7469bed80696d207fb505c2fc0e52d6);
+        
+
+        marker_a0d2f344d45637e1646ff6bea3a6f40a.bindPopup(popup_222802e3504677d4bc49108a929112b6)
+        ;
+
+        
+    
+    
+            marker_a0d2f344d45637e1646ff6bea3a6f40a.bindTooltip(
+                `<div>
+                     Công viên Hyde Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fa1e2f7eacae708fb2126cc77e70135 = L.marker(
+                [51.5005, -0.1198],
+                {}
+            ).addTo(feature_group_93fd1a23d1aac72a66e907cdef64fa99);
+        
+    
+            var icon_ba4eb71c929cf14da9ae6c910848795b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6fa1e2f7eacae708fb2126cc77e70135.setIcon(icon_ba4eb71c929cf14da9ae6c910848795b);
+        
+    
+        var popup_7ad7e0d49071fd2c4bf00d2d03d091be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa5ff4a0bd090b2ccf48f4061fd72fca = $(`<div id="html_aa5ff4a0bd090b2ccf48f4061fd72fca" style="width: 100.0%; height: 100.0%;"><b>Sông Thames – mốc minh hoạ (Cầu Westminster)</b><br>Điểm minh hoạ trên sông Thames (cầu Westminster).</div>`)[0];
+            popup_7ad7e0d49071fd2c4bf00d2d03d091be.setContent(html_aa5ff4a0bd090b2ccf48f4061fd72fca);
+        
+
+        marker_6fa1e2f7eacae708fb2126cc77e70135.bindPopup(popup_7ad7e0d49071fd2c4bf00d2d03d091be)
+        ;
+
+        
+    
+    
+            marker_6fa1e2f7eacae708fb2126cc77e70135.bindTooltip(
+                `<div>
+                     Sông Thames – mốc minh hoạ (Cầu Westminster)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_b6b02f25f59d51f1193679acdf528389 = L.featureGroup(
+                {}
+            ).addTo(map_4a8444df153aea58df9fd3d363326004);
+        
+    
+            var marker_a74889577b820844b3abfd298b3d8f62 = L.marker(
+                [51.52944, -0.12694],
+                {}
+            ).addTo(feature_group_b6b02f25f59d51f1193679acdf528389);
+        
+    
+            var icon_10ca2fb51971abcd302f42320d38f9cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a74889577b820844b3abfd298b3d8f62.setIcon(icon_10ca2fb51971abcd302f42320d38f9cc);
+        
+    
+        var popup_9d854dbe89990c56014761585cb5fca1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c91f1f7b60a0a2178a476510a3c39f13 = $(`<div id="html_c91f1f7b60a0a2178a476510a3c39f13" style="width: 100.0%; height: 100.0%;"><b>Thư viện Anh (British Library)</b><br>Địa chỉ hiện nay: 96 Euston Road, NW1 2DB.</div>`)[0];
+            popup_9d854dbe89990c56014761585cb5fca1.setContent(html_c91f1f7b60a0a2178a476510a3c39f13);
+        
+
+        marker_a74889577b820844b3abfd298b3d8f62.bindPopup(popup_9d854dbe89990c56014761585cb5fca1)
+        ;
+
+        
+    
+    
+            marker_a74889577b820844b3abfd298b3d8f62.bindTooltip(
+                `<div>
+                     Thư viện Anh (British Library)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_7d9678f4b9f1aad3db883dd2634f3713 = L.featureGroup(
+                {}
+            ).addTo(map_4a8444df153aea58df9fd3d363326004);
+        
+    
+            var marker_da3caf8440a1397beec9144ad83b785c = L.marker(
+                [51.5176, -0.1336],
+                {}
+            ).addTo(feature_group_7d9678f4b9f1aad3db883dd2634f3713);
+        
+    
+            var icon_c853663c11fff245c36ca7e49b30d796 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_da3caf8440a1397beec9144ad83b785c.setIcon(icon_c853663c11fff245c36ca7e49b30d796);
+        
+    
+        var popup_4dfa7e80c915c3608a0a392edef311ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3d3a9c552bdaf3bd398e915c274fb9d = $(`<div id="html_b3d3a9c552bdaf3bd398e915c274fb9d" style="width: 100.0%; height: 100.0%;"><b>Nhà số 8, đường Stephen (khu Tottenham Court)</b><br>Địa chỉ lịch sử “8 Stephen Street” (phố hiện còn, quy hoạch đổi mới; toạ độ ước lệ gần số 1–2 Stephen St).</div>`)[0];
+            popup_4dfa7e80c915c3608a0a392edef311ca.setContent(html_b3d3a9c552bdaf3bd398e915c274fb9d);
+        
+
+        marker_da3caf8440a1397beec9144ad83b785c.bindPopup(popup_4dfa7e80c915c3608a0a392edef311ca)
+        ;
+
+        
+    
+    
+            marker_da3caf8440a1397beec9144ad83b785c.bindTooltip(
+                `<div>
+                     Nhà số 8, đường Stephen (khu Tottenham Court)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dee0bc7b6180f808ce30801401112959 = L.marker(
+                [51.517, -0.1815],
+                {}
+            ).addTo(feature_group_7d9678f4b9f1aad3db883dd2634f3713);
+        
+    
+            var icon_12c3471be33e6d58964f70f5039a5af5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dee0bc7b6180f808ce30801401112959.setIcon(icon_12c3471be33e6d58964f70f5039a5af5);
+        
+    
+        var popup_5bd9fa1a9e15c8dcadae67e863cc9553 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82171f61a3bef97c89017de8f5edb977 = $(`<div id="html_82171f61a3bef97c89017de8f5edb977" style="width: 100.0%; height: 100.0%;"><b>Nhà số 10, Orsett Terrace (gần Hyde Park)</b><br>Tuyến đường Orsett Terrace, W2 (toạ độ gần số 10, khu Paddington).</div>`)[0];
+            popup_5bd9fa1a9e15c8dcadae67e863cc9553.setContent(html_82171f61a3bef97c89017de8f5edb977);
+        
+
+        marker_dee0bc7b6180f808ce30801401112959.bindPopup(popup_5bd9fa1a9e15c8dcadae67e863cc9553)
+        ;
+
+        
+    
+    
+            marker_dee0bc7b6180f808ce30801401112959.bindTooltip(
+                `<div>
+                     Nhà số 10, Orsett Terrace (gần Hyde Park)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_8f61a806e8bee7819b0c0db2fbc49740 = L.featureGroup(
+                {}
+            ).addTo(map_4a8444df153aea58df9fd3d363326004);
+        
+    
+            var marker_7d6ce3a755878db4b8fc5053a6ee0728 = L.marker(
+                [50.7928, 0.0521],
+                {}
+            ).addTo(feature_group_8f61a806e8bee7819b0c0db2fbc49740);
+        
+    
+            var icon_df686a2b8e916c2631138127b021278b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7d6ce3a755878db4b8fc5053a6ee0728.setIcon(icon_df686a2b8e916c2631138127b021278b);
+        
+    
+        var popup_8babc3ef35201d2135a8f1cc7c39e3b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b53b28f91432ec6d7aa86695f68bb7d9 = $(`<div id="html_b53b28f91432ec6d7aa86695f68bb7d9" style="width: 100.0%; height: 100.0%;"><b>Thị trấn Newhaven (West Quay)</b><br>Cảng Newhaven – tuyến phà Newhaven–Dieppe (có bia tưởng niệm/triển lãm).</div>`)[0];
+            popup_8babc3ef35201d2135a8f1cc7c39e3b8.setContent(html_b53b28f91432ec6d7aa86695f68bb7d9);
+        
+
+        marker_7d6ce3a755878db4b8fc5053a6ee0728.bindPopup(popup_8babc3ef35201d2135a8f1cc7c39e3b8)
+        ;
+
+        
+    
+    
+            marker_7d6ce3a755878db4b8fc5053a6ee0728.bindTooltip(
+                `<div>
+                     Thị trấn Newhaven (West Quay)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_497d554128f11502eef9358e478bfc3d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_10b1e6402d2b38d30c8870a6dfb6c137,
+                },
+                overlays :  {
+                    "Vi\u1ec7c l\u00e0m" : feature_group_f66012d92e116cfb3ec8fa146b100fce,
+                    "Sinh ho\u1ea1t" : feature_group_93fd1a23d1aac72a66e907cdef64fa99,
+                    "H\u1ecdc t\u1eadp" : feature_group_b6b02f25f59d51f1193679acdf528389,
+                    "\u0110\u1ecba ch\u1ec9 c\u01b0 tr\u00fa" : feature_group_7d9678f4b9f1aad3db883dd2634f3713,
+                    "Tuy\u1ebfn ph\u00e0/Th\u1ef1c t\u1ebf" : feature_group_8f61a806e8bee7819b0c0db2fbc49740,
+                },
+            };
+            L.control.layers(
+                layer_control_497d554128f11502eef9358e478bfc3d.base_layers,
+                layer_control_497d554128f11502eef9358e478bfc3d.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_4a8444df153aea58df9fd3d363326004);
+        
+</script>
+</html>

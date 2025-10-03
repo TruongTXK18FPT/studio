@@ -17,6 +17,15 @@ interface TimelineFiltersProps {
 export function TimelineFilters({ items, onFilteredItemsChange }: TimelineFiltersProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [yearRange, setYearRange] = useState([1890, 1969]);
+  const minYear = 1890;
+  const maxYear = 1969;
+  const milestones = [
+    { year: 1890, label: 'Sinh' },
+    { year: 1920, label: 'Tìm đường' },
+    { year: 1945, label: 'Độc lập' },
+    { year: 1969, label: 'Về với đời' },
+  ];
+  const toPercent = (y: number) => ((y - minYear) / (maxYear - minYear)) * 100;
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
   const availableTypes = useMemo(() => {
@@ -110,28 +119,22 @@ export function TimelineFilters({ items, onFilteredItemsChange }: TimelineFilter
               <Slider
                 value={yearRange}
                 onValueChange={setYearRange}
-                min={1890}
-                max={1969}
+                min={minYear}
+                max={maxYear}
                 step={1}
                 className="w-full [&_[role=slider]]:bg-red-800 [&_[role=slider]]:border-red-900"
               />
-              <div className="flex justify-between text-xs text-gray-500 mt-3 px-1">
-                <div className="text-center">
-                  <div className="font-medium">1890</div>
-                  <div className="text-gray-400">Sinh</div>
-                </div>
-                <div className="text-center">
-                  <div className="font-medium">1920</div>
-                  <div className="text-gray-400">Tìm đường</div>
-                </div>
-                <div className="text-center">
-                  <div className="font-medium">1945</div>
-                  <div className="text-gray-400">Độc lập</div>
-                </div>
-                <div className="text-center">
-                  <div className="font-medium">1969</div>
-                  <div className="text-gray-400">Về với đời</div>
-                </div>
+              <div className="relative mt-3 h-10 text-xs text-gray-500">
+                {milestones.map(m => (
+                  <div
+                    key={m.year}
+                    className="absolute -translate-x-1/2 text-center"
+                    style={{ left: `${toPercent(m.year)}%` }}
+                  >
+                    <div className="font-medium">{m.year}</div>
+                    <div className="text-gray-400">{m.label}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

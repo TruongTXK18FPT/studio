@@ -25,7 +25,7 @@ export default function QuizPage() {
 
   const [quizData, setQuizData] = useState<QuizData | null>(null)
   const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({})
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string[]>>({})
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [result, setResult] = useState<QuizResult | null>(null)
   const [timeLeft, setTimeLeft] = useState<number | null>(null)
@@ -165,23 +165,30 @@ export default function QuizPage() {
   }
 
   const handleAnswerSelect = (questionIndex: number, choiceId: string) => {
-    if (isSubmitted) return
-    setSelectedAnswers(prev => ({
-      ...prev,
-      [questionIndex]: choiceId
-    }))
+    if (isSubmitted || !quizData) return
+    const question = quizData.questions[questionIndex]
+    const correctCount = question.choices.filter(c => c.isCorrect).length
+    const isMultiple = correctCount > 1 || (question as any).type === 'multiple' || (question as any).type === 'multiple_choice'
+    setSelectedAnswers(prev => {
+      const current = prev[questionIndex] || []
+      if (isMultiple) {
+        const exists = current.includes(choiceId)
+        const next = exists ? current.filter(id => id !== choiceId) : [...current, choiceId]
+        return { ...prev, [questionIndex]: next }
+      } else {
+        return { ...prev, [questionIndex]: [choiceId] }
+      }
+    })
   }
 
   const handleSubmit = () => {
     if (!quizData) return
 
     const correctAnswers = quizData.questions.reduce((acc, question, index) => {
-      const selectedChoiceId = selectedAnswers[index]
-      const correctChoice = question.choices.find(choice => choice.isCorrect)
-      
-      if (selectedChoiceId === correctChoice?.id) {
-        acc++
-      }
+      const selectedIds = (selectedAnswers[index] || []).slice().sort()
+      const correctIds = question.choices.filter(c => c.isCorrect).map(c => c.id).sort()
+      const isEqual = selectedIds.length === correctIds.length && selectedIds.every((id, i) => id === correctIds[i])
+      if (isEqual) acc++
       return acc
     }, 0)
 
@@ -322,10 +329,9 @@ export default function QuizPage() {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Xem lại đáp án</h3>
             {quizData.questions.map((question, index) => {
-              const selectedChoiceId = selectedAnswers[index]
-              const correctChoice = question.choices.find(choice => choice.isCorrect)
-              const selectedChoice = question.choices.find(choice => choice.id === selectedChoiceId)
-              const isCorrect = selectedChoiceId === correctChoice?.id
+              const selectedIds = (selectedAnswers[index] || []).slice().sort()
+              const correctIds = question.choices.filter(c => c.isCorrect).map(c => c.id).sort()
+              const isCorrect = selectedIds.length === correctIds.length && selectedIds.every((id, i) => id === correctIds[i])
 
               return (
                 <Card key={question.id} className={`border-l-4 ${isCorrect ? 'border-l-green-500' : 'border-l-red-500'}`}>
@@ -342,7 +348,7 @@ export default function QuizPage() {
                   <CardContent>
                     <div className="space-y-2 mb-4">
                       {question.choices.map((choice) => {
-                        const isSelected = choice.id === selectedChoiceId
+                        const isSelected = (selectedAnswers[index] || []).includes(choice.id)
                         const isCorrectAnswer = choice.isCorrect
                         
                         return (
@@ -429,21 +435,17 @@ export default function QuizPage() {
                   key={choice.id}
                   onClick={() => handleAnswerSelect(currentQuestion, choice.id)}
                   className={`w-full p-4 text-left rounded-lg border-2 transition-all ${
-                    selectedAnswers[currentQuestion] === choice.id
+                    (selectedAnswers[currentQuestion] || []).includes(choice.id)
                       ? 'border-red-500 bg-red-50 text-red-900'
                       : 'border-gray-200 hover:border-red-300 hover:bg-red-25'
                   }`}
                 >
                   <div className="flex items-center gap-3">
-                    <div className={`w-4 h-4 rounded-full border-2 ${
-                      selectedAnswers[currentQuestion] === choice.id
+                    <div className={`w-4 h-4 rounded-sm border-2 ${
+                      (selectedAnswers[currentQuestion] || []).includes(choice.id)
                         ? 'border-red-500 bg-red-500'
                         : 'border-gray-300'
-                    }`}>
-                      {selectedAnswers[currentQuestion] === choice.id && (
-                        <div className="w-2 h-2 bg-white rounded-full m-0.5"></div>
-                      )}
-                    </div>
+                    }`}></div>
                     <span>{choice.text}</span>
                   </div>
                 </button>
@@ -493,7 +495,7 @@ export default function QuizPage() {
             ) : (
               <Button
                 onClick={() => setCurrentQuestion(prev => Math.min(quizData.questions.length - 1, prev + 1))}
-                disabled={!selectedAnswers[currentQuestion]}
+                disabled={!(selectedAnswers[currentQuestion] && selectedAnswers[currentQuestion].length > 0)}
               >
                 Câu tiếp theo
               </Button>

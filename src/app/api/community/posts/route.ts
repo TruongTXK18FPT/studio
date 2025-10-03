@@ -1,19 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { z } from 'zod'
+import crypto from 'crypto'
 
 const postSchema = z.object({
   title: z.string().min(10, 'Tiêu đề phải có ít nhất 10 ký tự').max(150, 'Tiêu đề không quá 150 ký tự'),
   content: z.string().min(50, 'Nội dung phải có ít nhất 50 ký tự').max(5000, 'Nội dung không quá 5000 ký tự'),
   tags: z.array(z.string()).optional(),
   author: z.string().optional(),
-  sourceLink: z.string().url().optional().or(z.literal(''))
+  sourceLink: z.string().url().optional().or(z.literal('')),
+  imageBase64: z.string().optional(), // data URL or base64 string
 })
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { title, content, tags, author, sourceLink } = postSchema.parse(body)
+    const { title, content, tags, author, sourceLink, imageBase64 } = postSchema.parse(body)
 
     // Try to find or create an anonymous user
     let authorId: string
@@ -38,6 +40,38 @@ export async function POST(request: NextRequest) {
       authorId = 'clm0000000000000000000000'
     }
 
+    // Optional upload to Cloudinary if image provided
+    let imageUrl: string | undefined
+    if (imageBase64) {
+      try {
+        const CLOUD = {
+          cloud_name: 'dbynhb8va',
+          api_key: '656858295268228',
+          api_secret: 'y1rUB4xxJ-9clwvxIjxmAZv0ULs'
+        }
+        const timestamp = Math.floor(Date.now() / 1000)
+        const folder = 'community_posts'
+        const toSign = `folder=${folder}&timestamp=${timestamp}${CLOUD.api_secret}`
+        const signature = crypto.createHash('sha1').update(toSign).digest('hex')
+
+        const form = new FormData()
+        form.append('file', imageBase64)
+        form.append('api_key', CLOUD.api_key)
+        form.append('timestamp', String(timestamp))
+        form.append('folder', folder)
+        form.append('signature', signature)
+
+        const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD.cloud_name}/image/upload`, {
+          method: 'POST',
+          body: form as any
+        })
+        const json = await res.json()
+        if (json.secure_url) imageUrl = json.secure_url as string
+      } catch (e) {
+        console.error('Cloudinary upload failed:', e)
+      }
+    }
+
     const post = await prisma.post.create({
       data: {
         title,
@@ -45,12 +79,7 @@ export async function POST(request: NextRequest) {
         tags: tags || [],
         status: 'pending',
         authorId,
-        // Store additional metadata in a JSON field
-        metadata: {
-          authorName: author || 'Ẩn danh',
-          sourceLink: sourceLink || null,
-          submittedAt: new Date().toISOString()
-        }
+        imageUrl
       }
     })
 
@@ -91,7 +120,7 @@ export async function GET(request: NextRequest) {
         content: true,
         tags: true,
         createdAt: true,
-        metadata: true
+        // metadata not selected to avoid schema mismatch
       }
     })
 

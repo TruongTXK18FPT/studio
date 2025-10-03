@@ -16,10 +16,7 @@ async function getPost(id: string) {
     const { prisma } = await import('@/lib/prisma');
     
     const post = await prisma.post.findUnique({
-      where: { 
-        id,
-        status: 'approved' // Only show approved posts
-      },
+      where: { id },
       select: {
         id: true,
         title: true,
@@ -27,7 +24,6 @@ async function getPost(id: string) {
         tags: true,
         status: true,
         createdAt: true,
-        metadata: true,
         imageUrl: true
       }
     });
@@ -41,7 +37,6 @@ async function getPost(id: string) {
       tags: Array.isArray(post.tags) ? post.tags as string[] : [],
       status: post.status as 'approved' | 'pending' | 'rejected',
       createdAt: post.createdAt.toISOString(),
-      metadata: post.metadata as any,
       imageUrl: post.imageUrl
     };
   } catch (error) {
@@ -77,8 +72,8 @@ export default async function PostDetailPage({ params }: Props) {
     notFound();
   }
 
-  const authorName = post.metadata?.authorName || 'Ẩn danh';
-  const sourceLink = post.metadata?.sourceLink;
+  const authorName = 'Ẩn danh';
+  const sourceLink = undefined as unknown as string | undefined;
   const publishedDate = new Date(post.createdAt).toLocaleDateString('vi-VN', {
     year: 'numeric',
     month: 'long',

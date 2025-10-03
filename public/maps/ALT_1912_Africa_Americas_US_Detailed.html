@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9907a0df2e850b47529df88fc1ffe66e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9907a0df2e850b47529df88fc1ffe66e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9907a0df2e850b47529df88fc1ffe66e = L.map(
+                "map_9907a0df2e850b47529df88fc1ffe66e",
+                {
+                    center: [10.0, -10.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5de1f0ad15d210e584e7083eae259950 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var marker_fb0a028238bbfe712907734cc43d8e95 = L.marker(
+                [49.7, 0.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_5b3bf4a3625a8e7f2319aa1d95691641 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fb0a028238bbfe712907734cc43d8e95.setIcon(icon_5b3bf4a3625a8e7f2319aa1d95691641);
+        
+    
+        var popup_992d1a66ac7d9fc8669c4dbb056e3598 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93879155200d521049c4ad29a45f8c03 = $(`<div id="html_93879155200d521049c4ad29a45f8c03" style="width: 100.0%; height: 100.0%;">1. Le Havre Offshore (FR)<br>1912 start (from France)</div>`)[0];
+            popup_992d1a66ac7d9fc8669c4dbb056e3598.setContent(html_93879155200d521049c4ad29a45f8c03);
+        
+
+        marker_fb0a028238bbfe712907734cc43d8e95.bindPopup(popup_992d1a66ac7d9fc8669c4dbb056e3598)
+        ;
+
+        
+    
+    
+            marker_fb0a028238bbfe712907734cc43d8e95.bindTooltip(
+                `<div>
+                     1. Le Havre Offshore (FR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc4791a15b7e97d2a7d62daad8f81cc6 = L.marker(
+                [49.0, -5.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_1457bd93b31fadef2a0e92a664646bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cc4791a15b7e97d2a7d62daad8f81cc6.setIcon(icon_1457bd93b31fadef2a0e92a664646bb4);
+        
+    
+        var popup_9152497d23797169c226c2224b28dea6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b33b4ae198c6e23c7ab1f5ec63724cbc = $(`<div id="html_b33b4ae198c6e23c7ab1f5ec63724cbc" style="width: 100.0%; height: 100.0%;">2. English Channel West<br></div>`)[0];
+            popup_9152497d23797169c226c2224b28dea6.setContent(html_b33b4ae198c6e23c7ab1f5ec63724cbc);
+        
+
+        marker_cc4791a15b7e97d2a7d62daad8f81cc6.bindPopup(popup_9152497d23797169c226c2224b28dea6)
+        ;
+
+        
+    
+    
+            marker_cc4791a15b7e97d2a7d62daad8f81cc6.bindTooltip(
+                `<div>
+                     2. English Channel West
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4edfb0e29905abb6605db1da3f03f61a = L.marker(
+                [43.5, -9.6],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_abbdc6705fa0e2b2476bbea2e052e068 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4edfb0e29905abb6605db1da3f03f61a.setIcon(icon_abbdc6705fa0e2b2476bbea2e052e068);
+        
+    
+        var popup_16626cabc21e2347fd0a59b84bc2e2fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84e47490c154380e808d5b9518d9c3b3 = $(`<div id="html_84e47490c154380e808d5b9518d9c3b3" style="width: 100.0%; height: 100.0%;">3. Offshore Galicia<br></div>`)[0];
+            popup_16626cabc21e2347fd0a59b84bc2e2fc.setContent(html_84e47490c154380e808d5b9518d9c3b3);
+        
+
+        marker_4edfb0e29905abb6605db1da3f03f61a.bindPopup(popup_16626cabc21e2347fd0a59b84bc2e2fc)
+        ;
+
+        
+    
+    
+            marker_4edfb0e29905abb6605db1da3f03f61a.bindTooltip(
+                `<div>
+                     3. Offshore Galicia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c99bc54a77d71062511f57467c228d9 = L.marker(
+                [38.6, -9.6],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_0b3e071001229266b0e432adf59c6d28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8c99bc54a77d71062511f57467c228d9.setIcon(icon_0b3e071001229266b0e432adf59c6d28);
+        
+    
+        var popup_88380659dc4267de021d55ef257f2389 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c5ee0111c3f36be0052c51923c951f3 = $(`<div id="html_8c5ee0111c3f36be0052c51923c951f3" style="width: 100.0%; height: 100.0%;">4. Offshore Lisbon (PT)<br>Portugal (1912)</div>`)[0];
+            popup_88380659dc4267de021d55ef257f2389.setContent(html_8c5ee0111c3f36be0052c51923c951f3);
+        
+
+        marker_8c99bc54a77d71062511f57467c228d9.bindPopup(popup_88380659dc4267de021d55ef257f2389)
+        ;
+
+        
+    
+    
+            marker_8c99bc54a77d71062511f57467c228d9.bindTooltip(
+                `<div>
+                     4. Offshore Lisbon (PT)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f1976146ddc3979e27152181ec87fee = L.marker(
+                [35.95, -5.6],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_528545630b19a614408907f93f7bda8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0f1976146ddc3979e27152181ec87fee.setIcon(icon_528545630b19a614408907f93f7bda8b);
+        
+    
+        var popup_81a4525a2e632d9706d1c56952a09060 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af6f138dba962b88c694d04da07da763 = $(`<div id="html_af6f138dba962b88c694d04da07da763" style="width: 100.0%; height: 100.0%;">5. Strait of Gibraltar (ES)<br>Spain (1912)</div>`)[0];
+            popup_81a4525a2e632d9706d1c56952a09060.setContent(html_af6f138dba962b88c694d04da07da763);
+        
+
+        marker_0f1976146ddc3979e27152181ec87fee.bindPopup(popup_81a4525a2e632d9706d1c56952a09060)
+        ;
+
+        
+    
+    
+            marker_0f1976146ddc3979e27152181ec87fee.bindTooltip(
+                `<div>
+                     5. Strait of Gibraltar (ES)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0aa55e9fc1b77c84c6091960ca1126af = L.marker(
+                [33.9, -7.7],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_076e91afc8547ca961a8a304c58a1eb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0aa55e9fc1b77c84c6091960ca1126af.setIcon(icon_076e91afc8547ca961a8a304c58a1eb6);
+        
+    
+        var popup_634d5f1ab6db9d19984b3792b7c5027c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_178a4e04616528e1274e85729ae0c677 = $(`<div id="html_178a4e04616528e1274e85729ae0c677" style="width: 100.0%; height: 100.0%;">6. Offshore Casablanca (MA)<br></div>`)[0];
+            popup_634d5f1ab6db9d19984b3792b7c5027c.setContent(html_178a4e04616528e1274e85729ae0c677);
+        
+
+        marker_0aa55e9fc1b77c84c6091960ca1126af.bindPopup(popup_634d5f1ab6db9d19984b3792b7c5027c)
+        ;
+
+        
+    
+    
+            marker_0aa55e9fc1b77c84c6091960ca1126af.bindTooltip(
+                `<div>
+                     6. Offshore Casablanca (MA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a649f1fc58e43dc0887418517933bf27 = L.marker(
+                [23.5, -16.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_919723d1ae89cb9f29708366f8b43a63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a649f1fc58e43dc0887418517933bf27.setIcon(icon_919723d1ae89cb9f29708366f8b43a63);
+        
+    
+        var popup_2ae0d227f13e294e125712d7d5e39d11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3da1a7baf26f702a1c787ffa03d5c4bc = $(`<div id="html_3da1a7baf26f702a1c787ffa03d5c4bc" style="width: 100.0%; height: 100.0%;">7. Offshore Western Sahara<br></div>`)[0];
+            popup_2ae0d227f13e294e125712d7d5e39d11.setContent(html_3da1a7baf26f702a1c787ffa03d5c4bc);
+        
+
+        marker_a649f1fc58e43dc0887418517933bf27.bindPopup(popup_2ae0d227f13e294e125712d7d5e39d11)
+        ;
+
+        
+    
+    
+            marker_a649f1fc58e43dc0887418517933bf27.bindTooltip(
+                `<div>
+                     7. Offshore Western Sahara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31c5e9c03458f987fa174d8ad3ffa45b = L.marker(
+                [14.7, -17.5],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_3065c0e75e91d8391871e5e20b8fc3e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_31c5e9c03458f987fa174d8ad3ffa45b.setIcon(icon_3065c0e75e91d8391871e5e20b8fc3e0);
+        
+    
+        var popup_bfc84c09d28f6848c2e8199e4585b067 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75d73e886bdbc1919a1bf3d1b74472af = $(`<div id="html_75d73e886bdbc1919a1bf3d1b74472af" style="width: 100.0%; height: 100.0%;">8. Dakar Roads (SN)<br>Senegal (1912)</div>`)[0];
+            popup_bfc84c09d28f6848c2e8199e4585b067.setContent(html_75d73e886bdbc1919a1bf3d1b74472af);
+        
+
+        marker_31c5e9c03458f987fa174d8ad3ffa45b.bindPopup(popup_bfc84c09d28f6848c2e8199e4585b067)
+        ;
+
+        
+    
+    
+            marker_31c5e9c03458f987fa174d8ad3ffa45b.bindTooltip(
+                `<div>
+                     8. Dakar Roads (SN)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a1c2928cd83332a90123918c11121bc = L.marker(
+                [5.0, -5.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_fa037087951683d71ffc8756ad729944 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9a1c2928cd83332a90123918c11121bc.setIcon(icon_fa037087951683d71ffc8756ad729944);
+        
+    
+        var popup_e3d91c54dffbd52d44e2ddeb5851cacd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2339693aedcbca4936fdaf7b1a687aac = $(`<div id="html_2339693aedcbca4936fdaf7b1a687aac" style="width: 100.0%; height: 100.0%;">9. Gulf of Guinea Mid<br></div>`)[0];
+            popup_e3d91c54dffbd52d44e2ddeb5851cacd.setContent(html_2339693aedcbca4936fdaf7b1a687aac);
+        
+
+        marker_9a1c2928cd83332a90123918c11121bc.bindPopup(popup_e3d91c54dffbd52d44e2ddeb5851cacd)
+        ;
+
+        
+    
+    
+            marker_9a1c2928cd83332a90123918c11121bc.bindTooltip(
+                `<div>
+                     9. Gulf of Guinea Mid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa3861eb4a8ac043fc5e9c180040227e = L.marker(
+                [6.1, 2.4],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_73a84c338eff3cc6d2f9b1b10ee39f9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fa3861eb4a8ac043fc5e9c180040227e.setIcon(icon_73a84c338eff3cc6d2f9b1b10ee39f9a);
+        
+    
+        var popup_155038831a7cddc231989e84f6c13274 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c5a3dfa5e3d2fc1be908b87933da717 = $(`<div id="html_9c5a3dfa5e3d2fc1be908b87933da717" style="width: 100.0%; height: 100.0%;">10. Benin Offshore (BJ)<br>Benin (1912)</div>`)[0];
+            popup_155038831a7cddc231989e84f6c13274.setContent(html_9c5a3dfa5e3d2fc1be908b87933da717);
+        
+
+        marker_fa3861eb4a8ac043fc5e9c180040227e.bindPopup(popup_155038831a7cddc231989e84f6c13274)
+        ;
+
+        
+    
+    
+            marker_fa3861eb4a8ac043fc5e9c180040227e.bindTooltip(
+                `<div>
+                     10. Benin Offshore (BJ)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a305b88258d93209e4a4490ec2b20cbc = L.marker(
+                [3.5, 9.5],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_60d3f7fc356277059a3b099a189a28e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a305b88258d93209e4a4490ec2b20cbc.setIcon(icon_60d3f7fc356277059a3b099a189a28e9);
+        
+    
+        var popup_29b596aeda4838889251b9ba8a587d3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d48873b235fae4c8a942076be7ef1db1 = $(`<div id="html_d48873b235fae4c8a942076be7ef1db1" style="width: 100.0%; height: 100.0%;">11. Cameroon Offshore (CM)<br>Cameroon (1912)</div>`)[0];
+            popup_29b596aeda4838889251b9ba8a587d3a.setContent(html_d48873b235fae4c8a942076be7ef1db1);
+        
+
+        marker_a305b88258d93209e4a4490ec2b20cbc.bindPopup(popup_29b596aeda4838889251b9ba8a587d3a)
+        ;
+
+        
+    
+    
+            marker_a305b88258d93209e4a4490ec2b20cbc.bindTooltip(
+                `<div>
+                     11. Cameroon Offshore (CM)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5fbc913aeda292f97695661b4a86fb5 = L.marker(
+                [-4.5, 11.8],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_73be06b845857c9a9f4d02cd3f9153dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e5fbc913aeda292f97695661b4a86fb5.setIcon(icon_73be06b845857c9a9f4d02cd3f9153dc);
+        
+    
+        var popup_96faa5802d6c87f9d565dc55dd3964ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5ee4a375b1a512a0c6e92a72808d907 = $(`<div id="html_a5ee4a375b1a512a0c6e92a72808d907" style="width: 100.0%; height: 100.0%;">12. Congo Offshore (CG)<br>Congo (1912)</div>`)[0];
+            popup_96faa5802d6c87f9d565dc55dd3964ce.setContent(html_a5ee4a375b1a512a0c6e92a72808d907);
+        
+
+        marker_e5fbc913aeda292f97695661b4a86fb5.bindPopup(popup_96faa5802d6c87f9d565dc55dd3964ce)
+        ;
+
+        
+    
+    
+            marker_e5fbc913aeda292f97695661b4a86fb5.bindTooltip(
+                `<div>
+                     12. Congo Offshore (CG)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2916718b7978c231db7ee8891510958e = L.marker(
+                [-23.0, 14.5],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_9436c567e742bb6f1722dcfa8a980a0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2916718b7978c231db7ee8891510958e.setIcon(icon_9436c567e742bb6f1722dcfa8a980a0b);
+        
+    
+        var popup_9d0ca6874fc81df4125b24edff8c3b62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63cabc333a203291d22778546eb8f410 = $(`<div id="html_63cabc333a203291d22778546eb8f410" style="width: 100.0%; height: 100.0%;">13. Walvis Bay Offshore (NA)<br></div>`)[0];
+            popup_9d0ca6874fc81df4125b24edff8c3b62.setContent(html_63cabc333a203291d22778546eb8f410);
+        
+
+        marker_2916718b7978c231db7ee8891510958e.bindPopup(popup_9d0ca6874fc81df4125b24edff8c3b62)
+        ;
+
+        
+    
+    
+            marker_2916718b7978c231db7ee8891510958e.bindTooltip(
+                `<div>
+                     13. Walvis Bay Offshore (NA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c74bb540d4364d2bd11e885fa34a589e = L.marker(
+                [-35.4, 18.5],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_83f17ea7cb1ad876b4d4a9badad57366 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c74bb540d4364d2bd11e885fa34a589e.setIcon(icon_83f17ea7cb1ad876b4d4a9badad57366);
+        
+    
+        var popup_77fc60eecb7f03f8cea6a7a666c8ab0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54b88ce2a851f3cdfc2545fa6d28e2e0 = $(`<div id="html_54b88ce2a851f3cdfc2545fa6d28e2e0" style="width: 100.0%; height: 100.0%;">14. Cape of Good Hope Offshore (ZA)<br>Round Africa</div>`)[0];
+            popup_77fc60eecb7f03f8cea6a7a666c8ab0f.setContent(html_54b88ce2a851f3cdfc2545fa6d28e2e0);
+        
+
+        marker_c74bb540d4364d2bd11e885fa34a589e.bindPopup(popup_77fc60eecb7f03f8cea6a7a666c8ab0f)
+        ;
+
+        
+    
+    
+            marker_c74bb540d4364d2bd11e885fa34a589e.bindTooltip(
+                `<div>
+                     14. Cape of Good Hope Offshore (ZA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a01fd6140016a356e10da503eb6bc47e = L.marker(
+                [-20.0, 42.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_276774312f95e7f7ab0cdc0db7377703 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a01fd6140016a356e10da503eb6bc47e.setIcon(icon_276774312f95e7f7ab0cdc0db7377703);
+        
+    
+        var popup_9c80cceb60963832658946f3e461bcff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09d0acc930b21d7094ff927e9c8eb130 = $(`<div id="html_09d0acc930b21d7094ff927e9c8eb130" style="width: 100.0%; height: 100.0%;">15. Mozambique Channel Mid<br></div>`)[0];
+            popup_9c80cceb60963832658946f3e461bcff.setContent(html_09d0acc930b21d7094ff927e9c8eb130);
+        
+
+        marker_a01fd6140016a356e10da503eb6bc47e.bindPopup(popup_9c80cceb60963832658946f3e461bcff)
+        ;
+
+        
+    
+    
+            marker_a01fd6140016a356e10da503eb6bc47e.bindTooltip(
+                `<div>
+                     15. Mozambique Channel Mid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31d6391b5c7cc1234792fca3cd1ec8ef = L.marker(
+                [-21.15, 55.53],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_95dd7147d710363624bfc5bc30795d0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_31d6391b5c7cc1234792fca3cd1ec8ef.setIcon(icon_95dd7147d710363624bfc5bc30795d0e);
+        
+    
+        var popup_3386229590fb29c72c9d5ba33d78cfdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adcd351aaecc0c999c83ee3d77b5581d = $(`<div id="html_adcd351aaecc0c999c83ee3d77b5581d" style="width: 100.0%; height: 100.0%;">16. Réunion (FR) – Offshore<br>Réunion (1912)</div>`)[0];
+            popup_3386229590fb29c72c9d5ba33d78cfdb.setContent(html_adcd351aaecc0c999c83ee3d77b5581d);
+        
+
+        marker_31d6391b5c7cc1234792fca3cd1ec8ef.bindPopup(popup_3386229590fb29c72c9d5ba33d78cfdb)
+        ;
+
+        
+    
+    
+            marker_31d6391b5c7cc1234792fca3cd1ec8ef.bindTooltip(
+                `<div>
+                     16. Réunion (FR) – Offshore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20cc3a8848c208dcb7638df008a734c4 = L.marker(
+                [6.0, 55.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_6dc4b7de82a38b8b0ca9bab868374aef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_20cc3a8848c208dcb7638df008a734c4.setIcon(icon_6dc4b7de82a38b8b0ca9bab868374aef);
+        
+    
+        var popup_ddecfd1db40bce43bbbe4a054cb4b1f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb4d1efc75635cba07db2a50c2247718 = $(`<div id="html_cb4d1efc75635cba07db2a50c2247718" style="width: 100.0%; height: 100.0%;">17. Arabian Sea SW<br></div>`)[0];
+            popup_ddecfd1db40bce43bbbe4a054cb4b1f7.setContent(html_cb4d1efc75635cba07db2a50c2247718);
+        
+
+        marker_20cc3a8848c208dcb7638df008a734c4.bindPopup(popup_ddecfd1db40bce43bbbe4a054cb4b1f7)
+        ;
+
+        
+    
+    
+            marker_20cc3a8848c208dcb7638df008a734c4.bindTooltip(
+                `<div>
+                     17. Arabian Sea SW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f49ff1932da4d2c694886835f2d21536 = L.marker(
+                [13.0, 47.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_2c1c2a71050e90be6d6f75a4243c5a6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f49ff1932da4d2c694886835f2d21536.setIcon(icon_2c1c2a71050e90be6d6f75a4243c5a6f);
+        
+    
+        var popup_df58af97ce96306ec6b1d4f703b27966 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_277fcc86a5a07d036ba3206abcf3bb77 = $(`<div id="html_277fcc86a5a07d036ba3206abcf3bb77" style="width: 100.0%; height: 100.0%;">18. Gulf of Aden Mid<br></div>`)[0];
+            popup_df58af97ce96306ec6b1d4f703b27966.setContent(html_277fcc86a5a07d036ba3206abcf3bb77);
+        
+
+        marker_f49ff1932da4d2c694886835f2d21536.bindPopup(popup_df58af97ce96306ec6b1d4f703b27966)
+        ;
+
+        
+    
+    
+            marker_f49ff1932da4d2c694886835f2d21536.bindTooltip(
+                `<div>
+                     18. Gulf of Aden Mid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7cbc61a1fe5a2ae96d67a862884d0ff = L.marker(
+                [11.6, 43.15],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_6cf6e815f4b57b9633b22f4692b70b33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b7cbc61a1fe5a2ae96d67a862884d0ff.setIcon(icon_6cf6e815f4b57b9633b22f4692b70b33);
+        
+    
+        var popup_583fabc8f62d82ae846111a69f7e2444 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23cf586733b2bdbb76cffae087eedb44 = $(`<div id="html_23cf586733b2bdbb76cffae087eedb44" style="width: 100.0%; height: 100.0%;">19. Djibouti (DJ) – Offshore<br>Djibouti (1912)</div>`)[0];
+            popup_583fabc8f62d82ae846111a69f7e2444.setContent(html_23cf586733b2bdbb76cffae087eedb44);
+        
+
+        marker_b7cbc61a1fe5a2ae96d67a862884d0ff.bindPopup(popup_583fabc8f62d82ae846111a69f7e2444)
+        ;
+
+        
+    
+    
+            marker_b7cbc61a1fe5a2ae96d67a862884d0ff.bindTooltip(
+                `<div>
+                     19. Djibouti (DJ) – Offshore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2a270b636c2d829f824c6f24a8d5801 = L.marker(
+                [-5.0, 45.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_fdc391c35c6c023e27ac8dab0a251079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b2a270b636c2d829f824c6f24a8d5801.setIcon(icon_fdc391c35c6c023e27ac8dab0a251079);
+        
+    
+        var popup_445c253b665bd2f1d4a495fc2b571798 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_375c31b8cabf42a1101952d6a0bd5fb3 = $(`<div id="html_375c31b8cabf42a1101952d6a0bd5fb3" style="width: 100.0%; height: 100.0%;">20. Indian Ocean SW Retreat<br></div>`)[0];
+            popup_445c253b665bd2f1d4a495fc2b571798.setContent(html_375c31b8cabf42a1101952d6a0bd5fb3);
+        
+
+        marker_b2a270b636c2d829f824c6f24a8d5801.bindPopup(popup_445c253b665bd2f1d4a495fc2b571798)
+        ;
+
+        
+    
+    
+            marker_b2a270b636c2d829f824c6f24a8d5801.bindTooltip(
+                `<div>
+                     20. Indian Ocean SW Retreat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_239e55b7888f6129a1dff108ec9b6124 = L.marker(
+                [-35.4, 18.5],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_e6f976e432ded94323e958b7b88958b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_239e55b7888f6129a1dff108ec9b6124.setIcon(icon_e6f976e432ded94323e958b7b88958b0);
+        
+    
+        var popup_ac5e43e8c283203d0fda4a63891caced = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f2ebc436f79a4ca835fc68170266e67 = $(`<div id="html_4f2ebc436f79a4ca835fc68170266e67" style="width: 100.0%; height: 100.0%;">21. Cape of Good Hope Offshore (ZA) – Return<br></div>`)[0];
+            popup_ac5e43e8c283203d0fda4a63891caced.setContent(html_4f2ebc436f79a4ca835fc68170266e67);
+        
+
+        marker_239e55b7888f6129a1dff108ec9b6124.bindPopup(popup_ac5e43e8c283203d0fda4a63891caced)
+        ;
+
+        
+    
+    
+            marker_239e55b7888f6129a1dff108ec9b6124.bindTooltip(
+                `<div>
+                     21. Cape of Good Hope Offshore (ZA) – Return
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69825276c39535d4203457d38a9979b2 = L.marker(
+                [-25.0, 10.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_cf3ea0380326c5c0e6e70a806d0a2458 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_69825276c39535d4203457d38a9979b2.setIcon(icon_cf3ea0380326c5c0e6e70a806d0a2458);
+        
+    
+        var popup_60cbe0b40fff0b29ba3a39c5f24dfd23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9de48d3d5bf79e7c8c706ae7662358a = $(`<div id="html_a9de48d3d5bf79e7c8c706ae7662358a" style="width: 100.0%; height: 100.0%;">22. South Atlantic Waypoint 1<br></div>`)[0];
+            popup_60cbe0b40fff0b29ba3a39c5f24dfd23.setContent(html_a9de48d3d5bf79e7c8c706ae7662358a);
+        
+
+        marker_69825276c39535d4203457d38a9979b2.bindPopup(popup_60cbe0b40fff0b29ba3a39c5f24dfd23)
+        ;
+
+        
+    
+    
+            marker_69825276c39535d4203457d38a9979b2.bindTooltip(
+                `<div>
+                     22. South Atlantic Waypoint 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eed6a2466df6a7ad9862b176f93e8b5a = L.marker(
+                [-17.0, -5.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_ccb3e5b511acdca3a9bff97b59781e28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_eed6a2466df6a7ad9862b176f93e8b5a.setIcon(icon_ccb3e5b511acdca3a9bff97b59781e28);
+        
+    
+        var popup_7994feb6e6ff7369253a8a7e491c9671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbb7a8bbb933073aa46227ede1c99e2d = $(`<div id="html_cbb7a8bbb933073aa46227ede1c99e2d" style="width: 100.0%; height: 100.0%;">23. South Atlantic Waypoint 2<br></div>`)[0];
+            popup_7994feb6e6ff7369253a8a7e491c9671.setContent(html_cbb7a8bbb933073aa46227ede1c99e2d);
+        
+
+        marker_eed6a2466df6a7ad9862b176f93e8b5a.bindPopup(popup_7994feb6e6ff7369253a8a7e491c9671)
+        ;
+
+        
+    
+    
+            marker_eed6a2466df6a7ad9862b176f93e8b5a.bindTooltip(
+                `<div>
+                     23. South Atlantic Waypoint 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cee7daae08e1690b153cbd7f4fda55cf = L.marker(
+                [-8.1, -34.9],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_8eea7d9d7659fd552455cb26b1283fe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cee7daae08e1690b153cbd7f4fda55cf.setIcon(icon_8eea7d9d7659fd552455cb26b1283fe4);
+        
+    
+        var popup_6609bf183849dd278dd97d619a4a78f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b987f0db146c1b1faa4815eaab6b1ab8 = $(`<div id="html_b987f0db146c1b1faa4815eaab6b1ab8" style="width: 100.0%; height: 100.0%;">24. Recife/PE Offshore (BR)<br>Brazil (1912)</div>`)[0];
+            popup_6609bf183849dd278dd97d619a4a78f9.setContent(html_b987f0db146c1b1faa4815eaab6b1ab8);
+        
+
+        marker_cee7daae08e1690b153cbd7f4fda55cf.bindPopup(popup_6609bf183849dd278dd97d619a4a78f9)
+        ;
+
+        
+    
+    
+            marker_cee7daae08e1690b153cbd7f4fda55cf.bindTooltip(
+                `<div>
+                     24. Recife/PE Offshore (BR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db36cdc15acee6c695e0af746c6a9a55 = L.marker(
+                [-23.0, -43.2],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_e2b965ced58ac9f50c90c4b390dcf8cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_db36cdc15acee6c695e0af746c6a9a55.setIcon(icon_e2b965ced58ac9f50c90c4b390dcf8cd);
+        
+    
+        var popup_83e08a765443da73ce4c34990d865ba3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99a407406a0233101d69a2494eb81bc2 = $(`<div id="html_99a407406a0233101d69a2494eb81bc2" style="width: 100.0%; height: 100.0%;">25. Rio de Janeiro Offshore (BR)<br></div>`)[0];
+            popup_83e08a765443da73ce4c34990d865ba3.setContent(html_99a407406a0233101d69a2494eb81bc2);
+        
+
+        marker_db36cdc15acee6c695e0af746c6a9a55.bindPopup(popup_83e08a765443da73ce4c34990d865ba3)
+        ;
+
+        
+    
+    
+            marker_db36cdc15acee6c695e0af746c6a9a55.bindTooltip(
+                `<div>
+                     25. Rio de Janeiro Offshore (BR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1964a046d1a6da69142484bad5b44dee = L.marker(
+                [-35.0, -55.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_53930345e8eb4b40306dfa2194b66436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1964a046d1a6da69142484bad5b44dee.setIcon(icon_53930345e8eb4b40306dfa2194b66436);
+        
+    
+        var popup_3072bafdb78463e83f37dbd1d65b386a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7428856bded19272cb8cd53e734c993c = $(`<div id="html_7428856bded19272cb8cd53e734c993c" style="width: 100.0%; height: 100.0%;">26. Uruguay Offshore<br>Uruguay (1912)</div>`)[0];
+            popup_3072bafdb78463e83f37dbd1d65b386a.setContent(html_7428856bded19272cb8cd53e734c993c);
+        
+
+        marker_1964a046d1a6da69142484bad5b44dee.bindPopup(popup_3072bafdb78463e83f37dbd1d65b386a)
+        ;
+
+        
+    
+    
+            marker_1964a046d1a6da69142484bad5b44dee.bindTooltip(
+                `<div>
+                     26. Uruguay Offshore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93120a416595112124afb7f2b40d838f = L.marker(
+                [-35.4, -57.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_c59c6af89ad0a30e3df1011a4b9785e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_93120a416595112124afb7f2b40d838f.setIcon(icon_c59c6af89ad0a30e3df1011a4b9785e9);
+        
+    
+        var popup_ad850e26ab1abe2b52a760ca1580c696 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01c5bd0e366b8b9d1be9cacdb782663f = $(`<div id="html_01c5bd0e366b8b9d1be9cacdb782663f" style="width: 100.0%; height: 100.0%;">27. Buenos Aires Approach (AR)<br>Argentina (1912)</div>`)[0];
+            popup_ad850e26ab1abe2b52a760ca1580c696.setContent(html_01c5bd0e366b8b9d1be9cacdb782663f);
+        
+
+        marker_93120a416595112124afb7f2b40d838f.bindPopup(popup_ad850e26ab1abe2b52a760ca1580c696)
+        ;
+
+        
+    
+    
+            marker_93120a416595112124afb7f2b40d838f.bindTooltip(
+                `<div>
+                     27. Buenos Aires Approach (AR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fdad87d97e736acc722b25b47a39b5b = L.marker(
+                [-20.0, -40.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_1727d6de6146f3ab114dde36f4958881 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0fdad87d97e736acc722b25b47a39b5b.setIcon(icon_1727d6de6146f3ab114dde36f4958881);
+        
+    
+        var popup_d2cda24e05b326c75db7be3977774f38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_832870d16774925ab4419feb6b37baa1 = $(`<div id="html_832870d16774925ab4419feb6b37baa1" style="width: 100.0%; height: 100.0%;">28. South Atlantic Return<br></div>`)[0];
+            popup_d2cda24e05b326c75db7be3977774f38.setContent(html_832870d16774925ab4419feb6b37baa1);
+        
+
+        marker_0fdad87d97e736acc722b25b47a39b5b.bindPopup(popup_d2cda24e05b326c75db7be3977774f38)
+        ;
+
+        
+    
+    
+            marker_0fdad87d97e736acc722b25b47a39b5b.bindTooltip(
+                `<div>
+                     28. South Atlantic Return
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f7fb066cdcba20d06e62057572a7b9b = L.marker(
+                [12.0, -60.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_8b0fb5f216a25d6d4e493d77cc030d1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4f7fb066cdcba20d06e62057572a7b9b.setIcon(icon_8b0fb5f216a25d6d4e493d77cc030d1d);
+        
+    
+        var popup_433d397555a4924cd457fe986f64568e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35ccc2d9797359b610898b761d403200 = $(`<div id="html_35ccc2d9797359b610898b761d403200" style="width: 100.0%; height: 100.0%;">29. Caribbean Waypoint E<br></div>`)[0];
+            popup_433d397555a4924cd457fe986f64568e.setContent(html_35ccc2d9797359b610898b761d403200);
+        
+
+        marker_4f7fb066cdcba20d06e62057572a7b9b.bindPopup(popup_433d397555a4924cd457fe986f64568e)
+        ;
+
+        
+    
+    
+            marker_4f7fb066cdcba20d06e62057572a7b9b.bindTooltip(
+                `<div>
+                     29. Caribbean Waypoint E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7806fad77cc9ae2a66df5aff679b0ce1 = L.marker(
+                [14.7, -61.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_c5fdb880b0bdfb130f7cb9eabc7e6de8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7806fad77cc9ae2a66df5aff679b0ce1.setIcon(icon_c5fdb880b0bdfb130f7cb9eabc7e6de8);
+        
+    
+        var popup_8f99fca9dd0ec3c0d50b480c2a289520 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caa6ab48508a4829b1b867c2d21b145c = $(`<div id="html_caa6ab48508a4829b1b867c2d21b145c" style="width: 100.0%; height: 100.0%;">30. Martinique (FR) – Offshore<br>Martinique (1912)</div>`)[0];
+            popup_8f99fca9dd0ec3c0d50b480c2a289520.setContent(html_caa6ab48508a4829b1b867c2d21b145c);
+        
+
+        marker_7806fad77cc9ae2a66df5aff679b0ce1.bindPopup(popup_8f99fca9dd0ec3c0d50b480c2a289520)
+        ;
+
+        
+    
+    
+            marker_7806fad77cc9ae2a66df5aff679b0ce1.bindTooltip(
+                `<div>
+                     30. Martinique (FR) – Offshore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f424c771ca7dbc42ea7017bd19d0c2be = L.marker(
+                [18.5, -73.0],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_f194ed54683f03cca775406bdf032240 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f424c771ca7dbc42ea7017bd19d0c2be.setIcon(icon_f194ed54683f03cca775406bdf032240);
+        
+    
+        var popup_4a45560044482546e89c911b1a1b528d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38bb2ff88f91047c5cb432b57b1e8ff6 = $(`<div id="html_38bb2ff88f91047c5cb432b57b1e8ff6" style="width: 100.0%; height: 100.0%;">31. Greater Antilles Mid<br></div>`)[0];
+            popup_4a45560044482546e89c911b1a1b528d.setContent(html_38bb2ff88f91047c5cb432b57b1e8ff6);
+        
+
+        marker_f424c771ca7dbc42ea7017bd19d0c2be.bindPopup(popup_4a45560044482546e89c911b1a1b528d)
+        ;
+
+        
+    
+    
+            marker_f424c771ca7dbc42ea7017bd19d0c2be.bindTooltip(
+                `<div>
+                     31. Greater Antilles Mid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f733ed0fc6bfc3424718b6bf7475c099 = L.marker(
+                [40.5, -73.8],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_f457a48a327446a278eeb2e7cbe5297c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f733ed0fc6bfc3424718b6bf7475c099.setIcon(icon_f457a48a327446a278eeb2e7cbe5297c);
+        
+    
+        var popup_3dc766b1b616b1eab3a3a9115287cfd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc41a7fddb2c38a8c78c2c6ae8fa4d14 = $(`<div id="html_bc41a7fddb2c38a8c78c2c6ae8fa4d14" style="width: 100.0%; height: 100.0%;">32. New York Approach (US)<br>United States (late 1912) – NYC/Brooklyn, Liberty, Harlem</div>`)[0];
+            popup_3dc766b1b616b1eab3a3a9115287cfd9.setContent(html_bc41a7fddb2c38a8c78c2c6ae8fa4d14);
+        
+
+        marker_f733ed0fc6bfc3424718b6bf7475c099.bindPopup(popup_3dc766b1b616b1eab3a3a9115287cfd9)
+        ;
+
+        
+    
+    
+            marker_f733ed0fc6bfc3424718b6bf7475c099.bindTooltip(
+                `<div>
+                     32. New York Approach (US)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83f77c0220db3adf560299661c1f6bd4 = L.marker(
+                [42.3, -70.8],
+                {}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            var icon_5054ad3170391eb1b33da63b47853102 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_83f77c0220db3adf560299661c1f6bd4.setIcon(icon_5054ad3170391eb1b33da63b47853102);
+        
+    
+        var popup_1ee56724594fff6e2858834d6a51e1bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e86b4ca7a297c3ba1dcc521c755a1a27 = $(`<div id="html_e86b4ca7a297c3ba1dcc521c755a1a27" style="width: 100.0%; height: 100.0%;">33. Boston Approach (US)<br>United States – Boston</div>`)[0];
+            popup_1ee56724594fff6e2858834d6a51e1bc.setContent(html_e86b4ca7a297c3ba1dcc521c755a1a27);
+        
+
+        marker_83f77c0220db3adf560299661c1f6bd4.bindPopup(popup_1ee56724594fff6e2858834d6a51e1bc)
+        ;
+
+        
+    
+    
+            marker_83f77c0220db3adf560299661c1f6bd4.bindTooltip(
+                `<div>
+                     33. Boston Approach (US)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_86268f4506d252cecb4f5f38c947775a = L.polyline(
+                [[49.7, 0.0], [49.0, -5.0], [43.5, -9.6], [38.6, -9.6], [35.95, -5.6], [33.9, -7.7], [23.5, -16.0], [14.7, -17.5], [5.0, -5.0], [6.1, 2.4], [3.5, 9.5], [-4.5, 11.8], [-23.0, 14.5], [-35.4, 18.5], [-20.0, 42.0], [-21.15, 55.53], [6.0, 55.0], [13.0, 47.0], [11.6, 43.15], [-5.0, 45.0], [-35.4, 18.5], [-25.0, 10.0], [-17.0, -5.0], [-8.1, -34.9], [-23.0, -43.2], [-35.0, -55.0], [-35.4, -57.0], [-20.0, -40.0], [12.0, -60.0], [14.7, -61.0], [18.5, -73.0], [40.5, -73.8], [42.3, -70.8]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9907a0df2e850b47529df88fc1ffe66e);
+        
+    
+            map_9907a0df2e850b47529df88fc1ffe66e.fitBounds(
+                [[-35.4, -73.8], [49.7, 55.53]],
+                {}
+            );
+        
+</script>
+</html>

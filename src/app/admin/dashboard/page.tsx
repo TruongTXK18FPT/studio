@@ -193,7 +193,7 @@ export default function AdminDashboard() {
   const pendingRate = stats.totalPosts > 0 ? Math.round((stats.pendingPosts / stats.totalPosts) * 100) : 0
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 -mt-6 md:-mt-10">
       {error && (
         <Alert variant="destructive" className="border-red-200 bg-red-50">
           <AlertTriangle className="h-4 w-4" />
@@ -314,9 +314,9 @@ export default function AdminDashboard() {
       </div>
 
       {/* Content Overview & Quick Actions */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="flex flex-col lg:flex-row gap-8">
         {/* Content Status Overview */}
-        <div className="lg:col-span-2">
+        <div className="lg:w-2/3 w-full">
           <Card className="h-full">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -365,7 +365,7 @@ export default function AdminDashboard() {
         </div>
 
         {/* Quick Actions */}
-        <div className="space-y-6">
+        <div className="lg:w-1/3 w-full space-y-6">
           <Card className="border-gradient-to-r from-red-200 to-rose-200">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">

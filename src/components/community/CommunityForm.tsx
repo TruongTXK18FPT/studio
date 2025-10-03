@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -46,6 +46,8 @@ export function CommunityForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [imageDataUrl, setImageDataUrl] = useState<string | undefined>(undefined);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
   
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -73,6 +75,7 @@ export function CommunityForm() {
           tags: values.tags?.split(',').map(tag => tag.trim()).filter(Boolean) || [],
           author: values.author,
           sourceLink: values.sourceLink,
+          imageBase64: imageDataUrl,
         }),
       });
 
@@ -85,6 +88,7 @@ export function CommunityForm() {
           description: 'Bài viết của bạn đã được lưu vào hệ thống và đang chờ kiểm duyệt. Cảm ơn bạn đã đóng góp!',
         });
         form.reset();
+        setImageDataUrl(undefined);
         
         // Reset success state after 5 seconds
         setTimeout(() => setSubmitSuccess(false), 5000);
@@ -283,25 +287,43 @@ export function CommunityForm() {
             )}
           />
 
-          {/* Image Upload Placeholder */}
+          {/* Image Upload */}
           <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center bg-gray-50">
             <ImageIcon className="w-12 h-12 text-gray-400 mx-auto mb-4" />
             <h4 className="text-lg font-medium text-gray-900 mb-2">Tải lên hình ảnh</h4>
-            <p className="text-sm text-gray-600 mb-4">
-              Hình ảnh minh họa sẽ làm bài viết của bạn sinh động và hấp dẫn hơn
-            </p>
-            <Button 
-              type="button" 
-              variant="outline" 
+            <p className="text-sm text-gray-600 mb-4">Hỗ trợ JPG, PNG, GIF. Tối đa 5MB</p>
+            <input
+              type="file"
+              accept="image/*"
+              className="hidden"
+              id="community-image"
+              ref={fileInputRef}
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                if (file.size > 5 * 1024 * 1024) {
+                  toast({ title: 'Ảnh quá lớn', description: 'Giới hạn 5MB', variant: 'destructive' });
+                  return;
+                }
+                const reader = new FileReader();
+                reader.onloadend = () => setImageDataUrl(reader.result as string);
+                reader.readAsDataURL(file);
+              }}
+            />
+            <Button
+              type="button"
+              variant="outline"
               className="border-red-300 text-red-700 hover:bg-red-50"
-              disabled
+              onClick={() => fileInputRef.current?.click()}
             >
               <Upload className="w-4 h-4 mr-2" />
-              Chọn hình ảnh (Sắp có)
+              Chọn hình ảnh
             </Button>
-            <p className="text-xs text-gray-500 mt-2">
-              Hỗ trợ JPG, PNG, GIF. Kích thước tối đa 5MB
-            </p>
+            {imageDataUrl && (
+              <div className="mt-4 flex justify-center">
+                <img src={imageDataUrl} alt="Xem trước" className="max-h-48 rounded-md border" />
+              </div>
+            )}
           </div>
 
           {/* Terms Notice */}

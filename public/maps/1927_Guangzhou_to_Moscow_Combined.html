@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_045dc4a7e417621c1482355b0310fe6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_045dc4a7e417621c1482355b0310fe6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_045dc4a7e417621c1482355b0310fe6f = L.map(
+                "map_045dc4a7e417621c1482355b0310fe6f",
+                {
+                    center: [38.0, 110.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db8487e4f9051eff2b5711986593d7c4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_045dc4a7e417621c1482355b0310fe6f);
+        
+    
+            var feature_group_73f99d08e45ed766847bffbf4019092c = L.featureGroup(
+                {}
+            ).addTo(map_045dc4a7e417621c1482355b0310fe6f);
+        
+    
+            var poly_line_b7b36acdd75a7bd4fa59f4b36d1d3a29 = L.polyline(
+                [[23.1291, 113.2644], [22.8, 113.9], [22.3193, 114.1694]],
+                {"bubblingMouseEvents": true, "color": "#9ca3af", "dashArray": "6,10", "dashOffset": null, "fill": false, "fillColor": "#9ca3af", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_73f99d08e45ed766847bffbf4019092c);
+        
+    
+            poly_line_b7b36acdd75a7bd4fa59f4b36d1d3a29.bindTooltip(
+                `<div>
+                     Overland context: Guangzhou → Hong Kong
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d09557e5edd562141bd834326ba7b2f4 = L.marker(
+                [23.1291, 113.2644],
+                {}
+            ).addTo(feature_group_73f99d08e45ed766847bffbf4019092c);
+        
+    
+            var icon_81eacebdcdbe2d2d5b37a2b974369801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_d09557e5edd562141bd834326ba7b2f4.setIcon(icon_81eacebdcdbe2d2d5b37a2b974369801);
+        
+    
+        var popup_584addaf58bd0ed64be6a042ea95837f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a89cfcc575075916d943e297e0cab75 = $(`<div id="html_2a89cfcc575075916d943e297e0cab75" style="width: 100.0%; height: 100.0%;"><b>Guangzhou (Quảng Châu)</b><br>Rời sau biến cố 4/1927; đầu 5/1927 đi Hồng Kông</div>`)[0];
+            popup_584addaf58bd0ed64be6a042ea95837f.setContent(html_2a89cfcc575075916d943e297e0cab75);
+        
+
+        marker_d09557e5edd562141bd834326ba7b2f4.bindPopup(popup_584addaf58bd0ed64be6a042ea95837f)
+        ;
+
+        
+    
+    
+            marker_d09557e5edd562141bd834326ba7b2f4.bindTooltip(
+                `<div>
+                     Guangzhou (Quảng Châu)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c9b8c07bdbef7e8eefb375bc94be345 = L.marker(
+                [22.3193, 114.1694],
+                {}
+            ).addTo(feature_group_73f99d08e45ed766847bffbf4019092c);
+        
+    
+            var icon_1e36ad7d8a6be8e3fa32f1f8f1cfe9e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_0c9b8c07bdbef7e8eefb375bc94be345.setIcon(icon_1e36ad7d8a6be8e3fa32f1f8f1cfe9e3);
+        
+    
+        var popup_5f6a46df1205dc0ac2fd00d1df894814 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a06f2abcb0b27ed95b19600be126920c = $(`<div id="html_a06f2abcb0b27ed95b19600be126920c" style="width: 100.0%; height: 100.0%;"><b>Hong Kong</b><br>Đầu 5/1927</div>`)[0];
+            popup_5f6a46df1205dc0ac2fd00d1df894814.setContent(html_a06f2abcb0b27ed95b19600be126920c);
+        
+
+        marker_0c9b8c07bdbef7e8eefb375bc94be345.bindPopup(popup_5f6a46df1205dc0ac2fd00d1df894814)
+        ;
+
+        
+    
+    
+            marker_0c9b8c07bdbef7e8eefb375bc94be345.bindTooltip(
+                `<div>
+                     Hong Kong
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_0c02b7342c1ffa208dff9dd16f826c44 = L.featureGroup(
+                {}
+            ).addTo(map_045dc4a7e417621c1482355b0310fe6f);
+        
+    
+            var circle_marker_b6bea6dbb26a7201fb1681238c901eae = L.circleMarker(
+                [22.8, 115.5],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var circle_marker_cdadb0a2d622a9450d9fa23ddf945335 = L.circleMarker(
+                [24.5, 118.0],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var circle_marker_628bc4ba480e2a2728643a222c53aa16 = L.circleMarker(
+                [26.6, 121.0],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var circle_marker_ab6ce8c2dc79aa794cfa57af61f556d1 = L.circleMarker(
+                [29.0, 122.5],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var circle_marker_562a9b85d174d4429630fa2f68014896 = L.circleMarker(
+                [31.2304, 121.4737],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var circle_marker_726ba1e54a67cbd9ef3dd8a5c61f9d03 = L.circleMarker(
+                [32.0, 123.0],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var circle_marker_93c8a5ba8a3efdf628a74a3b4722fa26 = L.circleMarker(
+                [34.0, 129.0],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var circle_marker_a872425c036ac9fbd415da066ff569a5 = L.circleMarker(
+                [38.0, 134.0],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var circle_marker_09aac42196042c84cce1c3dcf6eac853 = L.circleMarker(
+                [41.5, 135.5],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var marker_8d2d10ee456e82f1d853c8a6f0bc655e = L.marker(
+                [22.3193, 114.1694],
+                {}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var icon_e461c727b1b2b425712c01e50cd0229e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8d2d10ee456e82f1d853c8a6f0bc655e.setIcon(icon_e461c727b1b2b425712c01e50cd0229e);
+        
+    
+        var popup_c1a8b56c837e3d64321502739b5a7c8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c28be9c254ccda81814810cb50b0a4ef = $(`<div id="html_c28be9c254ccda81814810cb50b0a4ef" style="width: 100.0%; height: 100.0%;"><b>Hong Kong</b><br>Đầu 5/1927</div>`)[0];
+            popup_c1a8b56c837e3d64321502739b5a7c8c.setContent(html_c28be9c254ccda81814810cb50b0a4ef);
+        
+
+        marker_8d2d10ee456e82f1d853c8a6f0bc655e.bindPopup(popup_c1a8b56c837e3d64321502739b5a7c8c)
+        ;
+
+        
+    
+    
+            marker_8d2d10ee456e82f1d853c8a6f0bc655e.bindTooltip(
+                `<div>
+                     Hong Kong
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31c4376883102a45cbca8c2561c54df5 = L.marker(
+                [31.2304, 121.4737],
+                {}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var icon_8c795f007451a5af30e1762bbbefdd96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_31c4376883102a45cbca8c2561c54df5.setIcon(icon_8c795f007451a5af30e1762bbbefdd96);
+        
+    
+        var popup_2fdafecef48146e4b43fcf0cc10c6882 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58a281e08f175d8e6f1852fe0fbc9b40 = $(`<div id="html_58a281e08f175d8e6f1852fe0fbc9b40" style="width: 100.0%; height: 100.0%;"><b>Shanghai (Thượng Hải)</b><br>Đầu–giữa 5/1927</div>`)[0];
+            popup_2fdafecef48146e4b43fcf0cc10c6882.setContent(html_58a281e08f175d8e6f1852fe0fbc9b40);
+        
+
+        marker_31c4376883102a45cbca8c2561c54df5.bindPopup(popup_2fdafecef48146e4b43fcf0cc10c6882)
+        ;
+
+        
+    
+    
+            marker_31c4376883102a45cbca8c2561c54df5.bindTooltip(
+                `<div>
+                     Shanghai (Thượng Hải)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_903c02ef1c33ab3e8e902a963222538d = L.marker(
+                [32.0, 123.0],
+                {}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var icon_9b56d44cb120212210a970028f1d5c9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_903c02ef1c33ab3e8e902a963222538d.setIcon(icon_9b56d44cb120212210a970028f1d5c9f);
+        
+    
+        var popup_a1f24fd5c97f497eaa762517b8b29a7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_933ebaa6cc7f4b3cbcb3d80dfa2dbf72 = $(`<div id="html_933ebaa6cc7f4b3cbcb3d80dfa2dbf72" style="width: 100.0%; height: 100.0%;"><b>Offshore East China Sea</b><br></div>`)[0];
+            popup_a1f24fd5c97f497eaa762517b8b29a7a.setContent(html_933ebaa6cc7f4b3cbcb3d80dfa2dbf72);
+        
+
+        marker_903c02ef1c33ab3e8e902a963222538d.bindPopup(popup_a1f24fd5c97f497eaa762517b8b29a7a)
+        ;
+
+        
+    
+    
+            marker_903c02ef1c33ab3e8e902a963222538d.bindTooltip(
+                `<div>
+                     Offshore East China Sea
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c1b681e986fbe43566378f56efcdc81 = L.marker(
+                [43.1155, 131.8855],
+                {}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            var icon_40c4e027ad727a9a57b50ece32bae905 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1c1b681e986fbe43566378f56efcdc81.setIcon(icon_40c4e027ad727a9a57b50ece32bae905);
+        
+    
+        var popup_e3dfa535f75b80bd64f2209ff5bf1ed4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3a596e420471d28ea27f460bbf076a1 = $(`<div id="html_b3a596e420471d28ea27f460bbf076a1" style="width: 100.0%; height: 100.0%;"><b>Vladivostok</b><br>Cuối 5/1927 (đến bằng đường biển)</div>`)[0];
+            popup_e3dfa535f75b80bd64f2209ff5bf1ed4.setContent(html_b3a596e420471d28ea27f460bbf076a1);
+        
+
+        marker_1c1b681e986fbe43566378f56efcdc81.bindPopup(popup_e3dfa535f75b80bd64f2209ff5bf1ed4)
+        ;
+
+        
+    
+    
+            marker_1c1b681e986fbe43566378f56efcdc81.bindTooltip(
+                `<div>
+                     Vladivostok
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_05040641cf59248c17e2475c374e35cb = L.polyline(
+                [[22.3193, 114.1694], [22.8, 115.5], [24.5, 118.0], [26.6, 121.0], [29.0, 122.5], [31.2304, 121.4737], [32.0, 123.0], [34.0, 129.0], [38.0, 134.0], [41.5, 135.5], [43.1155, 131.8855]],
+                {"bubblingMouseEvents": true, "color": "#2563eb", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2563eb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_0c02b7342c1ffa208dff9dd16f826c44);
+        
+    
+            poly_line_05040641cf59248c17e2475c374e35cb.bindTooltip(
+                `<div>
+                     Sea leg: Hong Kong → Shanghai → Vladivostok (no land crossing)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_ce85f404578238ea126e01395825ee1f = L.featureGroup(
+                {}
+            ).addTo(map_045dc4a7e417621c1482355b0310fe6f);
+        
+    
+            var marker_691e0ec4346ba6875019e0d08d352f5d = L.marker(
+                [43.1155, 131.8855],
+                {}
+            ).addTo(feature_group_ce85f404578238ea126e01395825ee1f);
+        
+    
+            var icon_b3f4d98503be682cccc1ad5a9ba95735 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_691e0ec4346ba6875019e0d08d352f5d.setIcon(icon_b3f4d98503be682cccc1ad5a9ba95735);
+        
+    
+        var popup_255a18fac28bbee0d216007d36294b6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf55db475bd1e3e23d050917eb99274c = $(`<div id="html_cf55db475bd1e3e23d050917eb99274c" style="width: 100.0%; height: 100.0%;"><b>Vladivostok</b><br>Cuối 5/1927 (đến bằng đường biển)</div>`)[0];
+            popup_255a18fac28bbee0d216007d36294b6b.setContent(html_cf55db475bd1e3e23d050917eb99274c);
+        
+
+        marker_691e0ec4346ba6875019e0d08d352f5d.bindPopup(popup_255a18fac28bbee0d216007d36294b6b)
+        ;
+
+        
+    
+    
+            marker_691e0ec4346ba6875019e0d08d352f5d.bindTooltip(
+                `<div>
+                     Vladivostok
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e856f955aefe6959bf622b99c3646f0 = L.marker(
+                [55.7558, 37.6173],
+                {}
+            ).addTo(feature_group_ce85f404578238ea126e01395825ee1f);
+        
+    
+            var icon_a43f319210c2c75a7d62effb7d50c61a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5e856f955aefe6959bf622b99c3646f0.setIcon(icon_a43f319210c2c75a7d62effb7d50c61a);
+        
+    
+        var popup_4c14abb6bfa94c591121d48051873c01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d30a7ee9a8ab2c96f647892a231ee4b = $(`<div id="html_0d30a7ee9a8ab2c96f647892a231ee4b" style="width: 100.0%; height: 100.0%;"><b>Moscow (Moskva)</b><br>Đến 15/6/1927 (đường sắt)</div>`)[0];
+            popup_4c14abb6bfa94c591121d48051873c01.setContent(html_0d30a7ee9a8ab2c96f647892a231ee4b);
+        
+
+        marker_5e856f955aefe6959bf622b99c3646f0.bindPopup(popup_4c14abb6bfa94c591121d48051873c01)
+        ;
+
+        
+    
+    
+            marker_5e856f955aefe6959bf622b99c3646f0.bindTooltip(
+                `<div>
+                     Moscow (Moskva)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_418854bbabe0b71f0dc9dc7f83388a68 = L.polyline(
+                [[43.1155, 131.8855], [48.4808, 135.0928], [55.03, 82.92], [56.5, 84.97], [56.85, 60.61], [55.03, 73.4], [55.75, 49.13], [56.33, 44.0], [55.7558, 37.6173]],
+                {"bubblingMouseEvents": true, "color": "#16a34a", "dashArray": "6,10", "dashOffset": null, "fill": false, "fillColor": "#16a34a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_ce85f404578238ea126e01395825ee1f);
+        
+    
+            poly_line_418854bbabe0b71f0dc9dc7f83388a68.bindTooltip(
+                `<div>
+                     Trans-Siberian (illustrative corridor)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_f083c880cb6662b6a9438ea970d3c3f4 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_db8487e4f9051eff2b5711986593d7c4,
+                },
+                overlays :  {
+                    "Overland: Qu\u1ea3ng Ch\u00e2u \u2192 H\u1ed3ng K\u00f4ng (\u0111\u1ea7u 5/1927)" : feature_group_73f99d08e45ed766847bffbf4019092c,
+                    "Sea-only: Hong Kong \u2192 Shanghai \u2192 Vladivostok (~3576.0 km)" : feature_group_0c02b7342c1ffa208dff9dd16f826c44,
+                    "Rail/Overland: Vladivostok \u2192 Moscow (\u0111\u1ebfn 15/6/1927, ~8985.0 km)" : feature_group_ce85f404578238ea126e01395825ee1f,
+                },
+            };
+            L.control.layers(
+                layer_control_f083c880cb6662b6a9438ea970d3c3f4.base_layers,
+                layer_control_f083c880cb6662b6a9438ea970d3c3f4.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_045dc4a7e417621c1482355b0310fe6f);
+        
+    
+            map_045dc4a7e417621c1482355b0310fe6f.fitBounds(
+                [[22.3193, 37.6173], [56.85, 135.5]],
+                {}
+            );
+        
+</script>
+</html>

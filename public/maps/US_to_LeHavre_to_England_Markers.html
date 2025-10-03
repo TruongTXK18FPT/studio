@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_59af7669442358bfff2ec87696dd1e73 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_59af7669442358bfff2ec87696dd1e73" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_59af7669442358bfff2ec87696dd1e73 = L.map(
+                "map_59af7669442358bfff2ec87696dd1e73",
+                {
+                    center: [47.0, -15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_85252209d643bd63c0580000cbd29256 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_59af7669442358bfff2ec87696dd1e73);
+        
+    
+
+        function geo_json_87323e8674d4060c8d61ba52eb8be28f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_87323e8674d4060c8d61ba52eb8be28f = L.geoJson(null, {
+                onEachFeature: geo_json_87323e8674d4060c8d61ba52eb8be28f_onEachFeature,
+            
+        });
+
+        function geo_json_87323e8674d4060c8d61ba52eb8be28f_add (data) {
+            geo_json_87323e8674d4060c8d61ba52eb8be28f
+                .addData(data)
+                .addTo(map_59af7669442358bfff2ec87696dd1e73);
+        }
+            geo_json_87323e8674d4060c8d61ba52eb8be28f_add({"features": [{"geometry": {"coordinates": [-73.8, 40.5], "type": "Point"}, "properties": {"name": "New York Harbor Approach", "note": "Board ship (1912\u20131913)", "seq": 1}, "type": "Feature"}, {"geometry": {"coordinates": [-73.75, 40.35], "type": "Point"}, "properties": {"name": "Ambrose Channel Waypoint", "note": "", "seq": 2}, "type": "Feature"}, {"geometry": {"coordinates": [-69.0, 40.9], "type": "Point"}, "properties": {"name": "Offshore Nantucket", "note": "", "seq": 3}, "type": "Feature"}, {"geometry": {"coordinates": [-50.0, 43.5], "type": "Point"}, "properties": {"name": "Grand Banks South", "note": "", "seq": 4}, "type": "Feature"}, {"geometry": {"coordinates": [-30.0, 47.0], "type": "Point"}, "properties": {"name": "North Atlantic Mid", "note": "", "seq": 5}, "type": "Feature"}, {"geometry": {"coordinates": [-10.0, 49.0], "type": "Point"}, "properties": {"name": "SW Approaches (UK)", "note": "", "seq": 6}, "type": "Feature"}, {"geometry": {"coordinates": [-5.0, 49.2], "type": "Point"}, "properties": {"name": "English Channel W", "note": "", "seq": 7}, "type": "Feature"}, {"geometry": {"coordinates": [-2.0, 49.7], "type": "Point"}, "properties": {"name": "Off Cotentin (FR)", "note": "", "seq": 8}, "type": "Feature"}, {"geometry": {"coordinates": [-0.8, 49.6], "type": "Point"}, "properties": {"name": "Approach Seine Bay", "note": "", "seq": 9}, "type": "Feature"}, {"geometry": {"coordinates": [0.1079, 49.4944], "type": "Point"}, "properties": {"name": "Le Havre (FR)", "note": "Arrive Le Havre", "seq": 10}, "type": "Feature"}, {"geometry": {"coordinates": [0.0, 49.55], "type": "Point"}, "properties": {"name": "Cap de la H\u00e8ve Offshore", "note": "", "seq": 11}, "type": "Feature"}, {"geometry": {"coordinates": [-0.9, 50.1], "type": "Point"}, "properties": {"name": "Mid-Channel (FR-UK)", "note": "", "seq": 12}, "type": "Feature"}, {"geometry": {"coordinates": [0.25, 50.7], "type": "Point"}, "properties": {"name": "Off Beachy Head (UK)", "note": "", "seq": 13}, "type": "Feature"}, {"geometry": {"coordinates": [0.0521, 50.7928], "type": "Point"}, "properties": {"name": "Newhaven (UK)", "note": "Arrive England (ferry port)", "seq": 14}, "type": "Feature"}, {"geometry": {"coordinates": [[-73.8, 40.5], [-73.75, 40.35], [-69.0, 40.9], [-50.0, 43.5], [-30.0, 47.0], [-10.0, 49.0], [-5.0, 49.2], [-2.0, 49.7], [-0.8, 49.6], [0.1079, 49.4944], [0.0, 49.55], [-0.9, 50.1], [0.25, 50.7], [0.0521, 50.7928]], "type": "LineString"}, "properties": {"name": "US \u2192 Le Havre \u2192 England (sea-only)", "total_km_est": 6082.8}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var feature_group_071194080981e9b5c15c1bb1d847698b = L.featureGroup(
+                {}
+            ).addTo(map_59af7669442358bfff2ec87696dd1e73);
+        
+    
+            var marker_53600bc7f8931d1c73be4871318e5971 = L.marker(
+                [40.5, -73.8],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_1efafe8e61f9d4e76a104af87b37c542 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_53600bc7f8931d1c73be4871318e5971.setIcon(icon_1efafe8e61f9d4e76a104af87b37c542);
+        
+    
+        var popup_a2bbce9d2094183652a8472828cec590 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e028f5247b322f4b2c152ecfb07087e = $(`<div id="html_6e028f5247b322f4b2c152ecfb07087e" style="width: 100.0%; height: 100.0%;"><b>1. New York Harbor Approach</b><br>Board ship (1912–1913)</div>`)[0];
+            popup_a2bbce9d2094183652a8472828cec590.setContent(html_6e028f5247b322f4b2c152ecfb07087e);
+        
+
+        marker_53600bc7f8931d1c73be4871318e5971.bindPopup(popup_a2bbce9d2094183652a8472828cec590)
+        ;
+
+        
+    
+    
+            marker_53600bc7f8931d1c73be4871318e5971.bindTooltip(
+                `<div>
+                     1. New York Harbor Approach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f64933d2865689cb6ea8c7388e85b63 = L.marker(
+                [40.35, -73.75],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_e3bef0bd153acbb12c450d837be00099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5f64933d2865689cb6ea8c7388e85b63.setIcon(icon_e3bef0bd153acbb12c450d837be00099);
+        
+    
+        var popup_281c2542c84e7b28c777a4f243b88a37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25e15b5611a9558cf9578e9fa6e5864d = $(`<div id="html_25e15b5611a9558cf9578e9fa6e5864d" style="width: 100.0%; height: 100.0%;"><b>2. Ambrose Channel Waypoint</b><br></div>`)[0];
+            popup_281c2542c84e7b28c777a4f243b88a37.setContent(html_25e15b5611a9558cf9578e9fa6e5864d);
+        
+
+        marker_5f64933d2865689cb6ea8c7388e85b63.bindPopup(popup_281c2542c84e7b28c777a4f243b88a37)
+        ;
+
+        
+    
+    
+            marker_5f64933d2865689cb6ea8c7388e85b63.bindTooltip(
+                `<div>
+                     2. Ambrose Channel Waypoint
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ed795237a0e33f46a43fef702117f6f = L.marker(
+                [40.9, -69.0],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_7bfa2b2e6d1749b8a2d80966581f2933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8ed795237a0e33f46a43fef702117f6f.setIcon(icon_7bfa2b2e6d1749b8a2d80966581f2933);
+        
+    
+        var popup_69fee0e79ff261130a2df0abbc91d856 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bf1cfef025e220e21cdf93e0ff2a09c = $(`<div id="html_1bf1cfef025e220e21cdf93e0ff2a09c" style="width: 100.0%; height: 100.0%;"><b>3. Offshore Nantucket</b><br></div>`)[0];
+            popup_69fee0e79ff261130a2df0abbc91d856.setContent(html_1bf1cfef025e220e21cdf93e0ff2a09c);
+        
+
+        marker_8ed795237a0e33f46a43fef702117f6f.bindPopup(popup_69fee0e79ff261130a2df0abbc91d856)
+        ;
+
+        
+    
+    
+            marker_8ed795237a0e33f46a43fef702117f6f.bindTooltip(
+                `<div>
+                     3. Offshore Nantucket
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98f9b3927481a56feac2c73b4b5322a3 = L.marker(
+                [43.5, -50.0],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_4e6d431b7cb044e79f07ece1e7b910fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_98f9b3927481a56feac2c73b4b5322a3.setIcon(icon_4e6d431b7cb044e79f07ece1e7b910fe);
+        
+    
+        var popup_94c0db8706b2e101683e8328f91354e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e18d4266bb1e2ad7dd3ed48fd946c30c = $(`<div id="html_e18d4266bb1e2ad7dd3ed48fd946c30c" style="width: 100.0%; height: 100.0%;"><b>4. Grand Banks South</b><br></div>`)[0];
+            popup_94c0db8706b2e101683e8328f91354e4.setContent(html_e18d4266bb1e2ad7dd3ed48fd946c30c);
+        
+
+        marker_98f9b3927481a56feac2c73b4b5322a3.bindPopup(popup_94c0db8706b2e101683e8328f91354e4)
+        ;
+
+        
+    
+    
+            marker_98f9b3927481a56feac2c73b4b5322a3.bindTooltip(
+                `<div>
+                     4. Grand Banks South
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_318a6e6cccbc88a64293f47860092af4 = L.marker(
+                [47.0, -30.0],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_20891db3e62b093d04d67f97329a41c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_318a6e6cccbc88a64293f47860092af4.setIcon(icon_20891db3e62b093d04d67f97329a41c4);
+        
+    
+        var popup_56d742570b7a42a375648ddc919732e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1575a4c5c580b579c618ec30a506775c = $(`<div id="html_1575a4c5c580b579c618ec30a506775c" style="width: 100.0%; height: 100.0%;"><b>5. North Atlantic Mid</b><br></div>`)[0];
+            popup_56d742570b7a42a375648ddc919732e6.setContent(html_1575a4c5c580b579c618ec30a506775c);
+        
+
+        marker_318a6e6cccbc88a64293f47860092af4.bindPopup(popup_56d742570b7a42a375648ddc919732e6)
+        ;
+
+        
+    
+    
+            marker_318a6e6cccbc88a64293f47860092af4.bindTooltip(
+                `<div>
+                     5. North Atlantic Mid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_862e35b9005d0f8a8e1588d6e6bba6ea = L.marker(
+                [49.0, -10.0],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_d1478d560fb77b4d2ec3083dd019e3c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_862e35b9005d0f8a8e1588d6e6bba6ea.setIcon(icon_d1478d560fb77b4d2ec3083dd019e3c7);
+        
+    
+        var popup_4192393f28e2e48e7dd5b002a869a522 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee76b4467292964214e764866a8a1329 = $(`<div id="html_ee76b4467292964214e764866a8a1329" style="width: 100.0%; height: 100.0%;"><b>6. SW Approaches (UK)</b><br></div>`)[0];
+            popup_4192393f28e2e48e7dd5b002a869a522.setContent(html_ee76b4467292964214e764866a8a1329);
+        
+
+        marker_862e35b9005d0f8a8e1588d6e6bba6ea.bindPopup(popup_4192393f28e2e48e7dd5b002a869a522)
+        ;
+
+        
+    
+    
+            marker_862e35b9005d0f8a8e1588d6e6bba6ea.bindTooltip(
+                `<div>
+                     6. SW Approaches (UK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_655c453dd7be02f6038906f761cfa9c3 = L.marker(
+                [49.2, -5.0],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_0c75db85c385ffb24c532e22090c117c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_655c453dd7be02f6038906f761cfa9c3.setIcon(icon_0c75db85c385ffb24c532e22090c117c);
+        
+    
+        var popup_25cde5b3e9f24e2d5de7816ac6814b02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a896b43bd471b84818bdf1716864d020 = $(`<div id="html_a896b43bd471b84818bdf1716864d020" style="width: 100.0%; height: 100.0%;"><b>7. English Channel W</b><br></div>`)[0];
+            popup_25cde5b3e9f24e2d5de7816ac6814b02.setContent(html_a896b43bd471b84818bdf1716864d020);
+        
+
+        marker_655c453dd7be02f6038906f761cfa9c3.bindPopup(popup_25cde5b3e9f24e2d5de7816ac6814b02)
+        ;
+
+        
+    
+    
+            marker_655c453dd7be02f6038906f761cfa9c3.bindTooltip(
+                `<div>
+                     7. English Channel W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1386b56116d8cbab403889c3db312747 = L.marker(
+                [49.7, -2.0],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_dd8be57ae060a0081a1dfa1b791a81bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1386b56116d8cbab403889c3db312747.setIcon(icon_dd8be57ae060a0081a1dfa1b791a81bd);
+        
+    
+        var popup_90318ac5b632803a569fb8dd91a5f63e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c00add49c7c4278739cea27a955f3929 = $(`<div id="html_c00add49c7c4278739cea27a955f3929" style="width: 100.0%; height: 100.0%;"><b>8. Off Cotentin (FR)</b><br></div>`)[0];
+            popup_90318ac5b632803a569fb8dd91a5f63e.setContent(html_c00add49c7c4278739cea27a955f3929);
+        
+
+        marker_1386b56116d8cbab403889c3db312747.bindPopup(popup_90318ac5b632803a569fb8dd91a5f63e)
+        ;
+
+        
+    
+    
+            marker_1386b56116d8cbab403889c3db312747.bindTooltip(
+                `<div>
+                     8. Off Cotentin (FR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f0ed21ab5b6b55a7b985adea6e0e57b = L.marker(
+                [49.6, -0.8],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_2b97bdb4eaabc574dc6eba3b47d55199 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3f0ed21ab5b6b55a7b985adea6e0e57b.setIcon(icon_2b97bdb4eaabc574dc6eba3b47d55199);
+        
+    
+        var popup_a24761875f78786a5993c23cc041d563 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47e56d34f1beee034394bf12e809698d = $(`<div id="html_47e56d34f1beee034394bf12e809698d" style="width: 100.0%; height: 100.0%;"><b>9. Approach Seine Bay</b><br></div>`)[0];
+            popup_a24761875f78786a5993c23cc041d563.setContent(html_47e56d34f1beee034394bf12e809698d);
+        
+
+        marker_3f0ed21ab5b6b55a7b985adea6e0e57b.bindPopup(popup_a24761875f78786a5993c23cc041d563)
+        ;
+
+        
+    
+    
+            marker_3f0ed21ab5b6b55a7b985adea6e0e57b.bindTooltip(
+                `<div>
+                     9. Approach Seine Bay
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff2a3526912ab855c3550a78c689c22f = L.marker(
+                [49.4944, 0.1079],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_06c8d1777608c75f72a118e533df252a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ff2a3526912ab855c3550a78c689c22f.setIcon(icon_06c8d1777608c75f72a118e533df252a);
+        
+    
+        var popup_38f95c0db9fdf5d8009c9044b00b3466 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15851b5d1e708c4fbcf5c38dfdddd194 = $(`<div id="html_15851b5d1e708c4fbcf5c38dfdddd194" style="width: 100.0%; height: 100.0%;"><b>10. Le Havre (FR)</b><br>Arrive Le Havre</div>`)[0];
+            popup_38f95c0db9fdf5d8009c9044b00b3466.setContent(html_15851b5d1e708c4fbcf5c38dfdddd194);
+        
+
+        marker_ff2a3526912ab855c3550a78c689c22f.bindPopup(popup_38f95c0db9fdf5d8009c9044b00b3466)
+        ;
+
+        
+    
+    
+            marker_ff2a3526912ab855c3550a78c689c22f.bindTooltip(
+                `<div>
+                     10. Le Havre (FR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_845a32f328a500edaca7394234bd0143 = L.marker(
+                [49.55, 0.0],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_4d0f6bdd27ede2d7ecbba15a9d15038d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_845a32f328a500edaca7394234bd0143.setIcon(icon_4d0f6bdd27ede2d7ecbba15a9d15038d);
+        
+    
+        var popup_80347eda8cbc6f8af69dfe548ffd92d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a41a53958a6bf949afe45157dbc30450 = $(`<div id="html_a41a53958a6bf949afe45157dbc30450" style="width: 100.0%; height: 100.0%;"><b>11. Cap de la Hève Offshore</b><br></div>`)[0];
+            popup_80347eda8cbc6f8af69dfe548ffd92d1.setContent(html_a41a53958a6bf949afe45157dbc30450);
+        
+
+        marker_845a32f328a500edaca7394234bd0143.bindPopup(popup_80347eda8cbc6f8af69dfe548ffd92d1)
+        ;
+
+        
+    
+    
+            marker_845a32f328a500edaca7394234bd0143.bindTooltip(
+                `<div>
+                     11. Cap de la Hève Offshore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bad791a88d1f793e9f40844a5e303e9 = L.marker(
+                [50.1, -0.9],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_a3ef6ac952a3e3f3883126931ef91379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1bad791a88d1f793e9f40844a5e303e9.setIcon(icon_a3ef6ac952a3e3f3883126931ef91379);
+        
+    
+        var popup_f619896c72d2208ee94075ff1befb420 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f97a67aeaa11e7c84264287b4d3920ae = $(`<div id="html_f97a67aeaa11e7c84264287b4d3920ae" style="width: 100.0%; height: 100.0%;"><b>12. Mid-Channel (FR-UK)</b><br></div>`)[0];
+            popup_f619896c72d2208ee94075ff1befb420.setContent(html_f97a67aeaa11e7c84264287b4d3920ae);
+        
+
+        marker_1bad791a88d1f793e9f40844a5e303e9.bindPopup(popup_f619896c72d2208ee94075ff1befb420)
+        ;
+
+        
+    
+    
+            marker_1bad791a88d1f793e9f40844a5e303e9.bindTooltip(
+                `<div>
+                     12. Mid-Channel (FR-UK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9414b4a7cc838db983f6cf9ff31f9324 = L.marker(
+                [50.7, 0.25],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_03c23452bb06126a733213781544df23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9414b4a7cc838db983f6cf9ff31f9324.setIcon(icon_03c23452bb06126a733213781544df23);
+        
+    
+        var popup_42b2835ae69b6390b65cc28f4278bc7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c03e325f93db36206217d856e9e8eb0e = $(`<div id="html_c03e325f93db36206217d856e9e8eb0e" style="width: 100.0%; height: 100.0%;"><b>13. Off Beachy Head (UK)</b><br></div>`)[0];
+            popup_42b2835ae69b6390b65cc28f4278bc7a.setContent(html_c03e325f93db36206217d856e9e8eb0e);
+        
+
+        marker_9414b4a7cc838db983f6cf9ff31f9324.bindPopup(popup_42b2835ae69b6390b65cc28f4278bc7a)
+        ;
+
+        
+    
+    
+            marker_9414b4a7cc838db983f6cf9ff31f9324.bindTooltip(
+                `<div>
+                     13. Off Beachy Head (UK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81b4096674ab8fa4c6ffa290031f7e64 = L.marker(
+                [50.7928, 0.0521],
+                {}
+            ).addTo(feature_group_071194080981e9b5c15c1bb1d847698b);
+        
+    
+            var icon_890afbd3e1b48afbed0966f8449b4a2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_81b4096674ab8fa4c6ffa290031f7e64.setIcon(icon_890afbd3e1b48afbed0966f8449b4a2d);
+        
+    
+        var popup_b61362222570c478c2d9013fda973c5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f630f6da870cd7edd9fd7491dddc3296 = $(`<div id="html_f630f6da870cd7edd9fd7491dddc3296" style="width: 100.0%; height: 100.0%;"><b>14. Newhaven (UK)</b><br>Arrive England (ferry port)</div>`)[0];
+            popup_b61362222570c478c2d9013fda973c5a.setContent(html_f630f6da870cd7edd9fd7491dddc3296);
+        
+
+        marker_81b4096674ab8fa4c6ffa290031f7e64.bindPopup(popup_b61362222570c478c2d9013fda973c5a)
+        ;
+
+        
+    
+    
+            marker_81b4096674ab8fa4c6ffa290031f7e64.bindTooltip(
+                `<div>
+                     14. Newhaven (UK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_b8a7caa5691ac8f812525f202f8b5a61 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_85252209d643bd63c0580000cbd29256,
+                },
+                overlays :  {
+                    "Sea-only Route" : geo_json_87323e8674d4060c8d61ba52eb8be28f,
+                    "Key markers" : feature_group_071194080981e9b5c15c1bb1d847698b,
+                },
+            };
+            L.control.layers(
+                layer_control_b8a7caa5691ac8f812525f202f8b5a61.base_layers,
+                layer_control_b8a7caa5691ac8f812525f202f8b5a61.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_59af7669442358bfff2ec87696dd1e73);
+        
+</script>
+</html>

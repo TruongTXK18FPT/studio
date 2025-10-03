@@ -37,7 +37,7 @@ export async function GET(request: NextRequest) {
         tags: true,
         createdAt: true,
         updatedAt: true,
-        metadata: true
+        // metadata omitted for compatibility
       }
     })
 

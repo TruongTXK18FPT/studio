@@ -149,9 +149,6 @@ export default function VirtualMuseumPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Nguồn thông tin</h3>
-                <p className="text-lg text-gray-700 mb-4">
-                  Bảo tàng ảo được phát triển bởi baotangao.com - nền tảng bảo tàng ảo hàng đầu Việt Nam
-                </p>
                 <div className="flex items-center gap-4">
                   <Badge variant="outline" className="border-red-200 text-red-800">
                     Nguồn chính thức

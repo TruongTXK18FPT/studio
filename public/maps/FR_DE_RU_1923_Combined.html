@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d4c087f5966b8c0a2d89a3fcb9545b1e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d4c087f5966b8c0a2d89a3fcb9545b1e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d4c087f5966b8c0a2d89a3fcb9545b1e = L.map(
+                "map_d4c087f5966b8c0a2d89a3fcb9545b1e",
+                {
+                    center: [54.5, 12.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c1f4ab975e9804b91888f6431d7394b7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d4c087f5966b8c0a2d89a3fcb9545b1e);
+        
+    
+            var feature_group_88172e0a289bb2d07ddc7d3a54b876c5 = L.featureGroup(
+                {}
+            ).addTo(map_d4c087f5966b8c0a2d89a3fcb9545b1e);
+        
+    
+            var poly_line_d4923f80d006ca862b12f6d3247cbfba = L.polyline(
+                [[48.8566, 2.3522], [50.5, 6.5], [53.5461, 9.9661]],
+                {"bubblingMouseEvents": true, "color": "#6b7280", "dashArray": "6,10", "dashOffset": null, "fill": false, "fillColor": "#6b7280", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_88172e0a289bb2d07ddc7d3a54b876c5);
+        
+    
+            poly_line_d4923f80d006ca862b12f6d3247cbfba.bindTooltip(
+                `<div>
+                     Paris → Hamburg (đường bộ/ngữ cảnh)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3fbe1661961f20b67f67d0aa81f3fa69 = L.polyline(
+                [[49.4944, 0.1079], [50.5, 6.0], [53.5461, 9.9661]],
+                {"bubblingMouseEvents": true, "color": "#9ca3af", "dashArray": "5,9", "dashOffset": null, "fill": false, "fillColor": "#9ca3af", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_88172e0a289bb2d07ddc7d3a54b876c5);
+        
+    
+            poly_line_3fbe1661961f20b67f67d0aa81f3fa69.bindTooltip(
+                `<div>
+                     Le Havre → Hamburg (đường bộ/ngữ cảnh)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a28c1f13242e39c642a422c959bdcab8 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(feature_group_88172e0a289bb2d07ddc7d3a54b876c5);
+        
+    
+            var icon_87ac8abf8333388898cd3a7229920625 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_a28c1f13242e39c642a422c959bdcab8.setIcon(icon_87ac8abf8333388898cd3a7229920625);
+        
+    
+        var popup_ec736528308aff0800061b7a4431e3be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52ace8b37f598b14a887d3cb96497879 = $(`<div id="html_52ace8b37f598b14a887d3cb96497879" style="width: 100.0%; height: 100.0%;"><b>Paris (FR)</b><br>Overland → Hamburg (context)</div>`)[0];
+            popup_ec736528308aff0800061b7a4431e3be.setContent(html_52ace8b37f598b14a887d3cb96497879);
+        
+
+        marker_a28c1f13242e39c642a422c959bdcab8.bindPopup(popup_ec736528308aff0800061b7a4431e3be)
+        ;
+
+        
+    
+    
+            marker_a28c1f13242e39c642a422c959bdcab8.bindTooltip(
+                `<div>
+                     Paris (FR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efb424103809ca76546583273e1c3a61 = L.marker(
+                [49.4944, 0.1079],
+                {}
+            ).addTo(feature_group_88172e0a289bb2d07ddc7d3a54b876c5);
+        
+    
+            var icon_9953695fb7662cd8ba5b217ebef6d83f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_efb424103809ca76546583273e1c3a61.setIcon(icon_9953695fb7662cd8ba5b217ebef6d83f);
+        
+    
+        var popup_558ca0d3f91ab2ffc5787d4ba5579dd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1215daa40620601822f168617306f314 = $(`<div id="html_1215daa40620601822f168617306f314" style="width: 100.0%; height: 100.0%;"><b>Le Havre (FR)</b><br>Overland → Hamburg (context)</div>`)[0];
+            popup_558ca0d3f91ab2ffc5787d4ba5579dd5.setContent(html_1215daa40620601822f168617306f314);
+        
+
+        marker_efb424103809ca76546583273e1c3a61.bindPopup(popup_558ca0d3f91ab2ffc5787d4ba5579dd5)
+        ;
+
+        
+    
+    
+            marker_efb424103809ca76546583273e1c3a61.bindTooltip(
+                `<div>
+                     Le Havre (FR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a913f8c4ea640113e09de72e233004a9 = L.marker(
+                [53.5461, 9.9661],
+                {}
+            ).addTo(feature_group_88172e0a289bb2d07ddc7d3a54b876c5);
+        
+    
+            var icon_88915f69288d4d84ed7a3024347f85be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_a913f8c4ea640113e09de72e233004a9.setIcon(icon_88915f69288d4d84ed7a3024347f85be);
+        
+    
+        var popup_2d368faa8a1f174b01c6d0803cbccc06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54a7530ebef8d40adcf73e65c4d08bd9 = $(`<div id="html_54a7530ebef8d40adcf73e65c4d08bd9" style="width: 100.0%; height: 100.0%;"><b>Hamburg Port (DE)</b><br>Rời 27/06/1923 — tàu 'Karl Liebknecht'</div>`)[0];
+            popup_2d368faa8a1f174b01c6d0803cbccc06.setContent(html_54a7530ebef8d40adcf73e65c4d08bd9);
+        
+
+        marker_a913f8c4ea640113e09de72e233004a9.bindPopup(popup_2d368faa8a1f174b01c6d0803cbccc06)
+        ;
+
+        
+    
+    
+            marker_a913f8c4ea640113e09de72e233004a9.bindTooltip(
+                `<div>
+                     Hamburg Port (DE)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8 = L.featureGroup(
+                {}
+            ).addTo(map_d4c087f5966b8c0a2d89a3fcb9545b1e);
+        
+    
+            var marker_071dd305ef0f06fcb31c02986e9026e8 = L.marker(
+                [53.888, 9.141],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_cad352192777f41ece1892d5d9b5dd1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_071dd305ef0f06fcb31c02986e9026e8.setIcon(icon_cad352192777f41ece1892d5d9b5dd1a);
+        
+    
+        var popup_d8f2ebd64336e1e3586db27cb0e49af3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d879d29f15147ca660aa70e9aceef15 = $(`<div id="html_7d879d29f15147ca660aa70e9aceef15" style="width: 100.0%; height: 100.0%;"><b>Brunsbüttel Locks (DE)</b><br>Kênh Kiel (cửa Tây)</div>`)[0];
+            popup_d8f2ebd64336e1e3586db27cb0e49af3.setContent(html_7d879d29f15147ca660aa70e9aceef15);
+        
+
+        marker_071dd305ef0f06fcb31c02986e9026e8.bindPopup(popup_d8f2ebd64336e1e3586db27cb0e49af3)
+        ;
+
+        
+    
+    
+            marker_071dd305ef0f06fcb31c02986e9026e8.bindTooltip(
+                `<div>
+                     Brunsbüttel Locks (DE)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67146af1d7024e6824f470655dfa30d4 = L.marker(
+                [54.361, 10.142],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_4a7b01ffd5ae216f1bcc73f01e81fddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_67146af1d7024e6824f470655dfa30d4.setIcon(icon_4a7b01ffd5ae216f1bcc73f01e81fddb);
+        
+    
+        var popup_01b5bf83ecf87e69aac80c566ff53a86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_039cd7ecc14df05d19f5fa7381dc7373 = $(`<div id="html_039cd7ecc14df05d19f5fa7381dc7373" style="width: 100.0%; height: 100.0%;"><b>Kiel-Holtenau Locks (DE)</b><br>Kênh Kiel (cửa Đông)</div>`)[0];
+            popup_01b5bf83ecf87e69aac80c566ff53a86.setContent(html_039cd7ecc14df05d19f5fa7381dc7373);
+        
+
+        marker_67146af1d7024e6824f470655dfa30d4.bindPopup(popup_01b5bf83ecf87e69aac80c566ff53a86)
+        ;
+
+        
+    
+    
+            marker_67146af1d7024e6824f470655dfa30d4.bindTooltip(
+                `<div>
+                     Kiel-Holtenau Locks (DE)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64b5d0518d4775368b5b15fb9f06f9a8 = L.marker(
+                [54.45, 10.3],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_14b4f6ec049b730fc2fd5d357a3d5ef2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_64b5d0518d4775368b5b15fb9f06f9a8.setIcon(icon_14b4f6ec049b730fc2fd5d357a3d5ef2);
+        
+    
+        var popup_ab8f1216841cd3dd354934316a4eeb2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4ac696aef9202d8506d721b0dc802d0 = $(`<div id="html_e4ac696aef9202d8506d721b0dc802d0" style="width: 100.0%; height: 100.0%;"><b>Kieler Förde Offshore</b><br></div>`)[0];
+            popup_ab8f1216841cd3dd354934316a4eeb2c.setContent(html_e4ac696aef9202d8506d721b0dc802d0);
+        
+
+        marker_64b5d0518d4775368b5b15fb9f06f9a8.bindPopup(popup_ab8f1216841cd3dd354934316a4eeb2c)
+        ;
+
+        
+    
+    
+            marker_64b5d0518d4775368b5b15fb9f06f9a8.bindTooltip(
+                `<div>
+                     Kieler Förde Offshore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea10eaaf8edf6bfe46220b418acbc6cc = L.marker(
+                [57.3, 11.3],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_321f11d76bf27aad316c14227171bb0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ea10eaaf8edf6bfe46220b418acbc6cc.setIcon(icon_321f11d76bf27aad316c14227171bb0a);
+        
+    
+        var popup_c4d63a0cca4fd460ff905cd1228a91c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65077851812f551f82afee4c80dd4e7d = $(`<div id="html_65077851812f551f82afee4c80dd4e7d" style="width: 100.0%; height: 100.0%;"><b>Kattegat Mid</b><br></div>`)[0];
+            popup_c4d63a0cca4fd460ff905cd1228a91c0.setContent(html_65077851812f551f82afee4c80dd4e7d);
+        
+
+        marker_ea10eaaf8edf6bfe46220b418acbc6cc.bindPopup(popup_c4d63a0cca4fd460ff905cd1228a91c0)
+        ;
+
+        
+    
+    
+            marker_ea10eaaf8edf6bfe46220b418acbc6cc.bindTooltip(
+                `<div>
+                     Kattegat Mid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2eccafb9f00a4a6d6cf4178169912323 = L.marker(
+                [56.05, 12.63],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_13932a4e4ec4d18a751322af40e6ed4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2eccafb9f00a4a6d6cf4178169912323.setIcon(icon_13932a4e4ec4d18a751322af40e6ed4f);
+        
+    
+        var popup_e1b5ed158a652337ee2a4d178dea8b99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7745d61a41fd875c3a41be89b79475f6 = $(`<div id="html_7745d61a41fd875c3a41be89b79475f6" style="width: 100.0%; height: 100.0%;"><b>Øresund Passage</b><br></div>`)[0];
+            popup_e1b5ed158a652337ee2a4d178dea8b99.setContent(html_7745d61a41fd875c3a41be89b79475f6);
+        
+
+        marker_2eccafb9f00a4a6d6cf4178169912323.bindPopup(popup_e1b5ed158a652337ee2a4d178dea8b99)
+        ;
+
+        
+    
+    
+            marker_2eccafb9f00a4a6d6cf4178169912323.bindTooltip(
+                `<div>
+                     Øresund Passage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39bbf44c80d00289274b1bdeabad15e6 = L.marker(
+                [55.3, 15.0],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_7071ccd37189957f62acc069fe4ddcb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_39bbf44c80d00289274b1bdeabad15e6.setIcon(icon_7071ccd37189957f62acc069fe4ddcb7);
+        
+    
+        var popup_44e8fa167d8ce7ff40532447a92d5aef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2b494404602dc5bae3bc00f8f0f641a = $(`<div id="html_b2b494404602dc5bae3bc00f8f0f641a" style="width: 100.0%; height: 100.0%;"><b>Bornholm Offshore</b><br></div>`)[0];
+            popup_44e8fa167d8ce7ff40532447a92d5aef.setContent(html_b2b494404602dc5bae3bc00f8f0f641a);
+        
+
+        marker_39bbf44c80d00289274b1bdeabad15e6.bindPopup(popup_44e8fa167d8ce7ff40532447a92d5aef)
+        ;
+
+        
+    
+    
+            marker_39bbf44c80d00289274b1bdeabad15e6.bindTooltip(
+                `<div>
+                     Bornholm Offshore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b03235de66f48d871e7ad8013fc65fd4 = L.marker(
+                [56.5, 18.9],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_d42f4b83413bbd3c34d94c93d71cc49b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b03235de66f48d871e7ad8013fc65fd4.setIcon(icon_d42f4b83413bbd3c34d94c93d71cc49b);
+        
+    
+        var popup_b01b63173046885e1abfc05ed107a701 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce3282f3ce7058f160c30fa249f6e3be = $(`<div id="html_ce3282f3ce7058f160c30fa249f6e3be" style="width: 100.0%; height: 100.0%;"><b>South of Gotland</b><br></div>`)[0];
+            popup_b01b63173046885e1abfc05ed107a701.setContent(html_ce3282f3ce7058f160c30fa249f6e3be);
+        
+
+        marker_b03235de66f48d871e7ad8013fc65fd4.bindPopup(popup_b01b63173046885e1abfc05ed107a701)
+        ;
+
+        
+    
+    
+            marker_b03235de66f48d871e7ad8013fc65fd4.bindTooltip(
+                `<div>
+                     South of Gotland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8e6d65bbff3d3b64fb5337518478cee = L.marker(
+                [57.3, 20.5],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_3fa3e1dbc9796f334d7b492bf5c3e5e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f8e6d65bbff3d3b64fb5337518478cee.setIcon(icon_3fa3e1dbc9796f334d7b492bf5c3e5e5);
+        
+    
+        var popup_e44d2531bce5595058b9887bcda94f73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f9f12fd57caee91a81973c3e63536fd = $(`<div id="html_1f9f12fd57caee91a81973c3e63536fd" style="width: 100.0%; height: 100.0%;"><b>Central Baltic</b><br></div>`)[0];
+            popup_e44d2531bce5595058b9887bcda94f73.setContent(html_1f9f12fd57caee91a81973c3e63536fd);
+        
+
+        marker_f8e6d65bbff3d3b64fb5337518478cee.bindPopup(popup_e44d2531bce5595058b9887bcda94f73)
+        ;
+
+        
+    
+    
+            marker_f8e6d65bbff3d3b64fb5337518478cee.bindTooltip(
+                `<div>
+                     Central Baltic
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9489fed4f0b5df080891595feab0da76 = L.marker(
+                [59.8, 24.5],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_3af3b43839cbcddd2d9b743482589042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9489fed4f0b5df080891595feab0da76.setIcon(icon_3af3b43839cbcddd2d9b743482589042);
+        
+    
+        var popup_98dee7b71b0b828518b1766970ba5629 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f1f1d8bb399255085f89e8f44dc21c5 = $(`<div id="html_2f1f1d8bb399255085f89e8f44dc21c5" style="width: 100.0%; height: 100.0%;"><b>Gulf of Finland West</b><br></div>`)[0];
+            popup_98dee7b71b0b828518b1766970ba5629.setContent(html_2f1f1d8bb399255085f89e8f44dc21c5);
+        
+
+        marker_9489fed4f0b5df080891595feab0da76.bindPopup(popup_98dee7b71b0b828518b1766970ba5629)
+        ;
+
+        
+    
+    
+            marker_9489fed4f0b5df080891595feab0da76.bindTooltip(
+                `<div>
+                     Gulf of Finland West
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8de72b5927f96aa85b7f68b1d413f8e = L.marker(
+                [59.994, 29.766],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_03291f04268be3bef724008864a11b74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e8de72b5927f96aa85b7f68b1d413f8e.setIcon(icon_03291f04268be3bef724008864a11b74);
+        
+    
+        var popup_6d0ecd66e83b41865c65c4fda81362a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e50041db5ded5a4c13eddcae5d5ad43a = $(`<div id="html_e50041db5ded5a4c13eddcae5d5ad43a" style="width: 100.0%; height: 100.0%;"><b>Kronstadt (RU)</b><br>Roadstead</div>`)[0];
+            popup_6d0ecd66e83b41865c65c4fda81362a1.setContent(html_e50041db5ded5a4c13eddcae5d5ad43a);
+        
+
+        marker_e8de72b5927f96aa85b7f68b1d413f8e.bindPopup(popup_6d0ecd66e83b41865c65c4fda81362a1)
+        ;
+
+        
+    
+    
+            marker_e8de72b5927f96aa85b7f68b1d413f8e.bindTooltip(
+                `<div>
+                     Kronstadt (RU)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0920ddf7d8b2e5a5c19ab17673630e93 = L.marker(
+                [59.9375, 30.3086],
+                {}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            var icon_7d39894507357c16172f28dd13ad5d4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "circle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0920ddf7d8b2e5a5c19ab17673630e93.setIcon(icon_7d39894507357c16172f28dd13ad5d4d);
+        
+    
+        var popup_fea092f01200020c44ab773db31c9d29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_191662cdf712ec68116121242032b9ab = $(`<div id="html_191662cdf712ec68116121242032b9ab" style="width: 100.0%; height: 100.0%;"><b>Petrograd / St. Petersburg (RU)</b><br>Đến 30/06/1923</div>`)[0];
+            popup_fea092f01200020c44ab773db31c9d29.setContent(html_191662cdf712ec68116121242032b9ab);
+        
+
+        marker_0920ddf7d8b2e5a5c19ab17673630e93.bindPopup(popup_fea092f01200020c44ab773db31c9d29)
+        ;
+
+        
+    
+    
+            marker_0920ddf7d8b2e5a5c19ab17673630e93.bindTooltip(
+                `<div>
+                     Petrograd / St. Petersburg (RU)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_98b91d1d81436241ff39aa8329450fa8 = L.polyline(
+                [[53.5461, 9.9661], [53.888, 9.141], [54.361, 10.142], [54.45, 10.3], [57.3, 11.3], [56.05, 12.63], [55.3, 15.0], [56.5, 18.9], [57.3, 20.5], [59.8, 24.5], [59.994, 29.766], [59.9375, 30.3086]],
+                {"bubblingMouseEvents": true, "color": "#1f6ed4", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1f6ed4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8);
+        
+    
+            poly_line_98b91d1d81436241ff39aa8329450fa8.bindTooltip(
+                `<div>
+                     Sea leg: Hamburg → Petrograd (~1914.9 km)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_2954a4858ea48aaa5a2a2f8b6cc5eb8c = L.featureGroup(
+                {}
+            ).addTo(map_d4c087f5966b8c0a2d89a3fcb9545b1e);
+        
+    
+            var marker_799b147a8f4cbed1ffa588737a9db555 = L.marker(
+                [59.9375, 30.3086],
+                {}
+            ).addTo(feature_group_2954a4858ea48aaa5a2a2f8b6cc5eb8c);
+        
+    
+            var icon_37a08657833d7acf59e8f1bc24885a77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_799b147a8f4cbed1ffa588737a9db555.setIcon(icon_37a08657833d7acf59e8f1bc24885a77);
+        
+    
+        var popup_746a928316c9a42b6e195a24417c272b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8595ab5639f730c9d2c5902dde9e5b9 = $(`<div id="html_f8595ab5639f730c9d2c5902dde9e5b9" style="width: 100.0%; height: 100.0%;"><b>Petrograd / St. Petersburg (RU)</b><br>Đến 30/06/1923</div>`)[0];
+            popup_746a928316c9a42b6e195a24417c272b.setContent(html_f8595ab5639f730c9d2c5902dde9e5b9);
+        
+
+        marker_799b147a8f4cbed1ffa588737a9db555.bindPopup(popup_746a928316c9a42b6e195a24417c272b)
+        ;
+
+        
+    
+    
+            marker_799b147a8f4cbed1ffa588737a9db555.bindTooltip(
+                `<div>
+                     Petrograd / St. Petersburg (RU)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d4537b8cdff222f48129bd0e3a0974a = L.marker(
+                [56.8587, 35.9176],
+                {}
+            ).addTo(feature_group_2954a4858ea48aaa5a2a2f8b6cc5eb8c);
+        
+    
+            var icon_6936d854e1013d3a265c0879339671d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4d4537b8cdff222f48129bd0e3a0974a.setIcon(icon_6936d854e1013d3a265c0879339671d6);
+        
+    
+        var popup_d0da5c538e9eff217b2bf65059081c9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68f1d420c753e87ea48b3f29f4a1b8e4 = $(`<div id="html_68f1d420c753e87ea48b3f29f4a1b8e4" style="width: 100.0%; height: 100.0%;"><b>Tver (RU)</b><br>Ga trung gian</div>`)[0];
+            popup_d0da5c538e9eff217b2bf65059081c9e.setContent(html_68f1d420c753e87ea48b3f29f4a1b8e4);
+        
+
+        marker_4d4537b8cdff222f48129bd0e3a0974a.bindPopup(popup_d0da5c538e9eff217b2bf65059081c9e)
+        ;
+
+        
+    
+    
+            marker_4d4537b8cdff222f48129bd0e3a0974a.bindTooltip(
+                `<div>
+                     Tver (RU)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fd3094afce2bc0405518fd4304d35ff = L.marker(
+                [55.7558, 37.6173],
+                {}
+            ).addTo(feature_group_2954a4858ea48aaa5a2a2f8b6cc5eb8c);
+        
+    
+            var icon_d223b8f808abb26a421a55e15c04617d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2fd3094afce2bc0405518fd4304d35ff.setIcon(icon_d223b8f808abb26a421a55e15c04617d);
+        
+    
+        var popup_f93eba8044a5907c5dcd9276efdd8f1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e34ca8de4b9ac4463f1f06e5fe8e80f6 = $(`<div id="html_e34ca8de4b9ac4463f1f06e5fe8e80f6" style="width: 100.0%; height: 100.0%;"><b>Moscow (RU)</b><br>Đến 1923</div>`)[0];
+            popup_f93eba8044a5907c5dcd9276efdd8f1b.setContent(html_e34ca8de4b9ac4463f1f06e5fe8e80f6);
+        
+
+        marker_2fd3094afce2bc0405518fd4304d35ff.bindPopup(popup_f93eba8044a5907c5dcd9276efdd8f1b)
+        ;
+
+        
+    
+    
+            marker_2fd3094afce2bc0405518fd4304d35ff.bindTooltip(
+                `<div>
+                     Moscow (RU)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_73c2cd47c8047619cf97d6ee34ebec4c = L.polyline(
+                [[59.9375, 30.3086], [56.8587, 35.9176], [55.7558, 37.6173]],
+                {"bubblingMouseEvents": true, "color": "#16a34a", "dashArray": "6,10", "dashOffset": null, "fill": false, "fillColor": "#16a34a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_2954a4858ea48aaa5a2a2f8b6cc5eb8c);
+        
+    
+            poly_line_73c2cd47c8047619cf97d6ee34ebec4c.bindTooltip(
+                `<div>
+                     Rail/overland: Petrograd → Tver → Moscow
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_787f57ed464d92012c33d584666dc8dc = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c1f4ab975e9804b91888f6431d7394b7,
+                },
+                overlays :  {
+                    "Overland: France \u2192 Hamburg (context)" : feature_group_88172e0a289bb2d07ddc7d3a54b876c5,
+                    "Sea-only: Hamburg \u2192 Petrograd (27\u201330/06/1923)" : feature_group_86bcd9ed1f54c5cdd1d3fb87010a54c8,
+                    "Overland: Petrograd \u2192 Moscow (1923)" : feature_group_2954a4858ea48aaa5a2a2f8b6cc5eb8c,
+                },
+            };
+            L.control.layers(
+                layer_control_787f57ed464d92012c33d584666dc8dc.base_layers,
+                layer_control_787f57ed464d92012c33d584666dc8dc.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_d4c087f5966b8c0a2d89a3fcb9545b1e);
+        
+    
+            map_d4c087f5966b8c0a2d89a3fcb9545b1e.fitBounds(
+                [[48.8566, 0.1079], [59.994, 37.6173]],
+                {}
+            );
+        
+</script>
+</html>

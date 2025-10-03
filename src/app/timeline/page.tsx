@@ -1,6 +1,6 @@
 ﻿'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -9,10 +9,18 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Calendar, MapPin, FileText, Quote, Eye, ExternalLink, Heart, Share2, Clock } from 'lucide-react';
 import { TimelineFilters } from '@/components/timeline/TimelineFilters';
 import timelineData from '@/data/timeline.json';
-import type { TimelineItem } from '@/lib/types';
+import type { TimelineItem, SourceLink } from '@/lib/types';
 
 export default function TimelinePage() {
-  const allTimelineItems = timelineData as TimelineItem[];
+  const normalizeItem = (item: any): TimelineItem => {
+    const normalizedSources: SourceLink[] | undefined = Array.isArray(item.sources)
+      ? item.sources.map((s: any) =>
+        typeof s === 'string' ? { label: s, url: '' } : s
+      )
+      : undefined;
+    return { ...item, sources: normalizedSources } as TimelineItem;
+  };
+  const allTimelineItems = useMemo(() => (timelineData as any[]).map(normalizeItem), []);
   const [filteredItems, setFilteredItems] = useState<TimelineItem[]>(allTimelineItems);
   const [visibleItems, setVisibleItems] = useState<Set<string>>(new Set());
   const [selectedItem, setSelectedItem] = useState<TimelineItem | null>(null);
@@ -25,10 +33,11 @@ export default function TimelinePage() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setVisibleItems(prev => new Set([...prev, entry.target.id]));
+            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.2, rootMargin: '50px' }
+      { threshold: 0.01, rootMargin: '200px' }
     );
 
     const timelineCards = document.querySelectorAll('[data-timeline-card]');
@@ -111,11 +120,11 @@ export default function TimelinePage() {
                 Dòng Thời Gian Lịch Sử
               </h1>
               <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-                Hành trình vĩ đại của một con người phi thường - từ Nguyễn Sinh Cung đến Chủ tịch Hồ Chí Minh, 
+                Hành trình vĩ đại của một con người phi thường - từ Nguyễn Sinh Cung đến Chủ tịch Hồ Chí Minh,
                 vị lãnh tụ kính yêu của dân tộc Việt Nam
               </p>
             </div>
-            
+
             {/* Stats */}
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
@@ -138,8 +147,8 @@ export default function TimelinePage() {
       {/* Filters */}
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <TimelineFilters 
-            items={allTimelineItems} 
+          <TimelineFilters
+            items={allTimelineItems}
             onFilteredItemsChange={setFilteredItems}
           />
         </div>
@@ -153,44 +162,39 @@ export default function TimelinePage() {
             <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-red-800 via-red-700 to-red-900 transform md:-translate-x-px">
               <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-red-600 to-transparent animate-pulse"></div>
             </div>
-            
+
             {/* Timeline items */}
             <div className="space-y-12">
               {filteredItems.map((item, index) => {
                 const isVisible = visibleItems.has(item.id);
                 const isEven = index % 2 === 0;
-                
+
                 return (
-                  <div 
-                    key={item.id} 
+                  <div
+                    key={item.id}
                     id={item.id}
                     data-timeline-card
-                    className={`relative flex items-center transition-all duration-1000 ${isEven ? 'md:flex-row-reverse' : ''} ${
-                      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                    }`}
-                    style={{ transitionDelay: `${index * 0.1}s` }}
+                    className={`relative flex items-center transition-all duration-300 ${isEven ? 'md:flex-row-reverse' : ''} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                      }`}
                   >
                     {/* Animated timeline dot */}
-                    <div className={`absolute left-8 md:left-1/2 w-6 h-6 bg-gradient-to-br from-red-600 to-red-800 rounded-full transform -translate-x-3 md:-translate-x-3 z-10 border-4 border-white shadow-lg transition-all duration-500 ${
-                      isVisible ? 'scale-100' : 'scale-0'
-                    }`}>
+                    <div className={`absolute left-8 md:left-1/2 w-6 h-6 bg-gradient-to-br from-red-600 to-red-800 rounded-full transform -translate-x-3 md:-translate-x-3 z-10 border-4 border-white shadow-lg transition-all duration-500 ${isVisible ? 'scale-100' : 'scale-0'
+                      }`}>
                       <div className="absolute inset-0 bg-red-600 rounded-full animate-ping opacity-20"></div>
                     </div>
-                    
+
                     {/* Year indicator */}
-                    <div className={`absolute left-16 md:left-1/2 top-0 transform ${isEven ? 'md:-translate-x-20' : 'md:translate-x-8'} ${
-                      isVisible ? 'opacity-100' : 'opacity-0'
-                    } transition-all duration-700`}>
+                    <div className={`absolute left-16 md:left-1/2 top-0 transform ${isEven ? 'md:-translate-x-20' : 'md:translate-x-8'} ${isVisible ? 'opacity-100' : 'opacity-0'
+                      } transition-all duration-700`}>
                       <Badge className="bg-gradient-to-r from-amber-400 to-amber-600 text-amber-900 font-bold text-lg px-3 py-1 shadow-lg">
                         {item.year}
                       </Badge>
                     </div>
-                    
+
                     {/* Content card */}
                     <div className={`w-full md:w-1/2 ml-16 md:ml-0 mt-8 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
-                      <Card className={`shadow-xl border-0 bg-white/95 backdrop-blur-sm transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] group ${
-                        isVisible ? 'translate-x-0' : isEven ? 'translate-x-10' : '-translate-x-10'
-                      }`}>
+                      <Card className={`shadow-xl border-0 bg-white/95 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl group ${isVisible ? 'translate-x-0' : isEven ? 'translate-x-4' : '-translate-x-4'
+                        }`}>
                         <CardHeader className="pb-4">
                           <div className="flex items-center justify-between mb-2">
                             <Badge variant="outline" className="bg-red-50 border-red-200 text-red-800 flex items-center space-x-1">
@@ -216,11 +220,11 @@ export default function TimelinePage() {
                               </Button>
                             </div>
                           </div>
-                          
+
                           <CardTitle className="text-xl md:text-2xl font-bold text-gray-900 leading-tight group-hover:text-red-800 transition-colors">
                             {item.title}
                           </CardTitle>
-                          
+
                           <CardDescription className="flex flex-wrap items-center gap-4 text-gray-600">
                             {item.date && (
                               <span className="flex items-center space-x-1">
@@ -240,12 +244,12 @@ export default function TimelinePage() {
                             </span>
                           </CardDescription>
                         </CardHeader>
-                        
+
                         <CardContent className="pt-0">
                           <p className="text-gray-700 leading-relaxed mb-4 line-clamp-3">
                             {item.summary}
                           </p>
-                          
+
                           {/* Media preview */}
                           {item.media && item.media.length > 0 && (
                             <div className="mb-4">
@@ -263,7 +267,7 @@ export default function TimelinePage() {
                               )}
                             </div>
                           )}
-                          
+
                           {/* Tags */}
                           {item.tags && item.tags.length > 0 && (
                             <>
@@ -287,8 +291,8 @@ export default function TimelinePage() {
                           <div className="flex items-center justify-between">
                             <Dialog>
                               <DialogTrigger asChild>
-                                <Button 
-                                  variant="outline" 
+                                <Button
+                                  variant="outline"
                                   size="sm"
                                   onClick={() => setSelectedItem(item)}
                                   className="border-red-200 text-red-700 hover:bg-red-50"
@@ -319,11 +323,11 @@ export default function TimelinePage() {
                                         </div>
                                       )}
                                     </div>
-                                    
+
                                     <p className="text-gray-700 leading-relaxed text-lg">
                                       {selectedItem.summary}
                                     </p>
-                                    
+
                                     {(selectedItem as any).content && (
                                       <div className="bg-gradient-to-r from-red-50 to-amber-50 p-6 rounded-lg border-l-4 border-red-800">
                                         <h4 className="font-semibold text-red-800 mb-3">Nội dung chi tiết:</h4>
@@ -332,20 +336,117 @@ export default function TimelinePage() {
                                         </p>
                                       </div>
                                     )}
-                                    
+
+                                    {selectedItem.id === '1911-phap-lan-dau' && (
+                                      <div className="space-y-3">
+                                        <h4 className="font-semibold text-gray-900">Bản đồ hành trình đường biển (1911)</h4>
+                                        <div className="aspect-[16/9] rounded-lg overflow-hidden border border-gray-200 bg-white">
+                                          <iframe
+                                            src="/maps/ALT_1911_SeaOnly_Key5.html"
+                                            title="ALT 1911 Sea-only Route"
+                                            className="w-full h-full"
+                                            loading="lazy"
+                                          />
+                                        </div>
+                                      </div>
+                                    )}
+
+                                    {selectedItem.id === '1911-1912-vong-chau-phi-chau-my' && (
+                                      <div className="space-y-3">
+                                        <h4 className="font-semibold text-gray-900">Bản đồ hành trình đường biển (1912)</h4>
+                                        <div className="aspect-[16/9] rounded-lg overflow-hidden border border-gray-200 bg-white">
+                                          <iframe
+                                            src="/maps/ALT_1912_Africa_Americas_US_Detailed.html"
+                                            title="ALT 1912 Africa-Americas-US Route"
+                                            className="w-full h-full"
+                                            loading="lazy"
+                                          />
+                                        </div>
+                                      </div>
+                                    )}
+
+                                    {selectedItem.id === '1913-01-01' && (
+                                      <div className="space-y-3">
+                                        <h4 className="font-semibold text-gray-900">Một số địa điểm ở London có liên quan đến cuộc sống lao động và học tập của Nguyễn Tất Thành</h4>
+                                        <div className="aspect-[16/9] rounded-lg overflow-hidden border border-gray-200 bg-white">
+                                          <iframe
+                                            src="/maps/HCM_London_Sites_Map.html"
+                                            title="HCM London Sites Map"
+                                            className="w-full h-full"
+                                            loading="lazy"
+                                          />
+                                        </div>
+                                      </div>
+                                    )}
+
+                                    {selectedItem.id === '1913-tro-lai-chau-au' && (
+                                      <div className="space-y-3">
+                                        <h4 className="font-semibold text-gray-900">Bản đồ hành trình đường biển (1913)</h4>
+                                        <div className="aspect-[16/9] rounded-lg overflow-hidden border border-gray-200 bg-white">
+                                          <iframe
+                                            src="/maps/US_to_LeHavre_to_England_Markers.html"
+                                            title="US to Le Havre to England"
+                                            className="w-full h-full"
+                                            loading="lazy"
+                                          />
+                                        </div>
+                                      </div>
+                                    )}
+
+                                    {selectedItem.id === '1923-06-30' && (
+                                      <div className="space-y-3">
+                                        <h4 className="font-semibold text-gray-900">Hành trình đến Liên Xô (1923)</h4>
+                                        <div className="aspect-[16/9] rounded-lg overflow-hidden border border-gray-200 bg-white">
+                                          <iframe
+                                            src="/maps/FR_DE_RU_1923_Combined.html"
+                                            title="FR DE RU 1923 Combined"
+                                            className="w-full h-full"
+                                            loading="lazy"
+                                          />
+                                        </div>
+                                      </div>
+                                    )}
+
+                                    {selectedItem.id === '1927-06-hanh-trinh-quang-chau-moskva' && (
+                                      <div className="space-y-3">
+                                        <h4 className="font-semibold text-gray-900">Hành trình rời Trung Quốc (1930)</h4>
+                                        <div className="aspect-[16/9] rounded-lg overflow-hidden border border-gray-200 bg-white">
+                                          <iframe
+                                            src="/maps/1927_Guangzhou_to_Moscow_Combined.html"
+                                            title="1927 Guangzhou to Moscow"
+                                            className="w-full h-full"
+                                            loading="lazy"
+                                          />
+                                        </div>
+                                      </div>
+                                    )}
+
                                     {selectedItem.media && selectedItem.media.length > 0 && (
                                       <div className="space-y-4">
                                         <h4 className="font-semibold text-gray-900">Hình ảnh & Tài liệu:</h4>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                           {selectedItem.media.map((media, mediaIndex) => (
                                             <div key={`${selectedItem.id}-media-${mediaIndex}`} className="group">
-                                              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
-                                                <img
-                                                  src={media.url}
-                                                  alt={media.caption || selectedItem.title}
-                                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                                />
-                                              </div>
+                                              {media.kind === 'video' ? (
+                                                <div className="aspect-video rounded-lg overflow-hidden bg-black border border-gray-200">
+                                                  <iframe
+                                                    className="w-full h-full"
+                                                    src={(media.url.includes('watch?v=')) ? media.url.replace('watch?v=', 'embed/') : media.url}
+                                                    title={media.caption || selectedItem.title}
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowFullScreen
+                                                    loading="lazy"
+                                                  />
+                                                </div>
+                                              ) : (
+                                                <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
+                                                  <img
+                                                    src={media.url}
+                                                    alt={media.caption || selectedItem.title}
+                                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                                  />
+                                                </div>
+                                              )}
                                               {media.caption && (
                                                 <p className="text-sm text-gray-600 mt-2 italic">
                                                   {media.caption}
@@ -356,7 +457,7 @@ export default function TimelinePage() {
                                         </div>
                                       </div>
                                     )}
-                                    
+
                                     {selectedItem.sources && selectedItem.sources.length > 0 && (
                                       <div className="space-y-3">
                                         <h4 className="font-semibold text-gray-900">Nguồn tham khảo:</h4>
@@ -413,7 +514,7 @@ export default function TimelinePage() {
           </div>
         </div>
       </div>
-      
+
       {/* Footer quote with animation */}
       <div className="bg-gradient-to-r from-red-800 to-red-900 text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/patterns/lotus.svg')] opacity-5 bg-repeat bg-center"></div>

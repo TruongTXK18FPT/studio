@@ -27,7 +27,7 @@ async function getPosts() {
         tags: true,
         status: true,
         createdAt: true,
-        metadata: true
+        imageUrl: true
       }
     });
 
@@ -38,7 +38,7 @@ async function getPosts() {
       tags: Array.isArray(post.tags) ? post.tags as string[] : [],
       status: post.status as 'approved' | 'pending' | 'rejected',
       createdAt: post.createdAt.toISOString(),
-      metadata: post.metadata as any
+      cover: (post as any).imageUrl || undefined
     }));
   } catch (error) {
     console.error('Error fetching posts:', error);

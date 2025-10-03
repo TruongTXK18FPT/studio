@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ArrowRight, X, Download } from 'lucide-react';
 import type { MediaItem } from '@/lib/types';
@@ -53,6 +53,9 @@ export function Lightbox({ isOpen, onClose, items, startIndex = 0 }: LightboxPro
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="bg-background/80 backdrop-blur-lg border-0 p-2 w-screen h-screen max-w-none max-h-none rounded-none flex flex-col">
+        <DialogHeader>
+          <DialogTitle className="sr-only">{currentItem.caption || 'Xem ảnh'}</DialogTitle>
+        </DialogHeader>
         <div className="absolute top-4 right-4 z-50 flex items-center gap-2">
            {currentItem.url.endsWith('.pdf') || currentItem.kind === 'document' && (
                 <Button asChild variant="secondary">

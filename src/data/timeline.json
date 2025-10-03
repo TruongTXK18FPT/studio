@@ -7,88 +7,305 @@
     "summary": "Nguyễn Sinh Cung (sau đổi tên là Nguyễn Tất Thành, Nguyễn Ái Quốc, Hồ Chí Minh) sinh ngày 19 tháng 5 năm 1890 tại làng Hoàng Trù, xã Kim Liên, Nam Đàn, Nghệ An trong một gia đình nhà nho yêu nước.",
     "location": "Nam Đàn, Nghệ An, Việt Nam",
     "type": "event",
-    "media": [{
-      "url": "http://phunuvietnam.mediacdn.vn/media/news/be1b4073ff13b72ffc35bb9a2b71bd7d/3a.jpg",
-      "kind": "photo",
-      "caption": "Ngôi nhà tranh đơn sơ ở làng Hoàng Trù, nơi Bác ra đời."
-    }],
-    "tags": ["sinh ra", "quê hương"]
+    "media": [
+      {
+        "url": "http://phunuvietnam.mediacdn.vn/media/news/be1b4073ff13b72ffc35bb9a2b71bd7d/3a.jpg",
+        "kind": "photo",
+        "caption": "Ngôi nhà tranh đơn sơ ở làng Hoàng Trù, nơi Bác ra đời."
+      }
+    ],
+    "tags": [
+      "sinh ra",
+      "quê hương"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/nguyen-sinh-cung-cung-gia-dinh-chuyen-ve-song-o-lang-kim-lien.htm"
+      },
+      {
+        "label": "Hệ thống tự liệu - văn kiện Đảng",
+        "url": "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/tieu-su-cuoc-doi-va-su-nghiep/thoi-nien-thieu-cua-chu-tich-ho-chi-minh-1890-1911-3487"
+      }
+    ]
   },
   {
     "id": "1901-01-01",
     "year": 1901,
     "title": "Cha đỗ Phó bảng",
-    "summary": "Ông Nguyễn Sinh Sắc, thân phụ của Bác, thi đỗ Phó bảng trong khoa thi Hội. Đây là niềm tự hào lớn của gia đình và quê hương.",
+    "summary": "Ông Nguyễn Sinh Sắc, thân phụ của Bác, thi đỗ Phó bảng trong khoa thi Hội năm 1901. Đây là niềm tự hào lớn của gia đình và quê hương, đồng thời tạo điều kiện cho việc giáo dục con cái trong môi trường học thuật tốt hơn.",
     "location": "Kinh thành Huế, Việt Nam",
     "type": "event",
-    "media": [{
-      "url": "https://bna.1cdn.vn/2024/06/05/tranh-ve-cu-nguyen-sinh-sac-ke-toa-boc-thuoc-tri-benh-cho-ba-con.jpg",
-      "kind": "photo",
-      "caption": "Ông Nguyễn Sinh Sắc, thân phụ của Bác, thi đỗ Phó bảng trong khoa thi Hội. Đây là niềm tự hào lớn của gia đình và quê hương."
-    }],
-    "tags": ["gia đình", "phó bảng"]
+    "media": [
+      {
+        "url": "https://bna.1cdn.vn/2024/06/05/tranh-ve-cu-nguyen-sinh-sac-ke-toa-boc-thuoc-tri-benh-cho-ba-con.jpg",
+        "kind": "photo",
+        "caption": "Ông Nguyễn Sinh Sắc, thân phụ của Bác, thi đỗ Phó bảng trong khoa thi Hội. Đây là niềm tự hào lớn của gia đình và quê hương."
+      }
+    ],
+    "tags": [
+      "gia đình",
+      "phó bảng",
+      "giáo dục"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/nguyen-sinh-cung-cung-anh-theo-cha-me-vao-hue.htm"
+      }
+    ]
   },
   {
     "id": "1905-01-01",
     "year": 1905,
     "title": "Theo cha vào Huế",
-    "summary": "Nguyễn Sinh Cung theo cha vào Huế, học tại Trường Tiểu học Pháp - Việt Đông Ba, rồi sau đó là Trường Quốc Học Huế. Tại đây, Người được tiếp xúc với nhiều tư tưởng tiến bộ.",
+    "summary": "Nguyễn Sinh Cung theo cha vào Huế, học tại Trường Tiểu học Pháp - Việt Đông Ba, rồi sau đó là Trường Quốc Học Huế. Tại đây, Người được tiếp xúc với nhiều tư tưởng tiến bộ, học tiếng Pháp và có cơ hội tiếp cận với văn hóa phương Tây.",
     "location": "Huế, Việt Nam",
     "type": "event",
-    "tags": ["học tập", "Huế"]
+    "media": [
+      {
+        "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/data%20Hung/thang%205%20nam%202017/can%20nha%20so%209/1.jpg",
+        "kind": "photo",
+        "caption": "Nguyễn Sinh Cung tại Trường Quốc Học Huế."
+      }
+    ],
+    "tags": [
+      "học tập",
+      "Huế",
+      "Trường Quốc Học"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/nguyen-tat-thanh-cung-nguyen-tat-dat-theo-cha-vao-hue.htm"
+      }
+    ]
   },
   {
     "id": "1908-04-09",
     "year": 1908,
     "date": "1908-04-09",
     "title": "Tham gia biểu tình chống sưu thuế",
-    "summary": "Nguyễn Tất Thành tham gia cuộc biểu tình chống sưu thuế của nhân dân Thừa Thiên - Huế. Đây là lần đầu tiên Người trực tiếp tham gia một phong trào yêu nước của quần chúng.",
+    "summary": "Nguyễn Tất Thành tham gia cuộc biểu tình chống sưu thuế của nhân dân Thừa Thiên - Huế. Đây là lần đầu tiên Người trực tiếp tham gia một phong trào yêu nước của quần chúng, thể hiện tinh thần đấu tranh chống áp bức từ sớm.",
     "location": "Huế, Việt Nam",
     "type": "event",
-    "tags": ["yêu nước", "phong trào"]
+    "media": [
+      {
+        "url": "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/555599237_25177542561864578_7019430483495094841_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0b6b33&_nc_eui2=AeEQh_J-S909AntDiN5sFKKsfbCQyqJck-V9sJDKolyT5fdaznsaLvg68Z_sKRdbLaZ59_77Hsr3QK9aXzhjdNIb&_nc_ohc=065pgqSmeNoQ7kNvwFQ-SjF&_nc_oc=Admfq3BvOVkhbfgg0ry1arBN3LYGPjVqHvIMSacDAYGN5cIg1TdJLOv9OEHr9UR_tY8&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=fMnX-HklkH1IhIHTB2se8Q&oh=00_AfdpcSzDhzh8P-xXUmTKVt5o66AfKDk5Y7fa4L6-c0A6wA&oe=68E5A7A4",
+        "kind": "photo",
+        "caption": "Hình ảnh chống sưu thuế"
+      }
+    ],
+    "tags": [
+      "yêu nước",
+      "phong trào",
+      "chống sưu thuế"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://bthcm.hue.gov.vn/Truy%E1%BB%81n-th%C3%B4ng-gi%C3%A1o-d%E1%BB%A5c/Nghi%C3%AAn-c%E1%BB%A9u-v%E1%BB%81-H%E1%BB%93-Ch%C3%AD-Minh/C%C3%A1c-b%C3%A0i-tham-lu%E1%BA%ADn-t%E1%BA%A1i-c%C3%A1c-H%E1%BB%99i-th%E1%BA%A3o-khoa-h%E1%BB%8Dc-v%E1%BB%81-Ch%E1%BB%A7-t%E1%BB%8Bch-H%E1%BB%93-Ch%C3%AD-Minh/pid/477/cid/149?tid=Phong-trao-chong-thue-nam-1908-o-Hue-va-su-tham-gia-cua-anh-Nguyen-Tat-Thanh.html"
+      }
+    ]
   },
   {
     "id": "1911-06-05",
     "year": 1911,
     "date": "1911-06-05",
     "title": "Rời Bến Nhà Rồng, ra đi tìm đường cứu nước",
-    "summary": "Với tên gọi Văn Ba, Nguyễn Tất Thành làm phụ bếp trên tàu Amiral Latouche-Tréville, bắt đầu cuộc hành trình 30 năm tìm đường cứu nước, giải phóng dân tộc.",
+    "summary": "Với tên gọi Văn Ba, Nguyễn Tất Thành làm phụ bếp trên tàu Amiral Latouche-Tréville, bắt đầu cuộc hành trình 30 năm tìm đường cứu nước, giải phóng dân tộc. Đây là bước ngoặt quan trọng trong cuộc đời cách mạng của Người.",
     "location": "Sài Gòn, Việt Nam",
     "type": "event",
-    "media": [{
-      "url": "https://storage.baoquangngai.vn/data/dataimages/202206/original/images2457860_NR.jpg",
-      "kind": "photo",
-      "caption": "Bến Nhà Rồng, nơi Người bắt đầu cuộc hành trình vĩ đại."
-    }],
-    "tags": ["hành trình", "cứu nước"]
+    "media": [
+      {
+        "url": "https://storage.baoquangngai.vn/data/dataimages/202206/original/images2457860_NR.jpg",
+        "kind": "photo",
+        "caption": "Bến Nhà Rồng, nơi Người bắt đầu cuộc hành trình vĩ đại."
+      },
+      {
+        "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/data%20Hung/thang%205%20nam%202017/can%20nha%20so%209/1.jpg",
+        "kind": "photo",
+        "caption": "Nguyễn Tất Thành rời Bến Nhà Rồng"
+      }
+    ],
+    "tags": [
+      "hành trình",
+      "cứu nước"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/chuyen-ke-ve-ho-chi-minh.htm"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-5-6-1911-bac-ho-ra-di-tim-duong-cuu-nuoc-695390"
+      }
+    ]
   },
-{
-    "id": "1912-09-15",
-    "year": 1912,
-    "title": "Đến Hoa Kỳ",
-    "summary": "Nguyễn Tất Thành đến thành phố Boston (Mỹ), làm nhiều nghề lao động phổ thông như phụ bếp, cào tuyết, chụp ảnh… để kiếm sống và tìm hiểu đời sống công nhân, phong trào dân chủ ở Mỹ.",
-    "location": "Boston, Hoa Kỳ",
+  {
+    "id": "1911-phap-lan-dau",
+    "year": 1911,
+    "title": "Đặt chân đến Pháp lần đầu (Marseille, Le Havre)",
+    "summary": "Sau khi rời Bến Nhà Rồng ngày 5/6/1911 trên tàu Amiral Latouche-Tréville, khoảng một tháng sau tàu cập cảng Marseille rồi tiếp tục đến Le Havre. Đây là lần đầu tiên Nguyễn Tất Thành đặt chân tới nước Pháp.",
+    "location": "Marseille và Le Havre, Pháp",
     "type": "event",
-    "media": [{
-      "url": "https://img.cand.com.vn/NewFiles/Images/2023/05/20/omni_02-1684570171216.jpg",
-      "kind": "photo",
-      "caption": "Nguyễn Tất Thành tại Hoa Kỳ."
-    }],
-    "tags": ["Mỹ", "lao động", "tìm hiểu xã hội"]
+    "media": [
+      {
+        "url": "https://baotanghochiminh.vn/pic/Customer/images/N%C4%83m%202021/Th%C3%A1ng%206/image001.jpg",
+        "kind": "photo",
+        "caption": "Ảnh con tàu Đô đốc Latútsơ Tơrêvin (Amiral Latouche Tréville)"
+      }
+    ],
+    "tags": [
+      "Pháp",
+      "Marseille",
+      "Le Havre",
+      "hành trình 1911"
+    ],
+    "sources": [
+      {
+        "label": "Nhân Dân – Về nơi Bác Hồ đặt chân đến Pháp lần đầu tiên",
+        "url": "https://nhandan.vn/ve-noi-bac-ho-dat-chan-den-phap-lan-dau-tien-post292766.html"
+      },
+      {
+        "label": "VOV – Hành trình tìm đường cứu nước của Bác Hồ trên đất Pháp",
+        "url": "https://vov.vn/chinh-tri/hanh-trinh-tim-duong-cuu-nuoc-cua-bac-ho-tren-dat-phap-517450.vov"
+      },
+      {
+        "label": "Bảo tàng Hồ Chí Minh – Hành trình của tàu Amiral Latouche-Tréville",
+        "url": "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm"
+      }
+    ]
+  },
+  {
+    "id": "1911-1912-vong-chau-phi-chau-my",
+    "year": 1912,
+    "title": "Hải trình vòng qua châu Phi và châu Mỹ trên tàu thương mại",
+    "summary": "Từ 1911 đến đầu 1912, Nguyễn Tất Thành tiếp tục làm việc trên tàu, theo các tuyến hải trình thương mại vòng qua châu Phi và châu Mỹ trước khi trở lại bờ Đông Hoa Kỳ. Chặng đi này giúp Người quan sát đời sống người lao động và chế độ thuộc địa ở nhiều nơi.",
+    "location": "Trên biển, các cảng châu Phi và châu Mỹ",
+    "type": "event",
+    "media": [
+      {
+        "url": "https://baotanghochiminh.vn/pic/Customer/images/N%C4%83m%202021/Th%C3%A1ng%206/image001.jpg",
+        "kind": "photo",
+        "caption": "Ảnh con tàu Đô đốc Latútsơ Tơrêvin (Amiral Latouche Tréville)"
+      }
+    ],
+    "tags": [
+      "châu Phi",
+      "châu Mỹ",
+      "hải trình",
+      "lao động hàng hải"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh – Hành trình của tàu Amiral Latouche-Tréville",
+        "url": "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm"
+      }
+    ]
+  },
+  {
+    "id": "1912-new-york",
+    "year": 1912,
+    "title": "Sống và làm việc tại New York, tìm hiểu xã hội Mỹ",
+    "summary": "Trong thời gian ở New York (1912–1913), Nguyễn Tất Thành lao động kiếm sống, đi sâu tìm hiểu đời sống người lao động và vấn đề kỳ thị chủng tộc tại Mỹ; đây là trải nghiệm có ảnh hưởng đến nhận thức chính trị của Người.",
+    "location": "New York, Hoa Kỳ",
+    "type": "event",
+    "tags": [
+      "New York",
+      "Hoa Kỳ",
+      "lao động",
+      "quan sát xã hội"
+    ],
+    "sources": [
+      {
+        "label": "Di tích Chủ tịch Hồ Chí Minh tại Phủ Chủ tịch – Một số sự kiện về hoạt động của Nguyễn Tất Thành trên đất Mỹ (1912–1913)",
+        "url": "https://ditichhochiminhphuchutich.gov.vn/mot-so-su-kien-lich-su-ve-hoat-dong-cua-nguyen-tat-thanh-tren-dat-nuoc-my-1912-1913-3127"
+      },
+      {
+        "label": "VTV – Thăm nơi Bác Hồ từng làm việc tại Hoa Kỳ (nhắc New York & Boston)",
+        "url": "https://vtv.vn/chinh-tri/tham-noi-bac-ho-tung-lam-viec-tai-hoa-ky-nhan-dip-sinh-nhat-lan-thu-134-cua-nguoi-20240519113954428.htm"
+      }
+    ]
+  },
+  {
+    "id": "1912-boston-omni-parker-house",
+    "year": 1912,
+    "title": "Đến Boston và làm việc tại khách sạn Omni Parker House",
+    "summary": "Từ năm 1912, Nguyễn Tất Thành đến Boston, làm các công việc lao động dịch vụ (như phụ bếp/nhà bếp) tại khách sạn Omni Parker House; đồng thời học hỏi về phong trào dân chủ và xã hội Mỹ.",
+    "location": "Boston, Massachusetts, Hoa Kỳ",
+    "type": "event",
+    "media": [
+      {
+        "url": "https://img.cand.com.vn/NewFiles/Images/2023/05/20/omni_02-1684570171216.jpg",
+        "kind": "photo",
+        "caption": "Nguyễn Tất Thành tại Hoa Kỳ."
+      }
+    ],
+    "tags": [
+      "Boston",
+      "Omni Parker House",
+      "lao động",
+      "Hoa Kỳ"
+    ],
+    "sources": [
+      {
+        "label": "VOV – Thăm nơi Bác Hồ từng làm việc ở Boston",
+        "url": "https://vov.vn/chinh-tri/tham-noi-bac-ho-tung-lam-viec-o-boston-my-tren-hanh-trinh-tim-duong-cuu-nuoc-post1096085.vov"
+      },
+      {
+        "label": "Quân đội Nhân dân – Boston nhớ Người (kỷ niệm 134 năm ngày sinh)",
+        "url": "https://www.qdnd.vn/quoc-te/tin-tuc/ky-niem-134-nam-ngay-sinh-chu-tich-ho-chi-minh-thang-5-boston-nho-nguoi-777483"
+      }
+    ]
+  },
+  {
+    "id": "1913-tro-lai-chau-au",
+    "year": 1913,
+    "title": "Từ Hoa Kỳ trở về Le Havre và sang Anh",
+    "summary": "Đầu năm 1913, Nguyễn Tất Thành theo tàu rời Mỹ trở về cảng Le Havre (Pháp), sau đó sang Anh để tiếp tục làm việc và tích lũy kinh nghiệm sống.",
+    "location": "Le Havre (Pháp) → London (Anh)",
+    "type": "event",
+    "tags": [
+      "Le Havre",
+      "Anh",
+      "hồi hương châu Âu",
+      "lao động"
+    ],
+    "sources": [
+      {
+        "label": "Bộ đội Biên phòng – Hành trình Chủ tịch Hồ Chí Minh ra nước ngoài…",
+        "url": "https://www.bienphong.com.vn/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-post440274.html"
+      }
+    ]
   },
   {
     "id": "1913-01-01",
     "year": 1913,
     "title": "Sang Anh quốc",
-    "summary": "Người chuyển đến Anh, làm phụ bếp tại khách sạn Carlton ở London. Đây là thời gian Người tiếp cận nền văn hóa và phong trào công nhân Anh.",
+    "summary": "Người chuyển đến Anh, làm phụ bếp tại khách sạn Carlton ở London. Đây là thời gian Người tiếp cận nền văn hóa và phong trào công nhân Anh, học hỏi về tổ chức công đoàn và đấu tranh giai cấp.",
     "location": "London, Vương quốc Anh",
     "type": "event",
-    "media": [{
-      "url": "https://bcp.cdnchinhphu.vn/Uploaded/tranthitiep/2021_06_01/tau2.jpg",
-      "kind": "photo",
-      "caption": "Nguyễn Tất Thành tại Anh."
-    }],
-    "tags": ["Anh", "lao động", "cách mạng"]
+    "media": [
+      {
+        "url": "https://bcp.cdnchinhphu.vn/Uploaded/tranthitiep/2021_06_01/tau2.jpg",
+        "kind": "photo",
+        "caption": "Nguyễn Tất Thành tại Anh."
+      }
+    ],
+    "tags": [
+      "Anh",
+      "lao động",
+      "cách mạng",
+      "London"
+    ],
+    "sources": [
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      }
+    ]
   },
   {
     "id": "1917-06-01",
@@ -97,212 +314,952 @@
     "summary": "Sau Cách mạng Tháng Mười Nga 1917, Nguyễn Tất Thành trở lại Pháp, tham gia phong trào công nhân, hoạt động trong Hội những người Việt Nam yêu nước.",
     "location": "Paris, Pháp",
     "type": "event",
-    "media": [{
-      "url": "  https://file3.qdnd.vn/data/images/0/2022/07/08/tranhuyen/01nguyenaiquoc.jpg?dpi=150&quality=100&w=870",
-      "kind": "photo",
-      "caption": "Nguyễn Tất Thành trở lại Pháp"
-    }],
-    "tags": ["Pháp", "cách mạng", "phong trào công nhân"]
+    "media": [
+      {
+        "url": "  https://file3.qdnd.vn/data/images/0/2022/07/08/tranhuyen/01nguyenaiquoc.jpg?dpi=150&quality=100&w=870",
+        "kind": "photo",
+        "caption": "Nguyễn Tất Thành trở lại Pháp"
+      }
+    ],
+    "tags": [
+      "Pháp",
+      "cách mạng",
+      "phong trào công nhân"
+    ],
+    "sources": [
+      "Encyclopedia Britannica"
+    ]
+  },
+  {
+    "id": "1919-01-01",
+    "year": 1919,
+    "title": "Thay mặt người Việt yêu nước tại Pháp gửi “Bản yêu sách của nhân dân An Nam” tới Hội nghị Versailles",
+    "summary": "Với tên Nguyễn Ái Quốc, thay mặt những người Việt Nam yêu nước tại Pháp, Người gửi “Bản yêu sách của nhân dân An Nam” tới Hội nghị Versailles, nêu 8 điểm đòi các quyền tự do, dân chủ và bình đẳng cho nhân dân Việt Nam. Sự kiện đánh dấu tiếng nói chính nghĩa của dân tộc vang lên trên trường quốc tế.",
+    "location": "Versailles, Pháp",
+    "type": "document",
+    "media": [
+      {
+        "url": "https://file3.qdnd.vn/data/images/0/2021/06/02/vanphong/ban%20yeu%20sach%208%20diem.jpg?dpi=150&quality=100&w=1920",
+        "kind": "photo",
+        "caption": "Bản yêu sách Tám điểm của nhân dân Việt Nam do Nguyễn Ái Quốc và nhóm người Việt Nam yêu nước gửi Nghị viện Pháp và các đoàn đại biểu dự Hội nghị Vécxây (6-1919) "
+      }
+    ],
+    "tags": [
+      "Versailles",
+      "Bản yêu sách",
+      "quyền tự quyết"
+    ],
+    "sources": [
+      {
+        "label": "Tạp chí Cộng sản",
+        "url": "https://www.tapchicongsan.org.vn/web/guest/hoc-tap-va-lam-theo-tu-tuong-ao-uc-phong-cach-ho-chi-minh1/-/2018/826436/nhung-hoat-dong-cua-nguyen-ai-quoc-doi-voi-bao-le-paria.aspx"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/da-phuong-tien/longform/ky-2-nguoi-thanh-nien-khong-tuoi-trong-ngoi-nha-bon-khong-661330"
+      }
+    ]
+  },
+  {
+    "id": "1920-12-01",
+    "year": 1920,
+    "title": "Dự Đại hội Tours, ủng hộ Quốc tế III",
+    "summary": "Nguyễn Ái Quốc dự Đại hội Tours của Đảng Xã hội Pháp, ủng hộ Quốc tế III và tham gia sáng lập Đảng Cộng sản Pháp. Đây là bước ngoặt quan trọng trong việc Người tiếp thu chủ nghĩa Mác-Lênin.",
+    "location": "Tours, Pháp",
+    "type": "event",
+    "media": [
+      {
+        "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/data%20Hung/nguyen%20ai%20quoc/3.jpg",
+        "kind": "photo",
+        "caption": "Toàn cảnh Đại hội đại biểu toàn quốc lần thứ XVIII Đảng Xã hội Pháp ở thành phố Tua, tháng 12/1920."
+      }
+    ],
+    "tags": [
+      "Đại hội Tours",
+      "Quốc tế III",
+      "Đảng Cộng sản Pháp"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Lịch sử Quốc gia",
+        "url": "https://baotanglichsu.vn/vi/Articles/3097/15553/25-12-1920-nguyen-ai-quoc-tham-du-djai-hoi-lan-thu-xviii-djang-xa-hoi-phap.html"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/hanh-trinh-lich-su/dong-chi-nguyen-ai-quoc-va-dai-hoi-toan-quoc-lan-thu-18-dang-xa-hoi-phap-661016"
+      }
+    ]
+  },
+  {
+    "id": "1921-lien-hiep-thuoc-dia",
+    "year": 1921,
+    "title": "Nguyễn Ái Quốc tham gia sáng lập Hội Liên hiệp các dân tộc thuộc địa tại Paris (L’Union Intercoloniale)",
+    "summary": "Tháng 7/1921, tại Paris, Nguyễn Ái Quốc cùng các đồng chí và nhà hoạt động từ nhiều thuộc địa của Pháp tham gia sáng lập Hội Liên hiệp các dân tộc thuộc địa (L’Union Intercoloniale) nhằm đoàn kết lực lượng cách mạng thuộc địa, đấu tranh cho quyền tự do, dân chủ và bình đẳng.",
+    "location": "Paris, Pháp",
+    "type": "event",
+    "tags": [
+      "Paris",
+      "L’Union Intercoloniale",
+      "thuộc địa",
+      "đoàn kết quốc tế"
+    ],
+    "sources": [
+      {
+        "label": "Tạp chí Cộng sản",
+        "url": "https://www.tapchicongsan.org.vn/web/guest/hoc-tap-va-lam-theo-tu-tuong-ao-uc-phong-cach-ho-chi-minh1/-/2018/826436/nhung-hoat-dong-cua-nguyen-ai-quoc-doi-voi-bao-le-paria.aspx"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      }
+    ]
+  },
+  {
+    "id": "1921-1923-paris-ngo-compoint",
+    "year": 1922,
+    "title": "Ở số 9 ngõ Compoint, Paris – hoạt động báo chí và tổ chức",
+    "summary": "Từ 7/1921 đến 6/1923, Nguyễn Ái Quốc ở số 9 ngõ Compoint (quận 17, Paris), viết báo, tham gia sáng lập Hội Liên hiệp Thuộc địa, mở rộng hoạt động tuyên truyền và tổ chức trong cộng đồng người Việt tại Pháp.",
+    "location": "Paris, Pháp",
+    "type": "event",
+    "media": [
+      {
+        "url": "https://www.tapchicongsan.org.vn/documents/20182/207420453/bao+chi.jpg/87c5b2d0-9969-45a8-997f-719cd792ddd4?t=1669891702331",
+        "kind": "photo",
+        "caption": "Trong suốt cuộc đời làm báo, Chủ tịch Hồ Chí Minh đã sáng lập 9 tờ báo, trong đó Le Paria là tờ báo đầu tiên - cơ quan ngôn luận của Hội Liên hiệp thuộc địa_ Ảnh: special.nhandan.vn"
+      },
+      {
+        "url": "https://bcp.cdnchinhphu.vn/thumb_w/777/334894974524682240/2022/5/17/efc1b16bcff30ead57e2-16527517313622124026038.jpg",
+        "kind": "photo",
+        "caption": "Tờ báo cách mạng Le Paria thực hiện sứ mệnh giải phóng con người, do Nguyễn Ái Quốc và các đồng chí của Người sáng lập và phát hành được 38 số trong thời gian từ tháng 4/1922 đến tháng 4/1926"
+      }
+    ],
+    "tags": [
+      "Paris",
+      "báo chí",
+      "Hội Liên hiệp Thuộc địa",
+      "ngõ Compoint"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Lịch sử Quốc gia – Ngôi nhà số 9 ngõ Compoint, nơi Bác từng sống tại Paris",
+        "url": "https://baotanglichsuquocgia.vn/vi/Articles/3097/19986/ngoi-nha-so-9-ngo-congpoanh-noi-bac-tung-song-tai-paris.html"
+      },
+      {
+        "label": "Tạp chí Cộng sản",
+        "url": "https://www.tapchicongsan.org.vn/web/guest/hoc-tap-va-lam-theo-tu-tuong-ao-uc-phong-cach-ho-chi-minh1/-/2018/826436/nhung-hoat-dong-cua-nguyen-ai-quoc-doi-voi-bao-le-paria.aspx"
+      },
+      {
+        "label": "Báo chính phủ",
+        "url": "https://baochinhphu.vn/nguyen-ai-quoc-voi-to-bao-cach-mang-dau-tien-le-paria-102220517084408427.htm"
+      }
+    ]
   },
   {
     "id": "1923-06-30",
     "year": 1923,
     "title": "Đến Liên Xô",
-    "summary": "Nguyễn Ái Quốc sang Liên Xô theo lời mời của Quốc tế Cộng sản. Người học tập tại Trường Đại học Phương Đông, làm việc tại Quốc tế Nông dân và tham dự nhiều hội nghị quốc tế.",
+    "summary": "Nguyễn Ái Quốc sang Liên Xô theo lời mời của Quốc tế Cộng sản. Người học tập tại Trường Đại học Phương Đông, làm việc tại Quốc tế Nông dân và tham dự nhiều hội nghị quốc tế. Đây là bước ngoặt quan trọng trong việc tiếp thu chủ nghĩa Mác-Lênin.",
     "location": "Mátxcơva, Liên Xô",
     "type": "event",
-    "media": [{
-      "url": "https://file.qdnd.vn/data/images/0/2021/05/29/phucthang/bh15.jpg?dpi=150&quality=100&w=575",
-      "kind": "photo",
-      "caption": "Đồng chí Nguyễn Ái Quốc (người đầu tiên bên trái hàng ngồi) chụp ảnh với một số đại biểu tham dự Đại hội lần thứ V Quốc tế cộng sản của tại Moskva, Nga từ ngày 17-6 đến 8-7-1924."
-    }],
-    "tags": ["Liên Xô", "Quốc tế Cộng sản", "học tập"]
+    "media": [
+      {
+        "url": "https://file.qdnd.vn/data/images/0/2021/05/29/phucthang/bh15.jpg?dpi=150&quality=100&w=575",
+        "kind": "photo",
+        "caption": "Đồng chí Nguyễn Ái Quốc (người đầu tiên bên trái hàng ngồi) chụp ảnh với một số đại biểu tham dự Đại hội lần thứ V Quốc tế cộng sản của tại Moskva, Nga từ ngày 17-6 đến 8-7-1924."
+      },
+      {
+        "url": "https://file.qdnd.vn/data/images/0/2021/05/29/vuongthuy/04052021vthuy30.jpg?dpi=150&quality=100&w=575",
+        "kind": "photo",
+        "caption": "Giấy thông hành số 1829, do Đại diện toàn quyền nước Cộng hòa xã hội chủ nghĩa Xô viết Liên bang Nga tại Đức cấp cho Nguyễn Ái Quốc, bí danh “Chen Vang”, ngày 16-6-1923. Ảnh tư liệu "
+      }
+    ],
+    "tags": [
+      "Liên Xô",
+      "Quốc tế Cộng sản",
+      "học tập",
+      "Mác-Lênin"
+    ],
+    "sources": [
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/hanh-trinh-lich-su/hanh-trinh-tren-que-huong-cach-mang-thang-muoi-nga-661020"
+      },
+      {
+        "label": "Tạp chí Cộng sản",
+        "url": "https://www.tapchicongsan.org.vn/web/guest/hoc-tap-va-lam-theo-tu-tuong-ao-uc-phong-cach-ho-chi-minh1/-/2018/826436/nhung-hoat-dong-cua-nguyen-ai-quoc-doi-voi-bao-le-paria.aspx"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      }
+    ]
   },
   {
     "id": "1924-10-17",
     "year": 1924,
     "title": "Dự Đại hội V Quốc tế Cộng sản",
-    "summary": "Nguyễn Ái Quốc tham dự Đại hội V Quốc tế Cộng sản, đọc tham luận quan trọng về vấn đề dân tộc và thuộc địa, nêu cao tiếng nói của nhân dân thuộc địa.",
+    "summary": "Nguyễn Ái Quốc tham dự Đại hội V Quốc tế Cộng sản, đọc tham luận quan trọng về vấn đề dân tộc và thuộc địa, nêu cao tiếng nói của nhân dân thuộc địa. Đây là lần đầu tiên tiếng nói của nhân dân Việt Nam được nêu lên trên diễn đàn quốc tế.",
     "location": "Mátxcơva, Liên Xô",
     "type": "speech",
-    "tags": ["Quốc tế Cộng sản", "tham luận", "thuộc địa"]
+    "media": [
+      {
+        "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/data%20Hung/thang%206%20nam%202014/Dai%20hoi%20lan%20thu%20V%20quoc%20te%20cong%20san%20tai%20Matcova/2.jpg",
+        "kind": "photo",
+        "caption": "Thẻ đại biểu cấp cho Nguyễn Ái Quốc tham dự Đại hội lần thứ V Quốc tế cộng sản của tại Matxcơva, năm 1924."
+      },
+      {
+        "url": "https://file.qdnd.vn/data/images/0/2021/05/29/phucthang/bh15.jpg?dpi=150&quality=100&w=575",
+        "kind": "photo",
+        "caption": "Đồng chí Nguyễn Ái Quốc (người đầu tiên bên trái hàng ngồi) chụp ảnh với một số đại biểu tham dự Đại hội lần thứ V Quốc tế cộng sản của tại Moskva, Nga từ ngày 17-6 đến 8-7-1924."
+      }
+    ],
+    "tags": [
+      "Quốc tế Cộng sản",
+      "tham luận",
+      "thuộc địa",
+      "diễn đàn quốc tế"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/hui-viet-nam-cach-mang-thanh-nien-thanh-lap-tai-quang-chau.htm"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      },
+      {
+        "label": "Bảo tàng lịch sử",
+        "url": "https://baotanglichsu.vn/vi/Articles/3097/16508/cach-djay-90-nam-6-1924-6-2014-lanh-tu-nguyen-ai-quoc-tham-du-djai-hoi-lan-thu-v-cua-quoc-te-cong-san-tai-matxcova.html"
+      }
+    ]
   },
   {
     "id": "1925-06-21",
     "year": 1925,
     "title": "Thành lập Hội Việt Nam Cách mạng Thanh niên",
-    "summary": "Nguyễn Ái Quốc thành lập Hội Việt Nam Cách mạng Thanh niên tại Quảng Châu, Trung Quốc. Người trực tiếp mở lớp huấn luyện chính trị, đào tạo cán bộ cách mạng cho Việt Nam.",
+    "summary": "Nguyễn Ái Quốc thành lập Hội Việt Nam Cách mạng Thanh niên tại Quảng Châu, Trung Quốc. Người trực tiếp mở lớp huấn luyện chính trị, đào tạo cán bộ cách mạng cho Việt Nam. Đây là tổ chức tiền thân của Đảng Cộng sản Việt Nam.",
     "location": "Quảng Châu, Trung Quốc",
     "type": "event",
-    "media": [{
-      "url": "https://file3.qdnd.vn/data/images/0/2025/01/06/upload_2058/33.jpg?dpi=150&quality=100&w=870",
-      "kind": "photo",
-      "caption": "Tranh vẽ “ Nguyễn Ái Quốc giảng bài tại lớp huấn luyện cán bộ cách mạng Việt Nam tại Quảng Châu, Trung Quốc”."
-    }],
-    "tags": ["Hội Thanh niên", "đào tạo cán bộ"]
+    "media": [
+      {
+        "url": "https://file3.qdnd.vn/data/images/0/2025/01/06/upload_2058/33.jpg?dpi=150&quality=100&w=870",
+        "kind": "photo",
+        "caption": "Tranh vẽ Nguyễn Ái Quốc giảng bài tại lớp huấn luyện cán bộ cách mạng Việt Nam tại Quảng Châu, Trung Quốc."
+      },
+      {
+        "url": "https://images.hcmcpv.org.vn//Uploads/Image/08062021E17B6F78/hinh%202.jpg",
+        "kind": "photo",
+        "caption": "Báo Thanh niên – cơ quan ngôn luận của Việt Nam Thanh niên Cách mạng đồng chí Hội, số ra đầu tiên ngày 21/6/1925. Nguồn: Bảo tàng Hồ Chí Minh, chi nhánh TPHCM"
+      }
+    ],
+    "tags": [
+      "Hội Thanh niên",
+      "đào tạo cán bộ",
+      "Quảng Châu"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/hui-viet-nam-cach-mang-thanh-nien-thanh-lap-tai-quang-chau.htm"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      },
+      {
+        "label": "Đảng bộ thành phố Hồ Chí Minh",
+        "url": "https://hcmcpv.org.vn/tin-tuc/nguyen-ai-quoc-voi-viec-thanh-lap-hoi-viet-nam-cachmang-thanh-nien-1491879067"
+      }
+    ]
+  },
+  {
+    "id": "1927-duong-kach-menh",
+    "year": 1927,
+    "title": "Xuất bản “Đường Kách Mệnh” – tác phẩm lý luận chính trị đầu tiên của cách mạng Việt Nam",
+    "summary": "Các bài giảng lý luận cách mạng của Nguyễn Ái Quốc dành cho học viên lớp huấn luyện tại Quảng Châu được tập hợp, biên soạn và in thành sách “Đường Kách Mệnh” (1927). Tác phẩm trình bày những vấn đề cốt lõi về con đường cách mạng Việt Nam, vai trò của giai cấp công nhân và tổ chức cách mạng.",
+    "location": "Quảng Châu, Trung Quốc",
+    "type": "document",
+    "media": [
+      {
+        "url": "https://thinhvuongvietnam.com/Content/UploadFiles/EditorFiles/images/2025/Quy1/duongkachmenh20012025123326.jpg",
+        "kind": "photo",
+        "caption": "Tác phẩm 'Đường Kách mệnh' (Ảnh tư liệu)"
+      }
+    ],
+    "tags": [
+      "Đường Kách Mệnh",
+      "lý luận",
+      "Quảng Châu",
+      "tác phẩm"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/duong-kach-menh---tac-pham-ly-luan-chinh-tri-dau-tien-cua-cach-mang-viet-nam.htm"
+      },
+      {
+        "label": "Thịnh vựng Việt Nam",
+        "url": "https://thinhvuongvietnam.com/Content/tac-pham-duong-kach-menh-cua-nguyen-ai-quoc---su-xuat-hien-va-hanh-trinh-ve-viet-nam-48360"
+      }
+    ]
+  },
+  {
+    "id": "1927-06-hanh-trinh-quang-chau-moskva",
+    "year": 1927,
+    "title": "Rời Quảng Châu sau biến cố 1927, hành trình qua Hồng Kông – Thượng Hải – Vladivostok tới Moskva",
+    "summary": "Sau cuộc đàn áp cộng sản của Quốc dân đảng (4–5/1927), Nguyễn Ái Quốc rời Quảng Châu để bảo toàn lực lượng. Từ Hồng Kông sang Thượng Hải, tiếp tục đi Vladivostok và theo tuyến đường sắt xuyên Siberia tới Moskva; nhiều tư liệu ghi nhận Người có mặt tại Moskva vào ngày 15/6/1927 (thời điểm qua Vladivostok có sai số nhỏ giữa các nguồn).",
+    "location": "Hồng Kông → Thượng Hải → Vladivostok → Moskva",
+    "type": "event",
+    "tags": [
+      "hành trình",
+      "Quảng Châu",
+      "Hồng Kông",
+      "Vladivostok",
+      "Moskva",
+      "1927"
+    ],
+    "sources": [
+      {
+        "label": "Tạp chí Cộng sản",
+        "url": "https://www.tapchicongsan.org.vn/web/guest/hoc-tap-va-lam-theo-tu-tuong-ao-uc-phong-cach-ho-chi-minh1/-/2018/826436/nhung-hoat-dong-cua-nguyen-ai-quoc-doi-voi-bao-le-paria.aspx"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      }
+    ]
   },
   {
     "id": "1928-07-01",
     "year": 1928,
     "title": "Hoạt động ở Xiêm (Thái Lan)",
-    "summary": "Nguyễn Ái Quốc sang Xiêm (nay là Thái Lan), sống cùng Việt kiều, tổ chức hoạt động tuyên truyền, gây dựng cơ sở cách mạng trong cộng đồng người Việt.",
+    "summary": "Nguyễn Ái Quốc sang Xiêm (nay là Thái Lan), sống cùng Việt kiều, tổ chức hoạt động tuyên truyền, gây dựng cơ sở cách mạng trong cộng đồng người Việt. Người sống và hoạt động tại Nakhon Phanom, gần biên giới Việt Nam.",
     "location": "Nakhon Phanom, Xiêm",
     "type": "event",
-    "tags": ["Xiêm", "Việt kiều", "tuyên truyền"]
-  },
-  {
-    "id": "1929-06-01",
-    "year": 1929,
-    "title": "Đi nhiều nước châu Á",
-    "summary": "Người tiếp tục hoạt động tại Ấn Độ, Miến Điện, Xiêm, Singapore…, gây dựng cơ sở liên lạc, truyền bá chủ nghĩa Mác – Lênin vào phong trào giải phóng dân tộc Đông Nam Á.",
-    "location": "Châu Á",
-    "type": "event",
-    "tags": ["Đông Nam Á", "cách mạng", "Mác-Lênin"]
+    "tags": [
+      "Xiêm",
+      "Việt kiều",
+      "tuyên truyền",
+      "Nakhon Phanom"
+    ],
+    "sources": [
+      {
+        "label": "VOV",
+        "url": "https://vov.vn/chinh-tri/hanh-trinh-tim-duong-cuu-nuoc-cua-bac-co-mot-thau-chin-o-xiem-1048080.vov"
+      },
+      {
+        "label": "Di tích Hồ Chí Minh",
+        "url": "https://ditichhochiminhphuchutich.gov.vn/hoat-dong-cach-mang-cua-chu-tich-ho-chi-minh-tren-dat-nuoc-thai-lan-504"
+      }
+    ]
   },
   {
     "id": "1930-02-03",
     "year": 1930,
     "date": "1930-02-03",
     "title": "Chủ trì thành lập Đảng Cộng sản Việt Nam",
-    "summary": "Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Hồng Kông, thành lập Đảng Cộng sản Việt Nam.",
+    "summary": "Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Hồng Kông, thành lập Đảng Cộng sản Việt Nam. Người ra Lời kêu gọi nhân dịp thành lập Đảng Cộng sản Đông Dương (ICP) tại Hồng Kông.",
     "location": "Hồng Kông, Trung Quốc",
     "type": "event",
-    "media": [{
-      "url": "https://file3.qdnd.vn/data/images/0/2025/01/10/upload_2058/3.jpg?dpi=150&mode=crop&anchor=topcenter&quality=100&w=500",
-      "kind": "photo",
-      "caption": "Hội nghị thành lập Đảng Cộng sản Việt Nam ngày 3-2-1930."
-    }],
-    "tags": ["Đảng Cộng sản Việt Nam", "Hồng Kông"]
+    "media": [
+      {
+        "url": "https://file3.qdnd.vn/data/images/0/2025/01/10/upload_2058/3.jpg?dpi=150&mode=crop&anchor=topcenter&quality=100&w=500",
+        "kind": "photo",
+        "caption": "Hội nghị thành lập Đảng Cộng sản Việt Nam ngày 3-2-1930."
+      }
+    ],
+    "tags": [
+      "Đảng Cộng sản Việt Nam",
+      "Hồng Kông"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/nguyen-ai-quoc-chu-tri-hoi-nghi-hop-nhat-thanh-lap-dang-cong-san-viet-nam.htm"
+      },
+      {
+        "label": "Hồ Chí Minh",
+        "url": "https://hochiminh.vn/hoc-va-lam-theo-bac/hoc-va-lam-theo-bac/vai-tro-cua-nguyen-ai-quoc-tai-hoi-nghi-hop-nhat-cac-to-chuc-cong-san-o-viet-nam-3992"
+      }
+    ]
+  },
+  {
+    "id": "ChauA-1930",
+    "year": 1930,
+    "title": "Đi nhiều nước châu Á",
+    "summary": "Người tiếp tục hoạt động tại Ấn Độ, Miến Điện, Xiêm, Singapore…, gây dựng cơ sở liên lạc, truyền bá chủ nghĩa Mác – Lênin vào phong trào giải phóng dân tộc Đông Nam Á. Đây là giai đoạn mở rộng ảnh hưởng cách mạng ra khu vực.",
+    "location": "Châu Á",
+    "type": "event",
+    "tags": [
+      "Đông Nam Á",
+      "cách mạng",
+      "Mác-Lênin",
+      "liên lạc"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      }
+    ]
   },
   {
     "id": "1931-06-06",
     "year": 1931,
     "title": "Bị bắt ở Hồng Kông",
-    "summary": "Nguyễn Ái Quốc bị chính quyền Anh bắt giam tại Hồng Kông. Nhờ sự giúp đỡ của luật sư Loseby và phong trào cách mạng quốc tế, Người được trả tự do năm 1933.",
+    "summary": "Nguyễn Ái Quốc bị chính quyền Anh bắt giam tại Victoria Prison (Hồng Kông). Nhờ sự giúp đỡ của luật sư Loseby và phong trào cách mạng quốc tế, Người được trả tự do năm 1933.",
     "location": "Hồng Kông, Trung Quốc",
     "type": "event",
-    "tags": ["bị bắt", "Hồng Kông"]
+    "media": [
+      {
+        "url": "https://file3.qdnd.vn/data/images/0/2021/06/04/viethungvn/tvs.jpg?dpi=150&quality=100&w=1920",
+        "kind": "photo",
+        "caption": " Tống Văn Sơ (Nguyễn Ái Quốc), năm 1931."
+      },
+      {
+        "url": "https://file3.qdnd.vn/data/images/0/2021/06/04/viethungvn/1.jpg?dpi=150&quality=100&w=1920",
+        "kind": "photo",
+        "caption": "Nguyễn Ái Quốc tại Hồng Kông."
+      }
+    ],
+    "tags": [
+      "bị bắt",
+      "Hồng Kông",
+      "Victoria Prison"
+    ],
+    "sources": [
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/da-phuong-tien/longform/ky-4-bong-hoa-khong-the-hai-tren-dat-hong-kong-661550"
+      },
+      {
+        "label": "Đảng bộ thành phố Hồ Chí Minh",
+        "url": "https://www.hcmcpv.org.vn/tin-tuc/nhung-cau-chuyen-ve-vu-an-nguyen-ai-quoc-o-hongkong-1491910581"
+      }
+    ]
   },
   {
     "id": "1933-01-01",
     "year": 1933,
     "title": "Sang Liên Xô lần thứ hai",
-    "summary": "Sau khi được trả tự do, Nguyễn Ái Quốc sang Liên Xô lần thứ hai, tiếp tục học tập, nghiên cứu và tham gia công tác Quốc tế Cộng sản.",
+    "summary": "Sau khi được trả tự do, Nguyễn Ái Quốc sang Liên Xô lần thứ hai, tiếp tục học tập, nghiên cứu và tham gia công tác Quốc tế Cộng sản. Người tập trung nghiên cứu lý luận cách mạng và chuẩn bị cho việc trở về lãnh đạo phong trào trong nước.",
     "location": "Mátxcơva, Liên Xô",
     "type": "event",
-    "tags": ["Liên Xô", "nghiên cứu", "Quốc tế Cộng sản"]
+    "tags": [
+      "Liên Xô",
+      "nghiên cứu",
+      "Quốc tế Cộng sản",
+      "lý luận"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/nguyen-ai-quoc-sang-lien-xo-lan-thu-hai.htm"
+      },
+      {
+        "label": "Đảng bộ thành phố Hồ Chí Minh",
+        "url": "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
+      }
+    ]
+  },
+  {
+    "id": "1936-01-01",
+    "year": 1936,
+    "title": "Phong trào Dân chủ Đông Dương",
+    "summary": "Phong trào Dân chủ Đông Dương (1936-1939) phát triển mạnh mẽ trong nước, tạo điều kiện cho việc tập hợp lực lượng cách mạng và chuẩn bị cho cuộc đấu tranh giành độc lập.",
+    "location": "Đông Dương",
+    "type": "event",
+    "tags": [
+      "phong trào dân chủ",
+      "tập hợp lực lượng"
+    ],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh",
+      "Viện Lịch sử Đảng",
+      "Country Studies",
+      "Encyclopedia Britannica"
+    ]
   },
   {
     "id": "1938-10-01",
     "year": 1938,
     "title": "Trở lại Trung Quốc",
-    "summary": "Nguyễn Ái Quốc trở lại Trung Quốc, tham gia tổ chức huấn luyện quân sự và chính trị cho cán bộ Việt Nam tại Côn Minh, Quảng Tây.",
+    "summary": "Cuối 1938, từ Moskva trở lại Trung Quốc (Diên An). Nguyễn Ái Quốc (Hồ Quang) tham gia tổ chức huấn luyện quân sự và chính trị cho cán bộ Việt Nam tại Côn Minh, Quảng Tây.",
     "location": "Côn Minh, Trung Quốc",
     "type": "event",
-    "tags": ["huấn luyện", "Trung Quốc", "cách mạng"]
+    "tags": [
+      "huấn luyện",
+      "Trung Quốc",
+      "cách mạng"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/nguyen-ai-quoc-trong-vai-thieu-ta-ho-quang-cong-tac-tai-phong-cuu-vong-thuoc-van-phong-bat-lo-quan-o-que-lam.htm"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      }
+    ]
+  },
+  {
+    "id": "1939-02-01",
+    "year": 1939,
+    "title": "Viết loạt bài tuyên truyền tại Trung Quốc",
+    "summary": "Từ tháng 2-7/1939, Nguyễn Ái Quốc viết loạt bài tuyên truyền tại Trung Quốc, chuẩn bị tư tưởng và lý luận cho cuộc đấu tranh giải phóng dân tộc.",
+    "location": "Trung Quốc",
+    "type": "document",
+    "tags": [
+      "tuyên truyền",
+      "lý luận",
+      "chuẩn bị"
+    ],
+    "sources": [
+      "Encyclopedia Britannica",
+      "Tư liệu tổng hợp chính thống"
+    ]
   },
   {
     "id": "1941-01-28",
     "year": 1941,
     "date": "1941-01-28",
     "title": "Về nước sau 30 năm bôn ba",
-    "summary": "Nguyễn Ái Quốc vượt mốc 108 ở Pác Bó (Cao Bằng), chính thức trở về lãnh đạo phong trào cách mạng trong nước.",
+    "summary": "Nguyễn Ái Quốc vượt mốc 108 ở Pác Bó (Cao Bằng), chính thức trở về lãnh đạo phong trào cách mạng trong nước. Đây là sự kiện lịch sử quan trọng, đánh dấu việc Người trực tiếp lãnh đạo cuộc đấu tranh giải phóng dân tộc.",
     "location": "Pác Bó, Cao Bằng, Việt Nam",
     "type": "event",
-    "media": [{
-      "url": "https://special.nhandan.vn/ve-Pac-Bo-nho-Bac-Ho/assets/EoBeQGHSiR/ba-c-h-th-m-pa-c-bo-2-1961-1-2048x1360.jpg",
-      "kind": "photo",
-      "caption": "Bác Hồ thăm Pác Bó."
-    }],
-    "tags": ["trở về", "Pác Bó", "lãnh đạo"]
+    "media": [
+      {
+        "url": "https://special.nhandan.vn/ve-Pac-Bo-nho-Bac-Ho/assets/EoBeQGHSiR/ba-c-h-th-m-pa-c-bo-2-1961-1-2048x1360.jpg",
+        "kind": "photo",
+        "caption": "Bác Hồ thăm Pác Bó."
+      }
+    ],
+    "tags": [
+      "trở về",
+      "Pác Bó",
+      "lãnh đạo",
+      "mốc 108"
+    ],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh",
+      "Khu di tích Pác Bó",
+      "Viện Lịch sử Đảng",
+      "Nhân Dân Special"
+    ]
   },
   {
     "id": "1942-08-13",
     "year": 1942,
-    "title": "Sáng tác 'Ngục trung nhật ký'",
-    "summary": "Trong thời gian bị chính quyền Tưởng Giới Thạch bắt giam, Chủ tịch Hồ Chí Minh đã sáng tác tập thơ 'Ngục trung nhật ký' (Nhật ký trong tù) bất hủ.",
+    "date": "1942-08-13",
+    "title": "Nguyễn Ái Quốc lên đường đi Trung Quốc",
+    "summary": "Buổi tối 13/8/1942, với tên mới Hồ Chí Minh, Nguyễn Ái Quốc rời Việt Nam sang Trung Quốc để liên lạc với các lực lượng cách mạng người Việt Nam và lực lượng Đồng minh.",
+    "location": "Việt Nam / Trung Quốc",
+    "type": "event",
+    "media": [
+      {
+        "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/Cach%20day%2071%20nam/1.jpg",
+        "kind": "photo",
+        "caption": "Trụ sở xã Túc Vinh, huyện Đức Bảo, tỉnh Quảng Tây (Trung Quốc), nơi chính quyền Tưởng Giới Thạch bắt giữ Hồ Chí Minh, tháng 8/1942 (nguồn ảnh: Bảo tàng Hồ Chí Minh)"
+      },
+      {
+        "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/Cach%20day%2071%20nam/2.jpg",
+        "kind": "photo",
+        "caption": "Sơ đồ tuyến đường Hồ Chí Minh bị chính quyền Tưởng Giới Thạch giải đi sau khi bị bắt, từ tháng 8/1942- 9/1943 ( nguồn: lưu trữ Trung Quốc)"
+      }
+    ],
+    "tags": [
+      "hành trình",
+      "Trung Quốc",
+      "cứu nước"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Lịch sử Quốc gia",
+        "url": "https://baotanglichsu.vn/vi/Articles/3097/14964/cach-djay-71-nam-29-8-1942-29-8-2013-ho-chi-minh-bi-chinh-quyen-tuong-gioi-thach-bat-giu-tac-pham-nhat-ky-trong-tu-ra-djoi.html"
+      },
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/ky-niem-110-nam-ngay-bac-ho-ra-di-tim-duong-cuu-nuoc/chuyen-ve-nguoi/hanh-trinh-chu-tich-ho-chi-minh-ra-nuoc-ngoai-tim-duong-cuu-nuoc-giai-phong-dan-toc-661085"
+      }
+    ]
+  },
+  {
+    "id": "1942-08-13-poem",
+    "year": 1942,
+    "title": "Ngục trung nhật ký",
+    "summary": "Trong thời gian bị chính quyền Tưởng Giới Thạch bắt giam, Chủ tịch Hồ Chí Minh đã sáng tác tập thơ 'Ngục trung nhật ký' (Nhật ký trong tù) bất hủ. Tập thơ gồm 133 bài thơ chữ Hán, thể hiện tinh thần lạc quan và ý chí kiên cường của Người.",
     "location": "Quảng Tây, Trung Quốc",
     "type": "poem",
-    "media": [{
-      "url": "https://cdnmedia.baotintuc.vn/Upload/Td3qmSNSjM5mhekL9vM2Q/files/2020/05/Nhatkytrongtu/nhatkytrongtu-anh2.gif",
-      "kind": "photo",
-      "caption": "Bản nhật ký trong tù của Bác Hồ."
-    }],
-    "tags": ["thơ", "Nhật ký trong tù"]
+    "media": [
+      {
+        "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/26_3/Trang-bia.gif",
+        "kind": "photo",
+        "caption": "Trang bìa tác phẩm “ Ngục trung nhật ký” (Ảnh tư liệu BTLSQG)"
+      },
+      {
+        "url": "https://cdnmedia.baotintuc.vn/Upload/Td3qmSNSjM5mhekL9vM2Q/files/2020/05/Nhatkytrongtu/nhatkytrongtu-anh2.gif",
+        "kind": "photo",
+        "caption": "Bản nhật ký trong tù của Bác Hồ."
+      }
+    ],
+    "tags": [
+      "thơ",
+      "Nhật ký trong tù",
+      "chữ Hán",
+      "tinh thần lạc quan"
+    ],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh",
+      "Viện Văn học",
+      "Tài liệu lưu trữ Trung Quốc"
+    ]
   },
   {
     "id": "1945-09-02",
     "year": 1945,
     "date": "1945-09-02",
     "title": "Đọc Tuyên ngôn Độc lập",
-    "summary": "Tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập, khai sinh ra nước Việt Nam Dân chủ Cộng hòa.",
+    "summary": "Tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập, khai sinh ra nước Việt Nam Dân chủ Cộng hòa. Đây là sự kiện lịch sử trọng đại, đánh dấu sự ra đời của nhà nước Việt Nam độc lập. Tuyên ngôn được soạn thảo dựa trên Tuyên ngôn Độc lập của Mỹ và Tuyên ngôn Nhân quyền và Dân quyền của Pháp.",
     "location": "Hà Nội, Việt Nam",
     "type": "speech",
-    "media": [{
-      "url": "https://file3.qdnd.vn/data/images/0/2022/09/01/tvkimgiang/bac%20ho%20doc%20tuyen%20ngon.jpg?dpi=150&quality=100&w=870",
-      "kind": "photo",
-      "caption": "Bác Hồ đọc Tuyên ngôn Độc lập."
-    }],
-    "tags": ["độc lập", "Tuyên ngôn", "khai sinh"]
+    "media": [
+      {
+        "url": "https://file3.qdnd.vn/data/images/0/2022/09/01/tvkimgiang/bac%20ho%20doc%20tuyen%20ngon.jpg?dpi=150&quality=100&w=870",
+        "kind": "photo",
+        "caption": "Bác Hồ đọc Tuyên ngôn Độc lập."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=77kxLgUo-M0",
+        "kind": "video",
+        "caption": "Toàn cảnh Bác Hồ đọc Tuyên ngôn độc lập - Bảo tàng Hồ Chí Minh"
+      }
+    ],
+    "tags": [
+      "độc lập",
+      "Tuyên ngôn",
+      "khai sinh",
+      "Quảng trường Ba Đình"
+    ],
+    "sources": [
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-2-9-1945-bac-ho-doc-tuyen-ngon-doc-lap-704315"
+      },
+      {
+        "label": "Báo Nhân dân",
+        "url": "https://nhandan.vn/special/tuyenngondoclap_ynghia/index.html"
+      }
+    ]
+  },
+  {
+    "id": "1946-03-06",
+    "year": 1946,
+    "date": "1946-03-06",
+    "title": "Hiệp định Sơ bộ (Ho-Sainteny)",
+    "summary": "Ký kết Hiệp định Sơ bộ giữa Chủ tịch Hồ Chí Minh và đại diện Pháp Jean Sainteny, công nhận Việt Nam là một quốc gia tự do trong Liên bang Đông Dương.",
+    "location": "Hà Nội, Việt Nam",
+    "type": "event",
+    "media": [
+      {
+        "url": "https://file3.qdnd.vn/data/images/0/2022/03/03/thutrang_la/chutichhochiminhtailekyhiepdinhsobo%201.jpg?dpi=150&quality=100&w=870",
+        "kind": "photo",
+        "caption": "Chủ tịch Hồ Chí Minh và các đại biểu Anh, Mỹ, Trung Quốc tại Lễ ký kết Hiệp định Sơ bộ ngày 6-3-1946. Ảnh tư liệu "
+      }
+    ],
+    "tags": [
+      "hiệp định",
+      "tự do",
+      "Liên bang Đông Dương"
+    ],
+    "sources": [
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-6-3-1946-hiep-dinh-so-bo-phap-viet-duoc-ky-ket-687622"
+      },
+      {
+        "label": "Đảng bộ thành phố Hồ Chí Minh",
+        "url": "https://www.hcmcpv.org.vn/tin-tuc/hiep-dinh-so-bo-6-3-1946-va-tam-uoc-149-1946-nuoc-co-ngoai-giao-xuat-sac-cua-dang-va-chu-tich-1491884243"
+      }
+    ]
+  },
+  {
+    "id": "1946-09-01",
+    "year": 1946,
+    "title": "Modus Vivendi",
+    "summary": "Ký kết Modus Vivendi giữa Việt Nam và Pháp, tạm thời giải quyết các vấn đề cấp bách và tạo điều kiện cho việc đàm phán chính thức.",
+    "location": "Paris,Pháp",
+    "type": "event",
+    "media": [
+      {
+        "url": "https://images.hcmcpv.org.vn//Uploads/Image/140920212F70C5D3/14-09-2021Viet-Phap_4.jpg",
+        "kind": "photo",
+        "caption": "Chủ tịch Hồ Chí Minh và Bộ trưởng Marius Moutet ký Tạm ước về quan hệ Việt Nam - Pháp tại Paris ngày 14/9/1946 (Nguồn: Ảnh tư liệu)."
+      },
+      {
+        "url": "https://images.hcmcpv.org.vn/res/news/2021/09/13-09-2021-tam-uoc-viet-phap-nhip-nghi-can-thiet-cho-cach-mang-viet-nam-3F0B1BE-details.PNG?vs=13092021032141",
+        "kind": "photo",
+        "caption": "Chủ tịch Hồ Chí Minh và Bộ trưởng Hải ngoại Pháp Marius Moutet ký Tạm ước ngày 14/9/1946. (Ảnh tư liệu)"
+      }
+    ],
+    "tags": [
+      "Modus Vivendi",
+      "đàm phán"
+    ],
+    "sources": [
+      {
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-14-9-1946-modus-vivendi-viet-duoc-ky-ket-687622"
+      },
+      {
+        "label": "Đảng bộ thành phố Hồ Chí Minh",
+        "url": "https://www.hcmcpv.org.vn/tin-tuc/tam-uoc-viet-%E2%80%93-phap-nhip-nghi-can-thiet-cho-cach-mang-viet-nam-1491884206"
+      }
+    ]
   },
   {
     "id": "1946-12-19",
     "year": 1946,
     "date": "1946-12-19",
     "title": "Lời kêu gọi Toàn quốc kháng chiến",
-    "summary": "Hồ Chủ tịch ra 'Lời kêu gọi Toàn quốc kháng chiến', hiệu triệu toàn dân đứng lên chống thực dân Pháp xâm lược.",
+    "summary": "Hồ Chủ tịch ra 'Lời kêu gọi Toàn quốc kháng chiến', hiệu triệu toàn dân đứng lên chống thực dân Pháp xâm lược. Đây là bước ngoặt quan trọng trong cuộc đấu tranh giải phóng dân tộc.",
     "location": "Vạn Phúc, Hà Đông",
     "type": "speech",
-    "media": [{
-      "url": "https://hvlq.vn/upload/61311/20211210/images1774382_bac_ho_1__b5a1e.jpg",
-      "kind": "photo",
-      "caption": "Bác Hồ ra lời kêu gọi Toàn quốc kháng chiến."
-    }],
-    "tags": ["kháng chiến", "thực dân Pháp"]
+    "media": [
+      {
+        "url": "https://hvlq.vn/upload/61311/20211210/images1774382_bac_ho_1__b5a1e.jpg",
+        "kind": "photo",
+        "caption": "Bác Hồ ra lời kêu gọi Toàn quốc kháng chiến."
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/vi/f/f2/Toanquockhangchien.jpg",
+        "kind": "photo",
+        "caption": "Lời kêu gọi Toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh ngày 19-12-1946. Ảnh tư liệu"
+      }
+    ],
+    "tags": [
+      "kháng chiến",
+      "thực dân Pháp"
+    ],
+    "sources": [
+      {
+        "label": "Báo Hải quân Việt Nam",
+        "url": "https://baohaiquanvietnam.vn/tin-tuc/loi-keu-goi-toan-quoc-khang-chien-cua-chu-tich-ho-chi-minh-ngay-19-12-1946"
+      },
+      {
+        "label": "Hồ Chí Minh",
+        "url": "https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/loi-keu-goi-toan-quoc-khang-chien-cua-chu-tich-ho-chi-minh-y-chi-bao-ve-doc-lap-tu-do-cua-dan-toc-5994"
+      }
+    ]
+  },
+  {
+    "id": "1950-11-09",
+    "year": 1950,
+    "date": "1950-11-09",
+    "title": "Gửi điện chia buồn khi anh trai Nguyễn Sinh Khiêm mất",
+    "summary": "Khi nhận tin anh trai Nguyễn Sinh Khiêm qua đời, Chủ tịch Hồ Chí Minh đã gửi điện về quê bày tỏ nỗi buồn và xin lỗi vì không thể về chịu tang do bận việc nước; bức điện viết rằng Người 'chịu tội bất đễ' trước linh hồn anh và xin bà con nguyên lượng.",
+    "location": "Hà Nội, Việt Nam",
+    "type": "event",
+    "tags": [
+      "gia đình",
+      "điện tín",
+      "chia buồn"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/chu-tich-ho-chi-minh-gui-dien-cho-ho-nguyen-sinh-khi-nhan-duoc-tin-ong-nguyen-sinh-khiem-mat.htm"
+      }
+    ]
   },
   {
     "id": "1954-07-21",
     "year": 1954,
     "date": "1954-07-21",
     "title": "Hiệp định Genève",
-    "summary": "Hiệp định Genève được ký kết, chấm dứt chiến tranh ở Đông Dương. Chủ tịch Hồ Chí Minh cùng Trung ương Đảng lãnh đạo đất nước đi vào giai đoạn mới.",
+    "summary": "Hiệp định Genève được ký kết, chấm dứt chiến tranh ở Đông Dương, đình chiến và vùng tập kết dọc vĩ tuyến 17. Chủ tịch Hồ Chí Minh cùng Trung ương Đảng lãnh đạo đất nước đi vào giai đoạn mới.",
     "location": "Genève, Thụy Sĩ",
     "type": "event",
-    "media": [{
-      "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Gen-commons.jpg",
-      "kind": "photo",
-      "caption": "Hiệp định Genève."
-    }],
-    "tags": ["Hiệp định Genève", "hòa bình"]
+    "media": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Gen-commons.jpg",
+        "kind": "photo",
+        "caption": "Hiệp định Genève."
+      }
+    ],
+    "tags": [
+      "Hiệp định Genève",
+      "hòa bình",
+      "vĩ tuyến 17"
+    ],
+    "sources": [
+      {
+        "label": "Báo điện tử Chính phủ",
+        "url": "https://baochinhphu.vn/bac-ho-voi-hiep-dinh-geneva-102167289.htm"
+      },
+      {
+        "label": "Hồ Chí Minh",
+        "url": "https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/hiep-dinh-geneve-va-thang-loi-cua-ngoai-giao-viet-nam-11172"
+      }
+    ]
+  },
+  {
+    "id": "1957-04-05",
+    "year": 1957,
+    "date": "1957-04-05",
+    "title": "Chiêu đãi Đoàn đại biểu Chính phủ Ba Lan và dự tiệc của Thủ tướng",
+    "summary": "Ngày 5/4/1957, Chủ tịch Hồ Chí Minh chiêu đãi Đoàn đại biểu Chính phủ nước Cộng hòa Nhân dân Ba Lan tại Hà Nội, ca ngợi tinh thần anh dũng của nhân dân Ba Lan và cảm ơn sự giúp đỡ trong khôi phục đất nước; buổi tối Người dự tiệc chiêu đãi của Thủ tướng I. Xirăngkiêvích.",
+    "location": "Hà Nội, Việt Nam",
+    "type": "event",
+    "tags": [
+      "ngoại giao",
+      "Ba Lan",
+      "thi hành Hiệp định Genève"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/chu-tich-ho-chi-minh-chieu-dai-doan-dai-bieu-chinh-phu-nuoc-cong-hoa-nhan-dan-ba-lan-du-tiec-chieu-dai-cua-thu-tuong-i-xirangkievich.htm"
+      }
+    ]
+  },
+  {
+    "id": "1958-02-14",
+    "year": 1958,
+    "date": "1958-02-14",
+    "title": "Rời Cancútta đến Rănggun, bắt đầu chuyến thăm Miến Điện",
+    "summary": "Sau chuyến thăm hữu nghị Ấn Độ, sáng 14/2/1958 Chủ tịch Hồ Chí Minh rời Cancútta trên xe mui trần ra sân bay và lúc 8 giờ 15 phút lên đường đi Rănggun (Miến Điện). Người tới nơi lúc 13 giờ, được Tổng thống U Nu, Thủ tướng cùng hàng nghìn người đón tiếp; chiều tham dự tiệc và thăm chùa vàng Shwedagon.",
+    "location": "Cancútta (Ấn Độ) và Rănggun (Miến Điện)",
+    "type": "event",
+    "tags": [
+      "ngoại giao",
+      "Ấn Độ",
+      "Miến Điện"
+    ],
+    "sources": [
+      {
+        "label": "Bảo tàng Hồ Chí Minh",
+        "url": "https://baotanghochiminh.vn/chu-tich-ho-chi-minh-roi-cancutta-di-ranggun-mien-dien.htm"
+      },
+      {
+        "label": "Nhân Dân",
+        "url": "https://hochiminh.nhandan.vn/tinh-nghia-anh-em-vietanmien-ky-cuoi-1617.html"
+      }
+    ]
+  },
+  {
+    "id": "1958-03-02",
+    "year": 1958,
+    "date": "1958-03-02",
+    "title": "Thăm Thái Nguyên và kêu gọi đoàn kết xây dựng quê hương",
+    "summary": "Ngày 2/3/1958, Chủ tịch Hồ Chí Minh tới tỉnh Thái Nguyên, thăm trạm bơm Lưu Xá và yêu cầu chú trọng xây dựng đường dẫn nước; Người gặp gỡ nhân dân và kêu gọi đoàn kết, phát triển sản xuất nông nghiệp và xây dựng quê hương.",
+    "location": "Thái Nguyên, Việt Nam",
+    "type": "event",
+    "tags": [
+      "nông nghiệp",
+      "thăm địa phương",
+      "đoàn kết"
+    ],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh"
+    ]
   },
   {
     "id": "1960-09-05",
     "year": 1960,
-    "title": "Di chúc của Chủ tịch Hồ Chí Minh",
-    "summary": "Chủ tịch Hồ Chí Minh bắt đầu viết bản Di chúc lịch sử, đúc kết những tư tưởng, tình cảm và dặn dò tâm huyết cho toàn Đảng, toàn dân.",
+    "title": "Đại hội III xác định đường lối",
+    "summary": "Đại hội III của Đảng xác định đường lối 'miền Bắc XHCN, đấu tranh thống nhất', định hướng cho sự phát triển của đất nước trong giai đoạn mới.",
+    "location": "Hà Nội, Việt Nam",
+    "type": "event",
+    "tags": [
+      "Đại hội III",
+      "XHCN",
+      "thống nhất"
+    ],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh",
+      "Viện Lịch sử Đảng",
+      "Country Studies",
+      "Encyclopedia Britannica"
+    ]
+  },
+  {
+    "id": "1965-01-01",
+    "year": 1965,
+    "title": "Bắt đầu soạn Di chúc",
+    "summary": "Chủ tịch Hồ Chí Minh bắt đầu soạn bản Di chúc lịch sử, đúc kết những tư tưởng, tình cảm và dặn dò tâm huyết cho toàn Đảng, toàn dân. Di chúc được hoàn thiện và công bố sau khi Người qua đời.",
     "location": "Hà Nội, Việt Nam",
     "type": "document",
-    "media": [{
-      "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2019_08_22/2019-08-20-bao-chi-05.jpg",
-      "kind": "photo",
-      "caption": "Di chúc của Bác Hồ."
-    }],
-    "tags": ["Di chúc", "di sản"]
+    "media": [
+      {
+        "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2019_08_22/2019-08-20-bao-chi-05.jpg",
+        "kind": "photo",
+        "caption": "Di chúc của Bác Hồ."
+      }
+    ],
+    "tags": [
+      "Di chúc",
+      "di sản",
+      "tư tưởng"
+    ],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh",
+      "Viện Lịch sử Đảng",
+      "Encyclopedia Britannica",
+      "Tổng thuật chuẩn"
+    ]
+  },
+  {
+    "id": "1966-05-24",
+    "year": 1966,
+    "date": "1966-05-24",
+    "title": "Thăm Thái Hồ và làm bài thơ Vịnh Thái Hồ",
+    "summary": "Ngày 24/5/1966, Chủ tịch Hồ Chí Minh thăm danh thắng Thái Hồ (Trung Quốc) cùng lãnh đạo tỉnh Giang Tô và Hồ Nam. Tại đây Người sáng tác bài thơ chữ Hán 'Vịnh Thái Hồ' ca ngợi cảnh đẹp của hồ với bốn câu: 'Tây Hồ khôn sánh Thái Hồ đẹp / Thái Hồ rộng vượt Tây Hồ xa / Thuyền cá đi về trong nắng sớm / Ruộng đầy dâu lúa, núi đầy hoa'.",
+    "location": "Thái Hồ, Trung Quốc",
+    "type": "event",
+    "tags": [
+      "thơ",
+      "ngoại giao",
+      "Thái Hồ"
+    ],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh"
+    ]
   },
   {
     "id": "1969-09-02",
     "year": 1969,
     "date": "1969-09-02",
     "title": "Chủ tịch Hồ Chí Minh qua đời",
-    "summary": "Chủ tịch Hồ Chí Minh từ trần, để lại niềm tiếc thương vô hạn cho dân tộc Việt Nam và bạn bè quốc tế.",
+    "summary": "Chủ tịch Hồ Chí Minh từ trần tại Hà Nội, để lại niềm tiếc thương vô hạn cho dân tộc Việt Nam và bạn bè quốc tế. Người để lại di sản tư tưởng vĩ đại và tấm gương đạo đức sáng ngời.",
     "location": "Hà Nội, Việt Nam",
     "type": "event",
-    "media": [{
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhN4073UTCaOpPpL9hqBXrxmqu1hCgVjZF0Q&s",
-      "kind": "photo",
-      "caption": "Chủ tịch Hồ Chí Minh qua đời."
-    }],
-    "tags": ["từ trần", "di sản"]
+    "media": [
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhN4073UTCaOpPpL9hqBXrxmqu1hCgVjZF0Q&s",
+        "kind": "photo",
+        "caption": "Chủ tịch Hồ Chí Minh qua đời."
+      }
+    ],
+    "tags": [
+      "từ trần",
+      "di sản",
+      "tư tưởng"
+    ],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh",
+      "Viện Lịch sử Đảng",
+      "Encyclopedia Britannica",
+      "Asia for Educators"
+    ]
   }
 ]
-

@@ -153,21 +153,11 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
-      {/* Mobile sidebar overlay */}
-      {sidebarOpen && (
-        <div 
-          className="fixed inset-0 z-40 lg:hidden"
-          onClick={() => setSidebarOpen(false)}
-        >
-          <div className="fixed inset-0 bg-gray-900/50 backdrop-blur-sm" />
-        </div>
-      )}
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex">
 
-      {/* Sidebar */}
+      {/* Sidebar (scrolls with content, not fixed) */}
       <div className={`
-        fixed top-0 left-0 z-50 h-full w-72 bg-white/95 backdrop-blur-xl shadow-2xl transform transition-all duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 border-r border-gray-200/50
-        ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+        w-72 bg-white/95 backdrop-blur-xl shadow-2xl border-r border-gray-200/50 flex-shrink-0
       `}>
         {/* Sidebar Header */}
         <div className="flex items-center justify-between h-20 px-6 border-b border-gray-200/50 bg-gradient-to-r from-red-600 to-red-700">
@@ -277,7 +267,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
       </div>
 
       {/* Main content */}
-      <div className="lg:pl-72">
+      <div className="flex-1 min-w-0">
         {/* Top Header Bar */}
         <header className="sticky top-0 z-30 bg-white/80 backdrop-blur-xl border-b border-gray-200/50">
           <div className="flex items-center justify-between h-16 px-6">
