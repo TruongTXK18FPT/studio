@@ -1,0 +1,301 @@
+[
+  {
+    "id": 1,
+    "country": "Việt Nam",
+    "year": "1911",
+    "event": "Bác Hồ rời bến Nhà Rồng ra đi tìm đường cứu nước.",
+    "question": "Bác Hồ ra đi tìm đường cứu nước vào năm nào?",
+    "options": ["1905", "1911", "1920", "1930"],
+    "answer": "1911",
+    "coordinates": [106.7, 10.75]
+  },
+  {
+    "id": 2,
+    "country": "Pháp",
+    "year": "1911-1917",
+    "event": "Nguyễn Tất Thành làm việc trên tàu, tiếp xúc với phong trào công nhân Pháp.",
+    "question": "Ở Pháp, Bác Hồ chịu ảnh hưởng của phong trào nào?",
+    "options": ["Công nhân", "Nông dân", "Sinh viên", "Quân đội"],
+    "answer": "Công nhân",
+    "coordinates": [2.35, 48.85]
+  },
+  {
+    "id": 3,
+    "country": "Anh",
+    "year": "1913-1917",
+    "event": "Làm việc tại khách sạn Carlton, học hỏi văn minh công nghiệp phương Tây.",
+    "question": "Bác Hồ từng làm việc ở đâu khi ở Anh?",
+    "options": ["Khách sạn Carlton", "Khách sạn Paris", "Trường Đại học Oxford", "Tàu biển Amiral"],
+    "answer": "Khách sạn Carlton",
+    "coordinates": [-0.13, 51.5]
+  },
+  {
+    "id": 4,
+    "country": "Mỹ",
+    "year": "1912",
+    "event": "Quan sát xã hội tư bản và phong trào đấu tranh của người da đen.",
+    "question": "Bác Hồ học được điều gì khi ở Mỹ?",
+    "options": ["Tinh thần tự do và dân chủ", "Kỹ thuật in ấn", "Văn hóa châu Âu", "Làm báo"],
+    "answer": "Tinh thần tự do và dân chủ",
+    "coordinates": [-74.0, 40.7]
+  },
+  {
+    "id": 5,
+    "country": "Bỉ",
+    "year": "1911",
+    "event": "Dừng chân khi làm việc trên tàu, quan sát đời sống công nhân châu Âu.",
+    "question": "Tại Bỉ, Bác Hồ chú ý điều gì trong xã hội công nghiệp?",
+    "options": ["Sự bất công giữa các tầng lớp", "Khoa học kỹ thuật", "Văn hóa nghệ thuật", "Ẩm thực"],
+    "answer": "Sự bất công giữa các tầng lớp",
+    "coordinates": [4.35, 50.85]
+  },
+  {
+    "id": 6,
+    "country": "Thụy Sĩ",
+    "year": "1913",
+    "event": "Tham quan và tìm hiểu tổ chức quốc tế.",
+    "question": "Tại Thụy Sĩ, Bác Hồ quan tâm đến lĩnh vực gì?",
+    "options": ["Tổ chức quốc tế", "Nông nghiệp", "Công nghiệp", "Du lịch"],
+    "answer": "Tổ chức quốc tế",
+    "coordinates": [7.45, 46.95]
+  },
+  {
+    "id": 7,
+    "country": "Ý",
+    "year": "1914",
+    "event": "Dừng chân và quan sát phong trào công nhân Ý.",
+    "question": "Khi đến Ý, Bác Hồ quan sát phong trào nào?",
+    "options": ["Công nhân", "Nông dân", "Sinh viên", "Phụ nữ"],
+    "answer": "Công nhân",
+    "coordinates": [12.5, 41.9]
+  },
+  {
+    "id": 8,
+    "country": "Tây Ban Nha",
+    "year": "1914",
+    "event": "Dừng chân trong hành trình, quan sát đời sống nhân dân lao động.",
+    "question": "Bác Hồ học được gì từ nhân dân Tây Ban Nha?",
+    "options": ["Tinh thần đấu tranh", "Kỹ thuật sản xuất", "Ngôn ngữ Latin", "Văn hóa nghệ thuật"],
+    "answer": "Tinh thần đấu tranh",
+    "coordinates": [-3.7, 40.4]
+  },
+  {
+    "id": 9,
+    "country": "Bồ Đào Nha",
+    "year": "1915",
+    "event": "Tìm hiểu lịch sử thuộc địa và phong trào giải phóng dân tộc.",
+    "question": "Ở Bồ Đào Nha, Bác Hồ quan tâm vấn đề gì?",
+    "options": ["Giải phóng dân tộc", "Kỹ thuật hàng hải", "Kinh tế nông nghiệp", "Tôn giáo"],
+    "answer": "Giải phóng dân tộc",
+    "coordinates": [-9.1, 38.7]
+  },
+  {
+    "id": 10,
+    "country": "Hà Lan",
+    "year": "1915",
+    "event": "Quan sát hệ thống thuộc địa và chính trị tư sản.",
+    "question": "Bác Hồ nhận thấy điều gì từ Hà Lan?",
+    "options": ["Chính sách thuộc địa tàn bạo", "Kinh tế mạnh mẽ", "Giáo dục tiên tiến", "Tự do ngôn luận"],
+    "answer": "Chính sách thuộc địa tàn bạo",
+    "coordinates": [4.9, 52.37]
+  },
+  {
+    "id": 11,
+    "country": "Đức",
+    "year": "1916",
+    "event": "Dừng chân và quan sát tình hình chính trị trước Thế chiến I.",
+    "question": "Tại Đức, Bác Hồ chú ý đến sự kiện gì?",
+    "options": ["Chiến tranh thế giới", "Cách mạng công nghiệp", "Phong trào sinh viên", "Tư tưởng xã hội chủ nghĩa"],
+    "answer": "Chiến tranh thế giới",
+    "coordinates": [13.4, 52.5]
+  },
+  {
+    "id": 12,
+    "country": "Nga",
+    "year": "1923-1924",
+    "event": "Học tập lý luận Mác – Lênin và làm việc tại Quốc tế Cộng sản.",
+    "question": "Tại Nga, Bác Hồ học tập theo tư tưởng nào?",
+    "options": ["Mác – Lênin", "Tôn Trung Sơn", "Khổng Tử", "Nho giáo"],
+    "answer": "Mác – Lênin",
+    "coordinates": [37.6, 55.75]
+  },
+  {
+    "id": 13,
+    "country": "Trung Quốc",
+    "year": "1924-1940",
+    "event": "Tổ chức đào tạo cán bộ cách mạng Việt Nam tại Quảng Châu.",
+    "question": "Bác Hồ thành lập tổ chức nào ở Trung Quốc?",
+    "options": ["Hội Việt Nam Cách mạng Thanh niên", "Đảng Cộng sản Việt Nam", "Mặt trận Việt Minh", "Thanh niên cứu quốc"],
+    "answer": "Hội Việt Nam Cách mạng Thanh niên",
+    "coordinates": [113.3, 23.1]
+  },
+  {
+    "id": 14,
+    "country": "Thái Lan",
+    "year": "1928-1929",
+    "event": "Truyền bá cách mạng, vận động Việt kiều ủng hộ kháng chiến.",
+    "question": "Tại Thái Lan, Bác Hồ chủ yếu làm gì?",
+    "options": ["Vận động Việt kiều", "Tham dự hội nghị quốc tế", "Thành lập Đảng", "Tham quan"],
+    "answer": "Vận động Việt kiều",
+    "coordinates": [100.5, 13.75]
+  },
+  {
+    "id": 15,
+    "country": "Lào",
+    "year": "1929",
+    "event": "Liên kết phong trào cách mạng Đông Dương.",
+    "question": "Bác Hồ đến Lào nhằm mục tiêu gì?",
+    "options": ["Liên kết phong trào cách mạng", "Dạy học", "Tham quan", "Tổ chức hội nghị"],
+    "answer": "Liên kết phong trào cách mạng",
+    "coordinates": [102.6, 18.0]
+  },
+  {
+    "id": 16,
+    "country": "Campuchia",
+    "year": "1929",
+    "event": "Liên hệ các lực lượng yêu nước trong khu vực.",
+    "question": "Tại Campuchia, Bác Hồ hướng đến điều gì?",
+    "options": ["Hợp tác giải phóng Đông Dương", "Thành lập chi bộ Đảng", "Tìm tài liệu", "Tham quan"],
+    "answer": "Hợp tác giải phóng Đông Dương",
+    "coordinates": [104.9, 11.55]
+  },
+  {
+    "id": 17,
+    "country": "Hồng Kông",
+    "year": "1931",
+    "event": "Bị chính quyền Anh bắt giữ, sau đó được trả tự do.",
+    "question": "Sự kiện gì xảy ra với Bác Hồ tại Hồng Kông?",
+    "options": ["Bị bắt", "Thành lập tổ chức mới", "Tham dự hội nghị", "Viết báo"],
+    "answer": "Bị bắt",
+    "coordinates": [114.1, 22.3]
+  },
+  {
+    "id": 18,
+    "country": "Singapore",
+    "year": "1933",
+    "event": "Dừng chân ngắn, quan sát thuộc địa Anh.",
+    "question": "Tại Singapore, Bác Hồ quan sát điều gì?",
+    "options": ["Chính quyền thuộc địa Anh", "Phong trào công nhân", "Tự do báo chí", "Kinh tế tư bản"],
+    "answer": "Chính quyền thuộc địa Anh",
+    "coordinates": [103.8, 1.3]
+  },
+  {
+    "id": 19,
+    "country": "Ấn Độ",
+    "year": "1913",
+    "event": "Dừng chân trên đường đi, học hỏi tinh thần đấu tranh dân tộc.",
+    "question": "Bác Hồ chịu ảnh hưởng từ phong trào nào tại Ấn Độ?",
+    "options": ["Đấu tranh giành độc lập", "Cách mạng công nghiệp", "Phong trào tôn giáo", "Giáo dục"],
+    "answer": "Đấu tranh giành độc lập",
+    "coordinates": [77.2, 28.6]
+  },
+  {
+    "id": 20,
+    "country": "Ai Cập",
+    "year": "1911",
+    "event": "Dừng chân khi tàu đi qua kênh đào Suez.",
+    "question": "Khi tàu đi qua Ai Cập, Bác Hồ quan sát gì?",
+    "options": ["Đời sống nhân dân thuộc địa", "Văn hóa cổ đại", "Công trình kiến trúc", "Quân đội"],
+    "answer": "Đời sống nhân dân thuộc địa",
+    "coordinates": [31.2, 30.0]
+  },{
+    "id": 21,
+    "country": "Algeria",
+    "year": "1911",
+    "event": "Bác Hồ dừng chân tại Bắc Phi trong chuyến hải hành đầu tiên.",
+    "question": "Bác Hồ quan sát điều gì tại Algeria?",
+    "options": ["Chính sách thuộc địa của Pháp", "Phong trào công nhân", "Nông nghiệp phát triển", "Tôn giáo Hồi giáo"],
+    "answer": "Chính sách thuộc địa của Pháp",
+    "coordinates": [3.05, 36.75]
+  },
+  {
+    "id": 22,
+    "country": "Senegal",
+    "year": "1911",
+    "event": "Bác Hồ dừng chân ngắn tại châu Phi, thấy rõ cảnh áp bức của thực dân.",
+    "question": "Bác Hồ cảm nhận gì ở Senegal?",
+    "options": ["Sự bóc lột của chủ nghĩa thực dân", "Tinh thần tự do", "Công nghiệp hóa", "Kinh tế phát triển"],
+    "answer": "Sự bóc lột của chủ nghĩa thực dân",
+    "coordinates": [-17.44, 14.69]
+  },
+  {
+    "id": 23,
+    "country": "Brazil",
+    "year": "1912",
+    "event": "Quan sát xã hội Nam Mỹ, nhận thấy giai cấp lao động chịu thiệt thòi.",
+    "question": "Tại Brazil, Bác Hồ chú ý điều gì?",
+    "options": ["Sự bất bình đẳng xã hội", "Công nghệ nông nghiệp", "Văn hóa Samba", "Tự do báo chí"],
+    "answer": "Sự bất bình đẳng xã hội",
+    "coordinates": [-47.88, -15.79]
+  },
+  {
+    "id": 24,
+    "country": "Cuba",
+    "year": "1912",
+    "event": "Quan sát tinh thần yêu nước của nhân dân Cuba.",
+    "question": "Bác Hồ học được điều gì từ Cuba?",
+    "options": ["Tinh thần yêu nước và cách mạng", "Kỹ thuật nông nghiệp", "Ngôn ngữ Tây Ban Nha", "Kinh tế xuất khẩu"],
+    "answer": "Tinh thần yêu nước và cách mạng",
+    "coordinates": [-82.37, 23.12]
+  },
+  {
+    "id": 25,
+    "country": "Mexico",
+    "year": "1912",
+    "event": "Tìm hiểu phong trào cách mạng Mexico đầu thế kỷ XX.",
+    "question": "Bác Hồ quan sát phong trào nào tại Mexico?",
+    "options": ["Cách mạng nông dân", "Công nhân đấu tranh", "Đấu tranh tôn giáo", "Học thuật"],
+    "answer": "Cách mạng nông dân",
+    "coordinates": [-99.13, 19.43]
+  },
+  {
+    "id": 26,
+    "country": "Nhật Bản",
+    "year": "1917",
+    "event": "Tìm hiểu phong trào Duy Tân, học hỏi sự phát triển của châu Á.",
+    "question": "Tại Nhật, Bác Hồ quan tâm điều gì?",
+    "options": ["Phong trào Duy Tân", "Công nghiệp hóa", "Giáo dục", "Tư tưởng Khổng học"],
+    "answer": "Phong trào Duy Tân",
+    "coordinates": [139.7, 35.7]
+  },
+  {
+    "id": 27,
+    "country": "Triều Tiên",
+    "year": "1922",
+    "event": "Quan sát đất nước chịu ách đô hộ, đồng cảm với nhân dân bị áp bức.",
+    "question": "Bác Hồ thấy điểm tương đồng nào giữa Việt Nam và Triều Tiên?",
+    "options": ["Cùng bị đô hộ", "Cùng phát triển công nghiệp", "Có nền giáo dục mạnh", "Có tự do ngôn luận"],
+    "answer": "Cùng bị đô hộ",
+    "coordinates": [125.7, 39.0]
+  },
+  {
+    "id": 28,
+    "country": "Mông Cổ",
+    "year": "1924",
+    "event": "Gặp gỡ các nhà cách mạng quốc tế.",
+    "question": "Tại Mông Cổ, Bác Hồ tham dự hoạt động gì?",
+    "options": ["Gặp gỡ các nhà cách mạng", "Tham quan du lịch", "Giảng dạy", "Nghiên cứu văn hóa"],
+    "answer": "Gặp gỡ các nhà cách mạng",
+    "coordinates": [106.9, 47.9]
+  },
+  {
+    "id": 29,
+    "country": "Ba Lan",
+    "year": "1923",
+    "event": "Quan sát sự phục hồi sau chiến tranh và ảnh hưởng của Liên Xô.",
+    "question": "Bác Hồ nhận xét gì về Ba Lan thời kỳ đó?",
+    "options": ["Ảnh hưởng mạnh mẽ từ Liên Xô", "Kinh tế phát triển nhanh", "Tự do chính trị", "Tôn giáo đa dạng"],
+    "answer": "Ảnh hưởng mạnh mẽ từ Liên Xô",
+    "coordinates": [21.0, 52.2]
+  },
+  {
+    "id": 30,
+    "country": "Việt Nam (trở về)",
+    "year": "1941",
+    "event": "Trở về Pác Bó, lãnh đạo cách mạng giải phóng dân tộc.",
+    "question": "Năm nào Bác Hồ trở về Việt Nam lãnh đạo cách mạng?",
+    "options": ["1941", "1930", "1945", "1954"],
+    "answer": "1941",
+    "coordinates": [105.8, 22.7]
+  }
+]

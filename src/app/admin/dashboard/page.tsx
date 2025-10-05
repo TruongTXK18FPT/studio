@@ -114,7 +114,7 @@ export default function AdminDashboard() {
           pendingPosts: pendingPosts.length,
           approvedPosts: approvedPosts.length,
           rejectedPosts: rejectedPosts.length,
-          todayVisits: Math.floor(Math.random() * 500) + 200,
+          todayVisits: Math.floor(Math.random() * 2000) + 2000,
           weeklyGrowth: Math.floor(Math.random() * 15) + 5,
           monthlyRevenue: Math.floor(Math.random() * 10000) + 5000
         })

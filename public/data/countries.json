@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Vietnam",
+    "flag": "🇻🇳",
+    "year": "1890-1911, 1941-1969",
+    "question": "Bác Hồ ra đi tìm đường cứu nước từ bến nào?",
+    "options": ["Bến Nhà Rồng", "Bến Bạch Đằng", "Bến Cửa Lò", "Bến Ninh Kiều"],
+    "correctAnswer": "Bến Nhà Rồng"
+  },
+  {
+    "id": 2,
+    "name": "France",
+    "flag": "🇫🇷",
+    "year": "1911-1923",
+    "question": "Tại Pháp, Bác Hồ tham gia tổ chức chính trị nào?",
+    "options": ["Đảng Cộng sản Pháp", "Đảng Xã hội Pháp", "Quốc tế Cộng sản", "Hội Việt kiều yêu nước"],
+    "correctAnswer": "Đảng Xã hội Pháp"
+  },
+  {
+    "id": 3,
+    "name": "United Kingdom",
+    "flag": "🇬🇧",
+    "year": "1911-1912",
+    "question": "Tại London, Bác Hồ làm nghề gì để kiếm sống?",
+    "options": ["Phụ bếp", "Thợ làm bánh", "Quét tuyết", "Rửa bát"],
+    "correctAnswer": "Phụ bếp"
+  },
+  {
+    "id": 4,
+    "name": "United States",
+    "flag": "🇺🇸",
+    "year": "1912-1913",
+    "question": "Bác Hồ đã ghé thăm những thành phố nào của Mỹ?",
+    "options": ["New York", "San Francisco", "Boston", "Tất cả các đáp án"],
+    "correctAnswer": "Tất cả các đáp án"
+  },
+  {
+    "id": 5,
+    "name": "Algeria",
+    "flag": "🇩🇿",
+    "year": "1913",
+    "question": "Tại Algeria, Bác Hồ chứng kiến điều gì?",
+    "options": ["Sự áp bức của thực dân Pháp", "Cuộc khởi nghĩa", "Hội nghị quốc tế", "Lễ hội văn hóa"],
+    "correctAnswer": "Sự áp bức của thực dân Pháp"
+  },
+  {
+    "id": 6,
+    "name": "Tunisia",
+    "flag": "🇹🇳",
+    "year": "1913",
+    "question": "Bác Hồ rút ra bài học gì tại Tunisia?",
+    "options": ["Phải đoàn kết dân tộc", "Cần có vũ khí hiện đại", "Phải học tiếng Pháp", "Cần có ngoại giao"],
+    "correctAnswer": "Phải đoàn kết dân tộc"
+  },
+  {
+    "id": 7,
+    "name": "Belgium",
+    "flag": "🇧🇪",
+    "year": "1913",
+    "question": "Bác Hồ ghé qua Bỉ để làm gì?",
+    "options": ["Tìm hiểu phong trào công nhân", "Học tiếng Pháp", "Làm thợ làm vườn", "Viết báo"],
+    "correctAnswer": "Tìm hiểu phong trào công nhân"
+  },
+  {
+    "id": 8,
+    "name": "Italy",
+    "flag": "🇮🇹",
+    "year": "1913",
+    "question": "Bác Hồ đi qua Italy khi đi từ đâu đến đâu?",
+    "options": ["Pháp sang Đức", "Pháp sang Thụy Sĩ", "Bắc Phi trở về Pháp", "Anh sang Pháp"],
+    "correctAnswer": "Bắc Phi trở về Pháp"
+  },
+  {
+    "id": 9,
+    "name": "Germany",
+    "flag": "🇩🇪",
+    "year": "1923",
+    "question": "Bác Hồ đến Đức với mục đích gì?",
+    "options": ["Chuẩn bị sang Liên Xô", "Tham dự hội nghị quốc tế", "Tham gia cách mạng Đức", "Học tập lý luận"],
+    "correctAnswer": "Chuẩn bị sang Liên Xô"
+  },
+  {
+    "id": 10,
+    "name": "Russia",
+    "flag": "🇷🇺",
+    "year": "1923-1924",
+    "question": "Bác Hồ học gì tại Liên Xô?",
+    "options": ["Chiến thuật quân sự", "Lý luận cách mạng", "Ngoại giao", "Kinh tế"],
+    "correctAnswer": "Lý luận cách mạng"
+  },
+  {
+    "id": 11,
+    "name": "China",
+    "flag": "🇨🇳",
+    "year": "1924-1927, 1938-1941",
+    "question": "Bác Hồ thành lập tổ chức nào tại Trung Quốc?",
+    "options": ["Việt Nam Thanh niên Cách mạng Đồng chí Hội", "Đảng Cộng sản Đông Dương", "Việt Minh", "Hội Việt Nam Cách mạng"],
+    "correctAnswer": "Việt Nam Thanh niên Cách mạng Đồng chí Hội"
+  },
+  {
+    "id": 12,
+    "name": "Thailand",
+    "flag": "🇹🇭",
+    "year": "1928-1929",
+    "question": "Bác Hồ hoạt động bí mật tại Thái Lan với mục đích gì?",
+    "options": ["Liên lạc với cách mạng Việt Nam", "Học võ thuật", "Kinh doanh", "Du lịch"],
+    "correctAnswer": "Liên lạc với cách mạng Việt Nam"
+  },
+  {
+    "id": 13,
+    "name": "India",
+    "flag": "🇮🇳",
+    "year": "1929",
+    "question": "Bác Hồ học hỏi điều gì từ phong trào độc lập Ấn Độ?",
+    "options": ["Chiến thuật phi bạo lực", "Tổ chức quần chúng", "Kỹ thuật nông nghiệp", "Y học cổ truyền"],
+    "correctAnswer": "Tổ chức quần chúng"
+  },
+  {
+    "id": 14,
+    "name": "Singapore",
+    "flag": "🇸🇬",
+    "year": "1930",
+    "question": "Tại Singapore, Bác Hồ bị chính quyền nào bắt giữ?",
+    "options": ["Anh", "Pháp", "Nhật", "Hà Lan"],
+    "correctAnswer": "Anh"
+  },
+  {
+    "id": 15,
+    "name": "Hong Kong",
+    "flag": "🇭🇰",
+    "year": "1930",
+    "question": "Sự kiện quan trọng gì diễn ra tại Hồng Kông năm 1930?",
+    "options": ["Hội nghị hợp nhất thành lập Đảng Cộng sản Việt Nam", "Hội nghị Việt Minh", "Ra tuyên ngôn độc lập", "Thành lập chính phủ lâm thời"],
+    "correctAnswer": "Hội nghị hợp nhất thành lập Đảng Cộng sản Việt Nam"
+  },
+  {
+    "id": 16,
+    "name": "Burma",
+    "flag": "🇲🇲",
+    "year": "1929",
+    "question": "Bác Hồ đi qua Myanmar (Burma) khi đi từ đâu?",
+    "options": ["Từ Ấn Độ sang Trung Quốc", "Từ Thái Lan sang Trung Quốc", "Từ Singapore sang Thái Lan", "Từ Việt Nam sang Ấn Độ"],
+    "correctAnswer": "Từ Ấn Độ sang Trung Quốc"
+  },
+  {
+    "id": 17,
+    "name": "Malaysia",
+    "flag": "🇲🇾",
+    "year": "1930",
+    "question": "Tại Malaysia, Bác Hồ gặp gỡ và tuyên truyền cho ai?",
+    "options": ["Công nhân cao su Việt kiều", "Ngư dân", "Thợ mỏ", "Nông dân địa phương"],
+    "correctAnswer": "Công nhân cao su Việt kiều"
+  },
+  {
+    "id": 18,
+    "name": "Indonesia",
+    "flag": "🇮🇩",
+    "year": "1930",
+    "question": "Bác Hồ quan tâm đến phong trào nào tại Indonesia?",
+    "options": ["Phong trào độc lập chống Hà Lan", "Phong trào văn hóa", "Phong trào tôn giáo", "Phong trào nông nghiệp"],
+    "correctAnswer": "Phong trào độc lập chống Hà Lan"
+  },
+  {
+    "id": 19,
+    "name": "Philippines",
+    "flag": "🇵🇭",
+    "year": "1930",
+    "question": "Bác Hồ học điều gì từ cuộc đấu tranh của Philippines?",
+    "options": ["Chống chủ nghĩa thực dân Mỹ", "Xây dựng quân đội", "Phát triển kinh tế", "Cải cách giáo dục"],
+    "correctAnswer": "Chống chủ nghĩa thực dân Mỹ"
+  },
+  {
+    "id": 20,
+    "name": "Laos",
+    "flag": "🇱🇦",
+    "year": "1928-1929",
+    "question": "Bác Hồ đi qua Lào để làm gì?",
+    "options": ["Liên lạc với cách mạng Việt Nam", "Nghỉ dưỡng", "Học ngôn ngữ", "Kinh doanh"],
+    "correctAnswer": "Liên lạc với cách mạng Việt Nam"
+  },
+  {
+    "id": 21,
+    "name": "Cambodia",
+    "flag": "🇰🇭",
+    "year": "1929-1930",
+    "question": "Tại Campuchia, Bác Hồ tuyên truyền tư tưởng gì?",
+    "options": ["Đoàn kết Đông Dương", "Cách mạng vô sản", "Dân chủ tư sản", "Cải cách xã hội"],
+    "correctAnswer": "Đoàn kết Đông Dương"
+  },
+  {
+    "id": 22,
+    "name": "Switzerland",
+    "flag": "🇨🇭",
+    "year": "1923",
+    "question": "Bác Hồ tham dự hội nghị gì tại Thụy Sĩ?",
+    "options": ["Hội nghị Nông dân Quốc tế", "Hội nghị hòa bình", "Hội nghị thương mại", "Hội nghị văn hóa"],
+    "correctAnswer": "Hội nghị Nông dân Quốc tế"
+  },
+  {
+    "id": 23,
+    "name": "Austria",
+    "flag": "🇦🇹",
+    "year": "1923",
+    "question": "Bác Hồ ghé qua Áo khi đi từ đâu?",
+    "options": ["Từ Đức sang Thụy Sĩ", "Từ Pháp sang Liên Xô", "Từ Italy sang Đức", "Từ Nga sang Pháp"],
+    "correctAnswer": "Từ Đức sang Thụy Sĩ"
+  },
+  {
+    "id": 24,
+    "name": "Poland",
+    "flag": "🇵🇱",
+    "year": "1923",
+    "question": "Bác Hồ đi qua Ba Lan trên đường đi đến đâu?",
+    "options": ["Liên Xô", "Đức", "Pháp", "Thụy Sĩ"],
+    "correctAnswer": "Liên Xô"
+  },
+  {
+    "id": 25,
+    "name": "Morocco",
+    "flag": "🇲🇦",
+    "year": "1913",
+    "question": "Tại Morocco, Bác Hồ chứng kiến điều gì?",
+    "options": ["Sự kháng cự của người dân bản địa", "Hội nghị quốc tế", "Lễ hội văn hóa", "Chiến tranh thế giới"],
+    "correctAnswer": "Sự kháng cự của người dân bản địa"
+  },
+  {
+    "id": 26,
+    "name": "Spain",
+    "flag": "🇪🇸",
+    "year": "1913",
+    "question": "Bác Hồ ghé qua Tây Ban Nha khi đi từ đâu?",
+    "options": ["Từ Bắc Phi về Pháp", "Từ Pháp sang Italy", "Từ Anh sang Pháp", "Từ Đức sang Thụy Sĩ"],
+    "correctAnswer": "Từ Bắc Phi về Pháp"
+  },
+  {
+    "id": 27,
+    "name": "Netherlands",
+    "flag": "🇳🇱",
+    "year": "1913",
+    "question": "Bác Hồ quan sát điều gì khi ghé qua Hà Lan?",
+    "options": ["Chính sách thực dân Hà Lan ở thuộc địa", "Hệ thống giáo dục", "Công nghiệp nặng", "Nghệ thuật hội họa"],
+    "correctAnswer": "Chính sách thực dân Hà Lan ở thuộc địa"
+  },
+  {
+    "id": 28,
+    "name": "Denmark",
+    "flag": "🇩🇰",
+    "year": "1923",
+    "question": "Bác Hồ ghé qua Đan Mạch khi đi đâu?",
+    "options": ["Từ Đức về Pháp", "Từ Anh sang Nga", "Từ Pháp sang Anh", "Từ Nga về Pháp"],
+    "correctAnswer": "Từ Đức về Pháp"
+  },
+  {
+    "id": 29,
+    "name": "Sweden",
+    "flag": "🇸🇪",
+    "year": "1923",
+    "question": "Bác Hồ tìm hiểu gì tại Thụy Điển?",
+    "options": ["Phong trào công nhân và xã hội dân chủ", "Hệ thống phúc lợi", "Công nghệ đóng tàu", "Văn học"],
+    "correctAnswer": "Phong trào công nhân và xã hội dân chủ"
+  },
+  {
+    "id": 30,
+    "name": "Norway",
+    "flag": "🇳🇴",
+    "year": "1923",
+    "question": "Bác Hồ quan tâm điều gì tại Na Uy?",
+    "options": ["Phong trào độc lập dân tộc", "Công nghiệp đánh cá", "Hệ thống giáo dục", "Kiến trúc"],
+    "correctAnswer": "Phong trào độc lập dân tộc"
+  }
+]

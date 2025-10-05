@@ -5,7 +5,7 @@ import { NavLink } from './NavLink';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useEffect, useState } from 'react';
-import { Search, Menu, X, Heart, User, Settings, LogOut, Shield, BookOpen, MessageSquare, Clock, Globe, Building, Crown, GamepadIcon } from 'lucide-react';
+import { Search, Menu, X, Heart, User, Settings, LogOut, Shield, BookOpen, MessageSquare, Clock, Globe, Building, Crown, Map } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
@@ -13,13 +13,13 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSepara
 import { triggerHeaderLogoutRefresh } from '@/lib/auth-utils';
 
 const navLinks = [
-  { href: '/timeline', label: 'Dòng thời gian', icon: Clock, description: 'Hành trình cuộc đời Bác' },
-  { href: '/gallery', label: 'Thư viện', icon: BookOpen, description: 'Hình ảnh & tư liệu quý' },
-  { href: '/letters', label: 'Thư & Văn bản', icon: MessageSquare, description: 'Di sản văn học' },
-  { href: '/virtual_museum', label: 'Bảo tàng ảo', icon: Building, description: 'Trải nghiệm bảo tàng 3D' },
-  { href: '/community', label: 'Cộng đồng', icon: Globe, description: 'Chia sẻ & thảo luận' },
-  { href: '/quiz', label: 'Quiz lịch sử', icon: Shield, description: 'Kiểm tra kiến thức' },
-  { href: '/play', label: 'Battle Royale', icon: GamepadIcon, description: 'Tham gia game đối kháng', special: true },
+  { href: '/timeline', label: 'Dòng thời gian', icon: Clock, description: 'Hành trình cuộc đời Bác', admin: false },
+  { href: '/gallery', label: 'Thư viện', icon: BookOpen, description: 'Hình ảnh & tư liệu quý', admin: false },
+  { href: '/letters', label: 'Thư & Văn bản', icon: MessageSquare, description: 'Di sản văn học', admin: false },
+  { href: '/world-map', label: 'Bản đồ thế giới', icon: Map, description: 'Hành trình theo chân Bác', admin: false },
+  { href: '/virtual_museum', label: 'Bảo tàng ảo', icon: Building, description: 'Trải nghiệm bảo tàng 3D', admin: false },
+  { href: '/community', label: 'Cộng đồng', icon: Globe, description: 'Chia sẻ & thảo luận', admin: false },
+  { href: '/quiz', label: 'Quiz lịch sử', icon: Shield, description: 'Kiểm tra kiến thức', admin: false },
 ];
 
 interface User {

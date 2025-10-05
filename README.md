@@ -4,33 +4,6 @@ Module xác thực hoàn chỉnh cho ứng dụng Next.js 14 với App Router.
 
 Đây là một dự án Next.js được tạo cho "Hành Trình Bác Hồ", một trang web tư liệu về cuộc đời và sự nghiệp của Chủ tịch Hồ Chí Minh.
 
-### 🕹️ Battle Royale – Team vs Team (Skeleton)
-
-Yêu cầu môi trường (Upstash Redis):
-
-```env
-UPSTASH_REDIS_REST_URL=...
-UPSTASH_REDIS_REST_TOKEN=...
-```
-
-Seed câu hỏi mẫu:
-
-```bash
-npx tsx scripts/seed-game.ts
-```
-
-Endpoints mới:
-- `POST /api/rooms` tạo phòng: `{ numTeams, maxHpPerTeam, timePerQuestionMs }`
-- `POST /api/join` tham gia phòng theo code: `{ roomCode, name, teamId }`
-- `POST /api/submit` nộp đáp án: `{ roomId, playerId, questionId, answerIndex, timeMs }`
-
-Realtime:
-- WebSocket Edge `/api/ws` với message `{ type, payload }` (hiện skeleton phản hồi `ACK`).
-
-Pages:
-- Host: `/host`
-- Player: `/play/[roomId]` (tạm dùng roomId như code)
-
 ## Tính năng Authentication
 
 - ✅ Đăng ký/Đăng nhập với email và mật khẩu
