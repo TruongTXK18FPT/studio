@@ -37,7 +37,39 @@ export default function QuizPage() {
       try {
         let data: QuizData | null = null
         
-        if (quizId === 'bac-ho-co-ban' || quizId === 'bac-ho-nang-cao') {
+        // First, try to load from database
+        try {
+          const response = await fetch(`/api/quiz/${quizId}`)
+          if (response.ok) {
+            const dbQuiz = await response.json()
+            
+            // Transform database quiz to our format
+            data = {
+              title: dbQuiz.title,
+              description: dbQuiz.description || '',
+              questions: dbQuiz.questions.map((q: any) => ({
+                id: q.id,
+                question: q.question,
+                choices: q.choices.map((c: any) => ({
+                  id: c.id,
+                  text: c.text,
+                  isCorrect: c.isCorrect
+                })),
+                difficulty: q.difficulty,
+                explanation: q.explanation,
+                type: q.type,
+                topic: q.topic
+              })),
+              timeLimit: dbQuiz.timeLimit
+            }
+          }
+        } catch (dbError) {
+          console.log('Not a database quiz, trying JSON files...')
+        }
+        
+        // If not found in database, try JSON files
+        if (!data) {
+          if (quizId === 'bac-ho-co-ban' || quizId === 'bac-ho-nang-cao') {
           // Load from JSON file
           const response = await fetch('/quiz_bac_ho_vi.json')
           const jsonData = await response.json()
@@ -99,6 +131,32 @@ export default function QuizPage() {
             questions: transformedQuestions,
             timeLimit: 45
           }
+        } else if (quizId === 'ho-chi-minh-ideology-advanced') {
+          // Load Ho Chi Minh ideology advanced quiz from JSON file
+          const response = await fetch('/quiz_ho_chi_minh_ideology_advanced.json')
+          const jsonData = await response.json()
+          
+          // Transform the data format to match our expected structure
+          const transformedQuestions = jsonData.items.map((item: any) => ({
+            id: item.id,
+            question: item.question,
+            choices: item.choices.map((choice: any) => ({
+              id: choice.id,
+              text: choice.text,
+              isCorrect: choice.isCorrect
+            })),
+            difficulty: item.difficulty || 'hard',
+            explanation: item.explanation,
+            type: item.type || 'single',
+            topic: item.topic
+          }))
+          
+          data = {
+            title: jsonData.metadata.title,
+            description: jsonData.metadata.description,
+            questions: transformedQuestions,
+            timeLimit: 60
+          }
         } else if (quizId === 'lich-su-viet-nam') {
           // Load Vietnamese history quiz from JSON file
           const response = await fetch('/quiz_vietnam_history.json')
@@ -125,6 +183,7 @@ export default function QuizPage() {
             questions: transformedQuestions,
             timeLimit: 45
           }
+        }
         }
         
         setQuizData(data)
@@ -181,7 +240,7 @@ export default function QuizPage() {
     })
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!quizData) return
 
     const correctAnswers = quizData.questions.reduce((acc, question, index) => {
@@ -209,6 +268,31 @@ export default function QuizPage() {
       grade,
       timeSpent: quizData.timeLimit ? (quizData.timeLimit * 60 - (timeLeft || 0)) : 0,
       completedAt: new Date()
+    }
+
+    // Try to submit to database if it's a database quiz
+    try {
+      const response = await fetch('/api/quiz/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          quizId,
+          answers: Object.entries(selectedAnswers).map(([questionIndex, choiceIds]) => ({
+            questionId: quizData.questions[parseInt(questionIndex)].id,
+            choiceIds
+          })),
+          timeSpent: resultData.timeSpent
+        }),
+      });
+
+      if (response.ok) {
+        const submitResult = await response.json();
+        console.log('Quiz result submitted:', submitResult);
+      }
+    } catch (error) {
+      console.log('Could not submit to database (probably a JSON quiz):', error);
     }
 
     setResult(resultData)

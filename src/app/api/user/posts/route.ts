@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Get user from database
-    const user = await prisma.user.findUnique({
+    const user = await (prisma as any).user.findUnique({
       where: { id: session.sub }
     })
 
@@ -26,7 +26,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Get user's posts
-    const posts = await prisma.post.findMany({
+    const posts = await (prisma as any).post.findMany({
       where: { authorId: session.sub },
       orderBy: { createdAt: 'desc' },
       select: {

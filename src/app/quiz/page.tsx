@@ -1,16 +1,51 @@
-import type { Metadata } from 'next';
+"use client";
+
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Brain, Clock, Trophy, BookOpen, Star, ArrowRight, Users, Target } from 'lucide-react';
+import { 
+  Brain, 
+  Clock, 
+  Trophy, 
+  BookOpen, 
+  Star, 
+  ArrowRight, 
+  Users, 
+  Target, 
+  Plus, 
+  Settings,
+  Loader2
+} from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Quiz Lịch sử - Kiến thức về Chủ tịch Hồ Chí Minh',
-  description: 'Thử thách kiến thức của bạn về cuộc đời, sự nghiệp và tư tưởng của Chủ tịch Hồ Chí Minh qua các câu hỏi trắc nghiệm thú vị.',
-};
+interface Quiz {
+  id: string;
+  title: string;
+  description?: string;
+  difficulty: string;
+  category?: string;
+  tags: string[];
+  timeLimit?: number;
+  isPublic: boolean;
+  createdAt: string;
+  author: {
+    id: string;
+    name?: string;
+    email: string;
+  };
+  questions: Array<{
+    id: string;
+    question: string;
+    type: string;
+    difficulty: string;
+  }>;
+  _count: {
+    results: number;
+  };
+}
 
-const quizSets = [
+const staticQuizSets = [
   {
     id: 'bac-ho-co-ban',
     title: 'Kiến thức cơ bản về Bác Hồ',
@@ -32,6 +67,16 @@ const quizSets = [
     topics: ['Chủ nghĩa Mác-Lênin', 'Độc lập dân tộc', 'Chủ nghĩa xã hội', 'Tư tưởng chính trị']
   },
   {
+    id: 'ho-chi-minh-ideology-advanced',
+    title: 'Tư tưởng Hồ Chí Minh - Nâng Cao',
+    description: '50 câu trắc nghiệm nâng cao về Tư tưởng Hồ Chí Minh, dành cho sinh viên học phần đại học.',
+    questions: 50,
+    difficulty: 'chuyên sâu',
+    estimatedTime: 60,
+    color: 'bg-purple-600',
+    topics: ['Cơ sở hình thành', 'Cách mạng giải phóng dân tộc', 'CNXH và con đường đi lên CNXH', 'Đảng, cán bộ, đạo đức', 'Nhà nước, dân chủ, đại đoàn kết', 'Văn hóa, con người']
+  },
+  {
     id: 'lich-su-viet-nam',
     title: 'Lịch sử Việt Nam qua các thời kỳ',
     description: 'Kiến thức tổng quan về lịch sử dân tộc Việt Nam từ cổ đại đến hiện đại.',
@@ -50,6 +95,47 @@ const achievements = [
 ];
 
 export default function QuizHomePage() {
+  const [databaseQuizzes, setDatabaseQuizzes] = useState<Quiz[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadDatabaseQuizzes = async () => {
+      try {
+        const response = await fetch('/api/quiz?limit=6');
+        if (response.ok) {
+          const data = await response.json();
+          setDatabaseQuizzes(data.quizzes);
+        }
+      } catch (error) {
+        console.error('Error loading database quizzes:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadDatabaseQuizzes();
+  }, []);
+
+  const getDifficultyColor = (difficulty: string) => {
+    switch (difficulty) {
+      case 'easy': return 'bg-green-100 text-green-800';
+      case 'medium': return 'bg-yellow-100 text-yellow-800';
+      case 'hard': return 'bg-orange-100 text-orange-800';
+      case 'expert': return 'bg-red-100 text-red-800';
+      default: return 'bg-gray-100 text-gray-800';
+    }
+  };
+
+  const getDifficultyLabel = (difficulty: string) => {
+    switch (difficulty) {
+      case 'easy': return 'Dễ';
+      case 'medium': return 'Trung bình';
+      case 'hard': return 'Khó';
+      case 'expert': return 'Chuyên gia';
+      default: return difficulty;
+    }
+  };
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-red-50/30 via-orange-50/30 to-yellow-50/30">
       {/* Hero Section */}
@@ -68,18 +154,37 @@ export default function QuizHomePage() {
               qua những câu hỏi trắc nghiệm thú vị và bổ ích
             </p>
             
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <Button asChild size="lg" className="bg-white text-red-800 hover:bg-white/90 px-8 py-3">
+                <Link href="/quiz/create">
+                  <Plus className="w-5 h-5 mr-2" />
+                  Tạo Quiz Mới
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-red-800 px-8 py-3">
+                <Link href="/quiz/manage">
+                  <Settings className="w-5 h-5 mr-2" />
+                  Quản Lý Quiz
+                </Link>
+              </Button>
+            </div>
+            
             {/* Quick Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <div className="text-2xl font-bold">89</div>
-                <div className="text-sm text-white/80">Câu hỏi</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <div className="text-2xl font-bold">3</div>
+                <div className="text-2xl font-bold">{staticQuizSets.length + databaseQuizzes.length}</div>
                 <div className="text-sm text-white/80">Bộ quiz</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <div className="text-2xl font-bold">10</div>
+                <div className="text-2xl font-bold">
+                  {staticQuizSets.reduce((sum, quiz) => sum + quiz.questions, 0) + 
+                   databaseQuizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0)}
+                </div>
+                <div className="text-sm text-white/80">Câu hỏi</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <div className="text-2xl font-bold">10+</div>
                 <div className="text-sm text-white/80">Chủ đề</div>
               </div>
             </div>
@@ -94,8 +199,81 @@ export default function QuizHomePage() {
             Chọn bộ quiz phù hợp
           </h2>
           
+          {/* Database Quizzes */}
+          {loading ? (
+            <div className="flex justify-center py-12">
+              <Loader2 className="w-8 h-8 animate-spin text-gray-500" />
+            </div>
+          ) : databaseQuizzes.length > 0 && (
+            <>
+              <h3 className="text-xl font-semibold mb-6 text-gray-800">Quiz từ cộng đồng</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                {databaseQuizzes.map((quiz) => (
+                  <Card key={quiz.id} className="hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-0 overflow-hidden">
+                    <div className="h-2 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                    <CardHeader className="pb-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <Badge className={getDifficultyColor(quiz.difficulty)}>
+                          {getDifficultyLabel(quiz.difficulty)}
+                        </Badge>
+                        <div className="flex items-center text-sm text-gray-500">
+                          <Clock className="w-4 h-4 mr-1" />
+                          {quiz.timeLimit || 'Không giới hạn'} phút
+                        </div>
+                      </div>
+                      <CardTitle className="text-xl font-bold">{quiz.title}</CardTitle>
+                      <CardDescription className="text-gray-600 leading-relaxed">
+                        {quiz.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <div className="space-y-4">
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="flex items-center text-gray-600">
+                            <BookOpen className="w-4 h-4 mr-1" />
+                            {quiz.questions.length} câu hỏi
+                          </span>
+                          <span className="flex items-center text-gray-600">
+                            <Users className="w-4 h-4 mr-1" />
+                            {quiz._count.results} lượt làm
+                          </span>
+                        </div>
+                        
+                        {quiz.tags && quiz.tags.length > 0 && (
+                          <div className="space-y-2">
+                            <p className="text-sm font-medium text-gray-700">Chủ đề:</p>
+                            <div className="flex flex-wrap gap-1">
+                              {quiz.tags.slice(0, 3).map((tag) => (
+                                <Badge key={tag} variant="secondary" className="text-xs">
+                                  {tag}
+                                </Badge>
+                              ))}
+                              {quiz.tags.length > 3 && (
+                                <Badge variant="secondary" className="text-xs">
+                                  +{quiz.tags.length - 3}
+                                </Badge>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                        
+                        <Button asChild className="w-full">
+                          <Link href={`/quiz/${quiz.id}`}>
+                            Bắt đầu quiz <ArrowRight className="ml-2 h-4 w-4" />
+                          </Link>
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* Static Quiz Sets */}
+          <h3 className="text-xl font-semibold mb-6 text-gray-800">Quiz chính thức</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {quizSets.map((quiz) => (
+            {staticQuizSets.map((quiz) => (
               <Card key={quiz.id} className="hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-0 overflow-hidden">
                 <div className={`h-2 ${quiz.color}`}></div>
                 <CardHeader className="pb-4">
@@ -144,77 +322,47 @@ export default function QuizHomePage() {
             ))}
           </div>
 
-          {/* Features Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <Card className="border-0 shadow-lg">
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Users className="mr-3 h-6 w-6 text-red-600" />
-                  Dành cho mọi độ tuổi
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Từ học sinh THCS đến người lớn, mọi ai đều có thể tham gia và học hỏi 
-                  kiến thức lịch sử một cách thú vị và bổ ích.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg">
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Trophy className="mr-3 h-6 w-6 text-red-600" />
-                  Theo dõi tiến độ
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Xem kết quả chi tiết, theo dõi điểm số và cải thiện kiến thức 
-                  qua từng lần làm bài.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Achievements Preview */}
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          {/* Achievements */}
+          <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8 mb-12">
             <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">
               Thành tích có thể đạt được
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {achievements.map((achievement) => {
-                const Icon = achievement.icon;
-                return (
-                  <div key={achievement.title} className="text-center p-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Icon className="w-8 h-8 text-white" />
-                    </div>
-                    <h4 className="font-semibold text-gray-900 mb-2">{achievement.title}</h4>
-                    <p className="text-sm text-gray-600">{achievement.description}</p>
+              {achievements.map((achievement, index) => (
+                <div key={index} className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <achievement.icon className="w-8 h-8 text-white" />
                   </div>
-                );
-              })}
+                  <h4 className="text-lg font-semibold mb-2">{achievement.title}</h4>
+                  <p className="text-gray-600 text-sm">{achievement.description}</p>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Call to Action */}
-      <div className="bg-gradient-to-r from-red-800 to-red-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              Sẵn sàng thử thách kiến thức?
-            </h2>
-            <p className="text-white/80 mb-8 text-lg">
-              Hãy bắt đầu với bộ quiz cơ bản và khám phá những điều thú vị về lịch sử dân tộc
+          {/* Call to Action */}
+          <div className="text-center bg-gradient-to-r from-red-100 to-orange-100 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              Sẵn sàng thử thách bản thân?
+            </h3>
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+              Hãy bắt đầu với một trong những bộ quiz phía trên và khám phá kiến thức 
+              về lịch sử, văn hóa và tư tưởng của dân tộc Việt Nam.
             </p>
-            <Button asChild size="lg" className="bg-white text-red-800 hover:bg-red-50">
-              <Link href="/quiz/bac-ho-co-ban">
-                Bắt đầu ngay
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700">
+                <Link href="/quiz/bac-ho-co-ban">
+                  <Target className="w-5 h-5 mr-2" />
+                  Bắt đầu ngay
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link href="/quiz/create">
+                  <Plus className="w-5 h-5 mr-2" />
+                  Tạo quiz riêng
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

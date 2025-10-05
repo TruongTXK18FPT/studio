@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "title": "Tư tưởng Hồ Chí Minh - Bộ câu hỏi nâng cao",
+    "language": "vi",
+    "version": "1.0",
+    "created_at": "2024-01-01",
+    "description": "50 câu trắc nghiệm nâng cao về Tư tưởng Hồ Chí Minh, dùng cho sinh viên học phần đại học.",
+    "copyright": "Hành Trình Bác Hồ",
+    "tags": ["tư tưởng", "hồ chí minh", "nâng cao", "đại học"]
+  },
+  "items": [
+    {
+      "id": "1",
+      "question": "Tư tưởng Hồ Chí Minh được hình thành trên cơ sở nào?",
+      "choices": [
+        {
+          "id": "1a",
+          "text": "Chủ nghĩa Mác - Lênin, truyền thống dân tộc và tinh hoa văn hóa nhân loại",
+          "isCorrect": true
+        },
+        {
+          "id": "1b", 
+          "text": "Tư tưởng phương Đông",
+          "isCorrect": false
+        },
+        {
+          "id": "1c",
+          "text": "Tư tưởng phương Tây", 
+          "isCorrect": false
+        },
+        {
+          "id": "1d",
+          "text": "Kinh nghiệm thực tiễn cách mạng",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Tư tưởng Hồ Chí Minh được hình thành trên nền tảng chủ nghĩa Mác - Lênin, kế thừa truyền thống yêu nước, nhân nghĩa dân tộc và tinh hoa văn hóa nhân loại.",
+      "difficulty": "medium",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "tu_tuong"
+    },
+    {
+      "id": "2",
+      "question": "Thời kỳ nào đánh dấu sự hình thành tư tưởng cứu nước của Hồ Chí Minh?",
+      "choices": [
+        {
+          "id": "2a",
+          "text": "1890–1911",
+          "isCorrect": true
+        },
+        {
+          "id": "2b",
+          "text": "1911–1920",
+          "isCorrect": false
+        },
+        {
+          "id": "2c",
+          "text": "1920–1930",
+          "isCorrect": false
+        },
+        {
+          "id": "2d",
+          "text": "1930–1945",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Giai đoạn 1890–1911 là quá trình hình thành tư tưởng yêu nước và chí hướng tìm đường cứu nước của Nguyễn Tất Thành.",
+      "difficulty": "medium",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "tu_tuong"
+    },
+    {
+      "id": "3",
+      "question": "Hồ Chí Minh tiếp cận chủ nghĩa Mác – Lênin thông qua con đường nào?",
+      "choices": [
+        {
+          "id": "3a",
+          "text": "Thực tiễn hoạt động cách mạng và phong trào công nhân Pháp",
+          "isCorrect": true
+        },
+        {
+          "id": "3b",
+          "text": "Nghiên cứu lý luận ở Liên Xô",
+          "isCorrect": false
+        },
+        {
+          "id": "3c",
+          "text": "Tự học qua sách vở ở Việt Nam",
+          "isCorrect": false
+        },
+        {
+          "id": "3d",
+          "text": "Giảng dạy của các đồng chí quốc tế",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Hồ Chí Minh tiếp cận chủ nghĩa Mác - Lênin trong quá trình hoạt động trong phong trào công nhân và xã hội Pháp giai đoạn 1917–1920.",
+      "difficulty": "medium",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "tu_tuong"
+    },
+    {
+      "id": "4",
+      "question": "Tư tưởng Hồ Chí Minh là kết quả của sự kết hợp giữa các yếu tố nào?",
+      "choices": [
+        {
+          "id": "4a",
+          "text": "Chủ nghĩa Mác - Lênin, truyền thống dân tộc và tinh hoa văn hóa nhân loại",
+          "isCorrect": true
+        },
+        {
+          "id": "4b",
+          "text": "Tư tưởng phương Đông và phương Tây",
+          "isCorrect": false
+        },
+        {
+          "id": "4c",
+          "text": "Truyền thống dân tộc và kinh nghiệm thực tiễn",
+          "isCorrect": false
+        },
+        {
+          "id": "4d",
+          "text": "Chủ nghĩa Mác và Nho giáo",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Đây là sự kết hợp biện chứng giữa lý luận cách mạng, truyền thống dân tộc và tinh hoa văn hóa nhân loại.",
+      "difficulty": "medium",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "tu_tuong"
+    },
+    {
+      "id": "5",
+      "question": "Giai đoạn 1920–1930 trong sự phát triển tư tưởng Hồ Chí Minh có ý nghĩa gì?",
+      "choices": [
+        {
+          "id": "5a",
+          "text": "Giai đoạn hình thành tư tưởng cách mạng Việt Nam",
+          "isCorrect": true
+        },
+        {
+          "id": "5b",
+          "text": "Giai đoạn khảo nghiệm con đường cứu nước",
+          "isCorrect": false
+        },
+        {
+          "id": "5c",
+          "text": "Giai đoạn hoàn thiện tư tưởng",
+          "isCorrect": false
+        },
+        {
+          "id": "5d",
+          "text": "Giai đoạn phát triển văn hóa – xã hội",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "1920–1930 là giai đoạn Hồ Chí Minh truyền bá chủ nghĩa Mác - Lênin, hình thành tư tưởng cách mạng Việt Nam.",
+      "difficulty": "medium",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "tu_tuong"
+    },
+    {
+      "id": "6",
+      "question": "Tư tưởng Hồ Chí Minh bắt đầu được Đảng ta khẳng định từ Đại hội nào?",
+      "choices": [
+        {
+          "id": "6a",
+          "text": "Đại hội VII (1991)",
+          "isCorrect": true
+        },
+        {
+          "id": "6b",
+          "text": "Đại hội VIII (1996)",
+          "isCorrect": false
+        },
+        {
+          "id": "6c",
+          "text": "Đại hội IX (2001)",
+          "isCorrect": false
+        },
+        {
+          "id": "6d",
+          "text": "Đại hội VI (1986)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Đại hội VII (1991) khẳng định Tư tưởng Hồ Chí Minh là nền tảng tư tưởng, kim chỉ nam hành động của Đảng.",
+      "difficulty": "easy",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "tu_tuong"
+    },
+    {
+      "id": "7",
+      "question": "Theo Hồ Chí Minh, yếu tố quyết định thắng lợi của cách mạng giải phóng dân tộc là gì?",
+      "choices": [
+        {
+          "id": "7a",
+          "text": "Sự lãnh đạo của Đảng Cộng sản",
+          "isCorrect": true
+        },
+        {
+          "id": "7b",
+          "text": "Sức mạnh toàn dân tộc",
+          "isCorrect": false
+        },
+        {
+          "id": "7c",
+          "text": "Đoàn kết quốc tế",
+          "isCorrect": false
+        },
+        {
+          "id": "7d",
+          "text": "Công – nông liên minh",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Người nhấn mạnh: Sự lãnh đạo của Đảng Cộng sản là nhân tố quyết định thắng lợi của cách mạng Việt Nam.",
+      "difficulty": "medium",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "cach_mang"
+    },
+    {
+      "id": "8",
+      "question": "Trong tư tưởng Hồ Chí Minh, con đường cứu nước đúng đắn nhất là gì?",
+      "choices": [
+        {
+          "id": "8a",
+          "text": "Cách mạng vô sản",
+          "isCorrect": true
+        },
+        {
+          "id": "8b",
+          "text": "Cách mạng dân chủ tư sản",
+          "isCorrect": false
+        },
+        {
+          "id": "8c",
+          "text": "Cải cách xã hội",
+          "isCorrect": false
+        },
+        {
+          "id": "8d",
+          "text": "Khởi nghĩa vũ trang tự phát",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Người khẳng định: chỉ có con đường cách mạng vô sản mới giải phóng được dân tộc triệt để.",
+      "difficulty": "medium",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "cach_mang"
+    },
+    {
+      "id": "9",
+      "question": "Theo Hồ Chí Minh, mối quan hệ giữa giải phóng dân tộc và giai cấp là gì?",
+      "choices": [
+        {
+          "id": "9a",
+          "text": "Giải phóng dân tộc là trên hết, trước hết",
+          "isCorrect": true
+        },
+        {
+          "id": "9b",
+          "text": "Giải phóng giai cấp trước dân tộc",
+          "isCorrect": false
+        },
+        {
+          "id": "9c",
+          "text": "Cả hai đồng thời",
+          "isCorrect": false
+        },
+        {
+          "id": "9d",
+          "text": "Giải phóng quốc tế quyết định",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Người xác định: trong hoàn cảnh Việt Nam, giải phóng dân tộc là nhiệm vụ trước hết để tiến tới giải phóng giai cấp.",
+      "difficulty": "medium",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "cach_mang"
+    },
+    {
+      "id": "10",
+      "question": "Khẩu hiệu 'Không có gì quý hơn độc lập, tự do' được Hồ Chí Minh nêu trong hoàn cảnh nào?",
+      "choices": [
+        {
+          "id": "10a",
+          "text": "Kháng chiến chống Mỹ (1966)",
+          "isCorrect": true
+        },
+        {
+          "id": "10b",
+          "text": "Kháng chiến chống Pháp (1954)",
+          "isCorrect": false
+        },
+        {
+          "id": "10c",
+          "text": "Sau Cách mạng Tháng Tám",
+          "isCorrect": false
+        },
+        {
+          "id": "10d",
+          "text": "Khi đọc Tuyên ngôn Độc lập",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Câu nói được nêu năm 1966 trong Lời kêu gọi chống Mỹ cứu nước, thể hiện tinh thần kiên cường của dân tộc Việt Nam.",
+      "difficulty": "easy",
+      "type": "single",
+      "grade_hint": "nang_cao",
+      "topic": "cach_mang"
+    }
+  ]
+}

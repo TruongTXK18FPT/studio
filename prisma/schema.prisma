@@ -23,6 +23,12 @@ model User {
   // Mối quan hệ với Post
   posts Post[]
 
+  // Mối quan hệ với Quiz
+  quizzes Quiz[]
+
+  // Mối quan hệ với QuizResult
+  quizResults QuizResult[]
+
   @@map("users")
 }
 
@@ -62,4 +68,91 @@ model Timeline {
   updatedAt DateTime @updatedAt
 
   @@map("timelines")
+}
+
+// Model Quiz cho hệ thống quiz
+model Quiz {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  difficulty  String   @default("medium") // easy, medium, hard, expert
+  category    String?  // tư tưởng, lịch sử, văn hóa, etc.
+  tags        Json?    // array of tags
+  timeLimit   Int?     // time limit in minutes
+  isPublic    Boolean  @default(true)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Quan hệ với User (người tạo)
+  authorId String
+  author   User @relation(fields: [authorId], references: [id], onDelete: Cascade)
+
+  // Quan hệ với Question
+  questions Question[]
+
+  // Quan hệ với QuizResult
+  results QuizResult[]
+
+  @@map("quizzes")
+}
+
+// Model Question cho các câu hỏi trong quiz
+model Question {
+  id          String   @id @default(cuid())
+  question    String
+  type        String   @default("single") // single, multiple, true_false
+  difficulty  String   @default("medium") // easy, medium, hard, expert
+  explanation String?
+  topic       String?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Quan hệ với Quiz
+  quizId String
+  quiz   Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+
+  // Quan hệ với Choice
+  choices Choice[]
+
+  @@map("questions")
+}
+
+// Model Choice cho các lựa chọn của câu hỏi
+model Choice {
+  id        String   @id @default(cuid())
+  text      String
+  isCorrect Boolean  @default(false)
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Quan hệ với Question
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@map("choices")
+}
+
+// Model QuizResult để lưu kết quả quiz của user
+model QuizResult {
+  id              String   @id @default(cuid())
+  score           Int
+  totalQuestions  Int
+  correctAnswers  Int
+  timeSpent       Int      // time spent in seconds
+  completedAt     DateTime @default(now())
+  grade           String   // excellent, good, average, poor
+  answers         Json?    // user's answers
+
+  // Quan hệ với Quiz
+  quizId String
+  quiz   Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+
+  // Quan hệ với User (nếu có đăng nhập)
+  userId String?
+  user   User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@map("quiz_results")
 }
