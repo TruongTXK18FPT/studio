@@ -16,7 +16,7 @@ const navLinks = [
   { href: '/timeline', label: 'Dòng thời gian', icon: Clock, description: 'Hành trình cuộc đời Bác', admin: false },
   { href: '/gallery', label: 'Thư viện', icon: BookOpen, description: 'Hình ảnh & tư liệu quý', admin: false },
   { href: '/letters', label: 'Thư & Văn bản', icon: MessageSquare, description: 'Di sản văn học', admin: false },
-  { href: '/world-map', label: 'Bản đồ thế giới', icon: Map, description: 'Hành trình theo chân Bác', admin: false },
+  { href: '/world-map-journey-map', label: 'Bản đồ thế giới', icon: Map, description: 'Hành trình theo chân Bác', admin: false },
   { href: '/virtual_museum', label: 'Bảo tàng ảo', icon: Building, description: 'Trải nghiệm bảo tàng 3D', admin: false },
   { href: '/community', label: 'Cộng đồng', icon: Globe, description: 'Chia sẻ & thảo luận', admin: false },
   { href: '/quiz', label: 'Quiz lịch sử', icon: Shield, description: 'Kiểm tra kiến thức', admin: false },
@@ -155,11 +155,8 @@ export function SiteHeader() {
               <div key={link.href} className="group relative">
                 <NavLink 
                   href={link.href}
-                  className={`flex items-center space-x-1.5 px-3 py-2 rounded-lg transition-all duration-200 text-sm ${
-                    link.admin 
+                  className={`flex items-center space-x-1.5 px-3 py-2 rounded-lg transition-all duration-200 text-sm ${link.admin 
                       ? 'hover:bg-purple-50 hover:text-purple-800 text-purple-700'
-                      : link.special
-                      ? 'hover:bg-emerald-50 hover:text-emerald-800 text-emerald-700 font-medium'
                       : 'hover:bg-red-50 hover:text-red-800'
                   }`}
                 >
@@ -168,9 +165,7 @@ export function SiteHeader() {
                   {link.admin && (
                     <Crown className="w-3 h-3 text-purple-600" />
                   )}
-                  {link.special && (
-                    <span className="text-xs bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full font-bold">NEW</span>
-                  )}
+                  
                 </NavLink>
                 
                 {/* Tooltip */}
@@ -337,28 +332,17 @@ export function SiteHeader() {
                       <Link
                         key={link.href}
                         href={link.href}
-                        className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
-                          link.admin 
-                            ? 'hover:bg-purple-50 border border-purple-200'
-                            : link.special
-                            ? 'hover:bg-emerald-50 border border-emerald-200 bg-gradient-to-r from-emerald-50 to-teal-50'
-                            : 'hover:bg-red-50'
-                        }`}
+                        className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${link.admin ? 'hover:bg-purple-50 border border-purple-200' : 'hover:bg-red-50'}`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        <Icon className={`w-5 h-5 ${
-                          link.admin ? 'text-purple-600' : 
-                          link.special ? 'text-emerald-600' : 'text-red-600'
-                        }`} />
+                        <Icon className={`w-5 h-5 ${link.admin ? 'text-purple-600' : 'text-red-600'}`} />
                         <div className="flex-1">
                           <div className="flex items-center gap-2">
                             <span className="font-medium">{link.label}</span>
                             {link.admin && (
                               <Crown className="w-4 h-4 text-purple-600" />
                             )}
-                            {link.special && (
-                              <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-bold">NEW</span>
-                            )}
+                            
                           </div>
                           <p className="text-sm text-gray-600">{link.description}</p>
                         </div>
@@ -383,7 +367,7 @@ export function SiteHeader() {
                       <div className="p-3 bg-gray-50 rounded-lg">
                         <p className="font-medium">{user.name || 'Người dùng'}</p>
                         <p className="text-sm text-gray-600">{user.email}</p>
-                        {user.role === 'ADMIN' && (
+                        {user.role === 'admin' && (
                           <Badge className="mt-2 bg-red-100 text-red-800">
                             <Shield className="w-3 h-3 mr-1" />
                             Admin
@@ -396,7 +380,7 @@ export function SiteHeader() {
                           Trang cá nhân
                         </Link>
                       </Button>
-                      {user.role === 'ADMIN' && (
+                      {user.role === 'admin' && (
                         <Button variant="outline" asChild className="w-full border-red-200 text-red-700">
                           <Link href="/admin/dashboard" onClick={() => setMobileMenuOpen(false)}>
                             <Shield className="w-4 h-4 mr-2" />
