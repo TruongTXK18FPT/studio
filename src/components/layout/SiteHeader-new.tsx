@@ -60,12 +60,7 @@ export function SiteHeader() {
     }
   };
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      window.location.href = `/search?q=${encodeURIComponent(searchQuery.trim())}`;
-    }
-  };
+
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -112,19 +107,7 @@ export function SiteHeader() {
           })}
         </nav>
 
-        {/* Search Bar */}
-        <div className="hidden md:flex items-center space-x-4 flex-1 max-w-md mx-6">
-          <form onSubmit={handleSearch} className="relative w-full">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-            <Input
-              type="search"
-              placeholder="Tìm kiếm sự kiện, văn bản..."
-              className="pl-10 pr-4 py-2 border-gray-300 focus:border-red-500 focus:ring-red-500"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </form>
-        </div>
+
         
         {/* User Menu & Actions */}
         <div className="flex items-center gap-3">
@@ -237,17 +220,6 @@ export function SiteHeader() {
                   </div>
                 </div>
 
-                {/* Mobile Search */}
-                <form onSubmit={handleSearch} className="relative mb-6">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                  <Input
-                    type="search"
-                    placeholder="Tìm kiếm..."
-                    className="pl-10"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                  />
-                </form>
 
                 <Separator className="mb-6" />
 

@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 
-export async function POST() {
+export async function POST(request: NextRequest) {
   try {
     const cookieStore = await cookies()
     
@@ -14,10 +14,8 @@ export async function POST() {
       maxAge: 0
     })
 
-    return NextResponse.json({
-      ok: true,
-      message: 'Đăng xuất thành công'
-    })
+    // Redirect to login page after logout
+    return NextResponse.redirect(new URL('/login', request.url))
   } catch (error) {
     console.error('Logout error:', error)
     return NextResponse.json(

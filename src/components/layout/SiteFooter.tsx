@@ -206,9 +206,12 @@ export function SiteFooter() {
             <Button 
               variant="outline" 
               className="bg-white/10 border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-200"
+              asChild
             >
-              <Mail className="w-4 h-4 mr-2" />
-              Đăng ký
+              <Link href="/register">
+                <Mail className="w-4 h-4 mr-2" />
+                Đăng ký
+              </Link>
             </Button>
           </div>
         </div>

@@ -105,7 +105,7 @@ export default function JourneyRealMapPage() {
 
   // Load Leaflet via CDN and init map once
   useEffect(() => {
-    if (!mapRef.current || leafletRef.current) return;
+    if (!mapRef.current || leafletRef.current || countries.length === 0) return;
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
@@ -291,7 +291,15 @@ export default function JourneyRealMapPage() {
         .catch((e) => console.error("Load countries geojson failed", e));
     };
     document.body.appendChild(script);
-  }, []);
+    
+    // Cleanup function
+    return () => {
+      if (leafletRef.current) {
+        leafletRef.current.map.remove();
+        leafletRef.current = null;
+      }
+    };
+  }, [countries]);
 
   // Remove centroid markers; interactions happen directly on country polygons
   useEffect(() => {

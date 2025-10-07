@@ -112,13 +112,6 @@ export function SiteHeader() {
     }
   };
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      window.location.href = `/search?q=${encodeURIComponent(searchQuery.trim())}`;
-    }
-  };
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       {/* Main Header */}
@@ -177,20 +170,6 @@ export function SiteHeader() {
             );
           })}
         </nav>
-
-        {/* Search Bar */}
-        <div className="hidden lg:flex items-center space-x-4 flex-1 max-w-xs mx-4">
-          <form onSubmit={handleSearch} className="relative w-full">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-            <Input
-              type="search"
-              placeholder="Tìm kiếm..."
-              className="pl-10 pr-4 py-2 border-gray-300 focus:border-red-500 focus:ring-red-500 text-sm"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </form>
-        </div>
         
         {/* User Menu & Actions */}
         <div className="flex items-center gap-2 flex-shrink-0">
@@ -304,19 +283,7 @@ export function SiteHeader() {
                     <p className="text-sm text-gray-600">Ánh sáng lịch sử</p>
                   </div>
                 </div>
-
-                {/* Mobile Search */}
-                <form onSubmit={handleSearch} className="relative mb-6">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                  <Input
-                    type="search"
-                    placeholder="Tìm kiếm..."
-                    className="pl-10"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                  />
-                </form>
-
+                
                 <Separator className="mb-6" />
 
                 {/* Mobile Navigation */}

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
+import { getSession } from '@/lib/auth'
 import { z } from 'zod'
 import crypto from 'crypto'
 
@@ -17,27 +18,32 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const { title, content, tags, author, sourceLink, imageBase64 } = postSchema.parse(body)
 
-    // Try to find or create an anonymous user
+    // Determine author: logged-in user if available, otherwise create/use anonymous
     let authorId: string
-    
-    try {
-      let anonymousUser = await prisma.user.findUnique({
-        where: { email: 'anonymous@hcm202.com' }
-      })
-      
-      anonymousUser ??= await prisma.user.create({
-        data: {
-          email: 'anonymous@hcm202.com',
-          name: 'Người dùng ẩn danh',
-          passwordHash: 'anonymous' // This won't be used for login
-        }
-      })
-      
-      authorId = anonymousUser.id
-    } catch (dbError) {
-      console.error('Error with anonymous user:', dbError)
-      // Fallback to a default UUID
-      authorId = 'clm0000000000000000000000'
+    const session = await getSession()
+
+    if (session?.sub) {
+      authorId = session.sub
+    } else {
+      try {
+        let anonymousUser = await prisma.user.findUnique({
+          where: { email: 'anonymous@hcm202.com' }
+        })
+        
+        anonymousUser ??= await prisma.user.create({
+          data: {
+            email: 'anonymous@hcm202.com',
+            name: 'Người dùng ẩn danh',
+            passwordHash: 'anonymous'
+          }
+        })
+        
+        authorId = anonymousUser.id
+      } catch (dbError) {
+        console.error('Error with anonymous user:', dbError)
+        // As a last resort, deny creation to avoid orphan posts
+        return NextResponse.json({ error: 'Không thể xác định tác giả' }, { status: 500 })
+      }
     }
 
     // Optional upload to Cloudinary if image provided
