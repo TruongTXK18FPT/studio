@@ -140,32 +140,6 @@ export default async function LetterDetailPage({ params }: { params: Promise<{ i
 
             {/* Sidebar */}
             <div className="space-y-6">
-              {/* Media */}
-              {letter.media && letter.media.length > 0 && (
-                <Card className="shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <h3 className="font-semibold text-gray-900 mb-4">Hình ảnh & Tài liệu</h3>
-                    <div className="space-y-4">
-                      {letter.media.map((item, index) => (
-                        <div key={index} className="group">
-                          <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
-                            <img
-                              src={item.url}
-                              alt={item.caption || letter.title}
-                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                            />
-                          </div>
-                          {item.caption && (
-                            <p className="text-sm text-gray-600 mt-2 italic">
-                              {item.caption}
-                            </p>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              )}
 
               {/* Tags */}
               {letter.tags && letter.tags.length > 0 && (

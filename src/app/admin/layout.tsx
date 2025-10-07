@@ -50,7 +50,8 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
         }
         
         const userData = await response.json()
-        if (userData.user?.role !== 'admin') {
+        const role = (userData.user?.role || '').toString().toLowerCase()
+        if (role !== 'admin') {
           router.push('/admin/login')
           return
         }
@@ -96,13 +97,6 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
       icon: Users,
       current: pathname === '/admin/users',
       description: 'Thành viên hệ thống'
-    },
-    {
-      name: 'Hoạt động',
-      href: '/admin/activity',
-      icon: Activity,
-      current: pathname === '/admin/activity',
-      description: 'Nhật ký hoạt động'
     },
     {
       name: 'Cài đặt',

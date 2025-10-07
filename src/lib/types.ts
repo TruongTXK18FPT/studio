@@ -5,6 +5,7 @@ export interface MediaItem {
   url: string;
   kind: MediaKind;
   caption?: string;
+  source?: string;
 }
 
 export interface SourceLink {

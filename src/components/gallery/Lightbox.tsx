@@ -94,6 +94,18 @@ export function Lightbox({ isOpen, onClose, items, startIndex = 0 }: LightboxPro
         
         <div className="text-center p-4 text-primary-foreground bg-black/50 rounded-b-lg">
           <p className="font-medium">{currentItem.caption}</p>
+          {currentItem.source && (
+            <p className="text-[12px] mt-1">
+              <a
+                href={/^https?:\/\//i.test(currentItem.source) ? currentItem.source : `https://${currentItem.source}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 text-amber-200 hover:text-white break-all"
+              >
+                Nguồn: {currentItem.source}
+              </a>
+            </p>
+          )}
           <p className="text-sm text-muted-foreground/80">{currentIndex + 1} / {items.length}</p>
         </div>
       </DialogContent>

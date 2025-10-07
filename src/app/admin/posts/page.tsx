@@ -24,6 +24,8 @@ interface Post {
   status: string
   createdAt: string
   imageUrl: string | null
+  references?: string[]
+  metadata?: any
   author: {
     name: string | null
     email: string
@@ -35,6 +37,7 @@ export default function AdminPostsPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [actionLoading, setActionLoading] = useState<string | null>(null)
+  const [viewingPost, setViewingPost] = useState<Post | null>(null)
   const router = useRouter()
 
   useEffect(() => {
@@ -161,8 +164,9 @@ export default function AdminPostsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <>
+      <div className="min-h-screen bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {error && (
           <Alert variant="destructive" className="mb-6">
             <AlertDescription>{error}</AlertDescription>
@@ -325,6 +329,7 @@ export default function AdminPostsPage() {
                           size="sm"
                           variant="outline"
                           className="border-gray-300 text-gray-700 hover:bg-gray-50"
+                          onClick={() => setViewingPost(post)}
                         >
                           <Eye className="w-4 h-4 mr-1" />
                           Xem
@@ -347,6 +352,86 @@ export default function AdminPostsPage() {
             </div>
           </CardContent>
         </Card>
+        </div>
+      </div>
+      <PostViewModal post={viewingPost} onClose={() => setViewingPost(null)} />
+    </>
+  )
+}
+
+// Modal xem nội dung bài viết
+// Đặt cuối component tree để tránh z-index issues
+function PostViewModal({ post, onClose }: { post: Post | null, onClose: () => void }) {
+  if (!post) return null
+  const extractUrls = (text: string) => {
+    const urlRegex = /https?:\/\/[^\s)]+/gi
+    return Array.from(new Set((text.match(urlRegex) || [])))
+  }
+  const metaSources = Array.isArray((post as any)?.metadata?.sources) ? (post as any).metadata.sources : []
+  const fallbackFromContent = post.content ? extractUrls(post.content) : []
+  const refs: string[] = Array.isArray(post.references) && post.references.length > 0
+    ? post.references
+    : (metaSources.length > 0 ? metaSources : fallbackFromContent)
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
+      <div className="w-full max-w-4xl rounded-3xl overflow-hidden shadow-[0_30px_120px_rgba(0,0,0,0.45)] border-[3px] border-amber-900/50 bg-amber-50/95 backdrop-blur-sm">
+        {/* Header */}
+        {post.imageUrl ? (
+          <div className="relative">
+            <img src={post.imageUrl} alt={post.title} className="w-full h-56 object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-amber-900/80 via-amber-900/20 to-transparent" />
+            <div className="absolute bottom-3 left-0 right-0 px-6">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-amber-50 drop-shadow-[0_2px_0_rgba(0,0,0,0.35)]">{post.title}</h2>
+            </div>
+            <button onClick={onClose} className="absolute top-3 right-3 px-3 py-1.5 text-sm rounded-lg bg-amber-50/90 hover:bg-white text-amber-900 border border-amber-900/30 shadow">
+              Đóng
+            </button>
+          </div>
+        ) : (
+          <div className="bg-gradient-to-r from-amber-800 to-rose-700 px-6 py-5">
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-amber-50 drop-shadow">{post.title}</h2>
+              <button onClick={onClose} className="px-3 py-1.5 text-sm rounded-lg bg-amber-50/90 hover:bg-white text-amber-900 border border-amber-200 shadow">Đóng</button>
+            </div>
+          </div>
+        )}
+
+        {/* Meta */}
+        <div className="px-6 pt-5 pb-0">
+          <div className="text-sm text-amber-950/90 flex flex-wrap items-center gap-3">
+            <span className="inline-flex items-center gap-1"><User className="w-4 h-4" />{post.author?.name || post.author?.email}</span>
+            <span className="inline-flex items-center gap-1"><Calendar className="w-4 h-4" />{new Date(post.createdAt).toLocaleString('vi-VN')}</span>
+            <span className="inline-flex items-center gap-2">
+              <span className={`px-2 py-0.5 rounded-full text-xs border ${post.status==='approved' ? 'bg-green-100 text-green-800 border-green-300' : post.status==='rejected' ? 'bg-rose-100 text-rose-800 border-rose-300' : 'bg-amber-100 text-amber-900 border-amber-300'}`}>{post.status === 'approved' ? 'Đã duyệt' : post.status === 'rejected' ? 'Từ chối' : 'Chờ duyệt'}</span>
+            </span>
+          </div>
+        </div>
+
+        {/* Body */}
+        <div className="px-6 py-5 space-y-4 max-h-[65vh] overflow-y-auto bg-[radial-gradient(circle_at_top_left,#fff7ed,transparent_60%),radial-gradient(circle_at_bottom_right,#fffbeb,transparent_55%)]">
+          {post.content ? (
+            <pre className="whitespace-pre-wrap text-amber-950 text-base leading-7">{post.content}</pre>
+          ) : (
+            <p className="text-amber-900/70 text-sm italic">Bài viết không có nội dung.</p>
+          )}
+          {Array.isArray(refs) && refs.length > 0 && (
+            <div className="pt-3 border-t border-amber-900/20">
+              <h3 className="text-sm font-semibold text-amber-900 mb-2">Tài liệu tham khảo</h3>
+              <ul className="list-disc pl-5 space-y-1 text-sm">
+                {refs.map((ref, i) => {
+                  const href = /^https?:\/\//i.test(ref) ? ref : `https://${ref}`
+                  return (
+                    <li key={i}>
+                      <a href={href} target="_blank" rel="noopener noreferrer" className="text-amber-900 underline underline-offset-2 hover:text-rose-700 break-all">
+                        {ref}
+                      </a>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )

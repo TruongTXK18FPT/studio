@@ -106,13 +106,18 @@ export default function AdminSettingsPage() {
 
   const checkAdminAuth = async () => {
     try {
-      const response = await fetch('/api/admin/check')
-      if (!response.ok) {
+      const response = await fetch('/api/auth/me', { credentials: 'include' })
+      if (response.status === 401) {
         window.location.href = '/admin/login'
         return
       }
-      
-      // Fetch system stats
+      const data = await response.json()
+      const role = (data?.user?.role || '').toString().toLowerCase()
+      if (role !== 'admin') {
+        window.location.href = '/admin/login'
+        return
+      }
+
       await fetchSystemStats()
     } catch (error) {
       console.error('Admin auth check failed:', error)
@@ -124,7 +129,7 @@ export default function AdminSettingsPage() {
 
   const fetchSystemStats = async () => {
     try {
-      const response = await fetch('/api/admin/stats')
+      const response = await fetch('/api/admin/stats', { credentials: 'include' })
       if (response.ok) {
         const stats = await response.json()
         setSystemStats(stats)
@@ -150,6 +155,7 @@ export default function AdminSettingsPage() {
       const response = await fetch('/api/admin/settings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify(settings)
       })
       
@@ -169,7 +175,7 @@ export default function AdminSettingsPage() {
   const handleBackupData = async () => {
     setSaving(true)
     try {
-      const response = await fetch('/api/admin/backup')
+      const response = await fetch('/api/admin/backup', { credentials: 'include' })
       if (response.ok) {
         const blob = await response.blob()
         const url = window.URL.createObjectURL(blob)

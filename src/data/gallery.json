@@ -1,18 +1,98 @@
 [
-  { "url": "https://file3.qdnd.vn/data/images/0/2022/09/01/tvkimgiang/bac%20ho%20doc%20tuyen%20ngon.jpg?dpi=150&quality=100&w=870", "kind": "photo", "caption": "Bác Hồ đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, 1945." },
-  { "url": "https://file3.qdnd.vn/data/images/0/2021/05/29/phucthang/nguyen-ai-quoc.jpg", "kind": "photo", "caption": "Nguyễn Ái Quốc tại Đại hội Tua, 1920." },
-  { "url": "https://baohagiang.vn/file/dataimages/201907/original/images1444636_REDSVN_HoChiMinh_12.jpg", "kind": "photo", "caption": "Bác Hồ và các chiến sĩ tại chiến khu Việt Bắc." },
-  { "url": "https://file3.qdnd.vn/data/images/0/2024/05/18/upload_2049/ho-chi-minh.jpg?dpi=150&quality=100&w=870", "kind": "photo", "caption": "Chủ tịch Hồ Chí Minh làm việc tại Phủ Chủ tịch." },
-  { "url": "https://file3.qdnd.vn/data/images/0/2021/06/01/vuhuyen/142020huyen295258pg.jpg?dpi=150&quality=100&w=575", "kind": "photo", "caption": "Bác Hồ với các cháu thiếu nhi." },
-  { "url": "https://cand.com.vn/Files/Image/trangdung/2020/05/19/296e4d47-6c32-441d-9a65-2a92c096bd52.jpg", "kind": "photo", "caption": "Hình ảnh Bác tại Paris trong quá trình đàm phán." },
-  { "url": "https://cdnmedia.baotintuc.vn/Upload/a7srThwxbojBCucvUWgnxA/files/2020/05/16/bac-ho-16052020.jpg", "kind": "photo", "caption": "Căn nhà sàn đơn sơ của Bác." },
-  { "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Ho_Chi_Minh_-_1946_Portrait.jpg", "kind": "photo", "caption": "Chân dung Chủ tịch Hồ Chí Minh." },
-  { "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2015_09_01/lop-hoc-1.jpg", "kind": "photo", "caption": "Bác Hồ thăm một lớp học bình dân học vụ." },
-  { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/B%E1%BA%A3n_Tuy%C3%AAn_ng%C3%B4n_%C4%91%E1%BB%99c_l%E1%BA%ADp_c%E1%BB%A7a_n%C6%B0%E1%BB%9Bc_Vi%E1%BB%87t_Nam_D%C3%A2n_ch%E1%BB%A7_C%E1%BB%99ng_h%C3%B2a._-_Trung_t%C3%A2m_L%C6%B0u_tr%E1%BB%AF_qu%E1%BB%91c_gia_III._Ph%C3%B4ng_Ph%E1%BB%A7_Th%E1%BB%A7_t%C6%B0%E1%BB%9Bng%2C_h%E1%BB%93_s%C6%A1_586%2C_t%E1%BB%9D_s%E1%BB%91_1_%E2%80%93_3.jpg/1920px-thumbnail.jpg", "kind": "photo", "caption": "Bản thảo Tuyên ngôn Độc lập." },
-  { "url": "https://static.mattran.org.vn/Uploaded/admin/2018_11_27/NewFolder/1_NKQX.jpg", "kind": "photo", "caption": "Bác bắt nhịp bài ca Kết đoàn." },
-  { "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Duongkachmenh.jpg", "kind": "document", "caption": "Trang đầu của 'Đường Kách mệnh'." },
-  { "url": "https://file3.qdnd.vn/data/images/0/2021/08/25/vanduyen/bac_ho_va_bac_giap_a.jpg", "kind": "photo", "caption": "Bác Hồ và Đại tướng Võ Nguyên Giáp." },
-  { "url": "https://file3.qdnd.vn/data/images/0/2020/05/19/vanphong/19052020a10.jpg", "kind": "photo", "caption": "Bác Hồ trong chuyến thăm Ấn Độ." },
-  { "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/9/6/lan-na-nua-1-16623775694991094525214-16624310267061519273355.jpeg", "kind": "photo", "caption": "Lán Nà Nưa, nơi Bác ở và làm việc." },
-  { "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2019_08_14/Ban%20di%20chuc%20cua%20Bac%20Ho.jpg", "kind": "document", "caption": "Bản Di chúc của Chủ tịch Hồ Chí Minh." }
+  {
+    "url": "https://file3.qdnd.vn/data/images/0/2022/09/01/tvkimgiang/bac%20ho%20doc%20tuyen%20ngon.jpg?dpi=150&quality=100&w=870",
+    "kind": "photo",
+    "caption": "Bác Hồ đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, 1945.",
+    "source": "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/nghien-cuu-hoc-tap-tu-tuong/ban-tuyen-ngon-cua-tinh-than-va-y-chi-doc-lap-tu-do-3964"
+  },
+  {
+    "url": "https://file3.qdnd.vn/data/images/0/2021/05/29/phucthang/nguyen-ai-quoc.jpg",
+    "kind": "photo",
+    "caption": "Nguyễn Ái Quốc tại Đại hội Tua, 1920.",
+    "source": "https://www.vietnam.vn/nguyen-ai-quoc-voi-chi-si-phan-chu-trinh-tren-buoc-duong-cuu-nuoc"
+  },
+  {
+    "url": "https://baohagiang.vn/file/dataimages/201907/original/images1444636_REDSVN_HoChiMinh_12.jpg",
+    "kind": "photo",
+    "caption": "Bác Hồ và các chiến sĩ tại chiến khu Việt Bắc.",
+    "source": "https://www.vietnamplus.vn/75-nam-thi-dua-ai-quoc-khen-dung-nguoi-thuong-cong-minh-post867452.vnp"
+  },
+  {
+    "url": "https://file3.qdnd.vn/data/images/0/2024/05/18/upload_2049/ho-chi-minh.jpg?dpi=150&quality=100&w=870",
+    "kind": "photo",
+    "caption": "Chủ tịch Hồ Chí Minh làm việc tại Phủ Chủ tịch.",
+    "source": "https://media.qdnd.vn/podcast/ngay-nay-nam-xua-26-11-1946-chu-tich-ho-chi-minh-ve-o-va-lam-viec-tai-lang-hau-ai-55931"
+  },
+  {
+    "url": "https://file3.qdnd.vn/data/images/0/2021/06/01/vuhuyen/142020huyen295258pg.jpg?dpi=150&quality=100&w=575",
+    "kind": "photo",
+    "caption": "Bác Hồ với các cháu thiếu nhi.",
+    "source": "https://vnexpress.net/anh-doi-thuong-chu-tich-ho-chi-minh-o-ba-dinh-4785223.html"
+  },
+  {
+    "url": "https://cand.com.vn/Files/Image/trangdung/2020/05/19/296e4d47-6c32-441d-9a65-2a92c096bd52.jpg",
+    "kind": "photo",
+    "caption": "Hình ảnh Bác tại Paris trong quá trình đàm phán.",
+    "source": "https://media.qdnd.vn/long-form/tu-tuong-nhan-van-quan-su-viet-nam-dem-dai-nghia-lay-chi-nhan-thang-hung-tan-cuong-bao-bai-1-chien-tranh-luon-la-su-lua-chon-sau-cung-59804"
+  },
+  {
+    "url": "https://cdnmedia.baotintuc.vn/Upload/a7srThwxbojBCucvUWgnxA/files/2020/05/16/bac-ho-16052020.jpg",
+    "kind": "photo",
+    "caption": "Căn nhà sàn đơn sơ của Bác.",
+    "source": "https://baotintuc.vn/long-form/xay-dung-dang/xay-dung-dang-vung-manh-theo-di-chuc-cua-chu-tich-ho-chi-minh-20240824115851214.htm"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Ho_Chi_Minh_-_1946_Portrait.jpg",
+    "kind": "photo",
+    "caption": "Chân dung Chủ tịch Hồ Chí Minh.",
+    "source": "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh"
+  },
+  {
+    "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2015_09_01/lop-hoc-1.jpg",
+    "kind": "photo",
+    "caption": "Bác Hồ thăm một lớp học bình dân học vụ.",
+    "source": "https://www.vietnam.vn/fr/binh-dan-hoc-vu-tu-chu-den-so"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/B%E1%BA%A3n_Tuy%C3%AAn_ng%C3%B4n_%C4%91%E1%BB%99c_l%E1%BA%ADp_c%E1%BB%A7a_n%C6%B0%E1%BB%9Bc_Vi%E1%BB%87t_Nam_D%C3%A2n_ch%E1%BB%A7_C%E1%BB%99ng_h%C3%B2a._-_Trung_t%C3%A2m_L%C6%B0u_tr%E1%BB%AF_qu%E1%BB%91c_gia_III._Ph%C3%B4ng_Ph%E1%BB%A7_Th%E1%BB%A7_t%C6%B0%E1%BB%9Bng%2C_h%E1%BB%93_s%C6%A1_586%2C_t%E1%BB%9D_s%E1%BB%91_1_%E2%80%93_3.jpg/1920px-thumbnail.jpg",
+    "kind": "photo",
+    "caption": "Bản thảo Tuyên ngôn Độc lập.",
+    "source": "https://www.qdnd.vn/van-hoa/doi-song/hoi-thao-khoa-hoc-75-nam-ban-tuyen-ngon-doc-lap-cua-nuoc-viet-nam-dan-chu-cong-hoa-633631"
+  },
+  {
+    "url": "https://static.mattran.org.vn/Uploaded/admin/2018_11_27/NewFolder/1_NKQX.jpg",
+    "kind": "photo",
+    "caption": "Bác bắt nhịp bài ca Kết đoàn.",
+    "source": "https://www.vietnam.vn/en/thong-tan-xa-viet-nam-tu-hao-voi-4-giai-thuong-ho-chi-minh-ve-nhiep-anh"
+  },
+  {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Duongkachmenh.jpg",
+    "kind": "photo",
+    "caption": "Trang đầu của 'Đường Kách mệnh'.",
+    "source": "https://baovatquocgia.baotangso.com/bao-vat/cuon-duong-kach-menh-cua-lanh-tu-nguyen-ai-quoc"
+  },
+  {
+    "url": "https://file3.qdnd.vn/data/images/0/2021/08/25/vanduyen/bac_ho_va_bac_giap_a.jpg",
+    "kind": "photo",
+    "caption": "Bác Hồ và Đại tướng Võ Nguyên Giáp.",
+    "source": "https://danviet.vn/chum-anh-hiem-chu-tich-ho-chi-minh-va-qdnd-viet-nam-phan-2-7777771620-print522128.html"
+  },
+  {
+    "url": "https://file3.qdnd.vn/data/images/0/2020/05/19/vanphong/19052020a10.jpg",
+    "kind": "photo",
+    "caption": "Bác Hồ trong chuyến thăm Ấn Độ.",
+    "source": "https://www.qdnd.vn/chinh-tri/tin-tuc/voi-nguoi-dan-an-do-hinh-anh-viet-nam-luon-gan-voi-ho-chu-tich-618293"
+  },
+  {
+    "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/9/6/lan-na-nua-1-16623775694991094525214-16624310267061519273355.jpeg",
+    "kind": "photo",
+    "caption": "Lán Nà Nưa, nơi Bác ở và làm việc.",
+    "source": "https://baotintuc.vn/ban-doc/thamnoi-bac-ho-tung-songlam-viec-lanh-dao-tong-khoi-nghia-thang-8-thanh-cong-20220520154832444.htm"
+  },
+  {
+    "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2019_08_14/Ban%20di%20chuc%20cua%20Bac%20Ho.jpg",
+    "kind": "photo",
+    "caption": "Bản Di chúc của Chủ tịch Hồ Chí Minh.",
+    "source": "https://baotintuc.vn/thoi-su/di-chuc-cua-chu-tich-ho-chi-minh-tai-san-tinh-than-vo-gia-20190510151618790.htm"
+  }
 ]

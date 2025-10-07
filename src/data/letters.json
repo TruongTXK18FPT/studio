@@ -8,9 +8,31 @@
     "content": "Hôm nay là ngày khai trường đầu tiên của nước Việt Nam Dân chủ Cộng hoà.\n\nTrước đây, giặc Pháp cố tình làm cho dân ta ngu dốt, vì dân ngu dốt thì dễ bị nô lệ. Từ nay, nhờ được tự do, chúng ta phải:\n\n1/ Hết sức học tập để làm cho nước nhà văn minh, dân tộc tiến bộ.\n\n2/ Học tập để phục vụ nhân dân.\n\n3/ Học tập để bảo vệ và xây dựng Tổ quốc.\n\nNon sông Việt Nam có trở nên tươi đẹp hay không, dân tộc Việt Nam có bước tới đài vinh quang để sánh vai với các cường quốc năm châu được hay không, chính là nhờ một phần lớn ở công học tập của các em.\n\nNước nhà đã được giải phóng, các em nay đã được tự do học tập. Mỗi ngày đi học là mỗi ngày góp công vào việc xây dựng nước nhà. Các em hãy hăng hái, phấn khởi mà học tập.\n\nỞ trường thì ngoan ngoãn, chăm chỉ. Ở nhà thì giúp cha mẹ tết lu, tát nước, trông em, nuôi gà, chăn trâu... Nghĩa là các em phải vừa học, vừa làm, vừa giúp gia đình, vừa giúp dân tộc.\n\nBác mong các em ngoan, chăm học để xứng đáng với dân tộc anh hùng, xứng đáng với Tổ quốc tự do!",
     "location": "Hà Nội",
     "type": "letter",
-    "media": [{ "url": "https://bna.1cdn.vn/2017/09/05/uploaded-dataimages-201709-original-_resize_images1994630_1.jpg", "kind": "document", "caption": "Bản bút tích thư gửi học sinh." }],
-    "sources": [{ "label": "Báo Cứu Quốc", "url": "https://www.qdnd.vn/ho-so-su-kien/van-kien-tu-lieu/thu-bac-ho-gui-hoc-sinh-nhan-ngay-khai-truong-dau-tien-cua-nuoc-viet-nam-dan-chu-cong-hoa-550215" }],
-    "tags": ["giáo dục", "thế hệ trẻ"]
+    "media": [
+      {
+        "url": "https://bna.1cdn.vn/2017/09/05/uploaded-dataimages-201709-original-_resize_images1994630_1.jpg",
+        "kind": "document",
+        "caption": "Bản bút tích thư gửi học sinh."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Báo Quân đội Nhân dân",
+        "url": "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/15-9-1945-bac-ho-gui-thu-cho-hoc-sinh-nhan-ngay-khai-truong-dau-tien-671165"
+      },
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/thu-bac-ho-gui-cac-hoc-sinh-nam-1945-post413315.html"
+      },
+      {
+        "label": "Wikisource",
+        "url": "https://vi.wikisource.org/wiki/Th%C6%B0_Ch%E1%BB%A7_t%E1%BB%8Bch_H%E1%BB%93_Ch%C3%AD_Minh_g%E1%BB%ADi_c%C3%A1c_h%E1%BB%8Dc_sinh_nh%C3%A2n_ng%C3%A0y_khai_gi%E1%BA%A3ng_%C4%91%E1%BA%A7u_ti%C3%AAn_%E1%BB%9F_n%C6%B0%E1%BB%9Bc_Vi%E1%BB%87t_Nam_D%C3%A2n_ch%E1%BB%A7_C%E1%BB%99ng_h%C3%B2a_n%C4%83m_1945"
+      }
+    ],
+    "tags": [
+      "giáo dục",
+      "thế hệ trẻ"
+    ]
   },
   {
     "id": "loi-keu-goi-toan-quoc-khang-chien",
@@ -21,8 +43,31 @@
     "content": "Hỡi đồng bào toàn quốc!\n\nChúng ta muốn hoà bình, chúng ta phải nhân nhượng. Nhưng chúng ta càng nhân nhượng, thực dân Pháp càng lấn tới, vì chúng quyết tâm cướp nước ta lần nữa!\n\nKhông! Chúng ta thà hy sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ.\n\nHỡi đồng bào! Chúng ta phải đứng lên!\n\nNam, Bắc, Trung, trai, gái, già, trẻ, không phân biệt tôn giáo, đảng phái, dân tộc, hết thảy người Việt Nam phải đứng lên đánh thực dân Pháp để cứu Tổ quốc.\n\nNhững ai có súng dùng súng, nhừng ai có gươm dùng gươm, không có gươm thì dùng cuốc, búa, gậy gộc!\n\nMọi người phải ra sức chống thực dân Pháp cứu nước nhà.\n\nQuân đội, tự vệ, dân binh phải đồng thời nổi dậy.\n\nVì độc lập của Tổ quốc!\nVì tự do của dân tộc!\nVà để con em chúng ta khỏi làm nô lệ!\nChúng ta thà chết còn hơn mất nước, thà chết còn hơn làm nô lệ!\n\nQuyết tử để Tổ quốc quyết sinh!",
     "location": "Hà Nội",
     "type": "speech",
-    "media": [{ "url": "https://upload.wikimedia.org/wikipedia/vi/f/f2/Toanquockhangchien.jpg", "kind": "photo", "caption": "Bác Hồ ra lời kêu gọi Toàn quốc kháng chiến." }],
-    "tags": ["kháng chiến", "thực dân Pháp"]
+    "media": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/vi/f/f2/Toanquockhangchien.jpg",
+        "kind": "photo",
+        "caption": "Bác Hồ ra lời kêu gọi Toàn quốc kháng chiến."
+      }
+    ],
+    "tags": [
+      "kháng chiến",
+      "thực dân Pháp"
+    ],
+    "sources": [
+      {
+        "label": "Báo Hải quan Việt Nam",
+        "url": "https://baohaiquanvietnam.vn/tin-tuc/loi-keu-goi-toan-quoc-khang-chien-cua-chu-tich-ho-chi-minh-ngay-19-12-1946"
+      },
+      {
+        "label": "Bảo tàng TP Cần Thơ (PDF)",
+        "url": "https://baotangtpcantho.cantho.gov.vn/baotang_files/files/QR_Loi-keu-goi-Toan-quoc-khang-chien.pdf"
+      },
+      {
+        "label": "Cổng TT Hồ Chí Minh",
+        "url": "https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/loi-keu-goi-toan-quoc-khang-chien-cua-chu-tich-ho-chi-minh-y-chi-bao-ve-doc-lap-tu-do-cua-dan-toc-5994"
+      }
+    ]
   },
   {
     "id": "khong-co-gi-quy-hon-doc-lap-tu-do",
@@ -33,8 +78,28 @@
     "content": "Đồng bào và chiến sĩ toàn quốc!\n\nTrong khi các anh hùng chiến sĩ miền Nam đương tiến công địch quân trên khắp các mặt trận, giặc Mỹ điên cuồng ném bom phá hoại các thành phố, làng mạc ở miền Bắc, nhằm đe doạ chúng ta.\n\nNhưng đây là một tính toán ngu xuẩn của giặc Mỹ. Dân tộc Việt Nam anh hùng của chúng ta có truyền thống hàng nghìn năm chống ngoại xâm.\n\nChiến tranh có thể kéo dài 5 năm, 10 năm, 20 năm hoặc lâu hơn nữa. Hà Nội, Hải Phòng và một số thành phố, xí nghiệp có thể bị tàn phá, song nhân dân Việt Nam quyết không sợ!\n\nKhông có gì quý hơn độc lập, tự do!\n\nKhi thắng lợi hoàn toàn đã đến, đồng bào và chiến sĩ cả nước sẽ xây dựng lại quê hương ta tốt đẹp hơn xưa.\n\nDù cho các ngọn núi Trường Sơn có thể san bằng, song lòng dân Việt Nam quyết chống Mỹ cứu nước thì không bao giờ lay chuyển!\n\nThắng lợi nhất định về tay chúng ta!\n\nChúc toàn thể đồng bào và chiến sĩ cả nước mạnh khoẻ!",
     "location": "Hà Nội",
     "type": "speech",
-    "media": [{ "url": "https://tuyengiaobinhphuoc.org.vn/uploads/news/2021_09/image-20210918235958-2.jpeg", "kind": "document", "caption": "Bản thảo Lời kêu gọi." }],
-    "tags": ["độc lập", "tự do", "kháng chiến chống Mỹ"]
+    "media": [
+      {
+        "url": "https://tuyengiaobinhphuoc.org.vn/uploads/news/2021_09/image-20210918235958-2.jpeg",
+        "kind": "document",
+        "caption": "Bản thảo Lời kêu gọi."
+      }
+    ],
+    "tags": [
+      "độc lập",
+      "tự do",
+      "kháng chiến chống Mỹ"
+    ],
+    "sources": [
+      {
+        "label": "Tạp chí Tuyên giáo",
+        "url": "https://tuyengiao.vn/tu-lieu-tuyen-giao/khong-co-gi-quy-hon-doc-lap-tu-do-loi-the-thep-truoc-ke-thu-xam-luoc-135006"
+      },
+      {
+        "label": "Cổng TT Hồ Chí Minh",
+        "url": "https://hochiminh.vn/loi-keu-goi-khong-co-gi-quy-hon-doc-lap-tu-do-vi-dai-cua-chu-tich-ho-chi-minh-14493.html"
+      }
+    ]
   },
   {
     "id": "di-chuc-1969",
@@ -45,8 +110,28 @@
     "content": "Đảng ta là một Đảng cầm quyền. Mỗi đảng viên, mỗi cán bộ phải thực sự thấm nhuần đạo đức cách mạng, thực sự cần kiệm liêm chính, chí công vô tư. Phải giữ gìn Đảng ta thật trong sạch, phải xứng đáng là người lãnh đạo, là người công bộc thật trung thành của nhân dân.\n\nVề Chính phủ, từ trung ương đến cơ sở đều phải thường xuyên cải tiến lề lối làm việc, chăm lo thiết thực đến đời sống vật chất và tinh thần của nhân dân. Phải thật sự gần dân, hiểu dân, học dân, kính trọng dân.\n\nVề Mặt trận và các đoàn thể, cần phát huy tinh thần dân chủ, thực hiện tự phê bình và phê bình.\n\nVề công tác kháng chiến, toàn dân ta sắp giành thắng lợi hoàn toàn. Thế nhưng, nhân dân ta không được tự mãn. Trong hoà bình cũng như trong chiến tranh, tất cả mọi người từ già đến trẻ đều phải đoàn kết chiến đấu, xây dựng nước nhà.\n\nToàn Đảng, toàn dân ta đoàn kết phấn đấu, xây dựng một nước Việt Nam hoà bình, thống nhất, độc lập, dân chủ và giàu mạnh, và góp phần xứng đáng vào sự nghiệp cách mạng thế giới.\n\nTôi tin chắc rằng Đảng ta, nhân dân ta và quân đội ta sẽ đoàn kết chiến đấu, xây dựng một nước Việt Nam mới, góp phần quan trọng vào cách mạng thế giới.",
     "location": "Hà Nội",
     "type": "document",
-    "media": [{ "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2019_08_14/Ban%20di%20chuc%20cua%20Bac%20Ho.jpg", "kind": "document", "caption": "Bản Di chúc lịch sử của Người." }],
-    "tags": ["di chúc", "di sản", "thống nhất"]
+    "media": [
+      {
+        "url": "https://bcp.cdnchinhphu.vn/Uploaded/buithuhuong/2019_08_14/Ban%20di%20chuc%20cua%20Bac%20Ho.jpg",
+        "kind": "document",
+        "caption": "Bản Di chúc lịch sử của Người."
+      }
+    ],
+    "tags": [
+      "di chúc",
+      "di sản",
+      "thống nhất"
+    ],
+    "sources": [
+      {
+        "label": "Cổng thông tin Chính phủ",
+        "url": "https://baochinhphu.vn/toan-van-di-chuc-cua-chu-tich-ho-chi-minh-102270928.htm"
+      },
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/toan-van-di-chuc-cua-chu-tich-ho-chi-minh-post475607.html"
+      }
+    ]
   },
   {
     "id": "nguc-trung-nhat-ky",
@@ -56,8 +141,28 @@
     "content": "Thân thể ở trong lao,\nTinh thần ở ngoài lao;\nMuốn nên sự nghiệp lớn,\nTinh thần càng phải cao.\n\nCắm đầu ăn cơm cám,\nCắm cổ uống nước la;\nVì sao ta khổ vậy?\nVì ta yêu nước ta.\n\nVì ích lợi chúng sinh,\nVinh dự cá nhân ta;\nVì sao ta khổ vậy?\nVì ta yêu nước ta.\n\nNhà tù này rất tốt:\nCó thể rèn luyện ta;\nNhà tù này rất tốt:\nCó thể thử thách ta.\n\nTa quyết tâm đấu tranh,\nDù có chết cũng cam;\nTa hy sinh tất cả,\nĐể cứu lấy giang san.\n\nNgười tù chính trị\nPhải giữ tâm can trong sạch;\nDầu cho thân xác héo hon,\nTinh thần không được sa sút.",
     "location": "Quảng Tây, Trung Quốc",
     "type": "poem",
-    "media": [{ "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/The_prison_diary_of_Ho_Chi_Minh.tif/lossy-page1-913px-The_prison_diary_of_Ho_Chi_Minh.tif.jpg", "kind": "photo", "caption": "Bản nhật ký trong tù của Bác Hồ." }],
-    "tags": ["thơ", "ý chí", "cách mạng"]
+    "media": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/The_prison_diary_of_Ho_Chi_Minh.tif/lossy-page1-913px-The_prison_diary_of_Ho_Chi_Minh.tif.jpg",
+        "kind": "photo",
+        "caption": "Bản nhật ký trong tù của Bác Hồ."
+      }
+    ],
+    "tags": [
+      "thơ",
+      "ý chí",
+      "cách mạng"
+    ],
+    "sources": [
+      {
+        "label": "Wikisource",
+        "url": "https://vi.wikisource.org/wiki/Nh%E1%BA%ADt_k%C3%BD_trong_t%C3%B9"
+      },
+      {
+        "label": "Cổng TT Hồ Chí Minh",
+        "url": "https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/tac-pham/nhat-ky-trong-tu-4435.html"
+      }
+    ]
   },
   {
     "id": "thu-trung-thu-1951",
@@ -68,33 +173,65 @@
     "content": "Các cháu thiếu nhi thân yêu!\n\nTrung thu năm nay cũng đến. Bác nhớ các cháu lắm. Bác cũng nhớ câu hát mà các cháu thường hát:\n\n'Tết Trung thu rước đèn đi chơi\nEm rước đèn trong như trăng tròn\nAnh rước đèn cá chép bơi bơi\nChú Cuội ngồi gốc cây đa cười'\n\nTrung thu này, Bác không có quà gì tặng các cháu. Bác chỉ gửi các cháu nhiều cái hôn thân ái. Bác hứa với các cháu: đến ngày kháng chiến thắng lợi, độc lập thành công, Bác cháu ta sẽ cùng nhau ăn một Tết Trung thu thật vui vẻ.\n\nBác gửi các cháu mỗi người một cái đèn ông sao. Các cháu thắp đèn lên, rước đèn đi khắp làng, khắp phố mà hát:\n\n'Đèn ông sao\nSáng lừng lừng\nCháu yêu Bác Hồ\nCháu yêu nước ta'\n\nBác chúc các cháu học tập thật tốt, nhanh lớn khôn để xây dựng Tổ quốc ta thành một nước độc lập, thống nhất, dân chủ, giàu mạnh.\n\nBác hôn tất cả các cháu.",
     "location": "Chiến khu Việt Bắc",
     "type": "letter",
-    "media": [{ "url": "https://cdn.nhandan.vn/images/d233c8299c7755bbf317d96e7a85fcf707189eae2fb9c77d344889c3e0cfe1f0c1f938bebb98358847bd6d96b91485eaa51828c06a204145b6c42f690c52ed435cfacd5ee898d181029010948d9846a0/105_02_1516_signed-1629415484525.jpg", "kind": "photo", "caption": "Bác Hồ gửi các cháu thiếu nhi." }],
-    "tags": ["thiếu nhi", "Trung thu", "kháng chiến"]
+    "media": [
+      {
+        "url": "https://cdn.nhandan.vn/images/d233c8299c7755bbf317d96e7a85fcf707189eae2fb9c77d344889c3e0cfe1f0c1f938bebb98358847bd6d96b91485eaa51828c06a204145b6c42f690c52ed435cfacd5ee898d181029010948d9846a0/105_02_1516_signed-1629415484525.jpg",
+        "kind": "photo",
+        "caption": "Bác Hồ gửi các cháu thiếu nhi."
+      }
+    ],
+    "tags": [
+      "thiếu nhi",
+      "Trung thu",
+      "kháng chiến"
+    ],
+    "sources": [
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/thu-trung-thu-bac-ho-gui-cac-chau-thieu-nhi-post705791.html"
+      },
+      {
+        "label": "Báo điện tử Chính phủ",
+        "url": "https://baochinhphu.vn/thu-bac-ho-gui-cac-chau-thieu-nhi-trung-thu-1951-102210913093211109.htm"
+      }
+    ]
   },
-{
-  "id": "tuyen-ngon-doc-lap-1945",
-  "year": 1945,
-  "date": "1945-09-02",
-  "title": "Tuyên ngôn Độc lập",
-  "summary": "Ngày 2/9/1945 tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh thay mặt Chính phủ lâm thời đọc Tuyên ngôn Độc lập, tuyên bố sự ra đời của nước Việt Nam Dân chủ Cộng hòa, khẳng định quyền tự do và độc lập của dân tộc Việt Nam.",
-  "content": "Hỡi đồng bào cả nước,\n\nTất cả mọi người đều sinh ra có quyền bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc.\n\nBản tuyên ngôn độc lập năm 1776 của nước Mỹ có nói: ‘Tất cả mọi người đều sinh ra bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc.’\n\nBản Tuyên ngôn Nhân quyền và Dân quyền của cách mạng Pháp năm 1791 cũng nói: ‘Người ta sinh ra tự do và bình đẳng về quyền lợi, và phải luôn được tự do và bình đẳng về quyền lợi.’\n\nĐó là những lẽ phải không ai chối cãi được.\n\nThế mà hơn 80 năm nay, thực dân Pháp lợi dụng lá cờ tự do, bình đẳng, bác ái đến cướp nước ta, áp bức đồng bào ta. Hành động của chúng trái hẳn với nhân đạo và chính nghĩa…\n\nTóm lại, chúng đã tuyệt đối không “bảo hộ” gì nước ta, mà trái lại, trong năm năm chúng bán nước ta hai lần cho Nhật.\n\nTrước ngày 9 tháng 3, Pháp chạy, Nhật hàng, vua Bảo Đại thoái vị. Dân tộc ta đã lấy lại nước Việt Nam từ tay Nhật chứ không phải từ tay Pháp.\n\nDân ta đã đánh đổ các xiềng xích thực dân hơn 80 năm, để gây dựng nên nước Việt Nam độc lập. Dân ta lại đánh đổ chế độ quân chủ hàng mấy mươi thế kỷ, để lập nên nước Việt Nam dân chủ cộng hòa.\n\nBởi thế cho nên, chúng tôi, Chính phủ lâm thời của nước Việt Nam mới, tuyên bố với thế giới rằng nước Việt Nam có quyền được hưởng tự do và độc lập, mà sự thực đã thành một nước tự do độc lập.\n\nToàn thể dân tộc Việt Nam quyết đem tất cả tinh thần và lực lượng, tính mạng và của cải để giữ vững quyền tự do, độc lập ấy.",
-  "location": "Quảng trường Ba Đình, Hà Nội",
-  "type": "speech",
-  "media": [
-    {
-      "url": "https://picsum.photos/600/800?random=45",
-      "kind": "document",
-      "caption": "Bút tích bản Tuyên ngôn Độc lập của Chủ tịch Hồ Chí Minh."
-    }
-  ],
-  "sources": [
-    {
-      "label": "Hồ Chí Minh Toàn tập, tập 4",
-      "url": "https://hochiminh.vn"
-    }
-  ],
-  "tags": ["độc lập", "khai sinh nước Việt Nam Dân chủ Cộng hòa", "Tuyên ngôn"]
-},
+  {
+    "id": "tuyen-ngon-doc-lap-1945",
+    "year": 1945,
+    "date": "1945-09-02",
+    "title": "Tuyên ngôn Độc lập",
+    "summary": "Ngày 2/9/1945 tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh thay mặt Chính phủ lâm thời đọc Tuyên ngôn Độc lập, tuyên bố sự ra đời của nước Việt Nam Dân chủ Cộng hòa, khẳng định quyền tự do và độc lập của dân tộc Việt Nam.",
+    "content": "Hỡi đồng bào cả nước,\n\nTất cả mọi người đều sinh ra có quyền bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc.\n\nBản tuyên ngôn độc lập năm 1776 của nước Mỹ có nói: ‘Tất cả mọi người đều sinh ra bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc.’\n\nBản Tuyên ngôn Nhân quyền và Dân quyền của cách mạng Pháp năm 1791 cũng nói: ‘Người ta sinh ra tự do và bình đẳng về quyền lợi, và phải luôn được tự do và bình đẳng về quyền lợi.’\n\nĐó là những lẽ phải không ai chối cãi được.\n\nThế mà hơn 80 năm nay, thực dân Pháp lợi dụng lá cờ tự do, bình đẳng, bác ái đến cướp nước ta, áp bức đồng bào ta. Hành động của chúng trái hẳn với nhân đạo và chính nghĩa…\n\nTóm lại, chúng đã tuyệt đối không “bảo hộ” gì nước ta, mà trái lại, trong năm năm chúng bán nước ta hai lần cho Nhật.\n\nTrước ngày 9 tháng 3, Pháp chạy, Nhật hàng, vua Bảo Đại thoái vị. Dân tộc ta đã lấy lại nước Việt Nam từ tay Nhật chứ không phải từ tay Pháp.\n\nDân ta đã đánh đổ các xiềng xích thực dân hơn 80 năm, để gây dựng nên nước Việt Nam độc lập. Dân ta lại đánh đổ chế độ quân chủ hàng mấy mươi thế kỷ, để lập nên nước Việt Nam dân chủ cộng hòa.\n\nBởi thế cho nên, chúng tôi, Chính phủ lâm thời của nước Việt Nam mới, tuyên bố với thế giới rằng nước Việt Nam có quyền được hưởng tự do và độc lập, mà sự thực đã thành một nước tự do độc lập.\n\nToàn thể dân tộc Việt Nam quyết đem tất cả tinh thần và lực lượng, tính mạng và của cải để giữ vững quyền tự do, độc lập ấy.",
+    "location": "Quảng trường Ba Đình, Hà Nội",
+    "type": "speech",
+    "media": [
+      {
+        "url": "https://a80.mediacdn.vn/166391775898517504/2025/7/9/02-09-2021tuyenngondl-224-8-29-53-1752045580563710297163-1752053763901-17520537652351992381828.jpg",
+        "kind": "document",
+        "caption": "Bút tích bản Tuyên ngôn Độc lập của Chủ tịch Hồ Chí Minh."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Toàn văn bản Tuyên ngôn độc lập ngày 2/9/1945",
+        "url": "https://a80.hanoi.gov.vn/toan-van-ban-tuyen-ngon-doc-lap-ngay-2-9-1945-100250709163800863.htm"
+      },
+      {
+        "label": "Cổng thông tin Hà Nội (Toàn văn)",
+        "url": "https://a80.hanoi.gov.vn/toan-van-ban-tuyen-ngon-doc-lap-ngay-2-9-1945-100250709163800863.htm"
+      },
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/tuyen-ngon-doc-lap-tinh-than-bat-diet-cua-dan-toc-viet-nam-post705236.html"
+      }
+    ],
+    "tags": [
+      "độc lập",
+      "khai sinh nước Việt Nam Dân chủ Cộng hòa",
+      "Tuyên ngôn"
+    ]
+  },
   {
     "id": "loi-keu-goi-thien-nguyen-1945",
     "year": 1945,
@@ -106,18 +243,30 @@
     "type": "speech",
     "media": [
       {
-        "url": "https://picsum.photos/600/800?random=31",
+        "url": "https://file3.qdnd.vn/data/images/0/2021/09/26/thanhhuong/5a740df395be5ce005af.jpg?dpi=150&quality=100&w=870",
         "kind": "document",
         "caption": "Bản in Lời kêu gọi chống giặc đói, giặc dốt, giặc ngoại xâm."
       }
     ],
     "sources": [
       {
-        "label": "Báo Cứu Quốc",
-        "url": "https://qdnd.vn"
+        "label": "Quân đội nhân dân",
+        "url": "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/28-9-1945-bac-ho-keu-goi-se-com-nhuong-ao-672387"
+      },
+      {
+        "label": "Quân đội Nhân dân",
+        "url": "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/28-9-1945-bac-ho-keu-goi-se-com-nhuong-ao-672387"
+      },
+      {
+        "label": "Cổng TT Hồ Chí Minh",
+        "url": "https://hochiminh.vn/loi-keu-goi-chong-giac-doi-giac-dot-giac-ngoai-xam-9111.html"
       }
     ],
-    "tags": ["giặc đói", "giặc dốt", "giặc ngoại xâm"]
+    "tags": [
+      "giặc đói",
+      "giặc dốt",
+      "giặc ngoại xâm"
+    ]
   },
   {
     "id": "thu-chuc-tet-1946",
@@ -130,18 +279,30 @@
     "type": "letter",
     "media": [
       {
-        "url": "https://picsum.photos/600/800?random=32",
+        "url": "https://i.ytimg.com/vi/XrCSqQ2xzGA/maxresdefault.jpg",
         "kind": "document",
         "caption": "Bản bút tích Thư chúc Tết xuân 1946."
       }
     ],
     "sources": [
       {
-        "label": "Văn kiện Đảng toàn tập",
-        "url": "https://hochiminh.vn"
+        "label": "Công an nhân dân",
+        "url": "https://cand.com.vn/Tieu-diem-van-hoa/TET-Nho-loi-chuc-Tet-cua-Bac-Ho-Xuan-Binh-Tuat-nam-1946-i464021/"
+      },
+      {
+        "label": "Công an Nhân dân",
+        "url": "https://cand.com.vn/Tieu-diem-van-hoa/TET-Nho-loi-chuc-Tet-cua-Bac-Ho-Xuan-Binh-Tuat-nam-1946-i464021/"
+      },
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/loi-chuc-tet-cua-chu-tich-ho-chi-minh-xuan-binh-tuat-1946-post730561.html"
       }
     ],
-    "tags": ["Tết", "chúc Tết", "độc lập"]
+    "tags": [
+      "Tết",
+      "chúc Tết",
+      "độc lập"
+    ]
   },
   {
     "id": "thu-gui-bo-doi-bien-gioi-1958",
@@ -159,13 +320,21 @@
         "caption": "Bản thảo Thư gửi bộ đội biên giới năm 1958."
       }
     ],
+    "tags": [
+      "biên giới",
+      "quốc phòng",
+      "bộ đội"
+    ],
     "sources": [
       {
         "label": "Hồ Chí Minh Toàn tập",
         "url": "https://hochiminh.vn"
+      },
+      {
+        "label": "Bộ đội Biên phòng (tin tư liệu)",
+        "url": "https://www.bienphong.vn"
       }
-    ],
-    "tags": ["biên giới", "quốc phòng", "bộ đội"]
+    ]
   },
   {
     "id": "thu-gui-dong-bao-nam-bo-1946",
@@ -183,7 +352,21 @@
         "caption": "Bản bút tích Thư gửi đồng bào Nam Bộ."
       }
     ],
-    "tags": ["Nam Bộ", "kháng chiến", "đoàn kết"]
+    "tags": [
+      "Nam Bộ",
+      "kháng chiến",
+      "đoàn kết"
+    ],
+    "sources": [
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/nam-bo-la-mau-cua-mau-viet-nam-la-thit-cua-thit-viet-nam-post715142.html"
+      },
+      {
+        "label": "Cổng TT Hồ Chí Minh",
+        "url": "https://hochiminh.vn"
+      }
+    ]
   },
   {
     "id": "thu-chuc-tet-1947",
@@ -201,7 +384,21 @@
         "caption": "Thư chúc Tết 1947 – Bản in trên Báo Sự Thật."
       }
     ],
-    "tags": ["Tết", "kháng chiến", "đoàn kết"]
+    "tags": [
+      "Tết",
+      "kháng chiến",
+      "đoàn kết"
+    ],
+    "sources": [
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/thu-chuc-tet-1947-post726930.html"
+      },
+      {
+        "label": "Cổng TT Hồ Chí Minh",
+        "url": "https://hochiminh.vn"
+      }
+    ]
   },
   {
     "id": "thu-gui-cac-dai-bieu-quoc-dan-dai-hoi-1946",
@@ -219,7 +416,21 @@
         "caption": "Thư gửi Quốc dân Đại hội 1946."
       }
     ],
-    "tags": ["Quốc hội", "đại biểu", "dân chủ"]
+    "tags": [
+      "Quốc hội",
+      "đại biểu",
+      "dân chủ"
+    ],
+    "sources": [
+      {
+        "label": "Quốc hội Việt Nam",
+        "url": "https://quochoi.vn"
+      },
+      {
+        "label": "Cổng TT Hồ Chí Minh",
+        "url": "https://hochiminh.vn"
+      }
+    ]
   },
   {
     "id": "loi-keu-goi-cac-chien-si-duc-1948",
@@ -237,7 +448,21 @@
         "caption": "Bản thảo Lời kêu gọi thi đua ái quốc 1948."
       }
     ],
-    "tags": ["thi đua ái quốc", "yêu nước", "kháng chiến"]
+    "tags": [
+      "thi đua ái quốc",
+      "yêu nước",
+      "kháng chiến"
+    ],
+    "sources": [
+      {
+        "label": "Wikisource",
+        "url": "https://vi.wikisource.org/wiki/L%E1%BB%9Di_k%C3%AAu_g%E1%BB%8Di_thi_%C4%91ua_%C3%A1i_qu%E1%BB%91c"
+      },
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/75-nam-loi-keu-goi-thi-dua-ai-quoc-post744340.html"
+      }
+    ]
   },
   {
     "id": "thu-gui-chien-si-dien-bien-phu-1954",
@@ -255,6 +480,20 @@
         "caption": "Thư Bác Hồ gửi chiến sĩ Điện Biên Phủ."
       }
     ],
-    "tags": ["Điện Biên Phủ", "chiến sĩ", "kháng chiến chống Pháp"]
+    "tags": [
+      "Điện Biên Phủ",
+      "chiến sĩ",
+      "kháng chiến chống Pháp"
+    ],
+    "sources": [
+      {
+        "label": "Wikisource",
+        "url": "https://vi.wikisource.org/wiki/Th%C6%B0_g%E1%BB%ADi_c%C3%A1c_chi%E1%BA%BFn_s%C4%A9_%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7"
+      },
+      {
+        "label": "Báo Nhân Dân",
+        "url": "https://nhandan.vn/thu-bac-ho-gui-cac-chien-si-dien-bien-phu-post744132.html"
+      }
+    ]
   }
 ]
