@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Globe, CheckCircle, XCircle, Trophy } from "lucide-react";
+import { CheckCircle, XCircle, Trophy } from "lucide-react";
 
 type JourneyCountry = {
   id: number;
@@ -82,6 +82,7 @@ export default function JourneyRealMapPage() {
       "myanmar": "burma",
       "unitedkingdom": "unitedkingdom",
       "cotedivoire": "ivorycoast",
+        "benin": "benindahomey",
       "vietnam": "vietnam",
       "hongkong": "hongkong"
     };
@@ -364,7 +365,7 @@ export default function JourneyRealMapPage() {
   const handleAnswer = (opt: string) => {
     if (!selected) return;
     const isCorrect = opt === selected.correctAnswer;
-    const key = selected.name.toLowerCase().replace(/\s+/g, "");
+    const key = normalize(selected.name);
     setAnswers((prev) => ({ ...prev, [key]: isCorrect ? "correct" : "wrong" }));
     setResult(isCorrect ? "correct" : "wrong");
     setChosenOption(opt);
@@ -395,47 +396,56 @@ export default function JourneyRealMapPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden bg-[url('/patterns/trongdong.svg')] bg-fixed bg-center bg-cover">
+      {/* Vintage vignette overlay */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_40%,rgba(0,0,0,0.35))]"></div>
       <div className="container mx-auto px-4 py-8 relative z-10">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-purple-600 via-blue-600 to-pink-600 rounded-3xl shadow-2xl mb-6">
-            <Globe className="w-12 h-12 text-white" />
+          <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-amber-700 via-rose-700 to-amber-500 rounded-3xl shadow-2xl mb-6 ring-4 ring-amber-200/40">
+            <svg viewBox="0 0 3 2" className="w-14 h-auto" aria-label="Cờ Việt Nam">
+              <rect width="3" height="2" fill="#DA251D" />
+              <polygon fill="#FFCD00" points="1.5,0.3 1.7,0.95 2.38,0.95 1.82,1.32 2.02,1.9 1.5,1.5 0.98,1.9 1.18,1.32 0.62,0.95 1.3,0.95" />
+            </svg>
           </div>
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent mb-2">
-            Bản đồ thật: Giải mã Hành Trình (1911–1941)
+          <h1 className="text-5xl font-body tracking-wide font-extrabold text-amber-100 drop-shadow-[0_2px_0_rgba(0,0,0,0.35)] mb-2">
+            Giải mã Hành Trình (1911–1941) – Bản đồ tương tác
           </h1>
-          <p className="text-gray-300">Bản đồ OSM tương tác với các điểm đến trong hành trình của Bác Hồ.</p>
+          <p className="text-amber-200/90 font-medium">Khám phá các chặng đường: bấm vào quốc gia được tô màu để trả lời câu hỏi.</p>
           <div className="flex justify-center gap-3 mt-4">
-            <Badge className="bg-gradient-to-r from-red-600 to-orange-600 text-white">Thử nghiệm bản đồ thật</Badge>
+            <Badge className="bg-amber-700/80 border border-amber-300/50 text-amber-100">Phiên bản thử nghiệm</Badge>
           </div>
         </div>
 
-        <Card className="max-w-5xl mx-auto mb-6 border-2 border-purple-300 bg-white/95 backdrop-blur-sm shadow-2xl">
-          <CardHeader className="bg-gradient-to-r from-purple-50 to-blue-50">
+        <Card className="max-w-5xl mx-auto mb-6 border-[3px] border-amber-900/60 bg-amber-50/90 backdrop-blur-sm shadow-[0_20px_80px_rgba(0,0,0,0.35)] rounded-[22px]">
+          <CardHeader className="bg-gradient-to-r from-amber-100 to-amber-50 border-b border-amber-900/20 rounded-t-[20px]">
             <CardTitle className="flex items-center justify-between">
-              <span className="text-xl font-bold text-gray-800">Tiến độ</span>
-              <Badge className="bg-gradient-to-r from-red-600 to-orange-600 text-white text-lg px-4">
+              <span className="text-xl font-semibold text-amber-900">Tiến độ</span>
+              <Badge className="bg-amber-700 text-amber-50 text-lg px-4 border border-amber-300/40">
                 {score.correct} đúng • {score.wrong} sai • {totalAnswered}/{countries.length}
               </Badge>
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-4">
             <div className="space-y-3">
-              <Progress value={progress} className="h-4 bg-gray-100" />
+              <Progress value={progress} className="h-4 bg-amber-200" />
             </div>
           </CardContent>
         </Card>
 
-        <Card className="w-full mx-auto border-2 border-purple-300 bg-white/95 backdrop-blur-sm shadow-2xl overflow-hidden">
-          <CardContent className="p-0">
-            <div ref={mapRef} style={{ height: "80vh", minHeight: "700px", width: "100%" }} />
-          </CardContent>
-        </Card>
+        {/* Vintage map frame */}
+        <div className="w-full mx-auto overflow-hidden">
+          <div className="relative rounded-[26px] p-2 bg-[radial-gradient(circle_at_top_left,#fef3c7,transparent_60%),radial-gradient(circle_at_bottom_right,#fde68a,transparent_60%)] border-[6px] border-amber-900/60 shadow-[inset_0_0_40px_rgba(139,87,42,0.35),0_30px_120px_rgba(0,0,0,0.45)]">
+            <div className="absolute inset-0 pointer-events-none rounded-[20px] ring-1 ring-amber-900/20 z-10"></div>
+            <div className="rounded-[18px] overflow-hidden bg-amber-50/70 relative z-0">
+              <div ref={mapRef} style={{ height: "80vh", minHeight: "700px", width: "100%" }} />
+            </div>
+          </div>
+        </div>
 
         {selected && (
           <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50 p-4">
             <div className="bg-white rounded-3xl shadow-2xl w-full max-w-2xl">
-              <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white p-6 rounded-t-3xl">
+              <div className="bg-gradient-to-r from-amber-800 to-rose-700 text-amber-50 p-6 rounded-t-3xl">
                 <h2 className="text-2xl font-bold flex items-center gap-3">
                   <span className="text-4xl">{selected.flag}</span>
                   <span>{selected.name}</span>
@@ -452,13 +462,13 @@ export default function JourneyRealMapPage() {
                       disabled={result !== null}
                       className={`py-3 px-4 rounded-xl text-left font-medium transition-all ${
                         result === null
-                          ? "bg-blue-500 hover:bg-blue-600 text-white"
+                          ? "bg-amber-700 hover:bg-amber-800 text-amber-50"
                           : result === "correct" && opt === selected.correctAnswer
-                          ? "bg-green-500 text-white"
+                          ? "bg-green-600 text-white"
                           : result === "wrong" && opt === selected.correctAnswer
-                          ? "bg-green-500 text-white"
+                          ? "bg-green-600 text-white"
                           : result === "wrong" && chosenOption === opt
-                          ? "bg-red-500 text-white"
+                          ? "bg-rose-600 text-white"
                           : "bg-gray-200 text-gray-500"
                       }`}
                     >
@@ -486,9 +496,9 @@ export default function JourneyRealMapPage() {
                       )}
                       <p className="text-sm leading-relaxed text-gray-800">{selected.detail}</p>
                       {selected.references?.length ? (
-                        <ul className="list-disc pl-5 mt-2 text-sm text-blue-700">
+                        <ul className="list-disc pl-5 mt-2 text-sm text-gray-700">
                           {selected.references.map((ref, idx) => (
-                            <li key={idx}><a className="underline" href={ref} target="_blank" rel="noopener noreferrer">Tham khảo {idx + 1}</a></li>
+                            <li key={idx}><span className="break-all">{ref}</span></li>
                           ))}
                         </ul>
                       ) : null}
@@ -497,7 +507,7 @@ export default function JourneyRealMapPage() {
                 )}
 
                 <div className="mt-6 flex justify-end gap-3">
-                  <Button variant="outline" onClick={() => { setSelected(null); setResult(null); setChosenOption(null); }}>Đóng</Button>
+                  <Button variant="outline" onClick={() => { setSelected(null); setResult(null); setChosenOption(null); }} className="border-amber-900/30">Đóng</Button>
                 </div>
               </div>
             </div>
@@ -516,6 +526,8 @@ export default function JourneyRealMapPage() {
             </div>
           </div>
         )}
+
+        {/* Intro overlay removed by request */}
       </div>
     </div>
   );

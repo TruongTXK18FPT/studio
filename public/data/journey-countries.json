@@ -1,34 +1,534 @@
 [
-  {"id":1,"name":"Vietnam","flag":"🇻🇳","year":"1911; 1941","question":"Năm 1911, Người rời Tổ quốc từ đâu?","options":["Bến Nhà Rồng","Ga Hàng Cỏ","Bến Ninh Kiều","Cửa Lò"],"correctAnswer":"Bến Nhà Rồng","detail":"1911 rời Bến Nhà Rồng; 1941 trở về Pác Bó lãnh đạo cách mạng.","references":["thieutoan.thanhhoa"]},
-  {"id":2,"name":"Singapore","flag":"🇸🇬","year":"1911; 1932–1933","question":"Singapore gắn với hành trình năm nào?","options":["1911; 1932–1933","1928–1929","1934–1938","1917–1923"],"correctAnswer":"1911; 1932–1933","detail":"Tàu ghé Singapore 1911 và lần nữa 1932–1933 khi rời Hồng Kông.","references":["tuyengiao.hagiang"]},
-  {"id":3,"name":"Sri Lanka","flag":"🇱🇰","year":"1911","question":"Cảng Colombo thuộc quốc gia nào Người ghé 1911?","options":["Sri Lanka","Ấn Độ","Malaysia","Indonesia"],"correctAnswer":"Sri Lanka","detail":"1911 tàu ghé Colombo (Sri Lanka) trên tuyến Ấn Độ Dương.","references":["tuyengiao.hagiang"]},
-  {"id":4,"name":"Egypt","flag":"🇪🇬","year":"1911","question":"Cửa ngõ Trung Đông Người đi qua năm 1911 là đâu?","options":["Port Said (kênh Suez)","Haifa","Aqaba","Jeddah"],"correctAnswer":"Port Said (kênh Suez)","detail":"1911 tàu qua kênh Suez và ghé cảng Port Said.","references":["tuyengiao.hagiang"]},
-  {"id":5,"name":"France","flag":"🇫🇷","year":"1911–1912; 1917–1923","question":"Giai đoạn hoạt động dài nhất tại Paris?","options":["1917–1923","1911–1912","1927","1933"],"correctAnswer":"1917–1923","detail":"Ở và hoạt động tại Paris; có các chặng công tác/quá cảnh 1927, 1933.","references":["congan.hanoi"]},
-  {"id":6,"name":"United Kingdom","flag":"🇬🇧","year":"1913–1917","question":"Người lao động tại thành phố nào của Anh?","options":["London","Liverpool","Manchester","Bristol"],"correctAnswer":"London","detail":"1913–1917 lao động ở London.","references":["thieutoan.thanhhoa"]},
-  {"id":7,"name":"United States","flag":"🇺🇸","year":"1912–1913","question":"Người từng làm việc tại các thành phố nào ở Hoa Kỳ?","options":["Boston, New York","Chicago, Seattle","San Jose, Dallas","Miami, Atlanta"],"correctAnswer":"Boston, New York","detail":"1912–1913 lao động tại Boston, New York.","references":["ditichhochiminhphuchutich"]},
-  {"id":8,"name":"Germany","flag":"🇩🇪","year":"1923","question":"Thành phố cảng Người ghé trước khi sang Liên Xô?","options":["Hamburg","Bremen","Kiel","Lübeck"],"correctAnswer":"Hamburg","detail":"1923 ghé Hamburg; có giấy tạm trú Berlin trước khi đi.","references":["phunu.hochiminhcity"]},
-  {"id":9,"name":"Russia","flag":"🇷🇺","year":"1923–1924; 1934–1938","question":"Người làm việc tại tổ chức quốc tế nào ở Liên Xô?","options":["Quốc tế Cộng sản","Liên Hợp Quốc","COMECON","SEV"],"correctAnswer":"Quốc tế Cộng sản","detail":"1923–1924; 1934–1938 làm việc tại Quốc tế Cộng sản.","references":["phunu.hochiminhcity"]},
-  {"id":10,"name":"China","flag":"🇨🇳","year":"1924–1927; 1939–1940","question":"Trung tâm hoạt động 1924–1927 ở Trung Quốc là đâu?","options":["Quảng Châu","Bắc Kinh","Thượng Hải","Nam Kinh"],"correctAnswer":"Quảng Châu","detail":"1924–1927 ở Quảng Châu; 1939–1940 ở Côn Minh, Quế Lâm, Trùng Khánh.","references":["ditichhochiminhphuchutich"]},
-  {"id":11,"name":"Hong Kong","flag":"🇭🇰","year":"1929–1933","question":"Tình huống đặc biệt ở Hồng Kông 1931–1932?","options":["Bị bắt và giam giữ","Tham dự hội nghị quốc tế","Làm việc tại lãnh sự quán","Mở lớp huấn luyện"],"correctAnswer":"Bị bắt và giam giữ","detail":"1929–1933 hoạt động; 1931–1932 bị bắt.","references":["cambridge"]},
-  {"id":12,"name":"Thailand","flag":"🇹🇭","year":"1928–1929","question":"Tỉnh nào của Thái Lan gắn với hoạt động Việt kiều?","options":["Nakhon Phanom","Chiang Mai","Bangkok","Phuket"],"correctAnswer":"Nakhon Phanom","detail":"1928–1929 hoạt động Việt kiều tại Nakhon Phanom.","references":["daknong"]},
-  {"id":13,"name":"Belgium","flag":"🇧🇪","year":"1927","question":"Năm 1927 Người dự sự kiện phong trào quốc tế ở đâu?","options":["Bruxelles","Antwerp","Liège","Ghent"],"correctAnswer":"Bruxelles","detail":"1927 dự sự kiện phong trào quốc tế tại Bruxelles.","references":["phunu.hochiminhcity"]},
-  {"id":14,"name":"Italy","flag":"🇮🇹","year":"1927–1928","question":"Sau Bruxelles, Người đi qua quốc gia châu Âu nào?","options":["Italy","Portugal","Spain","Switzerland"],"correctAnswer":"Italy","detail":"1927–1928 đi qua theo tuyến công tác châu Âu.","references":["phunu.hochiminhcity"]},
-  {"id":15,"name":"Algeria","flag":"🇩🇿","year":"1911–1912","question":"Algeria thuộc khu vực nào trong hành trình 1911–1912?","options":["Bắc Phi","Tây Phi","Đông Phi","Nam Phi"],"correctAnswer":"Bắc Phi","detail":"1911–1912 thuộc chặng Bắc Phi.","references":["tuyengiao.hagiang"]},
-  {"id":16,"name":"Morocco","flag":"🇲🇦","year":"1911–1912","question":"Người ghé Morocco vào giai đoạn nào?","options":["1911–1912","1928–1929","1934–1938","1917–1923"],"correctAnswer":"1911–1912","detail":"Chặng Bắc Phi 1911–1912.","references":["tuyengiao.hagiang"]},
-  {"id":17,"name":"Tunisia","flag":"🇹🇳","year":"1911–1912","question":"Tunisia thuộc chặng nào trong hải trình?","options":["Bắc Phi","Trung Đông","Đông Phi","Nam Phi"],"correctAnswer":"Bắc Phi","detail":"Chặng Bắc Phi 1911–1912.","references":["tuyengiao.hagiang"]},
-  {"id":18,"name":"Senegal","flag":"🇸🇳","year":"1911–1912","question":"Người ghé khu vực nào của châu Phi 1911–1912?","options":["Tây Phi","Bắc Phi","Nam Phi","Đông Phi"],"correctAnswer":"Tây Phi","detail":"Tây Phi, cảng thuộc địa Pháp.","references":["tuyengiao.hagiang"]},
-  {"id":19,"name":"Ivory Coast","flag":"🇨🇮","year":"1911–1912","question":"Tên hiện đại của Dahomey là gì?","options":["Benin","Togo","Ghana","Gabon"],"correctAnswer":"Benin","detail":"Nhóm cảng Tây–Trung Phi (Ivory Coast/Congo thuộc Pháp/Dahomey – nay Benin).","references":["tuyengiao.hagiang"]},
-  {"id":20,"name":"Republic of the Congo","flag":"🇨🇬","year":"1911–1912","question":"Congo trong ghi chép thuộc địa nào Người đi qua?","options":["Congo (thuộc Pháp)","Congo (thuộc Bỉ)","Congo tự do","Không rõ"],"correctAnswer":"Congo (thuộc Pháp)","detail":"Một trong các cảng Tây–Trung Phi thời thuộc địa Pháp.","references":["tuyengiao.hagiang"]},
-  {"id":21,"name":"Netherlands","flag":"🇳🇱","year":"1911–1912 hoặc 1917","question":"Người có thể quá cảnh quốc gia Bắc Âu nào?","options":["Netherlands","Norway","Sweden","Denmark"],"correctAnswer":"Netherlands","detail":"Tổng thuật ghi khả năng quá cảnh tuyến Bắc Âu.","references":["tuyengiao.hagiang"]},
-  {"id":22,"name":"Spain","flag":"🇪🇸","year":"1911–1912 hoặc 1917","question":"Người có thể quá cảnh quốc gia Tây Âu nào?","options":["Spain","Ireland","Andorra","Monaco"],"correctAnswer":"Spain","detail":"Tổng thuật quá cảnh Tây Âu.","references":["tuyengiao.hagiang"]},
-  {"id":23,"name":"Portugal","flag":"🇵🇹","year":"1911–1912","question":"Bán đảo Iberia gồm Tây Ban Nha và quốc gia nào?","options":["Portugal","France","Italy","Greece"],"correctAnswer":"Portugal","detail":"Quá cảnh Iberia 1911–1912.","references":["tuyengiao.hagiang"]},
-  {"id":24,"name":"Luxembourg","flag":"🇱🇺","year":"1927","question":"Quốc gia nhỏ ở lục địa Người có thể quá cảnh 1927?","options":["Luxembourg","Liechtenstein","Andorra","San Marino"],"correctAnswer":"Luxembourg","detail":"Quá cảnh khi di chuyển Bruxelles–Ý.","references":["phunu.hochiminhcity"]},
-  {"id":25,"name":"Austria","flag":"🇦🇹","year":"1927–1928","question":"Quốc gia Trung Âu Người có thể đi qua 1927–1928?","options":["Austria","Switzerland","Hungary","Romania"],"correctAnswer":"Austria","detail":"Quá cảnh Trung Âu theo tuyến công tác.","references":["phunu.hochiminhcity"]},
-  {"id":26,"name":"Czechia","flag":"🇨🇿","year":"1927–1928","question":"Tiểu bang Đông–Trung Âu lịch sử Tiệp Khắc nay là?","options":["Czechia","Croatia","Serbia","Bosnia"],"correctAnswer":"Czechia","detail":"Tiệp Khắc cũ nay là Czechia và Slovakia; quá cảnh 1927–1928.","references":["phunu.hochiminhcity"]},
-  {"id":27,"name":"Slovakia","flag":"🇸🇰","year":"1927–1928","question":"Quốc gia còn lại tách từ Tiệp Khắc là?","options":["Slovakia","Slovenia","Belarus","Lithuania"],"correctAnswer":"Slovakia","detail":"Một phần của Tiệp Khắc cũ; quá cảnh 1927–1928.","references":["phunu.hochiminhcity"]},
-  {"id":28,"name":"Poland","flag":"🇵🇱","year":"1923 hoặc 1927","question":"Ba Lan gắn với tuyến di chuyển nào?","options":["Hamburg–Liên Xô hoặc sau Bruxelles","Paris–London","Tokyo–Moscow","Hanoi–Beijing"],"correctAnswer":"Hamburg–Liên Xô hoặc sau Bruxelles","detail":"Trục Hamburg–Liên Xô (1923) hoặc tuyến sau Bruxelles (1927).","references":["phunu.hochiminhcity"]},
-  {"id":29,"name":"Mongolia","flag":"🇲🇳","year":"1934–1938","question":"Giai đoạn 1934–1938 Người công tác khu vực nào ngoài Liên Xô?","options":["Mông Cổ","Triều Tiên","Mãn Châu","Ba Tư"],"correctAnswer":"Mông Cổ","detail":"Ghi nhận công tác khu vực khi ở Liên Xô giai đoạn 1934–1938.","references":["daknong"]},
-  {"id":30,"name":"Russia","flag":"🇷🇺","year":"1933 (Vladivostok)","question":"Năm 1933, Người đi từ đâu ra Vladivostok để về Moskva?","options":["Trung Quốc","Mông Cổ","Hàn Quốc","Nhật Bản"],"correctAnswer":"Trung Quốc","detail":"1933 từ Trung Quốc ra Vladivostok thuộc Liên Xô thời kỳ đó.","references":["phunu.hochiminhcity"]}
+  {
+    "id": 1,
+    "name": "Vietnam",
+    "flag": "🇻🇳",
+    "year": "1911; 1941",
+    "question": "Trong quá trình hoạt động ở Việt Nam sau năm 1941, Nguyễn Ái Quốc đã trực tiếp chỉ đạo thành lập tổ chức nào?",
+    "options": [
+      "Việt Nam Quốc dân Đảng",
+      "Hội Việt Nam Cách mạng Thanh niên",
+      "Mặt trận Việt Minh",
+      "Đông Dương Cộng sản Đảng"
+    ],
+    "correctAnswer": "Mặt trận Việt Minh",
+    "detail": "Năm 1941, Nguyễn Ái Quốc về Pác Bó, trực tiếp chỉ đạo thành lập Việt Nam Độc lập Đồng minh (Việt Minh), tập hợp lực lượng toàn dân đánh đuổi phát xít – thực dân.",
+    "references": [
+      "https://thieutoan.thanhhoa.gov.vn/xay-dung-dang-128154/bac-ho-ra-di-tim-duong-cuu-nuoc-va-buoc-ngoat-cua-cach-mang-viet-nam-559430"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Singapore",
+    "flag": "🇸🇬",
+    "year": "1911; 1932–1933",
+    "question": "Sau biến cố Hồng Kông, việc thoát sang Singapore thể hiện phẩm chất nào?",
+    "options": [
+      "Kiên định mục tiêu cách mạng nhưng tuyệt đối linh hoạt về phương pháp",
+      "Tin tưởng tuyệt đối vào sự che chở của Quốc tế Cộng sản",
+      "Sẵn sàng hy sinh lý tưởng để bảo toàn lực lượng",
+      "Dùng đấu tranh nghị trường thay cho bí mật"
+    ],
+    "correctAnswer": "Kiên định mục tiêu cách mạng nhưng tuyệt đối linh hoạt về phương pháp",
+    "detail": "Sau khi bị bắt tại Hồng Kông năm 1931 và được luật sư Lô-dơ-bai giúp đỡ thoát khỏi sự truy đuổi của chính quyền Anh, Nguyễn Ái Quốc bí mật rời Hồng Kông sang Singapore năm 1932. Việc vượt thoát an toàn trong hoàn cảnh nguy hiểm cho thấy sự kiên định lý tưởng song rất linh hoạt về phương pháp nhằm bảo toàn lực lượng tiếp tục hoạt động bí mật.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sri Lanka",
+    "flag": "🇱🇰",
+    "year": "1911",
+    "question": "Việc tàu ghé cảng Colombo năm 1911 mang lại nhận thức quan trọng nào cho Nguyễn Tất Thành?",
+    "options": [
+      "Tận mắt thấy cảnh áp bức thuộc địa và đời sống cơ cực của người lao động bản xứ",
+      "Được chính quyền Anh cấp học bổng du học",
+      "Ký kết thỏa thuận hoạt động với phong trào công nhân Sri Lanka",
+      "Thành lập tổ chức Việt kiều đầu tiên tại Nam Á"
+    ],
+    "correctAnswer": "Tận mắt thấy cảnh áp bức thuộc địa và đời sống cơ cực của người lao động bản xứ",
+    "detail": "Tháng 6/1911, trên hành trình từ Sài Gòn (Việt Nam) sang châu Âu, tàu Amiral Latouche-Tréville chở Nguyễn Tất Thành ghé cảng Colombo (Sri Lanka) rồi tiếp tục qua kênh Suez tới Marseille. Tại Colombo, Người chứng kiến cảnh cơ cực của người lao động bản xứ, qua đó hiểu sâu hơn sự áp bức của chủ nghĩa thực dân đối với các dân tộc thuộc địa.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },  
+  {
+    "id": 4,
+    "name": "Egypt",
+    "flag": "🇪🇬",
+    "year": "1911",
+    "question": "Cửa ngõ Trung Đông Người đi qua năm 1911 là đâu?",
+    "options": ["Port Said (kênh Suez)", "Haifa", "Aqaba", "Jeddah"],
+    "correctAnswer": "Port Said (kênh Suez)",
+    "detail": "Tháng 6/1911, trên tàu Amiral Latouche Tréville từ Pháp sang châu Á, Nguyễn Tất Thành đi qua kênh đào Suez và ghé cảng Port Said (Ai Cập). Đây là lần đầu Người trực tiếp tiếp xúc khu vực Trung Đông và quan sát đời sống tại một thuộc địa.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "France",
+    "flag": "🇫🇷",
+    "year": "1911; 1917–1923",
+    "question": "Cảng đầu tiên trên đất Pháp mà Nguyễn Tất Thành đặt chân tới trong chuyến đi năm 1911 là đâu?",
+    "options": ["Marseille", "Le Havre", "Bordeaux", "Dunkerque"],
+    "correctAnswer": "Marseille",
+    "detail": "Đầu 7/1911, tàu Amiral Latouche-Tréville cập cảng Marseille; từ đây Nguyễn Tất Thành tiếp tục hành trình lao động và quan sát xã hội chính quốc, rồi quay lại Pháp giai đoạn 1917–1923 để hoạt động chính trị.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "United Kingdom",
+    "flag": "🇬🇧",
+    "year": "1913–1917",
+    "question": "Khi Hồ Chí Minh làm phục vụ nhà hàng ở Anh, Người tiếp xúc với tầng lớp nào có ảnh hưởng đến tư tưởng cách mạng của Người?",
+    "options": [
+      "Giới trí thức Anh",
+      "Người lao động ôm bánh mỳ",
+      "Người lao động ngành vận tải biển và nhà hàng – đội ngũ công nhân thấp tầng",
+      "Quân đội Anh"
+    ],
+    "correctAnswer": "Người lao động ngành vận tải biển và nhà hàng – đội ngũ công nhân thấp tầng",
+    "detail": "Trải nghiệm sống – lao động trong môi trường công nhân thấp tầng tại Anh góp phần bồi đắp nhận thức giai cấp và tinh thần quốc tế của Người.",
+    "references": [
+      "https://thieutoan.thanhhoa.gov.vn/xay-dung-dang-128154/bac-ho-ra-di-tim-duong-cuu-nuoc-va-buoc-ngoat-cua-cach-mang-viet-nam-559430"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "United States",
+    "flag": "🇺🇸",
+    "year": "1912–1913",
+    "question": "Trong thời gian ở Hoa Kỳ (1912–1913), hoạt động chủ yếu của Nguyễn Tất Thành là gì?",
+    "options": [
+      "Làm công tác ngoại giao chính thức",
+      "Tham gia nghị trường ở New York",
+      "Lao động chân tay trong lĩnh vực khách sạn – nhà bếp và bến cảng, quan sát xã hội công nghiệp Mỹ",
+      "Thành lập tổ chức cách mạng người Việt tại Boston"
+    ],
+    "correctAnswer": "Lao động chân tay trong lĩnh vực khách sạn – nhà bếp và bến cảng, quan sát xã hội công nghiệp Mỹ",
+    "detail": "Người làm việc để mưu sinh, đồng thời ghi nhận thực trạng đời sống công nhân và mâu thuẫn xã hội ở một nước tư bản phát triển – những quan sát hữu ích cho nhận thức về con đường giải phóng dân tộc.",
+    "references": [
+      "https://ditichhochiminhphuchutich.gov.vn/mot-so-su-kien-lich-su-ve-hoat-dong-cua-nguyen-tat-thanh-tren-dat-nuoc-my-1912-1913-3127"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Germany",
+    "flag": "🇩🇪",
+    "year": "1923",
+    "question": "Hồ Chí Minh nhận thức về cách mạng nước Đức thất bại năm 1848 – 1918 như thế nào để áp dụng vào Việt Nam?",
+    "options": [
+      "Cách mạng phải chờ thời điểm quốc tế thuận lợi mới thực hiện",
+      "Cách mạng có thể nổ ra trong điều kiện chưa đủ lực lượng",
+      "Không cần chuẩn bị lực lượng, chỉ cần lãnh đạo linh hoạt",
+      "Nông dân giữ vai trò trung tâm cao hơn công nhân"
+    ],
+    "correctAnswer": "Cách mạng phải chờ thời điểm quốc tế thuận lợi mới thực hiện",
+    "detail": "Tổng kết lịch sử cho thấy thời cơ và cục diện quốc tế là yếu tố then chốt để giành thắng lợi, cần kết hợp lực lượng trong nước với bối cảnh quốc tế thuận lợi.",
+    "references": [
+      "https://phunu.hochiminhcity.gov.vn/img/Upload/web2b/Album/ContentDucument/2021-5/de-cuong-110-nam-bac-ho-ra-di-tim-duong-cuu-nuoc_3152021113520.pdf"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Russia",
+    "flag": "🇷🇺",
+    "year": "1923–1924; 1934–1938",
+    "question": "Tại Liên Xô, Nguyễn Ái Quốc tiếp thu tư tưởng nào có ảnh hưởng sâu sắc nhất đến con đường cách mạng Việt Nam sau này?",
+    "options": [
+      "Chủ nghĩa xã hội khoa học và học thuyết Lênin về cách mạng giải phóng dân tộc",
+      "Chủ nghĩa dân tộc tư sản và phong trào cải cách dân chủ",
+      "Chủ nghĩa kinh nghiệm phương Tây",
+      "Tư tưởng tự do thương mại và hòa bình nhân loại"
+    ],
+    "correctAnswer": "Chủ nghĩa xã hội khoa học và học thuyết Lênin về cách mạng giải phóng dân tộc",
+    "detail": "Trong thời gian học tập và làm việc tại Liên Xô, Nguyễn Ái Quốc nghiên cứu sâu học thuyết Mác–Lênin, đặc biệt là quan điểm về vấn đề dân tộc và thuộc địa, qua đó khẳng định con đường: độc lập dân tộc gắn liền với CNXH, dưới sự lãnh đạo của đảng kiểu mới.",
+    "references": [
+      "https://phunu.hochiminhcity.gov.vn/img/Upload/web2b/Album/ContentDucument/2021-5/de-cuong-110-nam-bac-ho-ra-di-tim-duong-cuu-nuoc_3152021113520.pdf"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "China",
+    "flag": "🇨🇳",
+    "year": "1924–1927; 1939–1940",
+    "question": "Hồ Chí Minh quan hệ với Trung Quốc trên tinh thần nào?",
+    "options": [
+      "Vừa là đồng chí, vừa là đồng đội",
+      "Vừa là đồng đội, vừa là đồng chỉ",
+      "Vừa là đồng chí, vừa là anh em",
+      "Vừa là đồng chí, vừa là tình thân"
+    ],
+    "correctAnswer": "Vừa là đồng chí, vừa là anh em",
+    "detail": "Tinh thần quốc tế vô sản: đồng chí – anh em, phối hợp chặt chẽ trong đấu tranh cách mạng và hậu cần.",
+    "references": [
+      "https://ditichhochiminhphuchutich.gov.vn/nguyen-ai-quoc-va-chang-duong-30-nam-tim-duong-cuu-nuoc-2482"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Hong Kong",
+    "flag": "🇭🇰",
+    "year": "1929–1933",
+    "question": "Trong thời gian hoạt động cách mạng tại Hồng Kông (thuộc Anh) từ 1929 đến 1933, sự kiện nào sau đây liên quan đến Chủ tịch Hồ Chí Minh đã xảy ra vào năm 1931?",
+    "options": [
+      "Hồ Chí Minh thành lập Mặt trận Việt Minh",
+      "Hồ Chí Minh bị chính quyền Anh bắt giữ",
+      "Hồ Chí Minh về nước tổ chức khởi nghĩa Yên Bái",
+      "Hồ Chí Minh tham dự Hội nghị Thành lập Quốc tế Cộng sản"
+    ],
+    "correctAnswer": "Hồ Chí Minh bị chính quyền Anh bắt giữ",
+    "detail": "Tháng 6/1931, Nguyễn Ái Quốc bị chính quyền Anh bắt giam tại Victoria (Hong Kong). Nhờ sự giúp đỡ pháp lý và can thiệp quốc tế, Người được trả tự do cuối 1932, tiếp tục vượt khỏi vòng vây để hoạt động.",
+    "references": [
+      "https://www.cambridge.org/core/books/abs/ho-chi-minh-in-hong-kong/early-life-in-france-and-move-back-to-asia/9C43DD08CA0EB264B8E236775E3BCD1A"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Thailand",
+    "flag": "🇹🇭",
+    "year": "1928–1929",
+    "question": "Trong thời gian hoạt động tại Thái Lan từ năm 1928 đến 1929, Chủ tịch Hồ Chí Minh (lúc đó lấy tên là Thầu Chín) chủ yếu làm gì tại vùng Nakhon Phanom?",
+    "options": [
+      "Tổ chức các cuộc khởi nghĩa chống Pháp tại Thái Lan",
+      "Tập hợp, giác ngộ Việt kiều và tuyên truyền cách mạng",
+      "Thành lập Mặt trận Dân tộc Giải phóng miền Nam Việt Nam",
+      "Gặp gỡ các nhà cách mạng Trung Quốc để bàn về hợp tác"
+    ],
+    "correctAnswer": "Tập hợp, giác ngộ Việt kiều và tuyên truyền cách mạng",
+    "detail": "Với bí danh Thầu Chín, Người đến Nakhon Phanom, Udon Thani, Sakon Nakhon… mở lớp dạy chữ quốc ngữ, tuyên truyền yêu nước và xây dựng cơ sở Việt kiều – hạt nhân phong trào Việt–Lào sau này.",
+    "references": [
+      "https://daknong.gov.vn/tin-noi-bat/hanh-trinh-30-nam-tim-duong-cuu-nuoc-cua-bac-ho-371252"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Belgium",
+    "flag": "🇧🇪",
+    "year": "1927",
+    "question": "Chủ tịch Hồ Chí Minh đã đến Bruxelles (Brussels), Bỉ vào cuối năm 1927 để tham dự sự kiện nào liên quan đến phong trào cách mạng quốc tế?",
+    "options": [
+      "Đại hội thành lập Đảng Cộng sản Đông Dương",
+      "Đại hội Quốc tế Cộng sản lần thứ VI",
+      "Hội nghị Quốc tế chống chủ nghĩa thực dân",
+      "Hội nghị Versailles kết thúc Thế chiến thứ nhất"
+    ],
+    "correctAnswer": "Hội nghị Quốc tế chống chủ nghĩa thực dân",
+    "detail": "Hội nghị quy tụ các lực lượng chống thực dân; Nguyễn Ái Quốc trình bày tham luận phê phán bản chất bóc lột của chủ nghĩa thực dân, khẳng định quyền tự quyết của các dân tộc thuộc địa.",
+    "references": [
+      "https://phunu.hochiminhcity.gov.vn/img/Upload/web2b/Album/ContentDucument/2021-5/de-cuong-110-nam-bac-ho-ra-di-tim-duong-cuu-nuoc_3152021113520.pdf"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Italy",
+    "flag": "🇮🇹",
+    "year": "1927–1928",
+    "question": "Việc Nguyễn Ái Quốc đi qua nước Ý trong giai đoạn 1927–1928 có ý nghĩa gì trong quá trình hoạt động cách mạng của ông tại châu Âu?",
+    "options": [
+      "Là nơi ông cư trú lâu dài để trực tiếp tổ chức phong trào Việt kiều",
+      "Là chặng dừng ngắn trong hành trình công tác và khảo sát phong trào cách mạng tại châu Âu",
+      "Là nơi ông bí mật gặp gỡ lãnh tụ Mussolini để tìm sự ủng hộ chống thực dân",
+      "Là nơi ông thành lập tổ chức cộng sản đầu tiên dành cho người Việt tại châu Âu"
+    ],
+    "correctAnswer": "Là chặng dừng ngắn trong hành trình công tác và khảo sát phong trào cách mạng tại châu Âu",
+    "detail": "Người quan sát phong trào công nhân châu Âu và sự trỗi dậy của chủ nghĩa phát xít, củng cố nhận thức về liên hệ chặt chẽ giữa cách mạng thuộc địa và phong trào vô sản chính quốc.",
+    "references": [
+      "https://phunu.hochiminhcity.gov.vn/img/Upload/web2b/Album/ContentDucument/2021-5/de-cuong-110-nam-bac-ho-ra-di-tim-duong-cuu-nuoc_3152021113520.pdf"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Algeria",
+    "flag": "🇩🇿",
+    "year": "1911–1912",
+    "question": "Khi Hồ Chí Minh thể hiện sự ủng hộ với phong trào Algeria, Người đã sử dụng luận điểm nào từ tư tưởng quốc tế của mình?",
+    "options": [
+      "Kêu gọi viện trợ kinh tế từ Liên Xô",
+      "Nhấn mạnh tính hợp pháp của khát vọng độc lập",
+      "So sánh Algeria với Việt Nam để kêu gọi hỗ trợ quân sự",
+      "Kêu gọi phong trào công nhân Pháp phản đối chiến tranh Algeria"
+    ],
+    "correctAnswer": "Nhấn mạnh tính hợp pháp của khát vọng độc lập",
+    "detail": "Phù hợp tư tưởng giải phóng dân tộc và quyền tự quyết của các dân tộc thuộc địa.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Morocco",
+    "flag": "🇲🇦",
+    "year": "1911–1912",
+    "question": "Trong hành trình qua các thuộc địa của Pháp năm 1911–1912, Nguyễn Ái Quốc đã đặt chân đến Maroc với tư cách nào?",
+    "options": [
+      "Du học sinh Việt Nam tại Bắc Phi",
+      "Công nhân khai thác mỏ tại Casablanca",
+      "Thủy thủ đoàn trên tàu Pháp ghé cảng Maroc",
+      "Đại biểu Quốc tế Cộng sản đi khảo sát phong trào thuộc địa"
+    ],
+    "correctAnswer": "Thủy thủ đoàn trên tàu Pháp ghé cảng Maroc",
+    "detail": "Một chặng trong tuyến Bắc Phi 1911–1912 khi tàu Pháp ghé cảng.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Tunisia",
+    "flag": "🇹🇳",
+    "year": "1911–1912",
+    "question": "Từ trường hợp Tunisia, Hồ Chí Minh có thể rút ra bài học gì về cách thức đấu tranh?",
+    "options": [
+      "Đấu tranh chủ yếu bằng luật pháp quốc tế",
+      "Chỉ cần vận động ngoại giao quốc tế",
+      "Phải kết hợp đấu tranh chính trị – ngoại giao – quần chúng địa phương",
+      "Phải có hỗ trợ quân sự từ chính quốc"
+    ],
+    "correctAnswer": "Phải kết hợp đấu tranh chính trị – ngoại giao – quần chúng địa phương",
+    "detail": "Chứng kiến phản kháng của cư dân thuộc địa ở Tunisia giúp Người nhận ra: muốn giành độc lập phải kết hợp nhiều hình thức đấu tranh, không thể chỉ trông cậy vào bên ngoài.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Senegal",
+    "flag": "🇸🇳",
+    "year": "1911–1912",
+    "question": "Tại sao Senegal (Tây Phi) lại được nhắc đến trong hành trình của Nguyễn Ái Quốc năm 1911–1912?",
+    "options": [
+      "Ông dừng chân tại cảng Dakar – một thuộc địa lớn của Pháp",
+      "Ông tham gia đấu tranh vũ trang tại đây cùng người bản xứ",
+      "Ông được đào tạo quân sự tại Dakar theo chương trình của Pháp",
+      "Ông thành lập nhóm cộng sản đầu tiên ở Tây Phi"
+    ],
+    "correctAnswer": "Ông dừng chân tại cảng Dakar – một thuộc địa lớn của Pháp",
+    "detail": "Dakar là cảng quan trọng của Pháp ở Tây Phi – điểm dừng trên tuyến hải trình năm 1911–1912.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Ivory Coast",
+    "flag": "🇨🇮",
+    "year": "1911–1912",
+    "question": "Trong hành trình vượt biển làm thuê cho tàu Pháp (1911–1912), ý nghĩa nổi bật của việc đi qua các cảng như Bờ Biển Ngà, Congo thuộc Pháp và Dahomey là gì?",
+    "options": [
+      "Ông mở rộng mạng lưới cách mạng đến các nước châu Phi",
+      "Ông tận mắt chứng kiến tình cảnh người dân châu Phi dưới ách đô hộ thực dân Pháp",
+      "Ông xây dựng các tổ chức bí mật trong giới công nhân bản địa",
+      "Ông được chính quyền Pháp phân công làm thông ngôn tại các cảng này"
+    ],
+    "correctAnswer": "Ông tận mắt chứng kiến tình cảnh người dân châu Phi dưới ách đô hộ thực dân Pháp",
+    "detail": "Đi qua nhiều cảng thuộc địa của Pháp (Dakar, Bờ Biển Ngà, Congo, Dahomey) giúp Người nhận ra bản chất chung của chủ nghĩa thực dân và củng cố lập trường giải phóng dân tộc gắn với tinh thần quốc tế.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Republic of the Congo",
+    "flag": "🇨🇬",
+    "year": "1911–1912",
+    "question": "Trong hành trình 1911–1912 qua các cảng thuộc địa ở Tây–Trung Phi (như Congo thuộc Pháp), ý nghĩa nổi bật là gì?",
+    "options": [
+      "Ông mở rộng mạng lưới cách mạng đến các nước châu Phi",
+      "Ông tận mắt chứng kiến tình cảnh người dân châu Phi dưới ách đô hộ thực dân Pháp",
+      "Ông xây dựng các tổ chức bí mật trong giới công nhân bản địa",
+      "Ông được chính quyền Pháp phân công làm thông ngôn tại các cảng này"
+    ],
+    "correctAnswer": "Ông tận mắt chứng kiến tình cảnh người dân châu Phi dưới ách đô hộ thực dân Pháp",
+    "detail": "Trải nghiệm thực địa tại các cảng thuộc địa giúp Người củng cố lập trường chống chủ nghĩa thực dân và ý thức liên đới với các dân tộc bị áp bức.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Netherlands",
+    "flag": "🇳🇱",
+    "year": "1911–1912 hoặc 1917",
+    "question": "Quan sát xã hội công nghiệp ở Hà Lan giúp Nguyễn Tất Thành nhận ra mâu thuẫn căn bản nào khiến Người dần rời bỏ tư tưởng “khai hóa văn minh” của Pháp?",
+    "options": [
+      "Mâu thuẫn giữa các dân tộc châu Âu do chiến tranh",
+      "Mâu thuẫn giữa giai cấp công nhân và tư sản – cho thấy sự áp bức nội tại ngay trong chính quốc",
+      "Mâu thuẫn giữa chính phủ và nhà thờ trong thời hậu chiến",
+      "Mâu thuẫn giữa người da trắng và người da màu tại thuộc địa"
+    ],
+    "correctAnswer": "Mâu thuẫn giữa giai cấp công nhân và tư sản – cho thấy sự áp bức nội tại ngay trong chính quốc",
+    "detail": "Nhận thức về mâu thuẫn giai cấp ở chính quốc khiến Người rời bỏ ảo tưởng “khai hóa văn minh” của thực dân.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Spain",
+    "flag": "🇪🇸",
+    "year": "1911–1912 hoặc 1917",
+    "question": "Trải nghiệm ở Tây Ban Nha giúp Nguyễn Tất Thành khái quát điều gì về bản chất “dân chủ” phương Tây?",
+    "options": [
+      "Là dân chủ tự do đích thực nếu được mở rộng sang thuộc địa",
+      "Là mô hình có thể áp dụng cho Việt Nam nếu cải cách giáo dục",
+      "Là dân chủ hình thức, chỉ phục vụ thiểu số giai cấp thống trị",
+      "Là nền dân chủ tiến bộ nhờ ảnh hưởng Công giáo"
+    ],
+    "correctAnswer": "Là dân chủ hình thức, chỉ phục vụ thiểu số giai cấp thống trị",
+    "detail": "Khi đối chiếu với thực tiễn thuộc địa, Người nhận thấy dân chủ tư sản là hình thức, phục vụ thiểu số cầm quyền.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Portugal",
+    "flag": "🇵🇹",
+    "year": "1911–1912",
+    "question": "Việc đi qua Bồ Đào Nha khiến Nguyễn Tất Thành củng cố kết luận nào quan trọng trong nhận thức cách mạng?",
+    "options": [
+      "Mọi đế quốc, dù lớn hay nhỏ, đều cùng bản chất bóc lột",
+      "Thực dân nhỏ thường nhân đạo hơn thực dân lớn",
+      "Mâu thuẫn chỉ xuất hiện ở các cường quốc tư bản",
+      "Các nước Nam Âu có chính sách thuộc địa ôn hòa hơn"
+    ],
+    "correctAnswer": "Mọi đế quốc, dù lớn hay nhỏ, đều cùng bản chất bóc lột",
+    "detail": "Trải nghiệm ở Nam Âu góp phần khái quát bản chất chung của chủ nghĩa thực dân.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Luxembourg",
+    "flag": "🇱🇺",
+    "year": "1927",
+    "question": "Qua phong trào công nhân Luxembourg, Nguyễn Ái Quốc nhận thấy giới hạn lớn nhất của phong trào vô sản châu Âu đối với thuộc địa là gì?",
+    "options": [
+      "Chưa có tổ chức lãnh đạo thống nhất",
+      "Thiếu tinh thần quốc tế vô sản thực sự – bị ràng buộc bởi lợi ích dân tộc tư sản",
+      "Thiếu liên hệ kinh tế với thuộc địa",
+      "Không được Quốc tế Cộng sản hỗ trợ"
+    ],
+    "correctAnswer": "Thiếu tinh thần quốc tế vô sản thực sự – bị ràng buộc bởi lợi ích dân tộc tư sản",
+    "detail": "Lợi ích dân tộc tư sản chi phối làm suy giảm tinh thần quốc tế vô sản đối với vấn đề thuộc địa.",
+    "references": [
+      "https://phunu.hochiminhcity.gov.vn/img/Upload/web2b/Album/ContentDucument/2021-5/de-cuong-110-nam-bac-ho-ra-di-tim-duong-cuu-nuoc_3152021113520.pdf"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Austria",
+    "flag": "🇦🇹",
+    "year": "1927–1928",
+    "question": "Khi chứng kiến tình hình chính trị Áo, Nguyễn Ái Quốc nhận thấy nguy cơ lớn nhất đe dọa phong trào vô sản thế giới lúc đó là:",
+    "options": [
+      "Sự thỏa hiệp của các nước tư sản nhỏ",
+      "Sự can thiệp của phong trào dân tộc chủ nghĩa châu Á",
+      "Sự tan rã của Quốc tế Cộng sản",
+      "Sự trỗi dậy của chủ nghĩa phát xít và khủng hoảng niềm tin trong giai cấp công nhân"
+    ],
+    "correctAnswer": "Sự trỗi dậy của chủ nghĩa phát xít và khủng hoảng niềm tin trong giai cấp công nhân",
+    "detail": "Quan sát ở Áo và châu Âu cuối thập niên 1920 cho thấy hiểm họa phát xít, đòi hỏi phong trào cách mạng củng cố lực lượng và liên minh quốc tế.",
+    "references": [
+      "https://phunu.hochiminhcity.gov.vn/img/Upload/web2b/Album/ContentDucument/2021-5/de-cuong-110-nam-bac-ho-ra-di-tim-duong-cuu-nuoc_3152021113520.pdf"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Czech Republic",
+    "flag": "🇨🇿",
+    "year": "1927–1928",
+    "question": "Qua Tiệp Khắc, Nguyễn Ái Quốc hiểu sâu thêm về yêu cầu nào mang tính nguyên tắc của cách mạng thuộc địa?",
+    "options": [
+      "Phải có đảng kiểu mới của giai cấp công nhân",
+      "Dựa vào tư sản dân tộc",
+      "Kết hợp nghị trường với vũ trang",
+      "Theo mô hình dân chủ tư sản Đức"
+    ],
+    "correctAnswer": "Phải có đảng kiểu mới của giai cấp công nhân",
+    "detail": "Đảng kiểu mới của giai cấp công nhân – có tổ chức và kỷ luật – là điều kiện để lãnh đạo phong trào đến thắng lợi.",
+    "references": [
+      "https://phunu.hochiminhcity.gov.vn/img/Upload/web2b/Album/ContentDucument/2021-5/de-cuong-110-nam-bac-ho-ra-di-tim-duong-cuu-nuoc_3152021113520.pdf"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Poland",
+    "flag": "🇵🇱",
+    "year": "1923 hoặc 1927",
+    "question": "Từ hành trình qua Ba Lan, Nguyễn Ái Quốc rút ra kết luận chiến lược nào cho cách mạng Việt Nam?",
+    "options": [
+      "Phải tách khỏi phong trào quốc tế để độc lập",
+      "Chỉ cần tinh thần yêu nước, không cần giai cấp công nhân",
+      "Muốn thắng lợi, phải kết hợp sức mạnh dân tộc với sức mạnh thời đại – mà trung tâm là Liên Xô",
+      "Dựa vào giai cấp tư sản bản xứ để phát triển"
+    ],
+    "correctAnswer": "Muốn thắng lợi, phải kết hợp sức mạnh dân tộc với sức mạnh thời đại – mà trung tâm là Liên Xô",
+    "detail": "Quan sát các phong trào ở quốc gia nhỏ như Ba Lan cho thấy: gắn bó với phong trào vô sản quốc tế, nhất là sự hậu thuẫn từ Liên Xô – trung tâm cách mạng thế giới, là đòn bẩy để cách mạng thuộc địa thành công.",
+    "references": [
+      "https://phunu.hochiminhcity.gov.vn/img/Upload/web2b/Album/ContentDucument/2021-5/de-cuong-110-nam-bac-ho-ra-di-tim-duong-cuu-nuoc_3152021113520.pdf"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Mongolia",
+    "flag": "🇲🇳",
+    "year": "1934–1938",
+    "question": "Trong thời gian ở Mông Cổ, Nguyễn Ái Quốc nhận thấy yếu tố quyết định để xây dựng chủ nghĩa xã hội ở nước nông nghiệp lạc hậu là:",
+    "options": [
+      "Bỏ qua giai đoạn dân chủ nhân dân",
+      "Tập trung hoá kinh tế và công nghiệp hoá trước",
+      "Sao chép mô hình Liên Xô toàn diện",
+      "Gắn cách mạng xã hội với giải phóng dân tộc và nâng cao dân trí"
+    ],
+    "correctAnswer": "Gắn cách mạng xã hội với giải phóng dân tộc và nâng cao dân trí",
+    "detail": "Theo dõi xây dựng xã hội mới ở Mông Cổ, Người rút ra: mô hình Liên Xô cần vận dụng phù hợp đặc điểm dân tộc; muốn thành công phải gắn giải phóng dân tộc với nâng cao dân trí và đời sống nhân dân.",
+    "references": [
+      "https://daknong.gov.vn/tin-noi-bat/hanh-trinh-30-nam-tim-duong-cuu-nuoc-cua-bac-ho-371252"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Laos",
+    "flag": "🇱🇦",
+    "year": "1928–1929",
+    "question": "Trong thời gian qua Lào (từ bờ bên kia sông Mekong đối diện Nakhon Phanom), Nguyễn Ái Quốc chủ yếu làm gì?",
+    "options": [
+      "Tổ chức khởi nghĩa vũ trang tại Viêng Chăn",
+      "Thiết lập kênh liên lạc và gây dựng cơ sở cách mạng Việt–Lào, vận động Việt kiều",
+      "Chỉ tham quan, không hoạt động",
+      "Mở đại hội Đảng Cộng sản Đông Dương tại Savannakhet"
+    ],
+    "correctAnswer": "Thiết lập kênh liên lạc và gây dựng cơ sở cách mạng Việt–Lào, vận động Việt kiều",
+    "detail": "Từ các cơ sở Việt kiều ở Nakhon Phanom (Thái Lan), Người nhiều lần vượt sông Mekong sang Khăm Muộn, Savannakhet… khảo sát tình hình, vận động Việt kiều, gây dựng liên lạc Việt–Lào và bồi dưỡng hạt nhân phong trào.",
+    "references": [
+      "https://qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/bac-ho-tung-hoat-dong-cach-mang-tai-lao-439076",
+      "https://tulieuhochiminh.vnulib.edu.vn/bitstream/VNUHCM/13488/1/23.LSD-Nguyen%20Van%20Sau-2022.pdf",
+      "https://www.thuviendongnai.gov.vn/100bacho/Lists/Posts/ViewPost.aspx?ID=32"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Benin (Dahomey)",
+    "flag": "🇧🇯",
+    "year": "1911–1912",
+    "question": "Khi tàu ghé Dahomey trong hành trình 1911–1912, ấn tượng lớn nhất với Nguyễn Tất Thành là gì?",
+    "options": [
+      "Cơ hội kết nạp đảng viên mới tại châu Phi",
+      "Sự tương đồng thân phận thuộc địa giữa châu Phi và Việt Nam",
+      "Được chính quyền thực dân hỗ trợ tài chính",
+      "Cộng đồng người Việt đông đúc tại Dahomey"
+    ],
+    "correctAnswer": "Sự tương đồng thân phận thuộc địa giữa châu Phi và Việt Nam",
+    "detail": "Quan sát đời sống cư dân thuộc địa ở Dahomey giúp Người khái quát bản chất chung của chủ nghĩa thực dân, củng cố lập trường giải phóng dân tộc và tinh thần quốc tế.",
+    "references": [
+      "https://tuyengiao.hagiang.gov.vn/tin-tuc/tin-so-nganh/hanh-trinh-cuu-nuoc-vi-dai-cua-lanh-tu-nguyen-ai-quoc.html"
+    ]
+  }
 ]
-
-

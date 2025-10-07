@@ -359,9 +359,9 @@ export default function WorldMapJourneyPage() {
                       <p className="font-semibold mb-2">{result === "correct" ? "Chính xác!" : "Chưa đúng. Đáp án đúng:"} {result === "wrong" && <span className="underline">{selected.correctAnswer}</span>}</p>
                       <p className="text-sm leading-relaxed text-gray-800">{selected.detail}</p>
                       {selected.references?.length ? (
-                        <ul className="list-disc pl-5 mt-2 text-sm text-blue-700">
+                        <ul className="list-disc pl-5 mt-2 text-sm text-gray-700">
                           {selected.references.map((ref, idx) => (
-                            <li key={idx}><a className="underline" href={ref} target="_blank" rel="noopener noreferrer">Tham khảo {idx + 1}</a></li>
+                            <li key={idx}><span className="break-all">{ref}</span></li>
                           ))}
                         </ul>
                       ) : null}
